@@ -1,5 +1,6 @@
 <script context="module">
-    const posts = import.meta.glob("./posts/*.md");
+    import dayjs from 'dayjs';
+    const posts = import.meta.glob("../posts/*.md");
 
     let body = [];
     for (let path in posts){
@@ -10,14 +11,18 @@
         );
     }
 
-    export const load = async() => {
+    export const load = async({ params }) => {
         const posts = await Promise.all(body);
-        posts.sort((a, b) => {
-            return new Date(a.metadata.date) - new Date(b.metadata.date);
+        posts.sort((a, b) => (dayjs(a.metadata.date, "MMM D, YYYY") -
+                            dayjs(b.metadata.date, "MMM D, YYYY")));
+        const tags = params.tags;
+        let filteredPosts = posts.filter((post) => { 
+            return post.metadata.tags.includes(tags)
         });
         return {
             props: {
-                posts,
+                filteredPosts,
+                tags
             }
         }
     }
@@ -25,13 +30,18 @@
 
 <script>
     import Thumbnail from "$lib/thumbnail.svelte";
-    export let posts;
+    export let filteredPosts;
+    export let tags;
 </script>
 
+
 <div class="container">
+    <div>
+        Posts tagged with {tags}
+    </div>
     <div class="spacer" style="padding: 35px" />
     <div class="grid">
-        {#each posts as {path, metadata}}
+        {#each filteredPosts as {path, metadata}}
             <Thumbnail title={metadata.title} summary={metadata.summary} link={`/blog/${path.replace(".md", "")}`} tags={metadata.tags} />
         {/each}
     </div>
@@ -54,4 +64,3 @@
     }
 
 </style>
-

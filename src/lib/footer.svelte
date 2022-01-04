@@ -3,17 +3,17 @@
       {
         name: "Twitter",
         url: "https://twitter.com/Feather_Systems",
-        icon: "./twitter.svg",
+        icon: "/twitter.svg",
       },
       {
         name: "Discord",
         url: "https://discord.gg/8KVKzg8HEk",
-        icon: "./discord.svg",
+        icon: "/discord.svg",
       },
       {
         name: "Reddit",
         url: "https://www.reddit.com/r/FeatherSystems/",
-        icon: "./reddit.svg",
+        icon: "/reddit.svg",
       },
     ];
   </script>
@@ -22,14 +22,14 @@
     <div class="spacer-gutter">
       <div class="top-container">
         <img
-          src="./footer-logo.svg"
+          src="/footer-logo.svg"
           alt="Feather Logo Long"
           class="logo"
         />
         <div class="spacer one footer" />
         <button class="cta">
           <div class="text">Join Our Mailing List</div>
-          <img src="./footer-mail.svg" alt="Mailing List" class="image" />
+          <img src="/footer-mail.svg" alt="Mailing List" class="image" />
         </button>
       </div>
       <div class="spacer two footer" />
