@@ -3,11 +3,12 @@
     export let summary;
     export let link;
     export let tags;
+    export let thumbnail;
 </script>
 
 <div class="thumbnail">
     <a href={link}>
-        <img src={"/blog-thumbnail-temp.svg"} alt="Thumbnail" />
+        <img src={thumbnail} alt="Thumbnail" />
         <div class="content">
             <h2>
                 {title}

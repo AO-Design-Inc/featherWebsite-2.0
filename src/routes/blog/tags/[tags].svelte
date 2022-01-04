@@ -1,5 +1,4 @@
 <script context="module">
-    import dayjs from 'dayjs';
     const posts = import.meta.glob("../posts/*.md");
 
     let body = [];
@@ -13,8 +12,9 @@
 
     export const load = async({ params }) => {
         const posts = await Promise.all(body);
-        posts.sort((a, b) => (dayjs(a.metadata.date, "MMM D, YYYY") -
-                            dayjs(b.metadata.date, "MMM D, YYYY")));
+        posts.sort((a, b) => {
+            return new Date(a.metadata.date) - new Date(b.metadata.date);
+        });
         const tags = params.tags;
         let filteredPosts = posts.filter((post) => { 
             return post.metadata.tags.includes(tags)
