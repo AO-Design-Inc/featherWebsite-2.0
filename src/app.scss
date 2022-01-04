@@ -1,0 +1,91 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap");
+
+html {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+  max-width: 100%;
+}
+
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #fffffb;
+  background: #11131c;
+}
+body.lightmode {
+  color: #11131c;
+  background: #fffffb;
+}
+
+a {
+  color: #fffffb;
+  text-decoration: none;
+}
+body.lightmode a {
+  color: #11131c;
+}
+body.lightmode a:hover {
+  color: #FB7680;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FB7680;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-padding: 0.4em 0;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+input:disabled {
+  color: #ccc;
+}
+
+button {
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none;
+  transition: filter 0.3s ease-in-out;
+}
+
+button:disabled {
+  color: #999;
+}
+
+button:not(:disabled):active {
+  background-color: #ddd;
+}
+
+button:focus {
+  border-color: #666;
+}
+
+button:hover {
+  transition: filter 0.3s ease-in-out;
+  filter: brightness(120%);
+}
