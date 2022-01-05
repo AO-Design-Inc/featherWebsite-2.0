@@ -23,7 +23,6 @@
                         <a class="tag" href={`/blog/tags/${tag}`}>
                             #{tag}
                         </a>
-                        
                     {/each}
                 </p>
                 <div id="arrow-icon" />

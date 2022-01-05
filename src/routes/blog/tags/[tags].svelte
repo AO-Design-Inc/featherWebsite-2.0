@@ -42,7 +42,9 @@
     <div class="spacer" style="padding: 35px" />
     <div class="grid">
         {#each filteredPosts as {path, metadata}}
-            <Thumbnail title={metadata.title} summary={metadata.summary} link={`/blog/${path.replace(".md", "")}`} tags={metadata.tags} />
+            <Thumbnail title={metadata.title} summary={metadata.summary} link={`/blog/${path.replace(".md", "")}`} tags={metadata.tags}
+                thumbnail={metadata.thumbnail} 
+            />
         {/each}
     </div>
     <div class="spacer" style="padding: 45px" />

@@ -5,6 +5,7 @@ summary: Summary Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a
 thumbnail: "/blog-thumbnail-temp.svg"
 tags:
     - UX
+author: Kyle Li, CMO, Feather
 ---
 
 # {title}
