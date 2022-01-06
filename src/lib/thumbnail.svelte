@@ -59,7 +59,6 @@
     }
 
     .thumbnail {
-        width: 350px;
         height: 450px;
         border-radius: 10px;
         background: #1a1e2c;

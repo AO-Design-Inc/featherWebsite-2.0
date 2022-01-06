@@ -26,7 +26,7 @@
           alt="Feather Logo Long"
           class="logo"
         />
-        <div class="spacer one footer" />
+        <!-- <div class="spacer one footer" /> -->
         <button class="cta">
           <div class="text">Join Our Mailing List</div>
           <img src="/footer-mail.svg" alt="Mailing List" class="image" />
@@ -79,6 +79,7 @@
       }
       .top-container {
         display: flex;
+        justify-content: space-between;
         width: 100%;
         align-content: center;
   
@@ -157,6 +158,7 @@
       }
       .bottom-container {
         display: flex;
+        justify-content: space-between;
         width: 100%;
         align-items: center;
         .copyright {

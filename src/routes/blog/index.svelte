@@ -25,11 +25,14 @@
 
 <script>
     import Thumbnail from "$lib/thumbnail.svelte";
+    import BlogBanner from "$lib/blog-banner.svelte";
     export let posts;
 </script>
 
 <div class="container">
-    <div class="spacer" style="padding: 35px" />
+    <div class="banner">
+        <BlogBanner post={posts[0]}/>
+    </div>
     <div class="grid">
         {#each posts as {path, metadata}}
             <Thumbnail title={metadata.title} summary={metadata.summary} 
@@ -38,22 +41,30 @@
             />
         {/each}
     </div>
-    <div class="spacer" style="padding: 45px" />
 </div>
 
 
 <style>
+
+    .banner {
+        width: 100%;
+    }
 
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        max-width: 1240px;
+        margin: 0px auto;
     }
     .grid {
+        padding-top: 70px;
+        padding-bottom: 90px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 50px;
+        width: 100%;
     }
 
 </style>
