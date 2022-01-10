@@ -28,7 +28,9 @@
 					</a>
 				{/each}
 			</p>
-			<div id="arrow-icon" />
+			<a href={link}>
+				<div id="arrow-icon" />
+			</a>
 		</div>
 		<!-- <div class="spacer" style="padding: 10px" /> -->
 	</div>
@@ -57,6 +59,7 @@
 	.content-footer {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 
 	.content {
