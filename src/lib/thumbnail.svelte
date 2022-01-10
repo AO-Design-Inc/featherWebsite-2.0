@@ -12,7 +12,7 @@
 	</a>
 	<div class="content">
 		<a href={link}>
-			<h2>
+			<h2 class="title">
 				{title}
 			</h2>
 			<div class="s">
@@ -36,6 +36,10 @@
 
 <style lang="scss">
 	@import '../variables.scss';
+
+	.title {
+		line-height: 1.5;
+	}
 	.tag {
 		margin-right: 10px;
 		text-decoration: none;
@@ -65,6 +69,7 @@
 		overflow: hidden;
 		white-space: pre-wrap;
 		text-overflow: ellipsis;
+		line-height: 1.6;
 	}
 
 	.thumbnail {

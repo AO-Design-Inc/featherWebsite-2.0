@@ -19,13 +19,51 @@
 			<div class="summary">
 				{post.metadata.summary}
 			</div>
+            <a href={`/blog/${post.path.replace("./", "").replace(".md", "")}`} class="button">
+                <div class="button-text">
+                    Read More
+                </div>
+                <div class="arrow-icon" />
+            </a>
 		</div>
 	</div>
 </div>
 
 <style lang="scss">
 	@import '../variables.scss';
+
+    .button-text {
+        font-size: 20px;
+        margin-right: 10px;
+        color: #74252b;
+        font-weight: bold;
+    }
+
+    .button:hover  {
+        background: #f87c86;
+    }
+
+    .button {
+        display: flex;
+        width: fit-content;
+        padding: 15px 20px;
+        border-radius: 10px 10px 10px 10px;
+        background: #ffb0b0;
+        margin-top: 30px;
+    }
+
+    .arrow-icon {
+        content: url("/arrow-dark.svg");
+        color: #74252b;
+    }
+
+    .summary {
+        padding-top: 20px;
+        line-height: 1.5;
+    }
+
 	.title {
+        padding-top: 20px;
 		font-weight: bold;
 		font-size: get-vw(40px);
 		@media screen and (max-width: $bp) {
