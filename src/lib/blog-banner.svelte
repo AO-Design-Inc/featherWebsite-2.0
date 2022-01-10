@@ -86,15 +86,15 @@
 	}
 
 	.content {
-		margin-left: 66%;
 		padding: get-vw(30px);
 		background: rgba(0, 0, 0, 0.6);
 		border-radius: 0px get-vw(10px) get-vw(10px) 0px;
 		@media screen and (max-width: $bp) {
-			padding: max(get-vw(30px), 30px);
+			padding: max(get-vw(30px), 50px);
 			border-radius: 0px max(get-vw(10px), 10px) max(get-vw(10px), 10px) 0px;
 		}
 		@media screen and (min-width: 1240px) {
+            margin-left: 66%;
 			padding: min(get-vw(30px), 30px);
 			border-radius: 0px min(get-vw(10px), 10px) min(get-vw(10px), 10px) 0px;
 		}
