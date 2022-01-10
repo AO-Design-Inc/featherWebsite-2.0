@@ -22,6 +22,7 @@
   </main>
   
   <style lang="scss">
+    @import '../variables.scss';
     $bpDash: 850px;
     .form-container {
       min-width: 350px;
@@ -31,13 +32,15 @@
       }
     }
     main {
-      aspect-ratio: 288 / 17;
+      // aspect-ratio: 288 / 17;
       display: flex;
       align-items: center;
-      max-width: 100%;
+      max-width: 90%;
       min-height: 85px;
       position: relative;
-      @media screen and (min-width: 1240px) {
+      margin: 0px;
+      padding: 0px get-vw(100px);
+      @media screen and (min-width: 1440px) {
         max-width: 1240px;
         padding: 0px;
         margin: 0px auto;
