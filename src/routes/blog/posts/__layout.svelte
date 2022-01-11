@@ -198,7 +198,7 @@
     .slot {
         position: relative;
         z-index: 1;
-        padding: 20px 20px 20px 20px;
+        padding: 20px 20px 20px 30px;
         background: #fffffb;
         height: 100%;
         overflow: hidden;
