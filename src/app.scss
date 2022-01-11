@@ -36,6 +36,7 @@ body.lightmode a:hover {
 }
 
 a:hover {
+  transition: color 0.3s ease-in-out;
   color: #FB7680;
   text-decoration: none;
 }
@@ -91,5 +92,10 @@ button:hover {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.65;
+  font-size: 16px;
+  a {
+    color: #c01c2a;
+    text-decoration: none;
+  }
 }

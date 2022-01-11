@@ -88,17 +88,20 @@
             <slot />
         </div>
     </div>
-    <div class="spacer" style={"padding: 15px"} />
+    <div class="spacer bottom" style={"padding: 15px"} />
 </div>
 
 <style lang="scss">
-
+    @import '../../../variables.scss';
     .social-container {
         position: relative;
         z-index: 1;
         width: 40px;
         padding-top: 30px;
         padding-right: 10px;
+        @media screen and (max-width: $bp) {
+			display: none;
+		}
     }
 
     .social.image {
@@ -149,9 +152,17 @@
         display: flex;
         flex-direction: column;
         color: black;
-        margin-left: 25%;
+        margin-left: 23%;
         margin-right: 25%;
         z-index: 1;
+        @media screen and (max-width: $bp) {
+			margin-left: 0%;
+            margin-right: 0%;
+		}
+        @media screen and (max-width: 800px) {
+			margin-left: 0%;
+            margin-right: auto;
+		}
     }
 
     .heading-box {
@@ -169,22 +180,35 @@
         border-radius: 10px 10px 0 0;
         padding-left: 30px;
         box-shadow: 10px 10px 0px 0px #E7E7E7;
+        @media screen and (max-width: $bp) {
+			width: 80%;
+            padding-left: 20px;
+		}
     }
 
     .content {
         display: flex;
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-left: 23%;
+        margin-right: 23%;
+        @media screen and (max-width: $bp) {
+			margin: 0%;
+		}
     }
 
     .slot {
         position: relative;
         z-index: 1;
-        padding: 20px 30px 20px 30px;
+        padding: 20px 20px 20px 20px;
         background: #fffffb;
         height: 100%;
         overflow: hidden;
         color: black;
         border-radius: 0 10px 10px 10px;
+    }
+    .spacer.bottom {
+        @media screen and (max-width: $bp) {
+			display: none;
+
+		}
     }
 </style>

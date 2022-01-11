@@ -31,17 +31,17 @@
   }
 
   .spacer.one {
-    min-height: 55px;
-    height: get-vw(55px);
+    min-height: 45px;
+    height: get-vw(45px);
     @media screen and (min-width: 1240px) {
-      height: min(get-vw(55px), 55px);
+      height: min(get-vw(45px), 45px);
     }
   }
   .spacer.two {
-    min-height: 190px;
-    height: get-vw(190px);
+    min-height: 95px;
+    height: get-vw(95px);
     @media screen and (min-width: 1240px) {
-      height: min(get-vw(190px), 190px);
+      height: min(get-vw(95px), 95px);
     }
   } 
 </style>
