@@ -28,23 +28,36 @@
 <script>
 	import '../../../app.scss';
 	import { page } from '$app/stores';
-	console.log(page);
 	export let post;
+	import { onMount } from 'svelte';
+
+	let url = ``;
+
+	onMount(() => {
+		url = window.location.href;
+		console.log(url);
+	});
+
 	let socialArray = [
 		{
+			name: 'Link',
+			url: `${url}`,
+			icon: '/share-link.svg'
+		},
+		{
 			name: 'Twitter',
-			url: `https://twitter.com/intent/tweet?text=Hello%20https://feather.systems/${page.url}`,
+			url: `https://twitter.com/intent/tweet?text=Hello%20https://feather.systems/${url}`,
 			icon: '/share-twitter.svg'
 		},
 		{
 			name: 'Facebook',
 			url: 'https://discord.gg/8KVKzg8HEk',
-			icon: '/discord.svg'
+			icon: '/share-fb.svg'
 		},
 		{
-			name: 'Reddit',
+			name: 'LinkedIn',
 			url: 'https://www.reddit.com/r/FeatherSystems/',
-			icon: '/reddit.svg'
+			icon: '/share-linkedin.svg'
 		}
 	];
 </script>
@@ -96,15 +109,18 @@
 	</div>
 	<div class="content">
 		<div class="social-container">
+			<div class="sticky-social">
 			{#each socialArray as { name, url, icon }, i}
 				<a href={url} class={i}>
 					<img src={icon} class="social image {name}" alt={name} />
 				</a>
 			{/each}
+			</div>
 		</div>
 		<div class="slot">
 			<slot />
 		</div>
+		<div class="center-spacer"></div>
 	</div>
 	<div class="spacer bottom" style={'padding: 15px'} />
 </div>
@@ -113,7 +129,7 @@
 	@import '../../../variables.scss';
 	.container {
 		position: relative;
-		width: get-vw(660px);
+		width: get-vw(720px);
 		margin: 0px auto 0px auto;
 		@media screen and (max-width: $bp) {
 			width: max(get-vw(660px), 90%);
@@ -122,7 +138,14 @@
 			width: min(get-vw(660px), 660px);
 		}
 	}
+	
+	.thumbnail {
+		margin: 0 30px;
+	}
+
 	.social-container {
+		/*position: sticky;
+		top: get-vw(310px);*/
 		position: fixed;
 		left: get-vw(310px);
 		top: get-vw(310px);
@@ -144,10 +167,22 @@
 		}
 	}
 
+	.sticky-social {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 160px;
+	}
+
 	.social.image {
 		aspect-ratio: 1 / 1;
-		width: 40px;
-		height: 40px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.center-spacer {
+		min-width: 30px;
+		flex-grow: 1;
 	}
 
 	.title {
@@ -190,6 +225,7 @@
 
 	.content {
 		display: flex;
+		flex-direction: row;
 		@media screen and (max-width: $bp) {
 			margin: 0%;
 		}
