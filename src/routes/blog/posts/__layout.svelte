@@ -129,7 +129,7 @@
 	@import '../../../variables.scss';
 	.container {
 		position: relative;
-		width: get-vw(720px);
+		width: get-vw(780px);
 		margin: 0px auto 0px auto;
 		@media screen and (max-width: $bp) {
 			width: max(get-vw(660px), 90%);
@@ -140,20 +140,31 @@
 	}
 	
 	.thumbnail {
-		margin: 0 30px;
+		margin: 0 60px;
 	}
 
 	.social-container {
-		/*position: sticky;
-		top: get-vw(310px);*/
-		position: fixed;
+		margin: get-vw(30px) 0px 0px 0px;
+		/*position: fixed;
 		left: get-vw(310px);
 		top: get-vw(310px);
-		z-index: 1;
-		width: 40px;
-		height: 100%;
-		padding-top: 30px;
+		z-index: 1;*/
+		min-width: 60px;
+		min-height: 100%;
+		/*padding-top: 30px;
 		padding-right: 10px;
+		*/
+	}
+
+	.sticky-social {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 160px;
+
+		position: sticky;
+		top: get-vw(310px);
+
 		@media screen and (max-width: 1112px) {
 			display: none;
 		}
@@ -167,21 +178,14 @@
 		}
 	}
 
-	.sticky-social {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		height: 160px;
-	}
-
 	.social.image {
 		aspect-ratio: 1 / 1;
-		width: 30px;
-		height: 30px;
+		width: 25px;
+		height: 25px;
 	}
 
 	.center-spacer {
-		min-width: 30px;
+		min-width: 60px;
 		flex-grow: 1;
 	}
 
