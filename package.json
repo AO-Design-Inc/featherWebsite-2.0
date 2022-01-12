@@ -26,7 +26,9 @@
 	"type": "module",
 	"dependencies": {
 		"dayjs": "^1.10.7",
+		"highlight.js": "^11.4.0",
 		"js-yaml": "^4.1.0",
+		"katex": "^0.15.1",
 		"rehype-highlight": "^5.0.2",
 		"rehype-stringify": "^9.0.2",
 		"remark-frontmatter": "^4.0.1",

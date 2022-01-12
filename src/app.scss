@@ -1,101 +1,166 @@
 /* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
 
 html {
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
 body {
-  position: relative;
-  max-width: 100%;
+	position: relative;
+	max-width: 100%;
 }
 
 body {
-  margin: 0px;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
-  font-size: 1em;
-  color: #fffffb;
-  background: #11131c;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	color: #fffffb;
+	background: #11131c;
 }
 body.lightmode {
-  color: #11131c;
-  background: #fffffb;
+	color: #11131c;
+	background: #fffffb;
 }
 
 a {
-  color: #fffffb;
-  text-decoration: none;
+	color: #fffffb;
+	text-decoration: none;
 }
 body.lightmode a {
-  color: #11131c;
+	color: #11131c;
 }
 body.lightmode a:hover {
-  color: #FB7680;
-  text-decoration: none;
+	color: #fb7680;
+	text-decoration: none;
 }
 
 a:hover {
-  transition: color 0.3s ease-in-out;
-  color: #FB7680;
-  text-decoration: none;
+	transition: color 0.3s ease-in-out;
+	color: #fb7680;
+	text-decoration: none;
 }
 
 a:visited {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 label {
-  display: block;
+	display: block;
 }
 
 input,
 button,
 select,
 textarea {
-  font-family: inherit;
-  font-size: inherit;
-  -webkit-padding: 0.4em 0;
-  padding: 0.4em;
-  margin: 0 0 0.5em 0;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 2px;
+	font-family: inherit;
+	font-size: inherit;
+	-webkit-padding: 0.4em 0;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
 }
 
 input:disabled {
-  color: #ccc;
+	color: #ccc;
 }
 
 button {
-  color: #333;
-  background-color: #f4f4f4;
-  outline: none;
-  transition: filter 0.3s ease-in-out;
+	color: #333;
+	background-color: #f4f4f4;
+	outline: none;
+	transition: filter 0.3s ease-in-out;
 }
 
 button:disabled {
-  color: #999;
+	color: #999;
 }
 
 button:not(:disabled):active {
-  background-color: #ddd;
+	background-color: #ddd;
 }
 
 button:focus {
-  border-color: #666;
+	border-color: #666;
 }
 
 button:hover {
-  transition: filter 0.3s ease-in-out;
-  filter: brightness(120%);
+	transition: filter 0.3s ease-in-out;
+	filter: brightness(120%);
 }
 
-p {
-  line-height: 1.65;
-  font-size: 16px;
-  a {
-    color: #c01c2a;
-    text-decoration: none;
-  }
+.slot p {
+	font-size: get-vw(20px);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.75;
+	letter-spacing: 0em;
+	text-align: left;
+	a {
+		color: #ec5c68;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #eb737d;
+		text-decoration: none;
+	}
+	@media screen and (max-width: $bp) {
+		font-size: max(get-vw(20px),16px);
+	}
+	@media screen and (min-width: 1240px) {
+		font-size: min(get-vw(20px),20px);
+	}
+}
+.slot h2,
+.slot img {
+	margin: get-vw(30px) 0px 0px 0px;
+	@media screen and (max-width: $bp) {
+		margin: max(get-vw(30px), 30px) 0px 0px 0px;
+	}
+	@media screen and (min-width: 1240px) {
+		margin: min(get-vw(30px), 30px) 0px 0px 0px;
+	}
+}
+.slot summary {
+	margin: get-vw(15px) 0px 0px 0px;
+	@media screen and (max-width: $bp) {
+		margin: max(get-vw(15px), 15px) 0px 0px 0px;
+	}
+	@media screen and (min-width: 1240px) {
+		margin: min(get-vw(15px), 15px) 0px 0px 0px;
+	}
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+}
+table {
+	border-collapse: collapse;
+}
+td {
+	padding: 1%;
+}
+blockquote p {
+	font-size: 37px;
+	font-style: normal;
+	line-height: 1.21;
+	letter-spacing: 0em;
+	text-align: left;
+	strong {
+		font-weight: 700;
+	}
+}
+.truncate {
+	/**Major Properties**/
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	display: block;
+	display: -webkit-box;
+	overflow: hidden !important;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 4;
 }

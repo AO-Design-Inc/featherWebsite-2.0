@@ -15,7 +15,7 @@
 			<h2 class="title">
 				{title}
 			</h2>
-			<div class="s">
+			<div class="s truncate">
 				{summary}
 			</div>
 		</a>
@@ -40,7 +40,14 @@
 	@import '../variables.scss';
 
 	.title {
-		line-height: 1.5;
+		line-height: 1.25;
+		font-size: get-vw(26px);
+		@media screen and (max-width: $bp) {
+			font-size: max(get-vw(26px), 26px);
+		}
+		@media screen and (min-width: 1240px) {
+			font-size: min(get-vw(26px), 26px);
+		}
 	}
 	.tag {
 		margin-right: 10px;
@@ -67,24 +74,32 @@
 		padding-right: 20px;
 	}
 	.s {
-		max-width: 100%;
-		aspect-ratio: 29/10;
-		overflow: hidden;
-		white-space: pre-wrap;
-		text-overflow: ellipsis;
+		width: 100%;
+		min-height: 100px;
 		line-height: 1.6;
+		font-size: get-vw(16px);
+		opacity: 0.75;
+		@media screen and (max-width: $bp) {
+			font-size: max(get-vw(16px), 16px);
+		}
+		@media screen and (min-width: 1240px) {
+			font-size: min(get-vw(16px), 16px);
+		}
 	}
 
 	.thumbnail {
 		aspect-ratio: 38 / 47;
+		min-width: get-vw(350px);
 		width: get-vw(350px);
 		border-radius: get-vw(10px);
 		background: #1a1e2c;
 		@media screen and (max-width: $bp) {
+			min-width: max(get-vw(350px),350px);
 			height: auto;
 			width: 100%;
 		}
 		@media screen and (min-width: 1240px) {
+			min-width: min(get-vw(350px),350px);
 			width: min(get-vw(380px), 380px);
 			border-radius: min(get-vw(10px), 10px);
 		}
