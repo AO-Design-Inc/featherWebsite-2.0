@@ -27,15 +27,17 @@
 
 <script>
 	import '../../../app.scss';
+	import { page } from '$app/stores';
+	console.log(page);
 	export let post;
 	let socialArray = [
 		{
 			name: 'Twitter',
-			url: 'https://twitter.com/Feather_Systems',
-			icon: '/twitter.svg'
+			url: `https://twitter.com/intent/tweet?text=Hello%20https://feather.systems/${page.url}`,
+			icon: '/share-twitter.svg'
 		},
 		{
-			name: 'Discord',
+			name: 'Facebook',
 			url: 'https://discord.gg/8KVKzg8HEk',
 			icon: '/discord.svg'
 		},
@@ -110,6 +112,7 @@
 <style lang="scss">
 	@import '../../../variables.scss';
 	.container {
+		position: relative;
 		width: get-vw(660px);
 		margin: 0px auto 0px auto;
 		@media screen and (max-width: $bp) {
@@ -120,14 +123,15 @@
 		}
 	}
 	.social-container {
-		position: absolute;
+		position: fixed;
 		left: get-vw(310px);
-		top: get-vw(270px);
+		top: get-vw(310px);
 		z-index: 1;
 		width: 40px;
+		height: 100%;
 		padding-top: 30px;
 		padding-right: 10px;
-		@media screen and (max-width: 1115px) {
+		@media screen and (max-width: 1112px) {
 			display: none;
 		}
 		@media screen and (max-width: $bp) {
