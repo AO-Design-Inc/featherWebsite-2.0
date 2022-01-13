@@ -27,13 +27,23 @@
     .signup{
         height: 100%;
         width: 100%;
-        content: url("/signup.webp");
+        
+        @media screen and (min-width: 600px){
+            content: url("/signup.webp");
+        }
+        @media screen and (max-width: 600px) {
+            content: url("/small-signup.webp");
+        }
     }
 
     .form {
-        width: 75%;
+        @media screen and (min-width: 600px){
+            width: 75%;
+        }
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
     }
-
 
     .pre-alpha-text {
         margin-top: 40px;
@@ -42,17 +52,29 @@
     }
     
     .subscription {
-        width: 50%;
         margin-right: 50px;
         padding: 30px 0px 30px 30px;
+        
+        @media screen and (min-width: 600px){
+            width: 45%;
+        }
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
     }
 
     .images {
-        width: 60%;
+        @media screen and (min-width: 600px){
+            width: 45%;
+        }
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
     }
     
     .inner {
         display: flex;
+        flex-flow: wrap;
     }
 
     .container {

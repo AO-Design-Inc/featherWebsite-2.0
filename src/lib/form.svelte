@@ -21,9 +21,9 @@
     // height: get-vw(45px);
     display: flex;
     position: relative;
-    @media (max-width: 540px) {
+    /*@media (max-width: 540px) {
       display: none;
-    }
+    }*/
     .email {
       height: get-vw(45px);
       min-height: 45px;
