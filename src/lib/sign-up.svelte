@@ -16,26 +16,18 @@
             </div>
         </div>
         <div class="images">
-            <div class="signup-1" />
-            <div class="signup-2" />
+            <div class="signup" />
         </div>
     </div>
 </div>
 
 <style lang="scss">
 
-    .signup-2 {
-        position: absolute;
-        top: 60px;
-        left: 160px;
-        content: url("/signup-2.png");
-    }
 
-    .signup-1 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        content: url("/signup-1.png");
+    .signup{
+        height: 100%;
+        width: 100%;
+        content: url("/signup.webp");
     }
 
     .form {
@@ -52,17 +44,17 @@
     .subscription {
         width: 50%;
         margin-right: 50px;
+        padding: 30px 0px 30px 30px;
     }
 
     .images {
-        height: 255px;
-        width: 50%;
-        position: relative;
+        // height: 255px;
+        width: 60%;
+        padding-right: 30px;
     }
     
     .inner {
         display: flex;
-        padding: 30px;
     }
 
     .container {
