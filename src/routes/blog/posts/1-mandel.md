@@ -42,8 +42,6 @@ The Mandelbrot Set is defined as the set of complex numbers for which the functi
 
 The Mandelbrot Set is stunning. We highly recommend getting lost in its beauty using our rendering website ([https://mandelbrot-ascript.vercel.app/](https://mandelbrot-ascript.vercel.app/)). Click to zoom and Shift + Click to zoom out.
 
-The Mandelbrot Set is stunning. We highly recommend getting lost in its beauty using our rendering website ([https://mandelbrot-ascript.vercel.app/](https://mandelbrot-ascript.vercel.app/)). Click to zoom and Shift + Click to zoom out.
-
 ## Benchmark Structure
 
 [The benchmarking site](https://js-wasm-mandelbrot-benchmark-3.vercel.app/) is designed to display each iteration we developed with a rough estimate for performance measured in milliseconds. For each version, a function was written to perform the Mandelbrot calculations and return a JavaScript ImageData object that could be easily put on the Canvas. Once the user selects a version from the drop down menu, the corresponding function is called. Since the functions can take some time to complete, they are called from a Web-worker to prevent the main thread from freezing while the function runs. The performance is calculated using `performance.now()` calls before and after the function call that returns the ImageData object.
