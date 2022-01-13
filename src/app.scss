@@ -164,3 +164,13 @@ blockquote p {
 	text-overflow: ellipsis;
 	-webkit-line-clamp: 4;
 }
+.truncate.header {
+	/**Major Properties**/
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	display: block;
+	display: -webkit-box;
+	overflow: hidden !important;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+}

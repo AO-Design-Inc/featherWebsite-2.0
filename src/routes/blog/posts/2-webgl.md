@@ -5,7 +5,6 @@ summary: Illustrating the bare minimum required to get WebGL up and running in C
 thumbnail: '/blog-2-tri-thumbnail.webp'
 tags:
   - WebGL
-  - Emscripten
 author: Jo Gao
 ---
 

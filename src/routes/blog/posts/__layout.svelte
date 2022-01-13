@@ -26,12 +26,13 @@
 </script>
 
 <script>
+	import Clipboard from 'svelte-clipboard';
 	import '../../../app.scss';
 	import { page } from '$app/stores';
 	export let post;
 	import { onMount } from 'svelte';
 
-	let url = ``;
+	let url = $page.url.pathname;
 
 	onMount(() => {
 		url = window.location.href;
@@ -46,17 +47,17 @@
 		},
 		{
 			name: 'Twitter',
-			url: `https://twitter.com/intent/tweet?text=Hello%20https://feather.systems/${url}`,
+			url: `https://twitter.com/intent/tweet?text=Check%20out%20this%20blog:%20https://feather.systems${url}`,
 			icon: '/share-twitter.svg'
 		},
 		{
 			name: 'Facebook',
-			url: 'https://discord.gg/8KVKzg8HEk',
+			url: `https://www.facebook.com/sharer.php?u=https://feather.systems${url}`,
 			icon: '/share-fb.svg'
 		},
 		{
 			name: 'LinkedIn',
-			url: 'https://www.reddit.com/r/FeatherSystems/',
+			url: `https://www.linkedin.com/sharing/share-offsite/?url=https://feather.systems/`,
 			icon: '/share-linkedin.svg'
 		}
 	];
@@ -110,17 +111,29 @@
 	<div class="content">
 		<div class="social-container">
 			<div class="sticky-social">
-			{#each socialArray as { name, url, icon }, i}
-				<a href={url} class={i}>
-					<img src={icon} class="social image {name}" alt={name} />
-				</a>
-			{/each}
+				{#each socialArray as { name, url, icon }, i}
+					{#if name === 'Link'}
+						<Clipboard
+							text="https://feather.systems{url}"
+							let:copy
+							on:copy={() => {
+								alert('Has Copied to Clipboard👏');
+							}}
+						>
+							<img on:click={copy} src={icon} class="social image {name}" alt={name} />
+						</Clipboard>
+					{:else}
+						<a href={url} class={i}>
+							<img src={icon} class="social image {name}" alt={name} />
+						</a>
+					{/if}
+				{/each}
 			</div>
 		</div>
 		<div class="slot">
 			<slot />
 		</div>
-		<div class="center-spacer"></div>
+		<div class="center-spacer" />
 	</div>
 	<div class="spacer bottom" style={'padding: 15px'} />
 </div>
@@ -138,7 +151,7 @@
 			width: min(get-vw(780px), 780px);
 		}
 	}
-	
+
 	.thumbnail {
 		margin: 0 60px;
 		@media screen and (max-width: $bp) {

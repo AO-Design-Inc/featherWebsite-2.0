@@ -7,12 +7,12 @@
 </script>
 
 <div class="thumbnail">
-	<a href={link}>
+	<a sveltekit:prefetch href={link}>
 		<img src={thumbnail} alt="Thumbnail" />
 	</a>
 	<div class="content">
-		<a href={link}>
-			<h2 class="title">
+		<a sveltekit:prefetch href={link}>
+			<h2 class="title truncate header">
 				{title}
 			</h2>
 			<div class="s truncate">
@@ -23,12 +23,12 @@
 		<div class="content-footer">
 			<p class="tags">
 				{#each tags as tag}
-					<a class="tag" href={`/blog/tags/${tag}`}>
+					<a sveltekit:prefetch class="tag" href={`/blog/tags/${tag}`}>
 						#{tag}
 					</a>
 				{/each}
 			</p>
-			<a href={link}>
+			<a sveltekit:prefetch href={link}>
 				<div id="arrow-icon" />
 			</a>
 		</div>
@@ -90,11 +90,12 @@
 	.thumbnail {
 		aspect-ratio: 38 / 47;
 		min-width: get-vw(350px);
-		width: get-vw(350px);
+		// width: get-vw(350px);
 		border-radius: get-vw(10px);
 		background: #1a1e2c;
 		@media screen and (max-width: $bp) {
-			min-width: max(get-vw(350px),350px);
+			// min-width: max(get-vw(350px),350px);
+			max-width: 100%;
 			height: auto;
 			width: 100%;
 		}

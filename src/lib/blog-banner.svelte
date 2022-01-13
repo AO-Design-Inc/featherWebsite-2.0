@@ -8,7 +8,7 @@
 		<div class="content">
 			<div class="tags">
 				{#each post.metadata.tags as tag}
-					<a class="tag" href={`/blog/tags/${tag}`}>
+					<a sveltekit:prefetch class="tag" href={`/blog/tags/${tag}`}>
 						#{tag}
 					</a>
 				{/each}
@@ -19,7 +19,7 @@
 			<div class="summary truncate">
 				{post.metadata.summary}
 			</div>
-			<a href={`/blog/${post.path.replace('./', '').replace('.md', '')}`} class="button">
+			<a sveltekit:prefetch href={`/blog/${post.path.replace('./', '').replace('.md', '')}`} class="button">
 				<div class="button-text">Read More</div>
 				<div class="arrow-icon" />
 			</a>
@@ -70,6 +70,7 @@
 	}
 
 	.summary {
+		max-width: 100%;
 		width: 100%;
 		aspect-ratio: 35/10;
 		font-size: get-vw(20px);
@@ -119,7 +120,7 @@
 		margin-left: 66%;
 		@media screen and (max-width: $bp) {
 			margin-left: 0%;
-			padding: max(get-vw(30px), 50px);
+			padding: max(get-vw(30px), 20px);
 			background: linear-gradient(180deg, rgba(17, 19, 28, 0) 0%, rgba(17, 19, 28, 0.75) 100%);
 			border-radius: 0px max(get-vw(10px), 10px) max(get-vw(10px), 10px) 0px;
 		}
@@ -148,7 +149,7 @@
 			height: min(get-vw(445px), 445px);
 		}
 		@media screen and (max-width: $bp) {
-			height: max(get-vw(445px), 445px);
+			height: max(get-vw(445px), 500px);
 		}
 	}
 
@@ -162,12 +163,13 @@
 			height: min(get-vw(445px), 445px);
 		}
 		@media screen and (max-width: $bp) {
-			height: max(get-vw(445px), 445px);
+			height: max(get-vw(445px), 500px);
 		}
 	}
 
 	.container {
 		width: 100%;
 		padding-top: 70px;
+		height: auto;
 	}
 </style>

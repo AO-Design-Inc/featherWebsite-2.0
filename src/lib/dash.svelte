@@ -94,7 +94,4 @@
 			width: 200 * $g;
 		}
 	}
-	.spacer.two {
-		width: 3 * $g;
-	}
 </style>
