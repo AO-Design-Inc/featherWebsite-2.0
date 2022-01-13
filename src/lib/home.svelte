@@ -2,6 +2,7 @@
     import Splash from "./splash.svelte";
     import Tutorial from "./tutorial.svelte";
     import Features from "./features.svelte";
+    import SignUp from "./sign-up.svelte";
     import { onMount } from "svelte";
 
     onMount(() => {
@@ -17,6 +18,8 @@
   <Tutorial />
   <div class="spacer two" />
   <Features />
+  <div class="spacer two" />
+  <SignUp />
   <div class="spacer two" />
 </main>
 

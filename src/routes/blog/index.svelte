@@ -12,9 +12,9 @@
 
 	export const load = async () => {
 		const posts = await Promise.all(body);
-		posts.sort((a, b) => {
-			return new Date(a.metadata.date) - new Date(b.metadata.date);
-		});
+		// posts.sort((a, b) => {
+		// 	return new Date(a.metadata.date) - new Date(b.metadata.date);
+		// });
 		return {
 			props: {
 				posts

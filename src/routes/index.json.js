@@ -8,8 +8,8 @@ export function get() {
         .map(fileName => {
             const { metadata } = process(`src/posts/${fileName}`);
             return {
-            metadata,
-            slug: fileName.slice(0, -3)
+                metadata,
+                slug: fileName.slice(0, -3)
             };
         });
     // sort the posts by create date.

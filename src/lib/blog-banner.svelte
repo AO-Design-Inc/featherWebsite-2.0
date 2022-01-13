@@ -137,8 +137,7 @@
 	}
 	.thumbnail img.background {
 		// object-fit: cover;
-		background-image: linear-gradient(360deg, rgba(17, 19, 28, 0.25) 0%, rgba(17, 19, 28, 1) 100%),
-			url('images/background.jpg');
+		background-image: linear-gradient(360deg, rgba(17, 19, 28, 0.25) 0%, rgba(17, 19, 28, 1) 100%);
 	}
 
 	.thumbnail {
