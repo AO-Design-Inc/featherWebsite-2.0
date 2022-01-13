@@ -6,7 +6,7 @@
     <div class="inner">
         <div class="subscription">
             <div class="pre-alpha-text">
-                Be the first to remote different.
+                Be the first to remote differently.
                 <div style={"font-weight: bold "}>
                     Join the Pre-Alpha
                 </div>
