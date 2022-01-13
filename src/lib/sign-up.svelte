@@ -38,7 +38,7 @@
     .pre-alpha-text {
         margin-top: 40px;
         font-size: 35px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
     
     .subscription {
@@ -48,9 +48,7 @@
     }
 
     .images {
-        // height: 255px;
         width: 60%;
-        padding-right: 30px;
     }
     
     .inner {
