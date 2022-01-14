@@ -27,13 +27,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"dayjs": "^1.10.7",
-		"highlight.js": "^11.4.0",
-		"js-yaml": "^4.1.0",
 		"katex": "^0.15.1",
 		"reading-time": "^1.5.0",
-		"remark-frontmatter": "^4.0.1",
-		"remark-rehype": "^10.1.0",
 		"svelte-clipboard": "^1.0.0"
 	}
 }
