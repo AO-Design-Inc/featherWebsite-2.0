@@ -1,4 +1,5 @@
 <script context="module">
+    export const prerender = true;
     // Get posts info
     const allPosts = import.meta.globEager(`../../lib/posts/*.md`);
     let posts = [];

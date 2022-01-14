@@ -1,4 +1,5 @@
 <script context="module">
+	export const prerender = true;
 	export async function load({ fetch }) {
 		const url = '/blog.json';
 		const res = await fetch(url);
