@@ -30,17 +30,17 @@
 
 <div class="image-gallery-main">
 	{#if index === 0}
-		<picture transition:fade={{ delay: 2400, duration: 2000, easing: quintOut }}>
+		<picture transition:fade|local={{ delay: 2400, duration: 2000, easing: quintOut }}>
 			<source media="(max-width:810px)" srcset={mobileImage[0]} />
 			<img class="image" src={image[0]} alt="Intro Images" />
 		</picture>
 	{:else if index === 1}
-		<picture transition:fade={{ delay: 2400, duration: 2000, easing: quintOut }}>
+		<picture transition:fade|local={{ delay: 2400, duration: 2000, easing: quintOut }}>
 			<source media="(max-width:810px)" srcset={mobileImage[1]} />
 			<img class="image" src={image[1]} alt="Intro Images" />
 		</picture>
 	{:else}
-		<picture transition:fade={{ delay: 2400, duration: 2000, easing: quintOut }}>
+		<picture transition:fade|local={{ delay: 2400, duration: 2000, easing: quintOut }}>
 			<source media="(max-width:810px)" srcset={mobileImage[2]} />
 			<img class="image" src={image[2]} alt="Intro Images" />
 		</picture>

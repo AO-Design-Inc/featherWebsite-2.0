@@ -79,6 +79,7 @@
 		integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
 		crossorigin="anonymous"
 		onload="renderMathInElement(document.body);"></script> -->
+		
 </svelte:head>
 
 <div class="container">

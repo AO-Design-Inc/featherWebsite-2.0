@@ -32,7 +32,7 @@
 	</div>
 	<div class="spacer one" />
 	<div id="right">
-		<!-- <Gallery /> -->
+		<Gallery />
 	</div>
 </div>
 
