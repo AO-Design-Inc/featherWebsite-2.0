@@ -17,7 +17,7 @@
           Download & install Feather on all the devices you want to connect.
         </div>
       </div>
-      <Form />
+      <!-- <Form /> -->
     </div>
     <div class="spacer one" />
     <div class="tut two">
@@ -129,7 +129,8 @@
             border-radius: 50%;
             @media screen and (min-width: 1240px) {
               width: min(get-vw(20px), 20px);
-              font-size: min(get-vw(12px), 12px);
+              height: min(get-vw(20px), 20px);
+              font-size: min(get-vw(12px), 10px);
             }
           }
         }
