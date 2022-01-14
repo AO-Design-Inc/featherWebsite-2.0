@@ -1,6 +1,7 @@
 <script>
 	import { fade } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import { onMount } from 'svelte';
 
 	let image = [
 		'./gallery/Gallery1.webp',
@@ -15,10 +16,16 @@
 		'./gallery/MobileMockup3.webp'
 	];
 	let index = 0;
-	setInterval(() => {
-		index++;
-		if (index >= 3) index = 0;
-	}, 3000);
+	onMount(() => {
+		const interval = setInterval(() => {
+			index++;
+			if (index >= 3) index = 0;
+		}, 3000);
+		return () => {
+			clearInterval(interval);
+		}
+	})
+	
 </script>
 
 <div class="image-gallery-main">

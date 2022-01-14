@@ -3,13 +3,13 @@
 </script>
 
 <main class="d">
-	<a href="/">
+	<a sveltekit:prefetch href="/">
 		<div id="logo">
 			<img src="/logo.svg" alt="Feather Logo" />
 		</div>
 	</a>
 	<div class=" spacer one" />
-	<a href="/blog">
+	<a sveltekit:prefetch href="/blog">
 		<div class="link">Blog</div>
 	</a>
 	<div class="spacer linker" />
