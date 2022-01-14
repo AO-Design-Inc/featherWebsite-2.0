@@ -32,12 +32,15 @@
 	import { page } from '$app/stores';
 	export let post;
 	import { onMount } from 'svelte';
-
+    import hljs from 'highlight.js';
+    import 'highlight.js/styles/atom-one-dark.css';
+    
 	let url = $page.url.pathname;
-
-	onMount(() => {
+	onMount(async () => {
 		url = window.location.href;
 		console.log(url);
+        console.log('done');
+		hljs.highlightAll();
 	});
 
 	let socialArray = [

@@ -9,17 +9,10 @@ author: Jo Gao
 ---
 
 <script>
-    import { onMount  } from 'svelte';
-    import hljs from 'highlight.js';
-    import 'highlight.js/styles/atom-one-dark.css';
     import Katex from "$lib/katex.svelte";
     console.log('a');
-    let e1 = "z_{0}=0"
-    let e2 = "z*{n+1}=z_n^2+c"
-    onMount(async () => {
-        console.log('done')
-		hljs.highlightAll()
-	});
+    let e1 = "z_{0}=0";
+    let e2 = "z*{n+1}=z_n^2+c";
 </script>
 
 <div align="center">
