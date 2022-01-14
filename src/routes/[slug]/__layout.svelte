@@ -94,7 +94,7 @@
 					<div class="spacer ten" />
 					<div class="meta">
 						{post.author} - {new Date(post.date).toDateString()} - {#each post.tags as tag}
-							<a class="tag" href={`/blog/tags/${tag}`}>
+							<a class="tag" sveltekit:prefetch href={`tags/${tag}`}>
 								#{tag}
 							</a>
 						{/each}
@@ -133,6 +133,8 @@
 	</div>
 	<div class="spacer bottom" style={'padding: 15px'} />
 </div>
+
+
 
 <style lang="scss">
 	@import '../../variables.scss';
