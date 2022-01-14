@@ -1,4 +1,5 @@
 <script context="module">
+	export const prerender = true;
 	const posts = import.meta.glob('./posts/*.md');
 
 	let body = [];
