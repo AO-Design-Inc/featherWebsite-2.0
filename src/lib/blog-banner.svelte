@@ -8,7 +8,7 @@
 		<div class="content">
 			<div class="tags">
 				{#each post.tags as tag}
-					<a sveltekit:prefetch class="tag" href={`/blog/tags/${tag}`}>
+					<a sveltekit:prefetch class="tag" href={`/tags/${tag}`}>
 						#{tag}
 					</a>
 				{/each}
