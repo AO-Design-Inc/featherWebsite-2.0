@@ -4,22 +4,22 @@
 
 <div class="container">
 	<div class="thumbnail">
-		<img src={post.metadata.thumbnail} alt="Thumbnail" class="background" />
+		<img src={post.thumbnail} alt="Thumbnail" class="background" />
 		<div class="content">
 			<div class="tags">
-				{#each post.metadata.tags as tag}
+				{#each post.tags as tag}
 					<a sveltekit:prefetch class="tag" href={`/blog/tags/${tag}`}>
 						#{tag}
 					</a>
 				{/each}
 			</div>
 			<div class="title">
-				{post.metadata.title}
+				{post.title}
 			</div>
 			<div class="summary truncate">
-				{post.metadata.summary}
+				{post.summary}
 			</div>
-			<a sveltekit:prefetch href={`/blog/${post.path.replace('./', '').replace('.md', '')}`} class="button">
+			<a sveltekit:prefetch href={post.slug} class="button">
 				<div class="button-text">Read More</div>
 				<div class="arrow-icon" />
 			</a>
