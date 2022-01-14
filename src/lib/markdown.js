@@ -1,5 +1,5 @@
 import { readSync } from 'to-vfile';
-import unified from 'unified';
+import { unified } from 'unified';
 import parse from 'remark-parse';
 import gfm from 'remark-gfm';
 import remark2rehype from 'remark-rehype';
