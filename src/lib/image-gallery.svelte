@@ -32,17 +32,17 @@
 	{#if index === 0}
 		<picture transition:fade|local={{ delay: 2400, duration: 2000, easing: quintOut }}>
 			<source media="(max-width:810px)" srcset={mobileImage[0]} />
-			<img class="image" src={image[0]} alt="Intro Images" />
+			<img class="image" src={image[0]} alt="Intro Images 0" />
 		</picture>
 	{:else if index === 1}
 		<picture transition:fade|local={{ delay: 2400, duration: 2000, easing: quintOut }}>
 			<source media="(max-width:810px)" srcset={mobileImage[1]} />
-			<img class="image" src={image[1]} alt="Intro Images" />
+			<img class="image" src={image[1]} alt="Intro Images 1" />
 		</picture>
 	{:else}
 		<picture transition:fade|local={{ delay: 2400, duration: 2000, easing: quintOut }}>
 			<source media="(max-width:810px)" srcset={mobileImage[2]} />
-			<img class="image" src={image[2]} alt="Intro Images" />
+			<img class="image" src={image[2]} alt="Intro Images 2" />
 		</picture>
 	{/if}
 </div>
