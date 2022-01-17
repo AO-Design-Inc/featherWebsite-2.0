@@ -118,13 +118,13 @@
 			position: absolute;
 			top: 55%;
 			left: -20px;
-			overflow: hidden;
-			width: 0%;
-			height: 40%;
-			max-width: fit-content;
 			@media screen and (max-width: $bp) {
-				top: 45%;
+				top: 50%;
+				left: -10px;
 			}
+			overflow: hidden;
+			height: 40%;
+			max-width: 0;
 			animation-delay: 1s;
 			animation-duration: 1s;
 			animation-name: appear;
@@ -133,10 +133,10 @@
 
 		@keyframes appear {
 			from {
-				width: 0%;
+				max-width: 0;
 			}
 			to {
-				width: 100%;
+				max-width: 400px;
 			}
 		}
 		#line {
@@ -146,7 +146,8 @@
 				width: min(get-vw(400px), 400px);
 			}
 			@media screen and (max-width: $bp) {
-				width: 75vw;
+				height: 80%;
+				width: auto;
 			}
 		}
 		#button-container {
