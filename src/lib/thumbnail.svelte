@@ -15,7 +15,7 @@
 			<h2 class="title truncate header">
 				{title}
 			</h2>
-			<div class="s truncate">
+			<div class="summary truncate">
 				{summary}
 			</div>
 		</a>
@@ -73,7 +73,7 @@
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	.s {
+	.summary {
 		width: 100%;
 		min-height: 100px;
 		line-height: 1.6;
@@ -90,6 +90,7 @@
 	.thumbnail {
 		aspect-ratio: 38 / 47;
 		min-width: get-vw(350px);
+		height: 485px;
 		// width: get-vw(350px);
 		border-radius: get-vw(10px);
 		background: #1a1e2c;
@@ -115,6 +116,7 @@
 	h2 {
 		word-wrap: break-word;
 		font-size: get-vw(26px);
+		min-height: 65px;
 		@media screen and (max-width: $bp) {
 			font-size: max(get-vw(26px), 26px);
 		}
