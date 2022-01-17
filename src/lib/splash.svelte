@@ -125,10 +125,7 @@
 			overflow: hidden;
 			height: 40%;
 			max-width: 0;
-			animation-delay: 1s;
-			animation-duration: 1s;
-			animation-name: appear;
-			animation-fill-mode: forwards;  
+			animation: appear 1s ease-in 1s forwards;
 		}
 
 		@keyframes appear {
@@ -140,7 +137,6 @@
 			}
 		}
 		#line {
-			/*width: get-vw(400px);*/
 			height: 100%;
 			@media screen and (min-width: 1240px) {
 				width: min(get-vw(400px), 400px);
