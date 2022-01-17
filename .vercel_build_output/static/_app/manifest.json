@@ -1,6 +1,6 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-042847d1.js",
+    "file": "start-044b0bfb.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -8,7 +8,7 @@
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
-      ".svelte-kit/build/components/error.svelte",
+      "src/routes/__error.svelte",
       "src/routes/index.svelte",
       "src/routes/blog.svelte",
       "src/routes/tags/[tags].svelte",
@@ -33,13 +33,16 @@
       "assets/pages/__layout.svelte-cada84bd.css"
     ]
   },
-  ".svelte-kit/build/components/error.svelte": {
-    "file": "error.svelte-3f37b106.js",
-    "src": ".svelte-kit/build/components/error.svelte",
+  "src/routes/__error.svelte": {
+    "file": "pages/__error.svelte-4fb3df52.js",
+    "src": "src/routes/__error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-0c144bdc.js"
+    ],
+    "css": [
+      "assets/pages/__error.svelte-f53665cf.css"
     ]
   },
   "src/routes/index.svelte": {
@@ -56,27 +59,27 @@
     ]
   },
   "src/routes/blog.svelte": {
-    "file": "pages/blog.svelte-95c3da77.js",
+    "file": "pages/blog.svelte-30371b15.js",
     "src": "src/routes/blog.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-0c144bdc.js",
-      "_thumbnail-a549e6cd.js"
+      "_thumbnail-42200ca5.js"
     ],
     "css": [
       "assets/pages/blog.svelte-8d4de4da.css"
     ]
   },
   "src/routes/tags/[tags].svelte": {
-    "file": "pages/tags/_tags_.svelte-e5b464ef.js",
+    "file": "pages/tags/_tags_.svelte-78131f50.js",
     "src": "src/routes/tags/[tags].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_2-webgl-03cc2566.js",
       "_vendor-0c144bdc.js",
-      "_thumbnail-a549e6cd.js"
+      "_thumbnail-42200ca5.js"
     ],
     "css": [
       "assets/pages/tags/_tags_.svelte-8bcd8f63.css"
@@ -129,13 +132,13 @@
       "assets/form-77d88580.css"
     ]
   },
-  "_thumbnail-a549e6cd.js": {
-    "file": "chunks/thumbnail-a549e6cd.js",
+  "_thumbnail-42200ca5.js": {
+    "file": "chunks/thumbnail-42200ca5.js",
     "imports": [
       "_vendor-0c144bdc.js"
     ],
     "css": [
-      "assets/thumbnail-409f52b0.css"
+      "assets/thumbnail-0d1d48d3.css"
     ]
   },
   "_2-webgl-03cc2566.js": {

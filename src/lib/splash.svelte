@@ -5,7 +5,12 @@
 <div id="main" class="d">
 	<div id="left">
 		<div id="bs">
-			<div id="title"><b>Remote</b> Desktop</div>
+			<div id="title-box">
+				<div id="title"><b>Remote</b> <br/> Desktop</div>
+				<div id="line-animation">
+					<img id="line" src="./crossout.svg" alt="pink line crossing out the word desktop"/>
+				</div>
+			</div>
 			<div id="blurb">Enjoy local app streaming that feels completely native.</div>
 			<div class="spacer two" />
 			<div id="button-container">
@@ -78,6 +83,15 @@
 				width: 100%;
 			}
 		}
+
+		#title-box {
+			position: relative;
+			height: 50%;
+			@media screen and (max-width: $bp) {
+				height: 100%;
+			}
+		}
+
 		#title {
 			font-size: get-vw(90px);
 			@media screen and (max-width: $bp) {
@@ -98,6 +112,41 @@
 				font-size: 65px;
 				padding-bottom: 20px;
 				// font-size: get-vw(280px);
+			}
+		}
+		#line-animation {
+			position: absolute;
+			top: 55%;
+			left: -20px;
+			overflow: hidden;
+			width: 0%;
+			height: 40%;
+			max-width: fit-content;
+			@media screen and (max-width: $bp) {
+				top: 45%;
+			}
+			animation-delay: 1s;
+			animation-duration: 1s;
+			animation-name: appear;
+			animation-fill-mode: forwards;  
+		}
+
+		@keyframes appear {
+			from {
+				width: 0%;
+			}
+			to {
+				width: 100%;
+			}
+		}
+		#line {
+			/*width: get-vw(400px);*/
+			height: 100%;
+			@media screen and (min-width: 1240px) {
+				width: min(get-vw(400px), 400px);
+			}
+			@media screen and (max-width: $bp) {
+				width: 75vw;
 			}
 		}
 		#button-container {
