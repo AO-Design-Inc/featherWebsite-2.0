@@ -19,14 +19,20 @@
     <h1 class="sad">This page does not exist :(</h1>
 </div>
 
-<style>
+<style lang="scss">
 
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
         margin: 90px 120px 90px 120px;
+
+        @media screen and (min-width: 1440px) {
+			margin: 200px 120px 200px 120px;
+		}
+        
     }
 
     .status{
