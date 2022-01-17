@@ -16,17 +16,15 @@
 							<img src="./arrow-docs.svg" alt="arrow" />
 						</div>
 					</div>
-					<div id="small">
-						Docs
-					</div>
+					<div id="small">Docs</div>
 				</button>
 				<div class="spacer three" />
-				<button class="primary download">
-					<div class="cont" style="display: flex">
-						Read <div class="spacer" style="width:15px" />
-						<img src="./arrow-read.svg" alt="arrow" />
-					</div>
-				</button>
+					<button on:click={() => window.location.href='#t_main'} class="primary download">
+						<div class="cont" style="display: flex">
+							Read <div class="spacer" style="width:15px" />
+							<img style="transform: rotate(90deg);" src="./arrow-read.svg" alt="arrow" />
+						</div>
+					</button>
 			</div>
 		</div>
 	</div>
@@ -214,11 +212,7 @@
 		}
 	}
 	#right {
-		background: linear-gradient(
-		  180deg,
-		  #1d2030 0%,
-		  rgba(29, 32, 48, 0.25) 100%
-		);
+		background: linear-gradient(180deg, #1d2030 0%, rgba(29, 32, 48, 0.25) 100%);
 		border-radius: 10px;
 		height: 100%;
 		width: 100%;

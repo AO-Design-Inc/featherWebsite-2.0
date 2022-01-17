@@ -19,7 +19,7 @@
 	onMount(() => {
 		const interval = setInterval(() => {
 			index++;
-			if (index >= 3) index = 0;
+			if (index > 4) index = 0;
 		}, 3000);
 		return () => {
 			clearInterval(interval);
@@ -39,10 +39,15 @@
 			<source media="(max-width:810px)" srcset={mobileImage[1]} />
 			<img class="image" src={image[1]} alt="Intro Images 1" />
 		</picture>
-	{:else}
+	{:else if index === 2}
 		<picture transition:fade|local={{ delay: 2400, duration: 2000, easing: quintOut }}>
 			<source media="(max-width:810px)" srcset={mobileImage[2]} />
-			<img class="image" src={image[2]} alt="Intro Images 2" />
+			<img class="image" src={image[2]} alt="Intro Images 1" />
+		</picture>
+	{:else}
+		<picture transition:fade|local={{ delay: 2400, duration: 2000, easing: quintOut }}>
+			<source media="(max-width:810px)" srcset={mobileImage[3]} />
+			<img class="image" src={image[3]} alt="Intro Images 2" />
 		</picture>
 	{/if}
 </div>

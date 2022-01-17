@@ -33,28 +33,29 @@ The Github repo for this tutorial is available on our [Github](https://github.co
 
 The following is a barebones HTML file with a canvas element. The `index.js` script after the canvas is the file that will be generated from compiling the C code.
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-	</head>
-	<body>
-		<canvas id="canvas" height="400px" width="400px"></canvas>
-		<script src="index.js"></script>
-	</body>
-</html>
-```
+<pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+	&lt;head&gt;
+		&lt;meta charset="UTF-8" /&gt;
+		&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+		&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+		&lt;title&gt;Document&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;canvas id="canvas" height="400px" width="400px"&gt;&lt;/canvas&gt;
+		&lt;script src="index.js"&gt;&lt;/script&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+&lt;h1&gt;This is a header&lt;/h1&gt;
+</code></pre>
 
 ## Header Files
 
-```c
-#include <emscripten/html5.h>
-#include <GLES2/gl2.h>
-```
+<pre><code class="language-c">
+#include &lt;emscripten/html5.h&gt;
+#include &lt;GLES2/gl2.h&gt;
+</code></pre>
 
 The html5 header provides the bindings required to use html elements and events from native code. For this tutorial, it will allow us to set up the WebGL context in C. You can view the full documentation for `emscripten/html.5.h` [here](https://emscripten.org/docs/api_reference/html5.h.html)
 
@@ -85,21 +86,21 @@ The `emscripten_webgl_create_context` function targets, `#canvas`, the selector 
 
 In JavaScript, we would use `clearColor` and `clear` on the canvas context to fill in the canvas. The equivalents of these methods are provided by the gl2 header as `glClearColor` and `glClear`.
 
-```c
+<pre><code class="language-c">
 	// this goes after you have activated the webgl context
 	glClearColor(0.984, 0.4627, 0.502, 1.0);
 	glClear(GL_COLOR_BUFFER_BIT);
 	return 1;
 } // end of main function
-```
+</code></pre>
 
 ## Compiling and Running
 
 To compile with Emscripten, run the following command. This will output the index.js file that is sourced from the html file.
 
-```bash
+<pre><code class="language-bash">
 emcc main.c -o index.js
-```
+</code></pre>
 
 The html file can now be opened and viewed in a browser. Huzzah!
 

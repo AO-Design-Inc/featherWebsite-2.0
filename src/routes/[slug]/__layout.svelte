@@ -95,7 +95,7 @@
 							text="https://feather.systems{url}"
 							let:copy
 							on:copy={() => {
-								alert('Has Copied to Clipboard👏');
+								alert('Link has been copied to your clipboard');
 							}}
 						>
 							<img on:click={copy} src={icon} class="social image {name}" alt={name} />
@@ -113,6 +113,7 @@
 		</div>
 		<div class="center-spacer" />
 	</div>
+	<div class="spacer hundred" />
 	<div class="spacer hundred" />
 	<div class="spacer bottom" style={'padding: 15px'} />
 </div>
@@ -175,7 +176,7 @@
 		height: 160px;
 
 		position: sticky;
-		top: get-vw(310px);
+		top: get-vw(150px);
 	}
 
 	.social.image {

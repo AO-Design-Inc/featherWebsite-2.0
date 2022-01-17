@@ -128,8 +128,8 @@
   
             border-radius: 50%;
             @media screen and (min-width: 1240px) {
-              width: min(get-vw(20px), 20px);
-              height: min(get-vw(20px), 20px);
+              width: min(get-vw(20px), 15px);
+              height: min(get-vw(20px), 15px);
               font-size: min(get-vw(12px), 10px);
             }
           }
