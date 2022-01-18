@@ -9,38 +9,31 @@
 
 </script>
 
-<div class="thumbnail">
-	<div class="image">
-		<a sveltekit:prefetch href={`/${link}`}>
+<a sveltekit:prefetch href={`/${link}`}>
+	<div class="thumbnail">
+		<div class="image">
 			<img src={thumbnail} alt="Thumbnail" />
-		</a>
-	</div>
-	
-	<div class="content">
-		<a sveltekit:prefetch href={`/${link}`}>
+		</div>
+		<div class="content">
 			<h2 class="title truncate header">
 				{title}
 			</h2>
 			<div class="summary truncate">
 				{summary}
 			</div>
-		</a>
-		<!-- <div class="spacer" style="padding: 10px" /> -->
-		<div class="content-footer">
-			<p class="tags">
-				{#each tags as tag}
-					<a sveltekit:prefetch class="tag" href={`/tags/${tag}`}>
-						#{tag}
-					</a>
-				{/each}
-			</p>
-			<a sveltekit:prefetch href={`/${link}`}>
+			<div class="content-footer">
+				<p class="tags">
+					{#each tags as tag}
+						<a sveltekit:prefetch class="tag" href={`/tags/${tag}`}>
+							#{tag}
+						</a>
+					{/each}
+				</p>
 				<div id="arrow-icon" />
-			</a>
+			</div>
 		</div>
-		<!-- <div class="spacer" style="padding: 10px" /> -->
 	</div>
-</div>
+</a>
 
 <style lang="scss">
 	@import '../variables.scss';

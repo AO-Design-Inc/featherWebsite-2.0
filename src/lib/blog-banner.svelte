@@ -1,14 +1,14 @@
 <script>
 	export let post;
-
+	
 	let hovering = false;
-
 	function enter() {
 		hovering = true;
 	}
 	function leave() {
 		hovering = false;
 	}
+	
 
 </script>
 

@@ -38,10 +38,9 @@
 
 
 <div class="container">
-    <div>
-        Posts tagged with {tag}
+    <div class="tags">
+        Posts tagged with #{tag}
     </div>
-    <div class="spacer" style="padding: 35px" />
     <div class="grid">
         {#each filteredPosts as { post, slug }}
             <Thumbnail title={post.metadata.title} summary={post.metadata.summary} link={post.metadata.slug} tags={post.metadata.tags}
@@ -54,6 +53,12 @@
 
 
 <style>
+
+    .tags {
+        padding: 35px;
+        font-size: 40px;
+        font-weight: 300;
+    }
     .container {
         display: flex;
         flex-direction: column;
