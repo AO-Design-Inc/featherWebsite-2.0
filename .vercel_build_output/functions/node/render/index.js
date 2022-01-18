@@ -5961,8 +5961,8 @@ var entry, js, css4;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-9256d8c6.js";
-    js = ["pages/__layout.svelte-9256d8c6.js", "chunks/vendor-0c144bdc.js", "chunks/stores-e596c154.js", "chunks/form-891cae09.js"];
+    entry = "pages/__layout.svelte-67e358e4.js";
+    js = ["pages/__layout.svelte-67e358e4.js", "chunks/vendor-41622600.js", "chunks/stores-02e64947.js", "chunks/form-a0ceccba.js"];
     css4 = ["assets/pages/__layout.svelte-cada84bd.css", "assets/vendor-2634b1a9.css", "assets/stores-8d0781a8.css", "assets/form-77d88580.css"];
   }
 });
@@ -5986,11 +5986,8 @@ var init_error_svelte = __esm({
     };
     _error = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { status } = $$props;
-      let { error: error2 } = $$props;
       if ($$props.status === void 0 && $$bindings.status && status !== void 0)
         $$bindings.status(status);
-      if ($$props.error === void 0 && $$bindings.error && error2 !== void 0)
-        $$bindings.error(error2);
       $$result.css.add(css5);
       return `<div class="${"container svelte-106xm8l"}"><div class="${"status svelte-106xm8l"}">${escape(status)}</div>
     <h1 class="${"sad"}">This page does not exist :(</h1>
@@ -6011,8 +6008,8 @@ var entry2, js2, css6;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "pages/__error.svelte-4fb3df52.js";
-    js2 = ["pages/__error.svelte-4fb3df52.js", "chunks/vendor-0c144bdc.js"];
+    entry2 = "pages/__error.svelte-56074fd7.js";
+    js2 = ["pages/__error.svelte-56074fd7.js", "chunks/vendor-41622600.js"];
     css6 = ["assets/pages/__error.svelte-f53665cf.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -6050,22 +6047,26 @@ var init_index_svelte = __esm({
 </div>`;
     });
     css$4 = {
-      code: "#main.svelte-1e0khk6.svelte-1e0khk6{height:31.25vw;width:100%;display:flex;max-width:1240px}@media screen and (max-width: 810px){#main.svelte-1e0khk6.svelte-1e0khk6{display:block;height:auto}}@media screen and (min-width: 1240px){#main.svelte-1e0khk6.svelte-1e0khk6{padding:0px;margin:0px auto;height:min(31.25vw, 450px)}}#left.svelte-1e0khk6.svelte-1e0khk6{display:flex;align-items:center}@media screen and (max-width: 810px){#left.svelte-1e0khk6.svelte-1e0khk6{height:auto}}#left.svelte-1e0khk6 .spacer.two.svelte-1e0khk6{height:2.7777777778vw}@media screen and (max-width: 810px){#left.svelte-1e0khk6 .spacer.two.svelte-1e0khk6{height:2.7777777778vw}}@media screen and (min-width: 1240px){#left.svelte-1e0khk6 .spacer.two.svelte-1e0khk6{height:min(2.7777777778vw, 40px)}}#left.svelte-1e0khk6 #bs.svelte-1e0khk6{height:26.7361111111vw}@media screen and (min-width: 1240px){#left.svelte-1e0khk6 #bs.svelte-1e0khk6{height:min(26.7361111111vw, 385px)}}@media screen and (max-width: 810px){#left.svelte-1e0khk6 #bs.svelte-1e0khk6{height:auto;width:100%}}#left.svelte-1e0khk6 #title.svelte-1e0khk6{font-size:6.25vw;font-weight:normal;line-height:101%;width:27.7777777778vw;height:14.5833333333vw}@media screen and (max-width: 810px){#left.svelte-1e0khk6 #title.svelte-1e0khk6{font-size:80px}}@media screen and (min-width: 1240px){#left.svelte-1e0khk6 #title.svelte-1e0khk6{font-size:min(6.25vw, 90px);width:min(27.7777777778vw, 400px);height:min(14.5833333333vw, 210px)}}@media screen and (max-width: 810px){#left.svelte-1e0khk6 #title.svelte-1e0khk6{width:100%;height:auto;font-size:65px;padding-bottom:20px}}#left.svelte-1e0khk6 #button-container.svelte-1e0khk6{display:flex}#left.svelte-1e0khk6 #button-container button.svelte-1e0khk6{height:3.8194444444vw;font-size:1.3888888889vw}@media screen and (max-width: 850px){#left.svelte-1e0khk6 #button-container button.svelte-1e0khk6{font-size:max(1.1111111111vw, 16px);min-height:55px}}@media screen and (max-width: 810px){#left.svelte-1e0khk6 #button-container button.svelte-1e0khk6{font-size:138%}}@media screen and (min-width: 1240px){#left.svelte-1e0khk6 #button-container button.svelte-1e0khk6{height:min(3.8194444444vw, 55px);font-size:min(1.3888888889vw, 20px)}}#left.svelte-1e0khk6 #button-container .primary.svelte-1e0khk6{aspect-ratio:35/11;width:12.1527777778vw;color:#74252b;font-weight:400;box-shadow:none;border:none;background:#ffb3b3;border-radius:0.6944444444vw;display:grid;place-items:center}@media screen and (max-width: 810px){#left.svelte-1e0khk6 #button-container .primary.svelte-1e0khk6{width:49%}}@media screen and (min-width: 1240px){#left.svelte-1e0khk6 #button-container .primary.svelte-1e0khk6{width:min(12.1527777778vw, 175px);border-radius:min(0.6944444444vw, 10px)}}#left.svelte-1e0khk6 #button-container .spacer.three.svelte-1e0khk6{width:1.0416666667vw}@media screen and (min-width: 1240px){#left.svelte-1e0khk6 #button-container .spacer.three.svelte-1e0khk6{width:min(1.0416666667vw, 15px)}}#left.svelte-1e0khk6 #button-container .secondary.svelte-1e0khk6{aspect-ratio:42/11;width:15.2777777778vw;color:#fffffb;box-shadow:none;border:1px solid #ffdede;background:#fb768100;border-radius:0.6944444444vw;display:grid;place-items:center}@media screen and (max-width: 810px){#left.svelte-1e0khk6 #button-container .secondary.svelte-1e0khk6{width:49%}}@media screen and (min-width: 1240px){#left.svelte-1e0khk6 #button-container .secondary.svelte-1e0khk6{width:min(15.2777777778vw, 220px);border-radius:min(0.6944444444vw, 10px)}}#left.svelte-1e0khk6 #button-container .secondary #big.svelte-1e0khk6{display:block}#left.svelte-1e0khk6 #button-container .secondary #small.svelte-1e0khk6{display:none}@media screen and (max-width: 1050px){#left.svelte-1e0khk6 #button-container .secondary #big.svelte-1e0khk6{display:none}#left.svelte-1e0khk6 #button-container .secondary #small.svelte-1e0khk6{display:block}}@media screen and (max-width: 810px){#left.svelte-1e0khk6 #button-container.svelte-1e0khk6{padding-bottom:50px}}@media screen and (max-width: 810px){#left.svelte-1e0khk6.svelte-1e0khk6{width:100%}}#left.svelte-1e0khk6 #blurb.svelte-1e0khk6{width:27.7777777778vw;height:5.5555555556vw;font-family:Inter;font-size:1.8055555556vw;font-style:normal;font-weight:400;line-height:154%;letter-spacing:0em;text-align:left;color:#fffffb;opacity:0.6}@media screen and (max-width: 810px){#left.svelte-1e0khk6 #blurb.svelte-1e0khk6{width:100%;height:auto;padding-bottom:20px}}@media screen and (max-width: 810px){#left.svelte-1e0khk6 #blurb.svelte-1e0khk6{font-size:20px}}@media screen and (min-width: 1240px){#left.svelte-1e0khk6 #blurb.svelte-1e0khk6{width:min(27.7777777778vw, 400px);height:min(5.5555555556vw, 80px);font-size:min(1.8055555556vw, 26px)}}#right.svelte-1e0khk6.svelte-1e0khk6{background:linear-gradient(180deg, #1d2030 0%, rgba(29, 32, 48, 0.25) 100%);border-radius:10px;height:100%;width:100%;position:relative;aspect-ratio:16/9}@media screen and (max-width: 810px){#right.svelte-1e0khk6.svelte-1e0khk6{aspect-ratio:4/5;width:100%}}.spacer.one.svelte-1e0khk6.svelte-1e0khk6{width:100%}",
+      code: "#main.svelte-5uetxy.svelte-5uetxy{height:31.25vw;width:100%;display:flex;max-width:1240px}@media screen and (max-width: 810px){#main.svelte-5uetxy.svelte-5uetxy{display:block;height:auto}}@media screen and (min-width: 1240px){#main.svelte-5uetxy.svelte-5uetxy{padding:0px;margin:0px auto;height:min(31.25vw, 450px)}}#left.svelte-5uetxy.svelte-5uetxy{display:flex;align-items:center}@media screen and (max-width: 810px){#left.svelte-5uetxy.svelte-5uetxy{height:auto}}#left.svelte-5uetxy .spacer.two.svelte-5uetxy{height:2.7777777778vw}@media screen and (max-width: 810px){#left.svelte-5uetxy .spacer.two.svelte-5uetxy{height:2.7777777778vw}}@media screen and (min-width: 1240px){#left.svelte-5uetxy .spacer.two.svelte-5uetxy{height:min(2.7777777778vw, 40px)}}#left.svelte-5uetxy #bs.svelte-5uetxy{height:26.7361111111vw}@media screen and (min-width: 1240px){#left.svelte-5uetxy #bs.svelte-5uetxy{height:min(26.7361111111vw, 385px)}}@media screen and (max-width: 810px){#left.svelte-5uetxy #bs.svelte-5uetxy{height:auto;width:100%}}#left.svelte-5uetxy #title-box.svelte-5uetxy{position:relative;height:50%}@media screen and (max-width: 810px){#left.svelte-5uetxy #title-box.svelte-5uetxy{height:100%}}#left.svelte-5uetxy #title.svelte-5uetxy{font-size:6.25vw;font-weight:normal;line-height:101%;width:27.7777777778vw;height:14.5833333333vw}@media screen and (max-width: 810px){#left.svelte-5uetxy #title.svelte-5uetxy{font-size:80px}}@media screen and (min-width: 1240px){#left.svelte-5uetxy #title.svelte-5uetxy{font-size:min(6.25vw, 90px);width:min(27.7777777778vw, 400px);height:min(14.5833333333vw, 210px)}}@media screen and (max-width: 810px){#left.svelte-5uetxy #title.svelte-5uetxy{width:100%;height:auto;font-size:65px;padding-bottom:20px}}#left.svelte-5uetxy #line-animation.svelte-5uetxy{position:absolute;top:63%;left:-20px;overflow:hidden;height:40%;max-width:0;animation:svelte-5uetxy-appear 3s cubic-bezier(0.32, 0, 0.67, 0) 0.3s forwards}@media screen and (max-width: 810px){#left.svelte-5uetxy #line-animation.svelte-5uetxy{top:60%;left:-10px}}@keyframes svelte-5uetxy-appear{0%{max-width:0;opacity:100%}50%{max-width:400px;opacity:100%}90%{max-width:400px;opacity:100%}100%{max-width:400px;opacity:0%}}#left.svelte-5uetxy #line.svelte-5uetxy{width:27.7777777778vw}@media screen and (min-width: 1240px){#left.svelte-5uetxy #line.svelte-5uetxy{width:min(27.7777777778vw, 400px)}}@media screen and (max-width: 810px){#left.svelte-5uetxy #line.svelte-5uetxy{width:max(27.7777777778vw, 300px)}}#left.svelte-5uetxy #button-container.svelte-5uetxy{display:flex}#left.svelte-5uetxy #button-container button.svelte-5uetxy{height:3.8194444444vw;font-size:1.3888888889vw}@media screen and (max-width: 850px){#left.svelte-5uetxy #button-container button.svelte-5uetxy{font-size:max(1.1111111111vw, 16px);min-height:55px}}@media screen and (max-width: 810px){#left.svelte-5uetxy #button-container button.svelte-5uetxy{font-size:138%}}@media screen and (min-width: 1240px){#left.svelte-5uetxy #button-container button.svelte-5uetxy{height:min(3.8194444444vw, 55px);font-size:min(1.3888888889vw, 20px)}}#left.svelte-5uetxy #button-container .primary.svelte-5uetxy{aspect-ratio:35/11;width:12.1527777778vw;color:#74252b;font-weight:400;box-shadow:none;border:none;background:#ffb3b3;border-radius:0.6944444444vw;display:grid;place-items:center}@media screen and (max-width: 810px){#left.svelte-5uetxy #button-container .primary.svelte-5uetxy{width:49%}}@media screen and (min-width: 1240px){#left.svelte-5uetxy #button-container .primary.svelte-5uetxy{width:min(12.1527777778vw, 175px);border-radius:min(0.6944444444vw, 10px)}}#left.svelte-5uetxy #button-container .spacer.three.svelte-5uetxy{width:1.0416666667vw}@media screen and (min-width: 1240px){#left.svelte-5uetxy #button-container .spacer.three.svelte-5uetxy{width:min(1.0416666667vw, 15px)}}#left.svelte-5uetxy #button-container .secondary.svelte-5uetxy{aspect-ratio:42/11;width:15.2777777778vw;color:#fffffb;box-shadow:none;border:1px solid #ffdede;background:#fb768100;border-radius:0.6944444444vw;display:grid;place-items:center}@media screen and (max-width: 810px){#left.svelte-5uetxy #button-container .secondary.svelte-5uetxy{width:49%}}@media screen and (min-width: 1240px){#left.svelte-5uetxy #button-container .secondary.svelte-5uetxy{width:min(15.2777777778vw, 220px);border-radius:min(0.6944444444vw, 10px)}}#left.svelte-5uetxy #button-container .secondary #big.svelte-5uetxy{display:block}#left.svelte-5uetxy #button-container .secondary #small.svelte-5uetxy{display:none}@media screen and (max-width: 1050px){#left.svelte-5uetxy #button-container .secondary #big.svelte-5uetxy{display:none}#left.svelte-5uetxy #button-container .secondary #small.svelte-5uetxy{display:block}}@media screen and (max-width: 810px){#left.svelte-5uetxy #button-container.svelte-5uetxy{padding-bottom:50px}}@media screen and (max-width: 810px){#left.svelte-5uetxy.svelte-5uetxy{width:100%}}#left.svelte-5uetxy #blurb.svelte-5uetxy{width:27.7777777778vw;height:5.5555555556vw;font-family:Inter;font-size:1.8055555556vw;font-style:normal;font-weight:400;line-height:154%;letter-spacing:0em;text-align:left;color:#fffffb;opacity:0.6}@media screen and (max-width: 810px){#left.svelte-5uetxy #blurb.svelte-5uetxy{width:100%;height:auto;padding-bottom:20px}}@media screen and (max-width: 810px){#left.svelte-5uetxy #blurb.svelte-5uetxy{font-size:20px}}@media screen and (min-width: 1240px){#left.svelte-5uetxy #blurb.svelte-5uetxy{width:min(27.7777777778vw, 400px);height:min(5.5555555556vw, 80px);font-size:min(1.8055555556vw, 26px)}}#right.svelte-5uetxy.svelte-5uetxy{background:linear-gradient(180deg, #1d2030 0%, rgba(29, 32, 48, 0.25) 100%);border-radius:10px;height:100%;width:100%;position:relative;aspect-ratio:16/9}@media screen and (max-width: 810px){#right.svelte-5uetxy.svelte-5uetxy{aspect-ratio:4/5;width:100%}}.spacer.one.svelte-5uetxy.svelte-5uetxy{width:100%}",
       map: null
     };
     Splash = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      const stringArray = ["Desktop", "Instantly", "Natively", "Different"];
+      let index = 0;
       $$result.css.add(css$4);
-      return `<div id="${"main"}" class="${"d svelte-1e0khk6"}"><div id="${"left"}" class="${"svelte-1e0khk6"}"><div id="${"bs"}" class="${"svelte-1e0khk6"}"><div id="${"title"}" class="${"svelte-1e0khk6"}"><b>Remote</b> Desktop</div>
-			<div id="${"blurb"}" class="${"svelte-1e0khk6"}">Enjoy local app streaming that feels completely native.</div>
-			<div class="${"spacer two svelte-1e0khk6"}"></div>
-			<div id="${"button-container"}" class="${"svelte-1e0khk6"}"><button class="${"secondary doc svelte-1e0khk6"}"><div id="${"big"}" class="${"svelte-1e0khk6"}"><div class="${"cont"}" style="${"display: flex"}">Documentation <div class="${"spacer"}" style="${"width:10px"}"></div>
+      return `<div id="${"main"}" class="${"d svelte-5uetxy"}"><div id="${"left"}" class="${"svelte-5uetxy"}"><div id="${"bs"}" class="${"svelte-5uetxy"}"><div id="${"title-box"}" class="${"svelte-5uetxy"}"><div id="${"title"}" class="${"svelte-5uetxy"}"><b>Remote</b> <br> 
+					<span>${escape(stringArray[index])}</span></div>
+				<div id="${"line-animation"}" class="${"svelte-5uetxy"}"><img id="${"line"}" src="${"./crossout.svg"}" alt="${"pink line crossing out the word desktop"}" class="${"svelte-5uetxy"}"></div></div>
+			<div id="${"blurb"}" class="${"svelte-5uetxy"}">Enjoy local app streaming that feels completely native.</div>
+			<div class="${"spacer two svelte-5uetxy"}"></div>
+			<div id="${"button-container"}" class="${"svelte-5uetxy"}"><button class="${"secondary doc svelte-5uetxy"}"><div id="${"big"}" class="${"svelte-5uetxy"}"><div class="${"cont"}" style="${"display: flex"}">Documentation <div class="${"spacer"}" style="${"width:10px"}"></div>
 							<img src="${"./arrow-docs.svg"}" alt="${"arrow"}"></div></div>
-					<div id="${"small"}" class="${"svelte-1e0khk6"}">Docs</div></button>
-				<div class="${"spacer three svelte-1e0khk6"}"></div>
-					<button class="${"primary download svelte-1e0khk6"}"><div class="${"cont"}" style="${"display: flex"}">Read <div class="${"spacer"}" style="${"width:15px"}"></div>
+					<div id="${"small"}" class="${"svelte-5uetxy"}">Docs</div></button>
+				<div class="${"spacer three svelte-5uetxy"}"></div>
+					<button class="${"primary download svelte-5uetxy"}"><div class="${"cont"}" style="${"display: flex"}">Read <div class="${"spacer"}" style="${"width:15px"}"></div>
 							<img style="${"transform: rotate(90deg);"}" src="${"./arrow-read.svg"}" alt="${"arrow"}"></div></button></div></div></div>
-	<div class="${"spacer one svelte-1e0khk6"}"></div>
-	<div id="${"right"}" class="${"svelte-1e0khk6"}">${validate_component(Image_gallery, "Gallery").$$render($$result, {}, {}, {})}</div>
+	<div class="${"spacer one svelte-5uetxy"}"></div>
+	<div id="${"right"}" class="${"svelte-5uetxy"}">${validate_component(Image_gallery, "Gallery").$$render($$result, {}, {}, {})}</div>
 </div>`;
     });
     css$3 = {
@@ -6198,9 +6199,9 @@ var entry3, js3, css8;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-86d05d91.js";
-    js3 = ["pages/index.svelte-86d05d91.js", "chunks/vendor-0c144bdc.js", "chunks/form-891cae09.js"];
-    css8 = ["assets/pages/index.svelte-bfe069c4.css", "assets/vendor-2634b1a9.css", "assets/form-77d88580.css"];
+    entry3 = "pages/index.svelte-5a76ce25.js";
+    js3 = ["pages/index.svelte-5a76ce25.js", "chunks/vendor-41622600.js", "chunks/form-a0ceccba.js"];
+    css8 = ["assets/pages/index.svelte-b436054d.css", "assets/vendor-2634b1a9.css", "assets/form-77d88580.css"];
   }
 });
 
@@ -20268,8 +20269,8 @@ var entry4, js4, css11;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_tags_svelte();
-    entry4 = "pages/tags/_tags_.svelte-78131f50.js";
-    js4 = ["pages/tags/_tags_.svelte-78131f50.js", "chunks/2-webgl-03cc2566.js", "chunks/vendor-0c144bdc.js", "chunks/thumbnail-42200ca5.js"];
+    entry4 = "pages/tags/_tags_.svelte-8ac41417.js";
+    js4 = ["pages/tags/_tags_.svelte-8ac41417.js", "chunks/2-webgl-6d719442.js", "chunks/vendor-41622600.js", "chunks/thumbnail-574f4ee1.js"];
     css11 = ["assets/pages/tags/_tags_.svelte-8bcd8f63.css", "assets/vendor-2634b1a9.css", "assets/thumbnail-0d1d48d3.css"];
   }
 });
@@ -67443,8 +67444,8 @@ var entry5, js5, css13;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_layout_svelte2();
-    entry5 = "pages/_slug_/__layout.svelte-500db2f0.js";
-    js5 = ["pages/_slug_/__layout.svelte-500db2f0.js", "chunks/vendor-0c144bdc.js", "chunks/stores-e596c154.js"];
+    entry5 = "pages/_slug_/__layout.svelte-1ae5bbe1.js";
+    js5 = ["pages/_slug_/__layout.svelte-1ae5bbe1.js", "chunks/vendor-41622600.js", "chunks/stores-02e64947.js"];
     css13 = ["assets/pages/_slug_/__layout.svelte-7693d0c0.css", "assets/vendor-2634b1a9.css", "assets/stores-8d0781a8.css"];
   }
 });
@@ -67502,8 +67503,8 @@ var entry6, js6, css14;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_index_svelte2();
-    entry6 = "pages/_slug_/index.svelte-acb4978f.js";
-    js6 = ["pages/_slug_/index.svelte-acb4978f.js", "chunks/2-webgl-03cc2566.js", "chunks/vendor-0c144bdc.js"];
+    entry6 = "pages/_slug_/index.svelte-2ac4dfc6.js";
+    js6 = ["pages/_slug_/index.svelte-2ac4dfc6.js", "chunks/2-webgl-6d719442.js", "chunks/vendor-41622600.js"];
     css14 = ["assets/vendor-2634b1a9.css"];
   }
 });
@@ -69211,10 +69212,10 @@ var App = class {
 // .svelte-kit/vercel-tmp/manifest.js
 var manifest = {
   appDir: "_app",
-  assets: new Set(["Feather-site-thumbnail.png", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-thumbnail-temp.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "logo.svg", "reddit.svg", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
+  assets: new Set(["Feather-site-thumbnail.png", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "logo.svg", "reddit.svg", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".webp": "image/webp", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json" },
-    entry: { "file": "start-044b0bfb.js", "js": ["start-044b0bfb.js", "chunks/vendor-0c144bdc.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-0715acc5.js", "js": ["start-0715acc5.js", "chunks/vendor-41622600.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

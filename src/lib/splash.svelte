@@ -1,12 +1,35 @@
 <script>
 	import Gallery from './image-gallery.svelte';
+	import { fade } from 'svelte/transition';
+	import { onMount } from 'svelte';
+
+	const stringArray = [
+		'Desktop',
+		'Instantly',
+		'Natively',
+		'Different'
+	]
+	let index = 0;
+	onMount(() => {
+		const interval = setInterval(() => {
+			index++;
+			if (index > 2) clearInterval(interval);;
+		}, 3000);
+		return () => {
+			clearInterval(interval);
+		}
+	})
 </script>
 
 <div id="main" class="d">
 	<div id="left">
 		<div id="bs">
 			<div id="title-box">
-				<div id="title"><b>Remote</b> <br/> Desktop</div>
+				<div id="title"><b>Remote</b> <br/> 
+					{#key index}
+						<span in:fade="{{duration: 300, delay: 300}}" out:fade="{{duration: 300}}">{stringArray[index]}</span>
+					{/key}
+				</div>
 				<div id="line-animation">
 					<img id="line" src="./crossout.svg" alt="pink line crossing out the word desktop"/>
 				</div>
@@ -116,34 +139,43 @@
 		}
 		#line-animation {
 			position: absolute;
-			top: 55%;
+			top: 63%;
 			left: -20px;
 			@media screen and (max-width: $bp) {
-				top: 50%;
+				top: 60%;
 				left: -10px;
 			}
 			overflow: hidden;
 			height: 40%;
 			max-width: 0;
-			animation: appear 1s ease-in 1s forwards;
+			animation: appear 3s cubic-bezier(0.32, 0, 0.67, 0) 0.3s forwards ;
 		}
 
 		@keyframes appear {
-			from {
+			0% {
 				max-width: 0;
+				opacity: 100%;
 			}
-			to {
+			50% {
 				max-width: 400px;
+				opacity: 100%;
+			}
+			90% {
+				max-width: 400px;
+				opacity: 100%;
+			}
+			100% {
+				max-width: 400px;
+				opacity: 0%;
 			}
 		}
 		#line {
-			height: 100%;
+			width: get-vw(400px);
 			@media screen and (min-width: 1240px) {
 				width: min(get-vw(400px), 400px);
 			}
 			@media screen and (max-width: $bp) {
-				height: 80%;
-				width: auto;
+				width: max(get-vw(400px), 300px);
 			}
 		}
 		#button-container {

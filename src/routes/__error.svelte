@@ -11,7 +11,7 @@
 
 <script>
 	export let status;
-    export let error;
+    // export let error;
 </script>
 
 <div class="container">
