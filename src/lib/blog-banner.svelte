@@ -1,10 +1,22 @@
 <script>
 	export let post;
+
+	let hovering = false;
+
+	function enter() {
+		hovering = true;
+	}
+	function leave() {
+		hovering = false;
+	}
+
 </script>
 
 <div class="container">
 	<div class="thumbnail">
-		<img src={post.thumbnail} alt="Thumbnail" class="background" />
+		<div class="image">
+			<img src={post.thumbnail} alt="Thumbnail" class="background" class:hovering />
+		</div>
 		<div class="content">
 			<div class="tags">
 				{#each post.tags as tag}
@@ -19,7 +31,7 @@
 			<div class="summary truncate">
 				{post.summary}
 			</div>
-			<a sveltekit:prefetch href={`/${post.slug}`} class="button">
+			<a on:mouseenter={enter} on:mouseleave={leave} sveltekit:prefetch href={`/${post.slug}`} class="button">
 				<div class="button-text">Read More</div>
 				<div class="arrow-icon" />
 			</a>
@@ -29,6 +41,19 @@
 
 <style lang="scss">
 	@import '../variables.scss';
+
+	.image {
+		overflow: hidden;
+	}
+
+	.hovering {
+		transform: scale(1.2);
+	}
+
+	img {
+		display: block;
+		transition: transform .4s;
+	}
 
 	.button-text {
 		font-size: get-vw(20px);
@@ -114,6 +139,7 @@
 	}
 
 	.content {
+		z-index: 1;
 		padding: get-vw(30px);
 		background: rgba(0, 0, 0, 0.6);
 		border-radius: 0px get-vw(10px) get-vw(10px) 0px;
@@ -131,7 +157,7 @@
 	}
 
 	.thumbnail .content,
-	.thumbnail img {
+	.thumbnail .image {
 		grid-row-start: 1;
 		grid-column-start: 1;
 	}

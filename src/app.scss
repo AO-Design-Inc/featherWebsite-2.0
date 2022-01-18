@@ -174,3 +174,35 @@ blockquote p {
 	text-overflow: ellipsis;
 	-webkit-line-clamp: 2;
 }
+
+/* width */
+::-webkit-scrollbar {
+	width: 20px;
+	// background: #11131c;
+	margin-right: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	// background: #f87c86;
+	// border: 10px #11131c solid;
+	// width: 11x;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	// background: #fffbfc;
+	// opacity: 0.75;
+	// border-radius: 10px 10px 10px 10px;
+	// border: 6px #11131c solid;
+	background: #98a19a;
+	opacity: 0.1;
+	border-radius: 10px 10px 10px 10px;
+	border: 6px #11131c solid;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #fffbfc;
+}

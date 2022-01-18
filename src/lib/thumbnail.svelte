@@ -1,15 +1,21 @@
 <script>
+	import { scale } from 'svelte/transition';
+	import { cubicOut } from 'svelte/easing';
 	export let title;
 	export let summary;
 	export let link;
 	export let tags;
 	export let thumbnail;
+
 </script>
 
 <div class="thumbnail">
-	<a sveltekit:prefetch href={`/${link}`}>
-		<img src={thumbnail} alt="Thumbnail" />
-	</a>
+	<div class="image">
+		<a sveltekit:prefetch href={`/${link}`}>
+			<img src={thumbnail} alt="Thumbnail" />
+		</a>
+	</div>
+	
 	<div class="content">
 		<a sveltekit:prefetch href={`/${link}`}>
 			<h2 class="title truncate header">
@@ -38,6 +44,11 @@
 
 <style lang="scss">
 	@import '../variables.scss';
+
+	.image {
+		overflow: hidden;
+		border-radius: 10px 10px 0 0;
+	}
 
 	.title {
 		line-height: 1.25;
@@ -107,10 +118,20 @@
 		}
 	}
 
+	a {
+		display: block;
+	}
+
 	img {
 		border-radius: 10px 10px 0 0;
 		width: 100%;
 		object-fit: contain;
+		transition: transform .4s;
+		display: block;
+	}
+
+	.thumbnail:hover img {
+		transform: scale(1.5);
 	}
 
 	h2 {
