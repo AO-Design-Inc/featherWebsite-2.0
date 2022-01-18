@@ -74,7 +74,7 @@ const filteredPosts = posts
 		return {
 			...post,
 			readingTime: readingTimeDuration,
-      relatedPosts: relatedPosts
+      		relatedPosts: relatedPosts
 										.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 										.sort((a, b) => b.count - a.count)
 										.slice(0, 3)
