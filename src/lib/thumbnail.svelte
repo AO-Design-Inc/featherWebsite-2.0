@@ -7,11 +7,11 @@
 </script>
 
 <div class="thumbnail">
-	<a sveltekit:prefetch href={link}>
+	<a sveltekit:prefetch href={`/${link}`}>
 		<img src={thumbnail} alt="Thumbnail" />
 	</a>
 	<div class="content">
-		<a sveltekit:prefetch href={link}>
+		<a sveltekit:prefetch href={`/${link}`}>
 			<h2 class="title truncate header">
 				{title}
 			</h2>
@@ -23,12 +23,12 @@
 		<div class="content-footer">
 			<p class="tags">
 				{#each tags as tag}
-					<a sveltekit:prefetch class="tag" href={`tags/${tag}`}>
+					<a sveltekit:prefetch class="tag" href={`/tags/${tag}`}>
 						#{tag}
 					</a>
 				{/each}
 			</p>
-			<a sveltekit:prefetch href={link}>
+			<a sveltekit:prefetch href={`/${link}`}>
 				<div id="arrow-icon" />
 			</a>
 		</div>

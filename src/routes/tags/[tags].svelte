@@ -43,8 +43,8 @@
     </div>
     <div class="spacer" style="padding: 35px" />
     <div class="grid">
-        {#each filteredPosts as {post, slug}}
-            <Thumbnail title={post.metadata.title} summary={post.metadata.summary} link={post.metadata.link} tags={post.metadata.tags}
+        {#each filteredPosts as { post, slug }}
+            <Thumbnail title={post.metadata.title} summary={post.metadata.summary} link={post.metadata.slug} tags={post.metadata.tags}
                 thumbnail={post.metadata.thumbnail} 
             />
         {/each}
