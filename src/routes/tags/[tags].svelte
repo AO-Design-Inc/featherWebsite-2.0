@@ -33,7 +33,7 @@
     import Thumbnail from "$lib/thumbnail.svelte";
     export let filteredPosts;
     export let tag;
-    console.log(filteredPosts);
+    // console.log(filteredPosts);
 </script>
 
 

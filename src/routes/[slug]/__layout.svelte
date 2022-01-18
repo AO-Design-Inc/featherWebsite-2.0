@@ -28,8 +28,12 @@
 	let url = $page.url.pathname;
 	onMount(async () => {
 		url = window.location.href;
-		console.log(url);
+		// console.log(url);
+		// const esc = str => str.replaceAll("<", "&lt;");
+		// document.querySelectorAll("code") // this will escape and trim all elements including nohighlight
+		// 	.forEach(elem =>elem.innerHTML = esc(elem.innerHTML.trim()));
 		hljs.highlightAll();
+		
 	});
 
 	export let post;
