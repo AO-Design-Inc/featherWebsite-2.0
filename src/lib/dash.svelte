@@ -13,7 +13,6 @@
 		<div class="link">Blog</div>
 	</a>
 	<div class="spacer linker" />
-	<!-- <a href="#/blog" class="link">Blog</a> -->
 	<div class="form-container">
 		<Form />
 	</div>

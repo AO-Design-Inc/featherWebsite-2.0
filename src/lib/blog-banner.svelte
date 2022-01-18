@@ -19,7 +19,7 @@
 			<div class="summary truncate">
 				{post.summary}
 			</div>
-			<a sveltekit:prefetch href={post.slug} class="button">
+			<a sveltekit:prefetch href={`/${post.slug}`} class="button">
 				<div class="button-text">Read More</div>
 				<div class="arrow-icon" />
 			</a>

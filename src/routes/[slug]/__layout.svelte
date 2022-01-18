@@ -80,7 +80,7 @@
 					<div class="spacer ten" />
 					<div class="meta">
 						{post.author} - {new Date(post.date).toDateString()} - {#each post.tags as tag}
-							<a class="tag" sveltekit:prefetch href={`tags/${tag}`}>
+							<a class="tag" sveltekit:prefetch href={`/tags/${tag}`}>
 								#{tag}
 							</a>
 						{/each}
