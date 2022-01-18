@@ -3,41 +3,39 @@
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
 
-	const stringArray = [
-		'Desktop',
-		'Instantly',
-		'Natively',
-		'Different'
-	]
+	const stringArray = ['Desktop', 'Instantly', 'Natively', 'Different'];
 	let index = 0;
 	onMount(() => {
 		const interval = setInterval(() => {
 			index++;
-			if (index > 2) clearInterval(interval);;
+			if (index > 2) clearInterval(interval);
 		}, 3000);
 		return () => {
 			clearInterval(interval);
-		}
-	})
+		};
+	});
 </script>
 
 <div id="main" class="d">
 	<div id="left">
 		<div id="bs">
 			<div id="title-box">
-				<div id="title"><b>Remote</b> <br/> 
+				<div id="title">
+					<b>Remote</b> <br />
 					{#key index}
-						<span in:fade="{{duration: 300, delay: 300}}" out:fade="{{duration: 300}}">{stringArray[index]}</span>
+						<span in:fade={{ duration: 300, delay: 300 }} out:fade={{ duration: 300 }}
+							>{stringArray[index]}</span
+						>
 					{/key}
 				</div>
 				<div id="line-animation">
-					<img id="line" src="./crossout.svg" alt="pink line crossing out the word desktop"/>
+					<img id="line" src="./crossout.svg" alt="pink line crossing out the word desktop" />
 				</div>
 			</div>
 			<div id="blurb">Enjoy local app streaming that feels completely native.</div>
 			<div class="spacer two" />
 			<div id="button-container">
-				<button class=" secondary doc">
+				<button on:click={() => (window.open('https://debonair-yumberry-7ef.notion.site/a088d6fbcf72470995a722249f52860e?v=3ad640a5516945b3ba7a7181ca084c97', '_blank'))} class=" secondary doc">
 					<div id="big">
 						<div class="cont" style="display: flex">
 							Documentation <div class="spacer" style="width:10px" />
@@ -47,12 +45,12 @@
 					<div id="small">Docs</div>
 				</button>
 				<div class="spacer three" />
-					<button on:click={() => window.location.href='#t_main'} class="primary download">
-						<div class="cont" style="display: flex">
-							Read <div class="spacer" style="width:15px" />
-							<img style="transform: rotate(90deg);" src="./arrow-read.svg" alt="arrow" />
-						</div>
-					</button>
+				<button on:click={() => (window.location.href = '#t_main')} class="primary download">
+					<div class="cont" style="display: flex">
+						Read <div class="spacer" style="width:15px" />
+						<img style="transform: rotate(90deg);" src="./arrow-read.svg" alt="arrow" />
+					</div>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -148,7 +146,7 @@
 			overflow: hidden;
 			height: 40%;
 			max-width: 0;
-			animation: appear 3s cubic-bezier(0.32, 0, 0.67, 0) 0.3s forwards ;
+			animation: appear 3s cubic-bezier(0.32, 0, 0.67, 0) 0.3s forwards;
 		}
 
 		@keyframes appear {
@@ -165,6 +163,7 @@
 				opacity: 100%;
 			}
 			100% {
+				display: none;
 				max-width: 400px;
 				opacity: 0%;
 			}
@@ -181,6 +180,7 @@
 		#button-container {
 			display: flex;
 			button {
+				cursor: pointer;
 				height: get-vw(55px);
 				// min-height: 55px;
 				font-size: get-vw(20px);
