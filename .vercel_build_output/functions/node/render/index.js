@@ -69165,7 +69165,8 @@ var template = ({ head, body }) => `<!DOCTYPE html>
 		<!-- Primary tags -->
 		<title>Feather</title>
 		<meta name="title" content="Feather" />
-		<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+		<!-- <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" /> -->
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
 		<!-- Twitter -->
 		<meta name="twitter:card" content="summary_large_image" />
@@ -69181,10 +69182,10 @@ var template = ({ head, body }) => `<!DOCTYPE html>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://feather.systems/" />
 		<meta property="og:title" content="Feather" />
-		<meta
+		<!-- <meta
 			property="og:description"
 			content="Enjoy local app streaming that feels completely native."
-		/>
+		/> -->
 		<meta
 			property="og:image"
 			content="https://5000-copper-beaver-rc3ipd4s.ws-us20.gitpod.io/assets/Feather-site-tumbnail.png"
