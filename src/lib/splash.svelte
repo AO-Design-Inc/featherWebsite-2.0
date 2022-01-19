@@ -5,7 +5,12 @@
 
 	const stringArray = ['Desktop', 'Instantly', 'Natively', 'Different'];
 	let index = 0;
+	// let line;
+	// $: line.classList.add('anim');
 	onMount(() => {
+		let line = document.getElementById('line-animation')
+		line.classList.add('anim')
+		console.log(line)
 		const interval = setInterval(() => {
 			index++;
 			if (index > 2) clearInterval(interval);
@@ -35,7 +40,14 @@
 			<div id="blurb">Enjoy local app streaming that feels completely native.</div>
 			<div class="spacer two" />
 			<div id="button-container">
-				<button on:click={() => (window.open('https://debonair-yumberry-7ef.notion.site/a088d6fbcf72470995a722249f52860e?v=3ad640a5516945b3ba7a7181ca084c97', '_blank'))} class=" secondary doc">
+				<button
+					on:click={() =>
+						window.open(
+							'https://debonair-yumberry-7ef.notion.site/a088d6fbcf72470995a722249f52860e?v=3ad640a5516945b3ba7a7181ca084c97',
+							'_blank'
+						)}
+					class=" secondary doc"
+				>
 					<div id="big">
 						<div class="cont" style="display: flex">
 							Documentation <div class="spacer" style="width:10px" />
@@ -149,28 +161,28 @@
 			overflow: hidden;
 			height: 40%;
 			max-width: 0;
-			animation: appear 3s cubic-bezier(0.32, 0, 0.67, 0) 0.3s forwards;
+			// animation: appear 3s cubic-bezier(0.32, 0, 0.67, 0) 0.3s 1 forwards;
 		}
 
-		@keyframes appear {
-			0% {
-				max-width: 0;
-				opacity: 100%;
-			}
-			50% {
-				max-width: 400px;
-				opacity: 100%;
-			}
-			90% {
-				max-width: 400px;
-				opacity: 100%;
-			}
-			100% {
-				display: none;
-				max-width: 400px;
-				opacity: 0%;
-			}
-		}
+		// @keyframes appear {
+		// 	0% {
+		// 		max-width: 0;
+		// 		opacity: 100%;
+		// 	}
+		// 	50% {
+		// 		max-width: 400px;
+		// 		opacity: 100%;
+		// 	}
+		// 	90% {
+		// 		max-width: 400px;
+		// 		opacity: 100%;
+		// 	}
+		// 	100% {
+		// 		display: none;
+		// 		max-width: 400px;
+		// 		opacity: 0%;
+		// 	}
+		// }
 		#line {
 			width: get-vw(400px);
 			@media screen and (min-width: 1240px) {

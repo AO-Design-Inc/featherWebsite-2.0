@@ -2,7 +2,6 @@
 // @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
 // @import url('../static/Inter.var.woff2');
 
-
 html {
 	overflow-x: hidden;
 }
@@ -109,10 +108,10 @@ button:hover {
 		text-decoration: none;
 	}
 	@media screen and (max-width: $bp) {
-		font-size: max(get-vw(20px),16px);
+		font-size: max(get-vw(20px), 16px);
 	}
 	@media screen and (min-width: 1240px) {
-		font-size: min(get-vw(20px),20px);
+		font-size: min(get-vw(20px), 20px);
 	}
 }
 .slot h2,
@@ -143,7 +142,8 @@ td {
 table {
 	border-collapse: collapse;
 }
-td, th {
+td,
+th {
 	padding: 1%;
 }
 blockquote p {
@@ -194,4 +194,28 @@ blockquote p {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: #fffbfc;
+}
+
+#line-animation.anim {
+	animation: appear 3s cubic-bezier(0.32, 0, 0.67, 0) 0.3s 1 forwards;
+}
+
+@keyframes appear {
+	0% {
+		max-width: 0;
+		opacity: 100%;
+	}
+	50% {
+		max-width: 400px;
+		opacity: 100%;
+	}
+	90% {
+		max-width: 400px;
+		opacity: 100%;
+	}
+	100% {
+		display: none;
+		max-width: 400px;
+		opacity: 0%;
+	}
 }
