@@ -5921,7 +5921,7 @@ var init_layout_svelte = __esm({
   </div>`;
     });
     css3 = {
-      code: ".progress-bar.svelte-10sgnlc{position:fixed;left:0%;top:0%;width:100%;height:3px;border:none}progress.svelte-10sgnlc::-webkit-progress-value,progress.svelte-10sgnlc::-moz-progress-bar,progress.svelte-10sgnlc::-webkit-progress-bar{height:3px;background-color:#f87c86}",
+      code: ".progress-bar.svelte-1ebxcsi{position:fixed;left:0%;top:0%;width:100%;height:3px;border:none}progress.svelte-1ebxcsi::-webkit-progress-value,progress.svelte-1ebxcsi::-moz-progress-bar,progress.svelte-1ebxcsi::-webkit-progress-bar{height:3px;background-color:#f87c86}",
       map: null
     };
     _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -5938,9 +5938,7 @@ var init_layout_svelte = __esm({
       $$unsubscribe_navigating();
       $$unsubscribe_progress();
       return `
-
-${$$result.head += `<meta name="${"robots"}" content="${"index, follow"}" data-svelte="svelte-1ie59ta"><html lang="${"en-GB"}" data-svelte="svelte-1ie59ta"></html>`, ""}
-${$navigating ? `<progress${add_attribute("value", $progress, 0)} class="${"progress-bar svelte-10sgnlc"}"></progress>` : ``}
+${$navigating ? `<progress${add_attribute("value", $progress, 0)} class="${"progress-bar svelte-1ebxcsi"}"></progress>` : ``}
 ${validate_component(Dash, "Dash").$$render($$result, {}, {}, {})}
 ${slots.default ? slots.default({}) : ``}
 ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
@@ -5960,9 +5958,9 @@ var entry, js, css4;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-3bd1ae6b.js";
-    js = ["pages/__layout.svelte-3bd1ae6b.js", "chunks/vendor-00a3e6de.js", "chunks/stores-61d2a175.js", "chunks/form-39ee9b33.js"];
-    css4 = ["assets/pages/__layout.svelte-cada84bd.css", "assets/vendor-2634b1a9.css", "assets/stores-21dd4574.css", "assets/form-77d88580.css"];
+    entry = "pages/__layout.svelte-f286e2b7.js";
+    js = ["pages/__layout.svelte-f286e2b7.js", "chunks/vendor-2345f34e.js", "chunks/stores-9e46c81f.js", "chunks/form-304c1942.js"];
+    css4 = ["assets/pages/__layout.svelte-f2b1d344.css", "assets/vendor-2634b1a9.css", "assets/stores-21dd4574.css", "assets/form-77d88580.css"];
   }
 });
 
@@ -6007,8 +6005,8 @@ var entry2, js2, css6;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "pages/__error.svelte-c99db164.js";
-    js2 = ["pages/__error.svelte-c99db164.js", "chunks/vendor-00a3e6de.js"];
+    entry2 = "pages/__error.svelte-3c54e745.js";
+    js2 = ["pages/__error.svelte-3c54e745.js", "chunks/vendor-2345f34e.js"];
     css6 = ["assets/pages/__error.svelte-f53665cf.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -6198,8 +6196,8 @@ var entry3, js3, css8;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-99b7b83c.js";
-    js3 = ["pages/index.svelte-99b7b83c.js", "chunks/vendor-00a3e6de.js", "chunks/form-39ee9b33.js"];
+    entry3 = "pages/index.svelte-48d77675.js";
+    js3 = ["pages/index.svelte-48d77675.js", "chunks/vendor-2345f34e.js", "chunks/form-304c1942.js"];
     css8 = ["assets/pages/index.svelte-523cc025.css", "assets/vendor-2634b1a9.css", "assets/form-77d88580.css"];
   }
 });
@@ -20264,8 +20262,8 @@ var entry4, js4, css11;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_tags_svelte();
-    entry4 = "pages/tags/_tags_.svelte-a88d70ca.js";
-    js4 = ["pages/tags/_tags_.svelte-a88d70ca.js", "chunks/2-webgl-9c9f1cb2.js", "chunks/vendor-00a3e6de.js", "chunks/thumbnail-6381b66d.js"];
+    entry4 = "pages/tags/_tags_.svelte-7d6d6691.js";
+    js4 = ["pages/tags/_tags_.svelte-7d6d6691.js", "chunks/2-webgl-45c8070e.js", "chunks/vendor-2345f34e.js", "chunks/thumbnail-ca47334d.js"];
     css11 = ["assets/pages/tags/_tags_.svelte-fe12782a.css", "assets/vendor-2634b1a9.css", "assets/thumbnail-b6ad015b.css"];
   }
 });
@@ -67439,8 +67437,8 @@ var entry5, js5, css13;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_layout_svelte2();
-    entry5 = "pages/_slug_/__layout.svelte-4eecb529.js";
-    js5 = ["pages/_slug_/__layout.svelte-4eecb529.js", "chunks/vendor-00a3e6de.js", "chunks/stores-61d2a175.js"];
+    entry5 = "pages/_slug_/__layout.svelte-73d46e09.js";
+    js5 = ["pages/_slug_/__layout.svelte-73d46e09.js", "chunks/vendor-2345f34e.js", "chunks/stores-9e46c81f.js"];
     css13 = ["assets/pages/_slug_/__layout.svelte-7693d0c0.css", "assets/vendor-2634b1a9.css", "assets/stores-21dd4574.css"];
   }
 });
@@ -67498,8 +67496,8 @@ var entry6, js6, css14;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_index_svelte2();
-    entry6 = "pages/_slug_/index.svelte-1d46483b.js";
-    js6 = ["pages/_slug_/index.svelte-1d46483b.js", "chunks/2-webgl-9c9f1cb2.js", "chunks/vendor-00a3e6de.js"];
+    entry6 = "pages/_slug_/index.svelte-a19be077.js";
+    js6 = ["pages/_slug_/index.svelte-a19be077.js", "chunks/2-webgl-45c8070e.js", "chunks/vendor-2345f34e.js"];
     css14 = ["assets/vendor-2634b1a9.css"];
   }
 });
@@ -69158,7 +69156,7 @@ var template = ({ head, body }) => `<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="description" content="" />
+		<!-- <meta name="description" content="" /> -->
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/png" href="/favicon.png" />
@@ -69272,7 +69270,7 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "logo.svg", "reddit.svg", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".svg": "image/svg+xml", ".webp": "image/webp", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json" },
-    entry: { "file": "start-0a23aaaf.js", "js": ["start-0a23aaaf.js", "chunks/vendor-00a3e6de.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-640f8322.js", "js": ["start-640f8322.js", "chunks/vendor-2345f34e.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

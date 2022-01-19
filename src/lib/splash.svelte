@@ -10,7 +10,6 @@
 	onMount(() => {
 		let line = document.getElementById('line-animation')
 		line.classList.add('anim')
-		console.log(line)
 		const interval = setInterval(() => {
 			index++;
 			if (index > 2) clearInterval(interval);

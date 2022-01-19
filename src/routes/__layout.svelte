@@ -22,11 +22,6 @@
 		progress.set(0.1);
 	}}
 />
-
-<svelte:head>
-	<meta name="robots" content="index, follow" />
-	<html lang="en-GB" />
-</svelte:head>
 {#if $navigating}
 	<progress value={$progress} class="progress-bar" />
 {/if}
@@ -42,7 +37,6 @@
 		width: 100%;
 		height: 3px;
 		border: none;
-
 	}
 	progress::-webkit-progress-value,
 	progress::-moz-progress-bar,
