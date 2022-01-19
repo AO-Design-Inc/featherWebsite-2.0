@@ -5962,7 +5962,7 @@ var init__ = __esm({
     init_layout_svelte();
     entry = "pages/__layout.svelte-3bd1ae6b.js";
     js = ["pages/__layout.svelte-3bd1ae6b.js", "chunks/vendor-00a3e6de.js", "chunks/stores-61d2a175.js", "chunks/form-39ee9b33.js"];
-    css4 = ["assets/pages/__layout.svelte-cada84bd.css", "assets/vendor-2634b1a9.css", "assets/stores-14f49877.css", "assets/form-77d88580.css"];
+    css4 = ["assets/pages/__layout.svelte-cada84bd.css", "assets/vendor-2634b1a9.css", "assets/stores-a9a08db1.css", "assets/form-77d88580.css"];
   }
 });
 
@@ -67441,7 +67441,7 @@ var init__5 = __esm({
     init_layout_svelte2();
     entry5 = "pages/_slug_/__layout.svelte-4eecb529.js";
     js5 = ["pages/_slug_/__layout.svelte-4eecb529.js", "chunks/vendor-00a3e6de.js", "chunks/stores-61d2a175.js"];
-    css13 = ["assets/pages/_slug_/__layout.svelte-7693d0c0.css", "assets/vendor-2634b1a9.css", "assets/stores-14f49877.css"];
+    css13 = ["assets/pages/_slug_/__layout.svelte-7693d0c0.css", "assets/vendor-2634b1a9.css", "assets/stores-a9a08db1.css"];
   }
 });
 
@@ -69154,7 +69154,69 @@ var user_hooks = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module"
 });
-var template = ({ head, body }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<meta name="description" content="" />\n		<link rel="icon" href="/favicon.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		<link rel="icon" type="image/png" href="/favicon.png" />\n\n		<!-- Primary tags -->\n		<title>Feather</title>\n		<meta name="title" content="Feather" />\n		<meta\n		name="description"\n		content="Enjoy local app streaming that feels completely native."\n		/>\n		<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">\n\n		<!-- Twitter -->\n		<meta name="twitter:card" content="summary_large_image" />\n		<meta name="twitter:site" content="@Feather_Systems" />\n		<meta name="twitter:text:title" content="Feather" />\n\n		<meta name="twitter:card" content="summary_large_image" />\n		<meta name="twitter:site" content="@Feather_Systems" />\n		<meta name="twitter:creator" content="@Feather_Systems" />\n		<meta\n		name="twitter:image"\n		content="https://feather.systems/Feather-site-thumbnail.png"\n		/>\n\n		<!-- Open Graph -->\n		<meta property="og:type" content="website" />\n		<meta property="og:url" content="https://feather.systems/" />\n		<meta property="og:title" content="Feather" />\n		<meta\n		property="og:description"\n		content="Enjoy local app streaming that feels completely native."\n		/>\n		<meta\n		property="og:image"\n		content="https://5000-copper-beaver-rc3ipd4s.ws-us20.gitpod.io/assets/Feather-site-tumbnail.png"\n		/>\n		<meta\n		property="og:image:alt"\n		content="Feather: Enjoy local app streaming that feels completely native."\n		/>\n\n		<!-- Icons -->\n		<link\n		rel="apple-touch-icon"\n		sizes="180x180"\n		href="/icons/apple-touch-icon.png"\n		/>\n		<link\n		rel="icon"\n		type="image/png"\n		sizes="32x32"\n		href="/icons/favicon-32x32.png"\n		/>\n		<link\n		rel="icon"\n		type="image/png"\n		sizes="16x16"\n		href="/icons/favicon-16x16.png"\n		/>\n		<link rel="manifest" href="/icons/site.webmanifest" />\n		<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#d5615b" />\n		<link rel="shortcut icon" href="/icons/favicon.ico" />\n		<meta name="msapplication-TileColor" content="#da532c" />\n		<meta name="msapplication-config" content="/icons/browserconfig.xml" />\n		<meta name="theme-color" content="#ffffff" />\n		\n		' + head + '\n	</head>\n	<body>\n		<script>0<\/script>\n		<div id="svelte">' + body + "</div>\n	</body>\n</html>\n";
+var template = ({ head, body }) => `<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+
+		<!-- Primary tags -->
+		<title>Feather</title>
+		<meta name="title" content="Feather" />
+		<meta name="description" content="Enjoy local app streaming that feels completely native." />
+		<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@Feather_Systems" />
+		<meta name="twitter:text:title" content="Feather" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@Feather_Systems" />
+		<meta name="twitter:creator" content="@Feather_Systems" />
+		<meta name="twitter:image" content="https://feather.systems/Feather-site-thumbnail.png" />
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://feather.systems/" />
+		<meta property="og:title" content="Feather" />
+		<meta
+			property="og:description"
+			content="Enjoy local app streaming that feels completely native."
+		/>
+		<meta
+			property="og:image"
+			content="https://5000-copper-beaver-rc3ipd4s.ws-us20.gitpod.io/assets/Feather-site-tumbnail.png"
+		/>
+		<meta
+			property="og:image:alt"
+			content="Feather: Enjoy local app streaming that feels completely native."
+		/>
+
+		<!-- Icons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+		<link rel="manifest" href="/icons/site.webmanifest" />
+		<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#d5615b" />
+		<link rel="shortcut icon" href="/icons/favicon.ico" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="msapplication-config" content="/icons/browserconfig.xml" />
+		<meta name="theme-color" content="#ffffff" />
+		<style>
+			@font-face {
+				font-family: 'Inter var';
+				font-style: oblique 0deg 10deg;
+				font-weight: 100 900;
+				font-display: swap;
+				src: url('/Inter.var.woff2') format('woff2');
+			}
+		</style>
+
+		` + head + '\n	</head>\n	<body>\n		<script>\n			0;\n		<\/script>\n		<div id="svelte">' + body + "</div>\n	</body>\n</html>\n";
 var read = null;
 set_paths({ "base": "", "assets": "" });
 var get_hooks = (hooks) => ({
