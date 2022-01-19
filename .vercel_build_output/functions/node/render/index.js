@@ -69156,6 +69156,7 @@ var template = ({ head, body }) => `<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="description" content="Enjoy local app streaming that feels completely native." />
 		<!-- <meta name="description" content="" /> -->
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -69164,7 +69165,6 @@ var template = ({ head, body }) => `<!DOCTYPE html>
 		<!-- Primary tags -->
 		<title>Feather</title>
 		<meta name="title" content="Feather" />
-		<meta name="description" content="Enjoy local app streaming that feels completely native." />
 		<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
 		<!-- Twitter -->
