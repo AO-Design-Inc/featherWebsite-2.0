@@ -1,5 +1,14 @@
 /* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
+// @import url('../static/Inter.var.woff2');
+@font-face {
+	font-family: 'Inter var';
+	font-style: oblique 0deg 10deg;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url('/Inter.var.woff2') format('woff2');
+  }
+
 
 html {
 	overflow-x: hidden;
@@ -12,8 +21,8 @@ body {
 body {
 	margin: 0px;
 	box-sizing: border-box;
-	font-family: 'Inter', sans-serif;
-	font-weight: 300;
+	font-family: 'Inter var', sans-serif;
+	font-weight: 250;
 	font-size: 1em;
 	color: #fffffb;
 	background: #11131c;
@@ -94,7 +103,7 @@ button:hover {
 .slot p {
 	font-size: get-vw(20px);
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 250;
 	line-height: 1.75;
 	letter-spacing: 0em;
 	text-align: left;

@@ -125,9 +125,9 @@
           .title {
             width: get-vw(420px);
   
-            font-family: Inter;
+            font-family: 'Inter var';
             font-style: normal;
-            font-weight: bold;
+            font-weight: 700;
             font-size: get-vw(37px);
             @media screen and (max-width: $bp) {
               font-size: max(get-vw(37px), 37px);
@@ -151,9 +151,9 @@
             }
           }
           .des {
-            font-family: Inter;
+            font-family: 'Inter var';
             font-style: normal;
-            font-weight: normal;
+            font-weight: 250;
             font-size: get-vw(20px);
             @media screen and (max-width: $bp) {
               font-size: max(get-vw(20px), 20px);

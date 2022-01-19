@@ -59,7 +59,7 @@
 		font-size: get-vw(20px);
 		margin-right: 10px;
 		color: #74252b;
-		font-weight: bold;
+		font-weight: 700;
 		@media screen and (max-width: $bp) {
 			font-size: max(get-vw(20px), 20px);
 		}
@@ -115,7 +115,7 @@
 
 	.title {
 		padding-top: get-vw(15px);
-		font-weight: bold;
+		font-weight: 700;
 		font-size: get-vw(37px);
 		@media screen and (max-width: $bp) {
 			font-size: max(get-vw(37px), 37px);

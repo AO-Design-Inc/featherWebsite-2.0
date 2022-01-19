@@ -5879,7 +5879,6 @@ var init_layout_svelte = __esm({
 	<div class="${"spacer one svelte-1gemu1j"}"></div>
 	<a sveltekit:prefetch href="${"/blog"}"><div class="${"link svelte-1gemu1j"}">Blog</div></a>
 	<div class="${"spacer linker svelte-1gemu1j"}"></div>
-	
 	<div class="${"form-container svelte-1gemu1j"}">${validate_component(Form, "Form").$$render($$result, {}, {}, {})}</div>
 	
 	
@@ -5961,9 +5960,9 @@ var entry, js, css4;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-67e358e4.js";
-    js = ["pages/__layout.svelte-67e358e4.js", "chunks/vendor-41622600.js", "chunks/stores-02e64947.js", "chunks/form-a0ceccba.js"];
-    css4 = ["assets/pages/__layout.svelte-cada84bd.css", "assets/vendor-2634b1a9.css", "assets/stores-8d0781a8.css", "assets/form-77d88580.css"];
+    entry = "pages/__layout.svelte-3bd1ae6b.js";
+    js = ["pages/__layout.svelte-3bd1ae6b.js", "chunks/vendor-00a3e6de.js", "chunks/stores-61d2a175.js", "chunks/form-39ee9b33.js"];
+    css4 = ["assets/pages/__layout.svelte-cada84bd.css", "assets/vendor-2634b1a9.css", "assets/stores-14f49877.css", "assets/form-77d88580.css"];
   }
 });
 
@@ -6008,8 +6007,8 @@ var entry2, js2, css6;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "pages/__error.svelte-56074fd7.js";
-    js2 = ["pages/__error.svelte-56074fd7.js", "chunks/vendor-41622600.js"];
+    entry2 = "pages/__error.svelte-c99db164.js";
+    js2 = ["pages/__error.svelte-c99db164.js", "chunks/vendor-00a3e6de.js"];
     css6 = ["assets/pages/__error.svelte-f53665cf.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -6047,26 +6046,26 @@ var init_index_svelte = __esm({
 </div>`;
     });
     css$4 = {
-      code: "#main.svelte-5uetxy.svelte-5uetxy{height:31.25vw;width:100%;display:flex;max-width:1240px}@media screen and (max-width: 810px){#main.svelte-5uetxy.svelte-5uetxy{display:block;height:auto}}@media screen and (min-width: 1240px){#main.svelte-5uetxy.svelte-5uetxy{padding:0px;margin:0px auto;height:min(31.25vw, 450px)}}#left.svelte-5uetxy.svelte-5uetxy{display:flex;align-items:center}@media screen and (max-width: 810px){#left.svelte-5uetxy.svelte-5uetxy{height:auto}}#left.svelte-5uetxy .spacer.two.svelte-5uetxy{height:2.7777777778vw}@media screen and (max-width: 810px){#left.svelte-5uetxy .spacer.two.svelte-5uetxy{height:2.7777777778vw}}@media screen and (min-width: 1240px){#left.svelte-5uetxy .spacer.two.svelte-5uetxy{height:min(2.7777777778vw, 40px)}}#left.svelte-5uetxy #bs.svelte-5uetxy{height:26.7361111111vw}@media screen and (min-width: 1240px){#left.svelte-5uetxy #bs.svelte-5uetxy{height:min(26.7361111111vw, 385px)}}@media screen and (max-width: 810px){#left.svelte-5uetxy #bs.svelte-5uetxy{height:auto;width:100%}}#left.svelte-5uetxy #title-box.svelte-5uetxy{position:relative;height:50%}@media screen and (max-width: 810px){#left.svelte-5uetxy #title-box.svelte-5uetxy{height:100%}}#left.svelte-5uetxy #title.svelte-5uetxy{font-size:6.25vw;font-weight:normal;line-height:101%;width:27.7777777778vw;height:14.5833333333vw}@media screen and (max-width: 810px){#left.svelte-5uetxy #title.svelte-5uetxy{font-size:80px}}@media screen and (min-width: 1240px){#left.svelte-5uetxy #title.svelte-5uetxy{font-size:min(6.25vw, 90px);width:min(27.7777777778vw, 400px);height:min(14.5833333333vw, 210px)}}@media screen and (max-width: 810px){#left.svelte-5uetxy #title.svelte-5uetxy{width:100%;height:auto;font-size:65px;padding-bottom:20px}}#left.svelte-5uetxy #line-animation.svelte-5uetxy{position:absolute;top:63%;left:-20px;overflow:hidden;height:40%;max-width:0;animation:svelte-5uetxy-appear 3s cubic-bezier(0.32, 0, 0.67, 0) 0.3s forwards}@media screen and (max-width: 810px){#left.svelte-5uetxy #line-animation.svelte-5uetxy{top:60%;left:-10px}}@keyframes svelte-5uetxy-appear{0%{max-width:0;opacity:100%}50%{max-width:400px;opacity:100%}90%{max-width:400px;opacity:100%}100%{max-width:400px;opacity:0%}}#left.svelte-5uetxy #line.svelte-5uetxy{width:27.7777777778vw}@media screen and (min-width: 1240px){#left.svelte-5uetxy #line.svelte-5uetxy{width:min(27.7777777778vw, 400px)}}@media screen and (max-width: 810px){#left.svelte-5uetxy #line.svelte-5uetxy{width:max(27.7777777778vw, 300px)}}#left.svelte-5uetxy #button-container.svelte-5uetxy{display:flex}#left.svelte-5uetxy #button-container button.svelte-5uetxy{height:3.8194444444vw;font-size:1.3888888889vw}@media screen and (max-width: 850px){#left.svelte-5uetxy #button-container button.svelte-5uetxy{font-size:max(1.1111111111vw, 16px);min-height:55px}}@media screen and (max-width: 810px){#left.svelte-5uetxy #button-container button.svelte-5uetxy{font-size:138%}}@media screen and (min-width: 1240px){#left.svelte-5uetxy #button-container button.svelte-5uetxy{height:min(3.8194444444vw, 55px);font-size:min(1.3888888889vw, 20px)}}#left.svelte-5uetxy #button-container .primary.svelte-5uetxy{aspect-ratio:35/11;width:12.1527777778vw;color:#74252b;font-weight:400;box-shadow:none;border:none;background:#ffb3b3;border-radius:0.6944444444vw;display:grid;place-items:center}@media screen and (max-width: 810px){#left.svelte-5uetxy #button-container .primary.svelte-5uetxy{width:49%}}@media screen and (min-width: 1240px){#left.svelte-5uetxy #button-container .primary.svelte-5uetxy{width:min(12.1527777778vw, 175px);border-radius:min(0.6944444444vw, 10px)}}#left.svelte-5uetxy #button-container .spacer.three.svelte-5uetxy{width:1.0416666667vw}@media screen and (min-width: 1240px){#left.svelte-5uetxy #button-container .spacer.three.svelte-5uetxy{width:min(1.0416666667vw, 15px)}}#left.svelte-5uetxy #button-container .secondary.svelte-5uetxy{aspect-ratio:42/11;width:15.2777777778vw;color:#fffffb;box-shadow:none;border:1px solid #ffdede;background:#fb768100;border-radius:0.6944444444vw;display:grid;place-items:center}@media screen and (max-width: 810px){#left.svelte-5uetxy #button-container .secondary.svelte-5uetxy{width:49%}}@media screen and (min-width: 1240px){#left.svelte-5uetxy #button-container .secondary.svelte-5uetxy{width:min(15.2777777778vw, 220px);border-radius:min(0.6944444444vw, 10px)}}#left.svelte-5uetxy #button-container .secondary #big.svelte-5uetxy{display:block}#left.svelte-5uetxy #button-container .secondary #small.svelte-5uetxy{display:none}@media screen and (max-width: 1050px){#left.svelte-5uetxy #button-container .secondary #big.svelte-5uetxy{display:none}#left.svelte-5uetxy #button-container .secondary #small.svelte-5uetxy{display:block}}@media screen and (max-width: 810px){#left.svelte-5uetxy #button-container.svelte-5uetxy{padding-bottom:50px}}@media screen and (max-width: 810px){#left.svelte-5uetxy.svelte-5uetxy{width:100%}}#left.svelte-5uetxy #blurb.svelte-5uetxy{width:27.7777777778vw;height:5.5555555556vw;font-family:Inter;font-size:1.8055555556vw;font-style:normal;font-weight:400;line-height:154%;letter-spacing:0em;text-align:left;color:#fffffb;opacity:0.6}@media screen and (max-width: 810px){#left.svelte-5uetxy #blurb.svelte-5uetxy{width:100%;height:auto;padding-bottom:20px}}@media screen and (max-width: 810px){#left.svelte-5uetxy #blurb.svelte-5uetxy{font-size:20px}}@media screen and (min-width: 1240px){#left.svelte-5uetxy #blurb.svelte-5uetxy{width:min(27.7777777778vw, 400px);height:min(5.5555555556vw, 80px);font-size:min(1.8055555556vw, 26px)}}#right.svelte-5uetxy.svelte-5uetxy{background:linear-gradient(180deg, #1d2030 0%, rgba(29, 32, 48, 0.25) 100%);border-radius:10px;height:100%;width:100%;position:relative;aspect-ratio:16/9}@media screen and (max-width: 810px){#right.svelte-5uetxy.svelte-5uetxy{aspect-ratio:4/5;width:100%}}.spacer.one.svelte-5uetxy.svelte-5uetxy{width:100%}",
+      code: '#main.svelte-1imiktj.svelte-1imiktj{height:31.25vw;width:100%;display:flex;max-width:1240px}@media screen and (max-width: 810px){#main.svelte-1imiktj.svelte-1imiktj{display:block;height:auto}}@media screen and (min-width: 1240px){#main.svelte-1imiktj.svelte-1imiktj{padding:0px;margin:0px auto;height:min(31.25vw, 450px)}}#left.svelte-1imiktj.svelte-1imiktj{display:flex;align-items:center}@media screen and (max-width: 810px){#left.svelte-1imiktj.svelte-1imiktj{height:auto}}#left.svelte-1imiktj .spacer.two.svelte-1imiktj{height:2.7777777778vw}@media screen and (max-width: 810px){#left.svelte-1imiktj .spacer.two.svelte-1imiktj{height:2.7777777778vw}}@media screen and (min-width: 1240px){#left.svelte-1imiktj .spacer.two.svelte-1imiktj{height:min(2.7777777778vw, 40px)}}#left.svelte-1imiktj #bs.svelte-1imiktj{height:26.7361111111vw}@media screen and (min-width: 1240px){#left.svelte-1imiktj #bs.svelte-1imiktj{height:min(26.7361111111vw, 385px)}}@media screen and (max-width: 810px){#left.svelte-1imiktj #bs.svelte-1imiktj{height:auto;width:100%}}#left.svelte-1imiktj #title-box.svelte-1imiktj{position:relative;height:50%}@media screen and (max-width: 810px){#left.svelte-1imiktj #title-box.svelte-1imiktj{height:100%}}#left.svelte-1imiktj #title.svelte-1imiktj{font-size:6.25vw;font-weight:250;line-height:101%;width:27.7777777778vw;height:14.5833333333vw}@media screen and (max-width: 810px){#left.svelte-1imiktj #title.svelte-1imiktj{font-size:80px}}@media screen and (min-width: 1240px){#left.svelte-1imiktj #title.svelte-1imiktj{font-size:min(6.25vw, 90px);width:min(27.7777777778vw, 400px);height:min(14.5833333333vw, 210px)}}#left.svelte-1imiktj #title b.svelte-1imiktj{font-weight:700}@media screen and (max-width: 810px){#left.svelte-1imiktj #title.svelte-1imiktj{width:100%;height:auto;font-size:65px;padding-bottom:20px}}#left.svelte-1imiktj #line-animation.svelte-1imiktj{position:absolute;top:63%;left:-20px;overflow:hidden;height:40%;max-width:0;animation:svelte-1imiktj-appear 3s cubic-bezier(0.32, 0, 0.67, 0) 0.3s forwards}@media screen and (max-width: 810px){#left.svelte-1imiktj #line-animation.svelte-1imiktj{top:60%;left:-10px}}@keyframes svelte-1imiktj-appear{0%{max-width:0;opacity:100%}50%{max-width:400px;opacity:100%}90%{max-width:400px;opacity:100%}100%{display:none;max-width:400px;opacity:0%}}#left.svelte-1imiktj #line.svelte-1imiktj{width:27.7777777778vw}@media screen and (min-width: 1240px){#left.svelte-1imiktj #line.svelte-1imiktj{width:min(27.7777777778vw, 400px)}}@media screen and (max-width: 810px){#left.svelte-1imiktj #line.svelte-1imiktj{width:max(27.7777777778vw, 300px)}}#left.svelte-1imiktj #button-container.svelte-1imiktj{display:flex}#left.svelte-1imiktj #button-container button.svelte-1imiktj{cursor:pointer;height:3.8194444444vw;font-size:1.3888888889vw}@media screen and (max-width: 850px){#left.svelte-1imiktj #button-container button.svelte-1imiktj{font-size:max(1.1111111111vw, 16px);min-height:55px}}@media screen and (max-width: 810px){#left.svelte-1imiktj #button-container button.svelte-1imiktj{font-size:138%}}@media screen and (min-width: 1240px){#left.svelte-1imiktj #button-container button.svelte-1imiktj{height:min(3.8194444444vw, 55px);font-size:min(1.3888888889vw, 20px)}}#left.svelte-1imiktj #button-container .primary.svelte-1imiktj{aspect-ratio:35/11;width:12.1527777778vw;color:#74252b;font-weight:250;box-shadow:none;border:none;background:#ffb3b3;border-radius:0.6944444444vw;display:grid;place-items:center}@media screen and (max-width: 810px){#left.svelte-1imiktj #button-container .primary.svelte-1imiktj{width:49%}}@media screen and (min-width: 1240px){#left.svelte-1imiktj #button-container .primary.svelte-1imiktj{width:min(12.1527777778vw, 175px);border-radius:min(0.6944444444vw, 10px)}}#left.svelte-1imiktj #button-container .spacer.three.svelte-1imiktj{width:1.0416666667vw}@media screen and (min-width: 1240px){#left.svelte-1imiktj #button-container .spacer.three.svelte-1imiktj{width:min(1.0416666667vw, 15px)}}#left.svelte-1imiktj #button-container .secondary.svelte-1imiktj{aspect-ratio:42/11;width:15.2777777778vw;color:#fffffb;box-shadow:none;border:1px solid #ffdede;background:#fb768100;border-radius:0.6944444444vw;display:grid;place-items:center}@media screen and (max-width: 810px){#left.svelte-1imiktj #button-container .secondary.svelte-1imiktj{width:49%}}@media screen and (min-width: 1240px){#left.svelte-1imiktj #button-container .secondary.svelte-1imiktj{width:min(15.2777777778vw, 220px);border-radius:min(0.6944444444vw, 10px)}}#left.svelte-1imiktj #button-container .secondary #big.svelte-1imiktj{display:block}#left.svelte-1imiktj #button-container .secondary #small.svelte-1imiktj{display:none}@media screen and (max-width: 1050px){#left.svelte-1imiktj #button-container .secondary #big.svelte-1imiktj{display:none}#left.svelte-1imiktj #button-container .secondary #small.svelte-1imiktj{display:block}}@media screen and (max-width: 810px){#left.svelte-1imiktj #button-container.svelte-1imiktj{padding-bottom:50px}}@media screen and (max-width: 810px){#left.svelte-1imiktj.svelte-1imiktj{width:100%}}#left.svelte-1imiktj #blurb.svelte-1imiktj{width:27.7777777778vw;height:5.5555555556vw;font-family:"Inter var";font-size:1.8055555556vw;font-style:normal;font-weight:250;line-height:154%;letter-spacing:0em;text-align:left;color:#fffffb;opacity:0.6}@media screen and (max-width: 810px){#left.svelte-1imiktj #blurb.svelte-1imiktj{width:100%;height:auto;padding-bottom:20px}}@media screen and (max-width: 810px){#left.svelte-1imiktj #blurb.svelte-1imiktj{font-size:20px}}@media screen and (min-width: 1240px){#left.svelte-1imiktj #blurb.svelte-1imiktj{width:min(27.7777777778vw, 400px);height:min(5.5555555556vw, 80px);font-size:min(1.8055555556vw, 26px)}}#right.svelte-1imiktj.svelte-1imiktj{background:linear-gradient(180deg, #1d2030 0%, rgba(29, 32, 48, 0.25) 100%);border-radius:10px;height:100%;width:100%;position:relative;aspect-ratio:16/9}@media screen and (max-width: 810px){#right.svelte-1imiktj.svelte-1imiktj{aspect-ratio:4/5;width:100%}}.spacer.one.svelte-1imiktj.svelte-1imiktj{width:100%}',
       map: null
     };
     Splash = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       const stringArray = ["Desktop", "Instantly", "Natively", "Different"];
       let index = 0;
       $$result.css.add(css$4);
-      return `<div id="${"main"}" class="${"d svelte-5uetxy"}"><div id="${"left"}" class="${"svelte-5uetxy"}"><div id="${"bs"}" class="${"svelte-5uetxy"}"><div id="${"title-box"}" class="${"svelte-5uetxy"}"><div id="${"title"}" class="${"svelte-5uetxy"}"><b>Remote</b> <br> 
+      return `<div id="${"main"}" class="${"d svelte-1imiktj"}"><div id="${"left"}" class="${"svelte-1imiktj"}"><div id="${"bs"}" class="${"svelte-1imiktj"}"><div id="${"title-box"}" class="${"svelte-1imiktj"}"><div id="${"title"}" class="${"svelte-1imiktj"}"><b class="${"svelte-1imiktj"}">Remote</b> <br>
 					<span>${escape(stringArray[index])}</span></div>
-				<div id="${"line-animation"}" class="${"svelte-5uetxy"}"><img id="${"line"}" src="${"./crossout.svg"}" alt="${"pink line crossing out the word desktop"}" class="${"svelte-5uetxy"}"></div></div>
-			<div id="${"blurb"}" class="${"svelte-5uetxy"}">Enjoy local app streaming that feels completely native.</div>
-			<div class="${"spacer two svelte-5uetxy"}"></div>
-			<div id="${"button-container"}" class="${"svelte-5uetxy"}"><button class="${"secondary doc svelte-5uetxy"}"><div id="${"big"}" class="${"svelte-5uetxy"}"><div class="${"cont"}" style="${"display: flex"}">Documentation <div class="${"spacer"}" style="${"width:10px"}"></div>
+				<div id="${"line-animation"}" class="${"svelte-1imiktj"}"><img id="${"line"}" src="${"./crossout.svg"}" alt="${"pink line crossing out the word desktop"}" class="${"svelte-1imiktj"}"></div></div>
+			<div id="${"blurb"}" class="${"svelte-1imiktj"}">Enjoy local app streaming that feels completely native.</div>
+			<div class="${"spacer two svelte-1imiktj"}"></div>
+			<div id="${"button-container"}" class="${"svelte-1imiktj"}"><button class="${"secondary doc svelte-1imiktj"}"><div id="${"big"}" class="${"svelte-1imiktj"}"><div class="${"cont"}" style="${"display: flex"}">Documentation <div class="${"spacer"}" style="${"width:10px"}"></div>
 							<img src="${"./arrow-docs.svg"}" alt="${"arrow"}"></div></div>
-					<div id="${"small"}" class="${"svelte-5uetxy"}">Docs</div></button>
-				<div class="${"spacer three svelte-5uetxy"}"></div>
-					<button class="${"primary download svelte-5uetxy"}"><div class="${"cont"}" style="${"display: flex"}">Read <div class="${"spacer"}" style="${"width:15px"}"></div>
-							<img style="${"transform: rotate(90deg);"}" src="${"./arrow-read.svg"}" alt="${"arrow"}"></div></button></div></div></div>
-	<div class="${"spacer one svelte-5uetxy"}"></div>
-	<div id="${"right"}" class="${"svelte-5uetxy"}">${validate_component(Image_gallery, "Gallery").$$render($$result, {}, {}, {})}</div>
+					<div id="${"small"}" class="${"svelte-1imiktj"}">Docs</div></button>
+				<div class="${"spacer three svelte-1imiktj"}"></div>
+				<button class="${"primary download svelte-1imiktj"}"><div class="${"cont"}" style="${"display: flex"}">Read <div class="${"spacer"}" style="${"width:15px"}"></div>
+						<img style="${"transform: rotate(90deg);"}" src="${"./arrow-read.svg"}" alt="${"arrow"}"></div></button></div></div></div>
+	<div class="${"spacer one svelte-1imiktj"}"></div>
+	<div id="${"right"}" class="${"svelte-1imiktj"}">${validate_component(Image_gallery, "Gallery").$$render($$result, {}, {}, {})}</div>
 </div>`;
     });
     css$3 = {
@@ -6105,43 +6104,43 @@ var init_index_svelte = __esm({
   </div>`;
     });
     css$22 = {
-      code: "#ft_main.svelte-xmrz3y.svelte-xmrz3y{width:100%;height:60.4166666667vw}@media screen and (max-width: 810px){#ft_main.svelte-xmrz3y.svelte-xmrz3y{height:auto}}@media screen and (min-width: 1240px){#ft_main.svelte-xmrz3y.svelte-xmrz3y{max-width:1240px;height:min(60.4166666667vw, 870px);padding:0px;margin:0px auto}}#ft_main.svelte-xmrz3y .container.svelte-xmrz3y{display:flex}@media screen and (max-width: 810px){#ft_main.svelte-xmrz3y .container.svelte-xmrz3y{display:block;height:auto}}#ft_main.svelte-xmrz3y .container .ft.svelte-xmrz3y{height:28.4722222222vw;aspect-ratio:595/410;background:cornflowerblue;border-radius:10px}@media screen and (max-width: 810px){#ft_main.svelte-xmrz3y .container .ft.svelte-xmrz3y{aspect-ratio:4/5;height:auto;width:100%}}@media screen and (min-width: 1240px){#ft_main.svelte-xmrz3y .container .ft.svelte-xmrz3y{height:min(28.4722222222vw, 410px)}}#ft_main.svelte-xmrz3y .container .ft .space-gutter.svelte-xmrz3y{padding:2.0833333333vw 3.4722222222vw 30px 2.0833333333vw}@media screen and (max-width: 810px){#ft_main.svelte-xmrz3y .container .ft .space-gutter.svelte-xmrz3y{padding:35px 30px}}@media screen and (min-width: 1240px){#ft_main.svelte-xmrz3y .container .ft .space-gutter.svelte-xmrz3y{padding:min(2.0833333333vw, 30px) min(3.4722222222vw, 50px) 30px min(2.0833333333vw, 30px)}}#ft_main.svelte-xmrz3y .container .ft .illus.svelte-xmrz3y{aspect-ratio:1/1;width:3.8194444444vw}@media screen and (max-width: 810px){#ft_main.svelte-xmrz3y .container .ft .illus.svelte-xmrz3y{width:max(3.8194444444vw, 55px)}}@media screen and (min-width: 1240px){#ft_main.svelte-xmrz3y .container .ft .illus.svelte-xmrz3y{width:min(3.8194444444vw, 55px)}}#ft_main.svelte-xmrz3y .container .ft .spacer.one.feature.svelte-xmrz3y{width:100%;height:1.7361111111vw}@media screen and (max-width: 810px){#ft_main.svelte-xmrz3y .container .ft .spacer.one.feature.svelte-xmrz3y{height:max(1.7361111111vw, 25px)}}@media screen and (min-width: 1240px){#ft_main.svelte-xmrz3y .container .ft .spacer.one.feature.svelte-xmrz3y{height:min(1.7361111111vw, 25px)}}#ft_main.svelte-xmrz3y .container .ft .title.svelte-xmrz3y{width:29.1666666667vw;font-family:Inter;font-style:normal;font-weight:bold;font-size:2.5694444444vw;line-height:120%;color:#fffffb}@media screen and (max-width: 810px){#ft_main.svelte-xmrz3y .container .ft .title.svelte-xmrz3y{font-size:max(2.5694444444vw, 37px);width:100%}}@media screen and (min-width: 1240px){#ft_main.svelte-xmrz3y .container .ft .title.svelte-xmrz3y{width:min(29.1666666667vw, 420px);font-size:min(2.5694444444vw, 37px)}}#ft_main.svelte-xmrz3y .container .ft .spacer.two.feature.svelte-xmrz3y{width:100%;height:0.6944444444vw}@media screen and (max-width: 810px){#ft_main.svelte-xmrz3y .container .ft .spacer.two.feature.svelte-xmrz3y{height:max(0.6944444444vw, 20px)}}@media screen and (min-width: 1240px){#ft_main.svelte-xmrz3y .container .ft .spacer.two.feature.svelte-xmrz3y{height:min(0.6944444444vw, 10px)}}#ft_main.svelte-xmrz3y .container .ft .des.svelte-xmrz3y{font-family:Inter;font-style:normal;font-weight:normal;font-size:1.3888888889vw;line-height:150%;color:#fffbfc;opacity:0.75}@media screen and (max-width: 810px){#ft_main.svelte-xmrz3y .container .ft .des.svelte-xmrz3y{font-size:max(1.3888888889vw, 20px)}}@media screen and (min-width: 1240px){#ft_main.svelte-xmrz3y .container .ft .des.svelte-xmrz3y{font-size:min(1.3888888889vw, 20px)}}#ft_main.svelte-xmrz3y .container .ft.one.svelte-xmrz3y{background:radial-gradient(100% 102.87% at 100% 102.87%, #1d2030 0%, rgba(29, 32, 48, 0.25) 71.95%)}#ft_main.svelte-xmrz3y .container .ft.two.svelte-xmrz3y{background:radial-gradient(100% 100% at 0% 100%, #1d2030 0%, rgba(29, 32, 48, 0.25) 71.95%)}#ft_main.svelte-xmrz3y .container .ft.three.svelte-xmrz3y{background:radial-gradient(102.54% 63.2% at 100% 0%, #1d2030 0%, rgba(29, 32, 48, 0.25) 71.95%)}#ft_main.svelte-xmrz3y .container .ft.four.svelte-xmrz3y{background:radial-gradient(101.51% 98.6% at 1.44% 1.49%, #1d2030 0%, rgba(29, 32, 48, 0.25) 71.95%)}#ft_main.svelte-xmrz3y .spacer.one.svelte-xmrz3y{width:3.4722222222vw}@media screen and (max-width: 810px){#ft_main.svelte-xmrz3y .spacer.one.svelte-xmrz3y{width:auto;height:50px}}@media screen and (min-width: 1240px){#ft_main.svelte-xmrz3y .spacer.one.svelte-xmrz3y{width:min(3.4722222222vw, 50px)}}#ft_main.svelte-xmrz3y .spacer.two.svelte-xmrz3y{height:3.4722222222vw}@media screen and (max-width: 810px){#ft_main.svelte-xmrz3y .spacer.two.svelte-xmrz3y{width:auto;height:50px}}@media screen and (min-width: 1240px){#ft_main.svelte-xmrz3y .spacer.two.svelte-xmrz3y{height:min(3.4722222222vw, 50px)}}",
+      code: '#ft_main.svelte-bs4sn6.svelte-bs4sn6{width:100%;height:60.4166666667vw}@media screen and (max-width: 810px){#ft_main.svelte-bs4sn6.svelte-bs4sn6{height:auto}}@media screen and (min-width: 1240px){#ft_main.svelte-bs4sn6.svelte-bs4sn6{max-width:1240px;height:min(60.4166666667vw, 870px);padding:0px;margin:0px auto}}#ft_main.svelte-bs4sn6 .container.svelte-bs4sn6{display:flex}@media screen and (max-width: 810px){#ft_main.svelte-bs4sn6 .container.svelte-bs4sn6{display:block;height:auto}}#ft_main.svelte-bs4sn6 .container .ft.svelte-bs4sn6{height:28.4722222222vw;aspect-ratio:595/410;background:cornflowerblue;border-radius:10px}@media screen and (max-width: 810px){#ft_main.svelte-bs4sn6 .container .ft.svelte-bs4sn6{aspect-ratio:4/5;height:auto;width:100%}}@media screen and (min-width: 1240px){#ft_main.svelte-bs4sn6 .container .ft.svelte-bs4sn6{height:min(28.4722222222vw, 410px)}}#ft_main.svelte-bs4sn6 .container .ft .space-gutter.svelte-bs4sn6{padding:2.0833333333vw 3.4722222222vw 30px 2.0833333333vw}@media screen and (max-width: 810px){#ft_main.svelte-bs4sn6 .container .ft .space-gutter.svelte-bs4sn6{padding:35px 30px}}@media screen and (min-width: 1240px){#ft_main.svelte-bs4sn6 .container .ft .space-gutter.svelte-bs4sn6{padding:min(2.0833333333vw, 30px) min(3.4722222222vw, 50px) 30px min(2.0833333333vw, 30px)}}#ft_main.svelte-bs4sn6 .container .ft .illus.svelte-bs4sn6{aspect-ratio:1/1;width:3.8194444444vw}@media screen and (max-width: 810px){#ft_main.svelte-bs4sn6 .container .ft .illus.svelte-bs4sn6{width:max(3.8194444444vw, 55px)}}@media screen and (min-width: 1240px){#ft_main.svelte-bs4sn6 .container .ft .illus.svelte-bs4sn6{width:min(3.8194444444vw, 55px)}}#ft_main.svelte-bs4sn6 .container .ft .spacer.one.feature.svelte-bs4sn6{width:100%;height:1.7361111111vw}@media screen and (max-width: 810px){#ft_main.svelte-bs4sn6 .container .ft .spacer.one.feature.svelte-bs4sn6{height:max(1.7361111111vw, 25px)}}@media screen and (min-width: 1240px){#ft_main.svelte-bs4sn6 .container .ft .spacer.one.feature.svelte-bs4sn6{height:min(1.7361111111vw, 25px)}}#ft_main.svelte-bs4sn6 .container .ft .title.svelte-bs4sn6{width:29.1666666667vw;font-family:"Inter var";font-style:normal;font-weight:700;font-size:2.5694444444vw;line-height:120%;color:#fffffb}@media screen and (max-width: 810px){#ft_main.svelte-bs4sn6 .container .ft .title.svelte-bs4sn6{font-size:max(2.5694444444vw, 37px);width:100%}}@media screen and (min-width: 1240px){#ft_main.svelte-bs4sn6 .container .ft .title.svelte-bs4sn6{width:min(29.1666666667vw, 420px);font-size:min(2.5694444444vw, 37px)}}#ft_main.svelte-bs4sn6 .container .ft .spacer.two.feature.svelte-bs4sn6{width:100%;height:0.6944444444vw}@media screen and (max-width: 810px){#ft_main.svelte-bs4sn6 .container .ft .spacer.two.feature.svelte-bs4sn6{height:max(0.6944444444vw, 20px)}}@media screen and (min-width: 1240px){#ft_main.svelte-bs4sn6 .container .ft .spacer.two.feature.svelte-bs4sn6{height:min(0.6944444444vw, 10px)}}#ft_main.svelte-bs4sn6 .container .ft .des.svelte-bs4sn6{font-family:"Inter var";font-style:normal;font-weight:250;font-size:1.3888888889vw;line-height:150%;color:#fffbfc;opacity:0.75}@media screen and (max-width: 810px){#ft_main.svelte-bs4sn6 .container .ft .des.svelte-bs4sn6{font-size:max(1.3888888889vw, 20px)}}@media screen and (min-width: 1240px){#ft_main.svelte-bs4sn6 .container .ft .des.svelte-bs4sn6{font-size:min(1.3888888889vw, 20px)}}#ft_main.svelte-bs4sn6 .container .ft.one.svelte-bs4sn6{background:radial-gradient(100% 102.87% at 100% 102.87%, #1d2030 0%, rgba(29, 32, 48, 0.25) 71.95%)}#ft_main.svelte-bs4sn6 .container .ft.two.svelte-bs4sn6{background:radial-gradient(100% 100% at 0% 100%, #1d2030 0%, rgba(29, 32, 48, 0.25) 71.95%)}#ft_main.svelte-bs4sn6 .container .ft.three.svelte-bs4sn6{background:radial-gradient(102.54% 63.2% at 100% 0%, #1d2030 0%, rgba(29, 32, 48, 0.25) 71.95%)}#ft_main.svelte-bs4sn6 .container .ft.four.svelte-bs4sn6{background:radial-gradient(101.51% 98.6% at 1.44% 1.49%, #1d2030 0%, rgba(29, 32, 48, 0.25) 71.95%)}#ft_main.svelte-bs4sn6 .spacer.one.svelte-bs4sn6{width:3.4722222222vw}@media screen and (max-width: 810px){#ft_main.svelte-bs4sn6 .spacer.one.svelte-bs4sn6{width:auto;height:50px}}@media screen and (min-width: 1240px){#ft_main.svelte-bs4sn6 .spacer.one.svelte-bs4sn6{width:min(3.4722222222vw, 50px)}}#ft_main.svelte-bs4sn6 .spacer.two.svelte-bs4sn6{height:3.4722222222vw}@media screen and (max-width: 810px){#ft_main.svelte-bs4sn6 .spacer.two.svelte-bs4sn6{width:auto;height:50px}}@media screen and (min-width: 1240px){#ft_main.svelte-bs4sn6 .spacer.two.svelte-bs4sn6{height:min(3.4722222222vw, 50px)}}',
       map: null
     };
     Features = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$22);
-      return `<div id="${"ft_main"}" class="${"d svelte-xmrz3y"}"><div class="${"container one svelte-xmrz3y"}"><div class="${"ft one svelte-xmrz3y"}"><div class="${"space-gutter svelte-xmrz3y"}"><img class="${"illus svelte-xmrz3y"}" src="${"/ft-illus-one.svg"}" alt="${"heart"}">
-          <div class="${"spacer one feature svelte-xmrz3y"}"></div>
-          <div class="${"title svelte-xmrz3y"}">Get interfaces that feel native.</div>
-          <div class="${"spacer two feature svelte-xmrz3y"}"></div>
-          <div class="${"des svelte-xmrz3y"}">Feather\u2019s novel approach to remote streaming captures and sends
+      return `<div id="${"ft_main"}" class="${"d svelte-bs4sn6"}"><div class="${"container one svelte-bs4sn6"}"><div class="${"ft one svelte-bs4sn6"}"><div class="${"space-gutter svelte-bs4sn6"}"><img class="${"illus svelte-bs4sn6"}" src="${"/ft-illus-one.svg"}" alt="${"heart"}">
+          <div class="${"spacer one feature svelte-bs4sn6"}"></div>
+          <div class="${"title svelte-bs4sn6"}">Get interfaces that feel native.</div>
+          <div class="${"spacer two feature svelte-bs4sn6"}"></div>
+          <div class="${"des svelte-bs4sn6"}">Feather\u2019s novel approach to remote streaming captures and sends
             individual windows to you. This makes the stream much lighter, the UI
             more defined and the overall user experience more native.
           </div></div></div>
-      <div class="${"spacer one svelte-xmrz3y"}"></div>
-      <div class="${"ft two svelte-xmrz3y"}"><div class="${"space-gutter svelte-xmrz3y"}"><img class="${"illus svelte-xmrz3y"}" src="${"./ft-illus-two.svg"}" alt="${"heart"}">
-          <div class="${"spacer one feature svelte-xmrz3y"}"></div>
-          <div class="${"title svelte-xmrz3y"}">Work faster, from any device.</div>
-          <div class="${"spacer two feature svelte-xmrz3y"}"></div>
-          <div class="${"des svelte-xmrz3y"}">Connect your devices with Feather and run complex apps with ease on
+      <div class="${"spacer one svelte-bs4sn6"}"></div>
+      <div class="${"ft two svelte-bs4sn6"}"><div class="${"space-gutter svelte-bs4sn6"}"><img class="${"illus svelte-bs4sn6"}" src="${"./ft-illus-two.svg"}" alt="${"heart"}">
+          <div class="${"spacer one feature svelte-bs4sn6"}"></div>
+          <div class="${"title svelte-bs4sn6"}">Work faster, from any device.</div>
+          <div class="${"spacer two feature svelte-bs4sn6"}"></div>
+          <div class="${"des svelte-bs4sn6"}">Connect your devices with Feather and run complex apps with ease on
             everything. Get better performance on your portable devices. Work from
             anywhere you desire.
           </div></div></div></div>
-    <div class="${"spacer two svelte-xmrz3y"}"></div>
-    <div class="${"container two svelte-xmrz3y"}"><div class="${"ft three svelte-xmrz3y"}"><div class="${"space-gutter svelte-xmrz3y"}"><img class="${"illus svelte-xmrz3y"}" src="${"./ft-illus-three.svg"}" alt="${"heart"}">
-          <div class="${"spacer one feature svelte-xmrz3y"}"></div>
-          <div class="${"title svelte-xmrz3y"}">Make your own Edge Nodes.</div>
-          <div class="${"spacer two feature svelte-xmrz3y"}"></div>
-          <div class="${"des svelte-xmrz3y"}">Feather pushes the cloud closer to the user by allowing you to
+    <div class="${"spacer two svelte-bs4sn6"}"></div>
+    <div class="${"container two svelte-bs4sn6"}"><div class="${"ft three svelte-bs4sn6"}"><div class="${"space-gutter svelte-bs4sn6"}"><img class="${"illus svelte-bs4sn6"}" src="${"./ft-illus-three.svg"}" alt="${"heart"}">
+          <div class="${"spacer one feature svelte-bs4sn6"}"></div>
+          <div class="${"title svelte-bs4sn6"}">Make your own Edge Nodes.</div>
+          <div class="${"spacer two feature svelte-bs4sn6"}"></div>
+          <div class="${"des svelte-bs4sn6"}">Feather pushes the cloud closer to the user by allowing you to
             seamlessly create your own cloud. Make your own edge nodes and
             experience lower latency and an easy wireless connection.
           </div></div></div>
-      <div class="${"spacer one svelte-xmrz3y"}"></div>
-      <div class="${"ft four svelte-xmrz3y"}"><div class="${"space-gutter svelte-xmrz3y"}"><img class="${"illus svelte-xmrz3y"}" src="${"./ft-illus-four.svg"}" alt="${"heart"}">
-          <div class="${"spacer one feature svelte-xmrz3y"}"></div>
-          <div class="${"title svelte-xmrz3y"}">Remotely access all the files you need.</div>
-          <div class="${"spacer two feature svelte-xmrz3y"}"></div>
-          <div class="${"des svelte-xmrz3y"}">Speed up collaboration and make file sharing within teams completely
+      <div class="${"spacer one svelte-bs4sn6"}"></div>
+      <div class="${"ft four svelte-bs4sn6"}"><div class="${"space-gutter svelte-bs4sn6"}"><img class="${"illus svelte-bs4sn6"}" src="${"./ft-illus-four.svg"}" alt="${"heart"}">
+          <div class="${"spacer one feature svelte-bs4sn6"}"></div>
+          <div class="${"title svelte-bs4sn6"}">Remotely access all the files you need.</div>
+          <div class="${"spacer two feature svelte-bs4sn6"}"></div>
+          <div class="${"des svelte-bs4sn6"}">Speed up collaboration and make file sharing within teams completely
             seamless. Create a hub for all your files &amp; gain instant access to
             them from any of your devices whenever you want with Feather.
           </div></div></div></div>
@@ -6199,9 +6198,9 @@ var entry3, js3, css8;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-5a76ce25.js";
-    js3 = ["pages/index.svelte-5a76ce25.js", "chunks/vendor-41622600.js", "chunks/form-a0ceccba.js"];
-    css8 = ["assets/pages/index.svelte-b436054d.css", "assets/vendor-2634b1a9.css", "assets/form-77d88580.css"];
+    entry3 = "pages/index.svelte-b5a7d310.js";
+    js3 = ["pages/index.svelte-b5a7d310.js", "chunks/vendor-00a3e6de.js", "chunks/form-39ee9b33.js"];
+    css8 = ["assets/pages/index.svelte-8ae34b1b.css", "assets/vendor-2634b1a9.css", "assets/form-77d88580.css"];
   }
 });
 
@@ -20157,13 +20156,13 @@ RUNTIME_FLAGS <span class="token operator">=</span> --runtime stub
   }
 });
 
-// .svelte-kit/output/server/chunks/thumbnail-a1549ba0.js
+// .svelte-kit/output/server/chunks/thumbnail-57767130.js
 var css9, Thumbnail;
-var init_thumbnail_a1549ba0 = __esm({
-  ".svelte-kit/output/server/chunks/thumbnail-a1549ba0.js"() {
+var init_thumbnail_57767130 = __esm({
+  ".svelte-kit/output/server/chunks/thumbnail-57767130.js"() {
     init_index_6bc633e9();
     css9 = {
-      code: '.title.svelte-1p0k14s{line-height:1.25;font-size:1.8055555556vw}@media screen and (max-width: 810px){.title.svelte-1p0k14s{font-size:max(1.8055555556vw, 26px)}}@media screen and (min-width: 1240px){.title.svelte-1p0k14s{font-size:min(1.8055555556vw, 26px)}}.tag.svelte-1p0k14s{margin-right:10px;text-decoration:none}.tags.svelte-1p0k14s{display:flex;flex-direction:row}#arrow-icon.svelte-1p0k14s{content:url("/arrow.svg")}.content-footer.svelte-1p0k14s{display:flex;justify-content:space-between;align-items:center}.content.svelte-1p0k14s{padding-left:20px;padding-right:20px}.summary.svelte-1p0k14s{width:100%;min-height:100px;line-height:1.6;font-size:1.1111111111vw;opacity:0.75}@media screen and (max-width: 810px){.summary.svelte-1p0k14s{font-size:max(1.1111111111vw, 16px)}}@media screen and (min-width: 1240px){.summary.svelte-1p0k14s{font-size:min(1.1111111111vw, 16px)}}.thumbnail.svelte-1p0k14s{aspect-ratio:38/47;min-width:24.3055555556vw;height:485px;border-radius:0.6944444444vw;background:#1a1e2c}@media screen and (max-width: 810px){.thumbnail.svelte-1p0k14s{max-width:100%;height:auto;width:100%}}@media screen and (min-width: 1240px){.thumbnail.svelte-1p0k14s{min-width:min(24.3055555556vw, 350px);width:min(26.3888888889vw, 380px);border-radius:min(0.6944444444vw, 10px)}}img.svelte-1p0k14s{border-radius:10px 10px 0 0;width:100%;object-fit:contain}h2.svelte-1p0k14s{word-wrap:break-word;font-size:1.8055555556vw;min-height:65px}@media screen and (max-width: 810px){h2.svelte-1p0k14s{font-size:max(1.8055555556vw, 26px)}}@media screen and (min-width: 1240px){h2.svelte-1p0k14s{font-size:min(1.8055555556vw, 26px)}}',
+      code: '.image.svelte-11z53b.svelte-11z53b{overflow:hidden;border-radius:10px 10px 0 0}.title.svelte-11z53b.svelte-11z53b{line-height:1.25;font-size:1.8055555556vw}@media screen and (max-width: 810px){.title.svelte-11z53b.svelte-11z53b{font-size:max(1.8055555556vw, 26px)}}@media screen and (min-width: 1240px){.title.svelte-11z53b.svelte-11z53b{font-size:min(1.8055555556vw, 26px)}}.tag.svelte-11z53b.svelte-11z53b{margin-right:10px;text-decoration:none}.tags.svelte-11z53b.svelte-11z53b{display:flex;flex-direction:row}#arrow-icon.svelte-11z53b.svelte-11z53b{content:url("/arrow.svg")}.content-footer.svelte-11z53b.svelte-11z53b{display:flex;justify-content:space-between;align-items:center}.content.svelte-11z53b.svelte-11z53b{padding-left:20px;padding-right:20px}.summary.svelte-11z53b.svelte-11z53b{width:100%;min-height:100px;line-height:1.6;font-size:1.1111111111vw;opacity:0.75}@media screen and (max-width: 810px){.summary.svelte-11z53b.svelte-11z53b{font-size:max(1.1111111111vw, 16px)}}@media screen and (min-width: 1240px){.summary.svelte-11z53b.svelte-11z53b{font-size:min(1.1111111111vw, 16px)}}.thumbnail.svelte-11z53b.svelte-11z53b{aspect-ratio:38/47;min-width:24.3055555556vw;height:485px;border-radius:0.6944444444vw;background:#1a1e2c}@media screen and (max-width: 810px){.thumbnail.svelte-11z53b.svelte-11z53b{max-width:100%;height:auto;width:100%}}@media screen and (min-width: 1240px){.thumbnail.svelte-11z53b.svelte-11z53b{min-width:min(24.3055555556vw, 350px);width:min(26.3888888889vw, 380px);border-radius:min(0.6944444444vw, 10px)}}a.svelte-11z53b.svelte-11z53b{display:block}img.svelte-11z53b.svelte-11z53b{border-radius:10px 10px 0 0;width:100%;object-fit:contain;transition:transform 0.4s;display:block}.thumbnail.svelte-11z53b:hover img.svelte-11z53b{transform:scale(1.5)}h2.svelte-11z53b.svelte-11z53b{word-wrap:break-word;font-size:1.8055555556vw;min-height:65px}@media screen and (max-width: 810px){h2.svelte-11z53b.svelte-11z53b{font-size:max(1.8055555556vw, 26px)}}@media screen and (min-width: 1240px){h2.svelte-11z53b.svelte-11z53b{font-size:min(1.8055555556vw, 26px)}}',
       map: null
     };
     Thumbnail = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -20183,15 +20182,13 @@ var init_thumbnail_a1549ba0 = __esm({
       if ($$props.thumbnail === void 0 && $$bindings.thumbnail && thumbnail2 !== void 0)
         $$bindings.thumbnail(thumbnail2);
       $$result.css.add(css9);
-      return `<div class="${"thumbnail svelte-1p0k14s"}"><a sveltekit:prefetch${add_attribute("href", link, 0)}><img${add_attribute("src", thumbnail2, 0)} alt="${"Thumbnail"}" class="${"svelte-1p0k14s"}"></a>
-	<div class="${"content svelte-1p0k14s"}"><a sveltekit:prefetch${add_attribute("href", link, 0)}><h2 class="${"title truncate header svelte-1p0k14s"}">${escape(title2)}</h2>
-			<div class="${"summary truncate svelte-1p0k14s"}">${escape(summary2)}</div></a>
-		
-		<div class="${"content-footer svelte-1p0k14s"}"><p class="${"tags svelte-1p0k14s"}">${each(tags2, (tag) => `<a sveltekit:prefetch class="${"tag svelte-1p0k14s"}"${add_attribute("href", `tags/${tag}`, 0)}>#${escape(tag)}
-					</a>`)}</p>
-			<a sveltekit:prefetch${add_attribute("href", link, 0)}><div id="${"arrow-icon"}" class="${"svelte-1p0k14s"}"></div></a></div>
-		</div>
-</div>`;
+      return `<a sveltekit:prefetch${add_attribute("href", `/${link}`, 0)} class="${"svelte-11z53b"}"><div class="${"thumbnail svelte-11z53b"}"><div class="${"image svelte-11z53b"}"><img${add_attribute("src", thumbnail2, 0)} alt="${"Thumbnail"}" class="${"svelte-11z53b"}"></div>
+		<div class="${"content svelte-11z53b"}"><h2 class="${"title truncate header svelte-11z53b"}">${escape(title2)}</h2>
+			<div class="${"summary truncate svelte-11z53b"}">${escape(summary2)}</div>
+			<div class="${"content-footer svelte-11z53b"}"><p class="${"tags svelte-11z53b"}">${each(tags2, (tag) => `<a sveltekit:prefetch class="${"tag svelte-11z53b"}"${add_attribute("href", `/tags/${tag}`, 0)}>#${escape(tag)}
+						</a>`)}</p>
+				<div id="${"arrow-icon"}" class="${"svelte-11z53b"}"></div></div></div></div>
+</a>`;
     });
   }
 });
@@ -20219,10 +20216,10 @@ var init_tags_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/tags/_tags_.svelte.js"() {
     init_webgl_b580027c();
     init_index_6bc633e9();
-    init_thumbnail_a1549ba0();
+    init_thumbnail_57767130();
     init_katex();
     css10 = {
-      code: ".container.svelte-13vd4v1{display:flex;flex-direction:column;align-items:center;justify-content:center}.grid.svelte-13vd4v1{display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:50px}",
+      code: ".tags.svelte-zjfayw{padding:35px;font-size:40px;font-weight:300}.container.svelte-zjfayw{display:flex;flex-direction:column;align-items:center;justify-content:center}.grid.svelte-zjfayw{display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:50px}",
       map: null
     };
     allPosts = { "../../lib/posts/1-mandel.md": __glob_1_0, "../../lib/posts/2-webgl.md": __glob_1_1 };
@@ -20236,18 +20233,16 @@ var init_tags_svelte = __esm({
     U5Btagsu5D = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { filteredPosts: filteredPosts2 } = $$props;
       let { tag } = $$props;
-      console.log(filteredPosts2);
       if ($$props.filteredPosts === void 0 && $$bindings.filteredPosts && filteredPosts2 !== void 0)
         $$bindings.filteredPosts(filteredPosts2);
       if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0)
         $$bindings.tag(tag);
       $$result.css.add(css10);
-      return `<div class="${"container svelte-13vd4v1"}"><div>Posts tagged with ${escape(tag)}</div>
-    <div class="${"spacer"}" style="${"padding: 35px"}"></div>
-    <div class="${"grid svelte-13vd4v1"}">${each(filteredPosts2, ({ post, slug: slug2 }) => `${validate_component(Thumbnail, "Thumbnail").$$render($$result, {
+      return `<div class="${"container svelte-zjfayw"}"><div class="${"tags svelte-zjfayw"}">Posts tagged with #${escape(tag)}</div>
+    <div class="${"grid svelte-zjfayw"}">${each(filteredPosts2, ({ post, slug: slug2 }) => `${validate_component(Thumbnail, "Thumbnail").$$render($$result, {
         title: post.metadata.title,
         summary: post.metadata.summary,
-        link: post.metadata.link,
+        link: post.metadata.slug,
         tags: post.metadata.tags,
         thumbnail: post.metadata.thumbnail
       }, {}, {})}`)}</div>
@@ -20269,9 +20264,9 @@ var entry4, js4, css11;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_tags_svelte();
-    entry4 = "pages/tags/_tags_.svelte-8ac41417.js";
-    js4 = ["pages/tags/_tags_.svelte-8ac41417.js", "chunks/2-webgl-6d719442.js", "chunks/vendor-41622600.js", "chunks/thumbnail-574f4ee1.js"];
-    css11 = ["assets/pages/tags/_tags_.svelte-8bcd8f63.css", "assets/vendor-2634b1a9.css", "assets/thumbnail-0d1d48d3.css"];
+    entry4 = "pages/tags/_tags_.svelte-a88d70ca.js";
+    js4 = ["pages/tags/_tags_.svelte-a88d70ca.js", "chunks/2-webgl-9c9f1cb2.js", "chunks/vendor-00a3e6de.js", "chunks/thumbnail-6381b66d.js"];
+    css11 = ["assets/pages/tags/_tags_.svelte-fe12782a.css", "assets/vendor-2634b1a9.css", "assets/thumbnail-b6ad015b.css"];
   }
 });
 
@@ -67414,7 +67409,7 @@ var init_layout_svelte2 = __esm({
 <div class="${"container svelte-uuqhyn"}"><div class="${"spacer hundred svelte-uuqhyn"}"></div>
 	<div class="${"thumbnail svelte-uuqhyn"}"><div class="${"heading-container"}"><div class="${"heading-box svelte-uuqhyn"}"><div class="${"heading svelte-uuqhyn"}"><div class="${"title svelte-uuqhyn"}">${escape(post.title)}</div>
 					<div class="${"spacer ten svelte-uuqhyn"}"></div>
-					<div class="${"meta svelte-uuqhyn"}">${escape(post.author)} - ${escape(new Date(post.date).toDateString())} - ${each(post.tags, (tag) => `<a class="${"tag svelte-uuqhyn"}" sveltekit:prefetch${add_attribute("href", `tags/${tag}`, 0)}>#${escape(tag)}
+					<div class="${"meta svelte-uuqhyn"}">${escape(post.author)} - ${escape(new Date(post.date).toDateString())} - ${each(post.tags, (tag) => `<a class="${"tag svelte-uuqhyn"}" sveltekit:prefetch${add_attribute("href", `/tags/${tag}`, 0)}>#${escape(tag)}
 							</a>`)}</div>
 					<div class="${"spacer twenty svelte-uuqhyn"}"></div></div></div></div></div>
 	<div class="${"content svelte-uuqhyn"}"><div class="${"social-container svelte-uuqhyn"}"><div class="${"sticky-social svelte-uuqhyn"}">${each(socialArray, ({ name, url: url2, icon }, i2) => `${name === "Link" ? `${validate_component(Clipboard, "Clipboard").$$render($$result, { text: "https://feather.systems" + url2 }, {}, {
@@ -67444,9 +67439,9 @@ var entry5, js5, css13;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_layout_svelte2();
-    entry5 = "pages/_slug_/__layout.svelte-1ae5bbe1.js";
-    js5 = ["pages/_slug_/__layout.svelte-1ae5bbe1.js", "chunks/vendor-41622600.js", "chunks/stores-02e64947.js"];
-    css13 = ["assets/pages/_slug_/__layout.svelte-7693d0c0.css", "assets/vendor-2634b1a9.css", "assets/stores-8d0781a8.css"];
+    entry5 = "pages/_slug_/__layout.svelte-4eecb529.js";
+    js5 = ["pages/_slug_/__layout.svelte-4eecb529.js", "chunks/vendor-00a3e6de.js", "chunks/stores-61d2a175.js"];
+    css13 = ["assets/pages/_slug_/__layout.svelte-7693d0c0.css", "assets/vendor-2634b1a9.css", "assets/stores-14f49877.css"];
   }
 });
 
@@ -67503,8 +67498,8 @@ var entry6, js6, css14;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_index_svelte2();
-    entry6 = "pages/_slug_/index.svelte-2ac4dfc6.js";
-    js6 = ["pages/_slug_/index.svelte-2ac4dfc6.js", "chunks/2-webgl-6d719442.js", "chunks/vendor-41622600.js"];
+    entry6 = "pages/_slug_/index.svelte-1d46483b.js";
+    js6 = ["pages/_slug_/index.svelte-1d46483b.js", "chunks/2-webgl-9c9f1cb2.js", "chunks/vendor-00a3e6de.js"];
     css14 = ["assets/vendor-2634b1a9.css"];
   }
 });
@@ -67623,7 +67618,7 @@ var require_reading_time2 = __commonJS({
   }
 });
 
-// .svelte-kit/output/server/chunks/posts-a9826a5b.js
+// .svelte-kit/output/server/chunks/posts-8dc729cf.js
 function groupByTags(array) {
   return array.reduce((acc, value) => {
     const property = value["tag"];
@@ -67652,8 +67647,8 @@ function getRelatedPosts(post) {
   return relatedPosts;
 }
 var import_reading_time, imports, posts3, allTagsAndPosts, categories, filteredPosts;
-var init_posts_a9826a5b = __esm({
-  ".svelte-kit/output/server/chunks/posts-a9826a5b.js"() {
+var init_posts_8dc729cf = __esm({
+  ".svelte-kit/output/server/chunks/posts-8dc729cf.js"() {
     init_webgl_b580027c();
     import_reading_time = __toModule(require_reading_time2());
     imports = { "./posts/1-mandel.md": __glob_1_0, "./posts/2-webgl.md": __glob_1_1 };
@@ -67696,7 +67691,7 @@ async function get() {
 var import_reading_time2;
 var init_blog_json = __esm({
   ".svelte-kit/output/server/entries/endpoints/blog.json.js"() {
-    init_posts_a9826a5b();
+    init_posts_8dc729cf();
     init_webgl_b580027c();
     init_index_6bc633e9();
     init_katex();
@@ -67724,7 +67719,7 @@ function get2({ params }) {
 var import_reading_time3;
 var init_index_json = __esm({
   ".svelte-kit/output/server/entries/endpoints/_slug_/index.json.js"() {
-    init_posts_a9826a5b();
+    init_posts_8dc729cf();
     init_webgl_b580027c();
     init_index_6bc633e9();
     init_katex();
@@ -69159,7 +69154,7 @@ var user_hooks = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module"
 });
-var template = ({ head, body }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<meta name="description" content="" />\n		<link rel="icon" href="/favicon.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		<title>Feather</title>\n\n		<link rel="icon" type="image/png" href="/favicon.png" />\n\n		<!-- Primary tags -->\n		<title>Feather</title>\n		<meta name="title" content="Feather" />\n		<meta\n		name="description"\n		content="Enjoy local app streaming that feels completely native."\n		/>\n\n		<!-- Twitter -->\n		<meta name="twitter:card" content="summary_large_image" />\n		<meta name="twitter:site" content="@Feather_Systems" />\n		<meta name="twitter:text:title" content="Feather" />\n\n		<meta name="twitter:card" content="summary_large_image" />\n		<meta name="twitter:site" content="@Feather_Systems" />\n		<meta name="twitter:creator" content="@Feather_Systems" />\n		<meta\n		name="twitter:image"\n		content="https://feather.systems/Feather-site-thumbnail.png"\n		/>\n\n		<!-- Open Graph -->\n		<meta property="og:type" content="website" />\n		<meta property="og:url" content="https://feather.systems/" />\n		<meta property="og:title" content="Feather" />\n		<meta\n		property="og:description"\n		content="Enjoy local app streaming that feels completely native."\n		/>\n		<meta\n		property="og:image"\n		content="https://5000-copper-beaver-rc3ipd4s.ws-us20.gitpod.io/assets/Feather-site-tumbnail.png"\n		/>\n		<meta\n		property="og:image:alt"\n		content="Feather: Enjoy local app streaming that feels completely native."\n		/>\n\n		<!-- Icons -->\n		<link\n		rel="apple-touch-icon"\n		sizes="180x180"\n		href="/icons/apple-touch-icon.png"\n		/>\n		<link\n		rel="icon"\n		type="image/png"\n		sizes="32x32"\n		href="/icons/favicon-32x32.png"\n		/>\n		<link\n		rel="icon"\n		type="image/png"\n		sizes="16x16"\n		href="/icons/favicon-16x16.png"\n		/>\n		<link rel="manifest" href="/icons/site.webmanifest" />\n		<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#d5615b" />\n		<link rel="shortcut icon" href="/icons/favicon.ico" />\n		<meta name="msapplication-TileColor" content="#da532c" />\n		<meta name="msapplication-config" content="/icons/browserconfig.xml" />\n		<meta name="theme-color" content="#ffffff" />\n		\n		' + head + '\n	</head>\n	<body>\n		<script>0<\/script>\n		<div id="svelte">' + body + "</div>\n	</body>\n</html>\n";
+var template = ({ head, body }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<meta name="description" content="" />\n		<link rel="icon" href="/favicon.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		<link rel="icon" type="image/png" href="/favicon.png" />\n\n		<!-- Primary tags -->\n		<title>Feather</title>\n		<meta name="title" content="Feather" />\n		<meta\n		name="description"\n		content="Enjoy local app streaming that feels completely native."\n		/>\n		<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">\n\n		<!-- Twitter -->\n		<meta name="twitter:card" content="summary_large_image" />\n		<meta name="twitter:site" content="@Feather_Systems" />\n		<meta name="twitter:text:title" content="Feather" />\n\n		<meta name="twitter:card" content="summary_large_image" />\n		<meta name="twitter:site" content="@Feather_Systems" />\n		<meta name="twitter:creator" content="@Feather_Systems" />\n		<meta\n		name="twitter:image"\n		content="https://feather.systems/Feather-site-thumbnail.png"\n		/>\n\n		<!-- Open Graph -->\n		<meta property="og:type" content="website" />\n		<meta property="og:url" content="https://feather.systems/" />\n		<meta property="og:title" content="Feather" />\n		<meta\n		property="og:description"\n		content="Enjoy local app streaming that feels completely native."\n		/>\n		<meta\n		property="og:image"\n		content="https://5000-copper-beaver-rc3ipd4s.ws-us20.gitpod.io/assets/Feather-site-tumbnail.png"\n		/>\n		<meta\n		property="og:image:alt"\n		content="Feather: Enjoy local app streaming that feels completely native."\n		/>\n\n		<!-- Icons -->\n		<link\n		rel="apple-touch-icon"\n		sizes="180x180"\n		href="/icons/apple-touch-icon.png"\n		/>\n		<link\n		rel="icon"\n		type="image/png"\n		sizes="32x32"\n		href="/icons/favicon-32x32.png"\n		/>\n		<link\n		rel="icon"\n		type="image/png"\n		sizes="16x16"\n		href="/icons/favicon-16x16.png"\n		/>\n		<link rel="manifest" href="/icons/site.webmanifest" />\n		<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#d5615b" />\n		<link rel="shortcut icon" href="/icons/favicon.ico" />\n		<meta name="msapplication-TileColor" content="#da532c" />\n		<meta name="msapplication-config" content="/icons/browserconfig.xml" />\n		<meta name="theme-color" content="#ffffff" />\n		\n		' + head + '\n	</head>\n	<body>\n		<script>0<\/script>\n		<div id="svelte">' + body + "</div>\n	</body>\n</html>\n";
 var read = null;
 set_paths({ "base": "", "assets": "" });
 var get_hooks = (hooks) => ({
@@ -69212,10 +69207,10 @@ var App = class {
 // .svelte-kit/vercel-tmp/manifest.js
 var manifest = {
   appDir: "_app",
-  assets: new Set(["Feather-site-thumbnail.png", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "logo.svg", "reddit.svg", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
+  assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "logo.svg", "reddit.svg", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
-    mime: { ".png": "image/png", ".svg": "image/svg+xml", ".webp": "image/webp", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json" },
-    entry: { "file": "start-0715acc5.js", "js": ["start-0715acc5.js", "chunks/vendor-41622600.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    mime: { ".png": "image/png", ".woff2": "font/woff2", ".svg": "image/svg+xml", ".webp": "image/webp", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json" },
+    entry: { "file": "start-c2c075c1.js", "js": ["start-c2c075c1.js", "chunks/vendor-00a3e6de.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

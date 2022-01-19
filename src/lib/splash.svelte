@@ -123,7 +123,10 @@
 				width: min(get-vw(400px), 400px);
 				height: min(get-vw(210px), 210px);
 			}
-			font-weight: normal;
+			font-weight: 250;
+			b {
+				font-weight: 700;
+			}
 			line-height: 101%;
 			width: get-vw(400px);
 			height: get-vw(210px);
@@ -203,7 +206,7 @@
 					width: 49%;
 				}
 				color: hsla(355, 52%, 30%, 1);
-				font-weight: 400;
+				font-weight: 250;
 				box-shadow: none;
 				border: none;
 				background: hsla(0, 100%, 85%, 1);
@@ -270,13 +273,13 @@
 			height: auto;
 			padding-bottom: 20px;
 		}
-		font-family: Inter;
+		font-family: 'Inter var';
 		font-size: get-vw(26px);
 		@media screen and (max-width: $bp) {
 			font-size: 20px;
 		}
 		font-style: normal;
-		font-weight: 400;
+		font-weight: 250;
 		line-height: 154%;
 		letter-spacing: 0em;
 		text-align: left;
