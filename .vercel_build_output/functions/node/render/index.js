@@ -69157,7 +69157,6 @@ var template = ({ head, body }) => `<!DOCTYPE html>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="Enjoy local app streaming that feels completely native." />
-		<!-- <meta name="description" content="" /> -->
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/png" href="/favicon.png" />
@@ -69181,10 +69180,10 @@ var template = ({ head, body }) => `<!DOCTYPE html>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://feather.systems/" />
 		<meta property="og:title" content="Feather" />
-		<!-- <meta
+		<meta
 			property="og:description"
 			content="Enjoy local app streaming that feels completely native."
-		/> -->
+		/>
 		<meta
 			property="og:image"
 			content="https://5000-copper-beaver-rc3ipd4s.ws-us20.gitpod.io/assets/Feather-site-tumbnail.png"
