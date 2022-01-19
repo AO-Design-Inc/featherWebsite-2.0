@@ -1,6 +1,6 @@
 <div id="ft_main" class="d">
     <div class="container one">
-      <div class="ft one">
+      <div class="ft one grow">
         <div class="space-gutter">
           <img class="illus" src="/ft-illus-one.svg" alt="heart" />
           <div class="spacer one feature" />
@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="spacer one" />
-      <div class="ft two">
+      <div class="ft two grow">
         <div class="space-gutter">
           <img class="illus" src="./ft-illus-two.svg" alt="heart" />
           <div class="spacer one feature" />
@@ -30,7 +30,7 @@
     </div>
     <div class="spacer two" />
     <div class="container two">
-      <div class="ft three">
+      <div class="ft three grow">
         <div class="space-gutter">
           <img class="illus" src="./ft-illus-three.svg" alt="heart" />
           <div class="spacer one feature" />
@@ -44,7 +44,7 @@
         </div>
       </div>
       <div class="spacer one" />
-      <div class="ft four">
+      <div class="ft four grow">
         <div class="space-gutter">
           <img class="illus" src="./ft-illus-four.svg" alt="heart" />
           <div class="spacer one feature" />

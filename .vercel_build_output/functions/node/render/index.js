@@ -5960,7 +5960,7 @@ var init__ = __esm({
     init_layout_svelte();
     entry = "pages/__layout.svelte-f286e2b7.js";
     js = ["pages/__layout.svelte-f286e2b7.js", "chunks/vendor-2345f34e.js", "chunks/stores-9e46c81f.js", "chunks/form-304c1942.js"];
-    css4 = ["assets/pages/__layout.svelte-f2b1d344.css", "assets/vendor-2634b1a9.css", "assets/stores-21dd4574.css", "assets/form-77d88580.css"];
+    css4 = ["assets/pages/__layout.svelte-f2b1d344.css", "assets/vendor-2634b1a9.css", "assets/stores-ca62fa95.css", "assets/form-77d88580.css"];
   }
 });
 
@@ -6107,7 +6107,7 @@ var init_index_svelte = __esm({
     };
     Features = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$22);
-      return `<div id="${"ft_main"}" class="${"d svelte-bs4sn6"}"><div class="${"container one svelte-bs4sn6"}"><div class="${"ft one svelte-bs4sn6"}"><div class="${"space-gutter svelte-bs4sn6"}"><img class="${"illus svelte-bs4sn6"}" src="${"/ft-illus-one.svg"}" alt="${"heart"}">
+      return `<div id="${"ft_main"}" class="${"d svelte-bs4sn6"}"><div class="${"container one svelte-bs4sn6"}"><div class="${"ft one grow svelte-bs4sn6"}"><div class="${"space-gutter svelte-bs4sn6"}"><img class="${"illus svelte-bs4sn6"}" src="${"/ft-illus-one.svg"}" alt="${"heart"}">
           <div class="${"spacer one feature svelte-bs4sn6"}"></div>
           <div class="${"title svelte-bs4sn6"}">Get interfaces that feel native.</div>
           <div class="${"spacer two feature svelte-bs4sn6"}"></div>
@@ -6116,7 +6116,7 @@ var init_index_svelte = __esm({
             more defined and the overall user experience more native.
           </div></div></div>
       <div class="${"spacer one svelte-bs4sn6"}"></div>
-      <div class="${"ft two svelte-bs4sn6"}"><div class="${"space-gutter svelte-bs4sn6"}"><img class="${"illus svelte-bs4sn6"}" src="${"./ft-illus-two.svg"}" alt="${"heart"}">
+      <div class="${"ft two grow svelte-bs4sn6"}"><div class="${"space-gutter svelte-bs4sn6"}"><img class="${"illus svelte-bs4sn6"}" src="${"./ft-illus-two.svg"}" alt="${"heart"}">
           <div class="${"spacer one feature svelte-bs4sn6"}"></div>
           <div class="${"title svelte-bs4sn6"}">Work faster, from any device.</div>
           <div class="${"spacer two feature svelte-bs4sn6"}"></div>
@@ -6125,7 +6125,7 @@ var init_index_svelte = __esm({
             anywhere you desire.
           </div></div></div></div>
     <div class="${"spacer two svelte-bs4sn6"}"></div>
-    <div class="${"container two svelte-bs4sn6"}"><div class="${"ft three svelte-bs4sn6"}"><div class="${"space-gutter svelte-bs4sn6"}"><img class="${"illus svelte-bs4sn6"}" src="${"./ft-illus-three.svg"}" alt="${"heart"}">
+    <div class="${"container two svelte-bs4sn6"}"><div class="${"ft three grow svelte-bs4sn6"}"><div class="${"space-gutter svelte-bs4sn6"}"><img class="${"illus svelte-bs4sn6"}" src="${"./ft-illus-three.svg"}" alt="${"heart"}">
           <div class="${"spacer one feature svelte-bs4sn6"}"></div>
           <div class="${"title svelte-bs4sn6"}">Make your own Edge Nodes.</div>
           <div class="${"spacer two feature svelte-bs4sn6"}"></div>
@@ -6134,7 +6134,7 @@ var init_index_svelte = __esm({
             experience lower latency and an easy wireless connection.
           </div></div></div>
       <div class="${"spacer one svelte-bs4sn6"}"></div>
-      <div class="${"ft four svelte-bs4sn6"}"><div class="${"space-gutter svelte-bs4sn6"}"><img class="${"illus svelte-bs4sn6"}" src="${"./ft-illus-four.svg"}" alt="${"heart"}">
+      <div class="${"ft four grow svelte-bs4sn6"}"><div class="${"space-gutter svelte-bs4sn6"}"><img class="${"illus svelte-bs4sn6"}" src="${"./ft-illus-four.svg"}" alt="${"heart"}">
           <div class="${"spacer one feature svelte-bs4sn6"}"></div>
           <div class="${"title svelte-bs4sn6"}">Remotely access all the files you need.</div>
           <div class="${"spacer two feature svelte-bs4sn6"}"></div>
@@ -6196,8 +6196,8 @@ var entry3, js3, css8;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-48d77675.js";
-    js3 = ["pages/index.svelte-48d77675.js", "chunks/vendor-2345f34e.js", "chunks/form-304c1942.js"];
+    entry3 = "pages/index.svelte-3f23d9b4.js";
+    js3 = ["pages/index.svelte-3f23d9b4.js", "chunks/vendor-2345f34e.js", "chunks/form-304c1942.js"];
     css8 = ["assets/pages/index.svelte-523cc025.css", "assets/vendor-2634b1a9.css", "assets/form-77d88580.css"];
   }
 });
@@ -67439,7 +67439,7 @@ var init__5 = __esm({
     init_layout_svelte2();
     entry5 = "pages/_slug_/__layout.svelte-73d46e09.js";
     js5 = ["pages/_slug_/__layout.svelte-73d46e09.js", "chunks/vendor-2345f34e.js", "chunks/stores-9e46c81f.js"];
-    css13 = ["assets/pages/_slug_/__layout.svelte-7693d0c0.css", "assets/vendor-2634b1a9.css", "assets/stores-21dd4574.css"];
+    css13 = ["assets/pages/_slug_/__layout.svelte-7693d0c0.css", "assets/vendor-2634b1a9.css", "assets/stores-ca62fa95.css"];
   }
 });
 
@@ -69269,7 +69269,7 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "logo.svg", "reddit.svg", "robots.txt", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".svg": "image/svg+xml", ".webp": "image/webp", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain" },
-    entry: { "file": "start-640f8322.js", "js": ["start-640f8322.js", "chunks/vendor-2345f34e.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-68f1531f.js", "js": ["start-68f1531f.js", "chunks/vendor-2345f34e.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
