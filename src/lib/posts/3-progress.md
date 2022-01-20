@@ -3,7 +3,7 @@ slug: 3-progress
 title: January 2022 Progress
 date: 2022-1-20
 summary: We have working on stuff
-thumbnail: /link
+thumbnail: ''
 tags:
 	- update
 author: Jo
