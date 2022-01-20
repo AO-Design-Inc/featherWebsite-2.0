@@ -1,12 +1,13 @@
 ---
 slug: 3-progress
-title: January 2022 Progress
-date: 2022-1-20
-summary: We have working on stuff
+title: What We've Been Up To
+date: 2022-1-21
+summary: A look at the progress we've acheived in the past three months
 thumbnail: ''
 tags:
 	- update
-author: Jo
+    - engineering
+author: Kyle Li, Jo Gao
 ---
 
 Hey everyone,
