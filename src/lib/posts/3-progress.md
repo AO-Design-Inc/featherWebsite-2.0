@@ -9,6 +9,8 @@ tags:
 author: Jo
 ---
 
-Text here
+Hey everyone,
+
+This January, we’re excited to bring you the first of many monthly updates you can expect moving forward into 2022.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zh7jbxOZipw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
