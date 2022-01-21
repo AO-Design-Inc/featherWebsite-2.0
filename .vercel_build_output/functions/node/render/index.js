@@ -6249,12 +6249,12 @@ var init_about_svelte = __esm({
 		<h2 class="${"text svelte-flpgyp"}">Who we are</h2>
 		<p class="${"svelte-flpgyp"}">We are Feather Systems!<br>
 			Computers don\u2019t work well together (especially across platforms). This leads to a lot of computers
-			running tasks that they are not necessarily optimised for. So Feather turns people\u2019s computers
+			running tasks that they are not necessarily optimised for. Feather turns people\u2019s computers
 			into routers for processing power, so that this compute can happen where it&#39;s best for it to happen.
 		</p>
 		<h2 class="${"text svelte-flpgyp"}">What we do</h2>
-		<p class="${"svelte-flpgyp"}">We are currently building a remote desktop protocol (RDP) with WebRTC and Electron. Our
-			primary focus with this application is to build a competitive RDP application with an
+		<p class="${"svelte-flpgyp"}">We are currently building a remote desktop application with WebRTC and Electron. Our
+			primary focus with this application is to build a competitive remote access software with an
 			excellent, near-native user experience. This will set the foundation for our dream of making
 			virtualised hardware easy to access and ubiquitous.
 		</p>
@@ -6262,11 +6262,11 @@ var init_about_svelte = __esm({
 		<p class="${"svelte-flpgyp"}">We want to be the nexus between the remote desktop and cloud infrastructure industries. Both
 			these industries have the same major flaw, they are overly technical and obtuse. Our plan is
 			to establish our own network of edge nodes and allow users to easily connect with them with
-			our robust remote desktop protocol.<br><br>
+			our robust remote desktop application.<br><br>
 			We&#39;re ambitious. We hope to grow our own network of Feather edge nodes to the point where everyone
-			and everything that uses Feather will have access to the data they need and the processing power
-			they deserve. From smart homes, to delivery drones, to your smart phones and wearables, everything
-			will be powerful by default.
+			and everything that uses Feather will have access to the data and processing power they need. From
+			smart homes, to delivery drones, to your smart phones and wearables, everything will be powerful
+			by default.
 		</p>
 		<h1 class="${"svelte-flpgyp"}">Our Team</h1>
 		<div class="${"spacer vert one svelte-flpgyp"}"></div>
@@ -6295,8 +6295,8 @@ var entry4, js4, css10;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_about_svelte();
-    entry4 = "pages/about.svelte-661103a9.js";
-    js4 = ["pages/about.svelte-661103a9.js", "chunks/vendor-2345f34e.js"];
+    entry4 = "pages/about.svelte-c37440bb.js";
+    js4 = ["pages/about.svelte-c37440bb.js", "chunks/vendor-2345f34e.js"];
     css10 = ["assets/pages/about.svelte-ff7d833d.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -69406,7 +69406,7 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "logo.svg", "reddit.svg", "robots.txt", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain" },
-    entry: { "file": "start-55360238.js", "js": ["start-55360238.js", "chunks/vendor-2345f34e.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-104cb152.js", "js": ["start-104cb152.js", "chunks/vendor-2345f34e.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

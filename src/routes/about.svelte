@@ -36,13 +36,13 @@
 		<p>
 			We are Feather Systems!<br />
 			Computers don’t work well together (especially across platforms). This leads to a lot of computers
-			running tasks that they are not necessarily optimised for. So Feather turns people’s computers
+			running tasks that they are not necessarily optimised for. Feather turns people’s computers
 			into routers for processing power, so that this compute can happen where it's best for it to happen.
 		</p>
 		<h2 class="text">What we do</h2>
 		<p>
-			We are currently building a remote desktop protocol (RDP) with WebRTC and Electron. Our
-			primary focus with this application is to build a competitive RDP application with an
+			We are currently building a remote desktop application with WebRTC and Electron. Our
+			primary focus with this application is to build a competitive remote access software with an
 			excellent, near-native user experience. This will set the foundation for our dream of making
 			virtualised hardware easy to access and ubiquitous.
 		</p>
@@ -51,11 +51,11 @@
 			We want to be the nexus between the remote desktop and cloud infrastructure industries. Both
 			these industries have the same major flaw, they are overly technical and obtuse. Our plan is
 			to establish our own network of edge nodes and allow users to easily connect with them with
-			our robust remote desktop protocol.<br /><br />
+			our robust remote desktop application.<br /><br />
 			We're ambitious. We hope to grow our own network of Feather edge nodes to the point where everyone
-			and everything that uses Feather will have access to the data they need and the processing power
-			they deserve. From smart homes, to delivery drones, to your smart phones and wearables, everything
-			will be powerful by default.
+			and everything that uses Feather will have access to the data and processing power they need. From
+			smart homes, to delivery drones, to your smart phones and wearables, everything will be powerful
+			by default.
 		</p>
 		<h1>Our Team</h1>
 		<div class="spacer vert one" />
@@ -128,7 +128,7 @@
 					0deg,
 					#11131c 0%,
 					rgba(240, 173, 183, 0) 56.28%,
-					rgba(17, 19, 28, 0) 56.28%linear-gradient(96.56deg,#fff2f0 0%,#fcafa8 50%,#f5938b 60%)
+					rgba(17, 19, 28, 0) 56.28%linear-gradient(96.56deg, #fff2f0 0%, #fcafa8 50%, #f5938b 60%)
 				);
 				@media screen and (max-width: $bp) {
 					background-image: linear-gradient(
@@ -222,7 +222,7 @@
 	}
 	h1.text {
 		//gradient
-		background: linear-gradient(96.56deg,#fff2f0 0%,#fcafa8 50%,#f5938b 60%);
+		background: linear-gradient(96.56deg, #fff2f0 0%, #fcafa8 50%, #f5938b 60%);
 		-webkit-background-clip: text;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
