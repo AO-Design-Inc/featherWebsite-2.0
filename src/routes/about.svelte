@@ -36,13 +36,13 @@
 		<p>
 			We are Feather Systems!<br />
 			Computers don’t work well together (especially across platforms). This leads to a lot of computers
-			running tasks that they are not necessarily optimised for. Feather turns people’s computers
-			into routers for processing power, so that this compute can happen where it's best for it to happen.
+			running tasks that they are not necessarily optimised for. Feather turns people’s computers into
+			routers for processing power, so that this compute can happen where it's best for it to happen.
 		</p>
 		<h2 class="text">What we do</h2>
 		<p>
-			We are currently building a remote desktop application with WebRTC and Electron. Our
-			primary focus with this application is to build a competitive remote access software with an
+			We are currently building a remote desktop application with WebRTC and Electron. Our primary
+			focus with this application is to build a competitive remote access software with an
 			excellent, near-native user experience. This will set the foundation for our dream of making
 			virtualised hardware easy to access and ubiquitous.
 		</p>
@@ -124,12 +124,7 @@
 				position: absolute;
 				top: 0%;
 				left: 0%;
-				background-image: linear-gradient(
-					0deg,
-					#11131c 0%,
-					rgba(240, 173, 183, 0) 56.28%,
-					rgba(17, 19, 28, 0) 56.28%linear-gradient(96.56deg, #fff2f0 0%, #fcafa8 50%, #f5938b 60%)
-				);
+				background-image: linear-gradient(96.56deg, #fff2f0 0%, #fcafa8 50%, #f5938b 60%);
 				@media screen and (max-width: $bp) {
 					background-image: linear-gradient(
 						0deg,
