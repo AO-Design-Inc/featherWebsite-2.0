@@ -35,23 +35,27 @@
 		<h2 class="text">Who we are</h2>
 		<p>
 			We are Feather Systems!<br />
-			So, Computers don’t work well together (especially across platforms). This leads to a lot of computer
-			hardware running tasks that they are not necessarily optimised for. We turn people’s computers
-			into routers for processing power, so that compute can happen where it is best for it to happen.
+			Computers don’t work well together (especially across platforms). This leads to a lot of computers
+			running tasks that they are not necessarily optimised for. So Feather turns people’s computers
+			into routers for processing power, so that this compute can happen where it's best for it to happen.
 		</p>
 		<h2 class="text">What we do</h2>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et sodales elit. Maecenas
-			quis sapien a lacus hendrerit imperdiet. Sed luctus bibendum enim, ut ornare magna sodales
-			non. Sed sed nisl in eros efficitur tristique venenatis sit amet turpis. Vivamus in tortor
-			elit. Aenean lacinia semper orci.
+			We are currently building a remote desktop protocol (RDP) with WebRTC and Electron. Our
+			primary focus with this application is to build a competitive RDP application with an
+			excellent, near-native user experience. This will set the foundation for our dream of making
+			virtualised hardware easy to access and ubiquitous.
 		</p>
 		<h2 class="text">Where we are going</h2>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et sodales elit. Maecenas
-			quis sapien a lacus hendrerit imperdiet. Sed luctus bibendum enim, ut ornare magna sodales
-			non. Sed sed nisl in eros efficitur tristique venenatis sit amet turpis. Vivamus in tortor
-			elit. Aenean lacinia semper orci.
+			We want to be the nexus between the remote desktop and cloud infrastructure industries. Both
+			these industries have the same major flaw, they are overly technical and obtuse. Our plan is
+			to establish our own network of edge nodes and allow users to easily connect with them with
+			our robust remote desktop protocol.<br /><br />
+			We're ambitious. We hope to grow our own network of Feather edge nodes to the point where everyone
+			and everything that uses Feather will have access to the data they need and the processing power
+			they deserve. From smart homes, to delivery drones, to your smart phones and wearables, everything
+			will be powerful by default.
 		</p>
 		<h1>Our Team</h1>
 		<div class="spacer vert one" />
@@ -235,7 +239,7 @@
 	}
 	p {
 		opacity: 0.85;
-		font-size: 20px;
+		font-size: get-vw(20px);
 		font-style: normal;
 		font-weight: 400;
 		line-height: 1.75;
@@ -243,6 +247,12 @@
 		text-align: left;
 		margin-top: 0.5%;
 		margin-bottom: 7%;
+		@media screen and (min-width: 1240px) {
+			font-size: min(get-vw(20px), 20px);
+		}
+		@media screen and (max-width: $bp) {
+			font-size: max(get-vw(20px), 20px);
+		}
 	}
 
 	// spacers

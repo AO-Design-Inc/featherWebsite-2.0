@@ -5,7 +5,7 @@ date: 2021-08-03
 summary: Illustrating the bare minimum required to get WebGL up and running in C with the Emscripten compiler.
 thumbnail: '/blog-2-tri-thumbnail.webp'
 tags:
-  - WebGL
+  - Engineering
 author: Jo Gao
 ---
 

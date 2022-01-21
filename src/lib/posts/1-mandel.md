@@ -5,7 +5,7 @@ date: 2021-06-21
 summary: Our initial experiments rendering the Mandelbrot set with JavaScript, Web-workers & emerging web technologies like webassembly.
 thumbnail: '/blog-1-mandel-thumbnail.webp'
 tags:
-  - WASM
+  - Engineering
 author: Ojasvin Kirpane, Abhishek Cherath, Jo Gao & Abhinuv Allu
 ---
 

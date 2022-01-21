@@ -78,6 +78,7 @@
 			font-size: min(get-vw(16px), 16px);
 			height: min(get-vw(45px), 45px);
 			border-radius: min(get-vw(10px), 10px);
+			width: min(get-vw(95px), 90px);
 		}
 		@media screen and (max-width: $bpDash) {
 			width: max(get-vw(95px), 90px);

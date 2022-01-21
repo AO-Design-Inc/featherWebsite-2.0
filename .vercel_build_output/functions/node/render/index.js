@@ -1637,10 +1637,10 @@ var init_install_fetch = __esm({
           [PullSteps](readRequest) {
             const stream = this._controlledReadableByteStream;
             if (this._queueTotalSize > 0) {
-              const entry7 = this._queue.shift();
-              this._queueTotalSize -= entry7.byteLength;
+              const entry8 = this._queue.shift();
+              this._queueTotalSize -= entry8.byteLength;
               ReadableByteStreamControllerHandleQueueDrain(this);
-              const view = new Uint8Array(entry7.buffer, entry7.byteOffset, entry7.byteLength);
+              const view = new Uint8Array(entry8.buffer, entry8.byteOffset, entry8.byteLength);
               readRequest._chunkSteps(view);
               return;
             }
@@ -5598,7 +5598,7 @@ function create_ssr_component(fn) {
       return {
         html,
         css: {
-          code: Array.from(result.css).map((css15) => css15.code).join("\n"),
+          code: Array.from(result.css).map((css17) => css17.code).join("\n"),
           map: null
         },
         head: result.title + result.head
@@ -5870,22 +5870,24 @@ var init_layout_svelte = __esm({
     init_form_8ef09c78();
     subscriber_queue2 = [];
     css$2 = {
-      code: ".form-container.svelte-1gemu1j.svelte-1gemu1j{min-width:350px;width:31.25vw}@media screen and (min-width: 1240px){.form-container.svelte-1gemu1j.svelte-1gemu1j{width:min(31.25vw, 450px)}}@media screen and (max-width: 850px){.form-container.svelte-1gemu1j.svelte-1gemu1j{display:none}}main.svelte-1gemu1j.svelte-1gemu1j{display:flex;align-items:center;max-width:90%;min-height:85px;position:relative;margin:0px;padding:0px 6.9444444444vw}@media screen and (min-width: 1440px){main.svelte-1gemu1j.svelte-1gemu1j{max-width:1240px;padding:0px;margin:0px auto}}#logo.svelte-1gemu1j img.svelte-1gemu1j{aspect-ratio:1/1;width:3.4722222222vw;min-width:50px;display:grid;place-items:center}@media screen and (min-width: 1240px){#logo.svelte-1gemu1j img.svelte-1gemu1j{width:min(3.4722222222vw, 50px)}}.link.svelte-1gemu1j.svelte-1gemu1j{width:8.5416666667vw;min-width:95px;text-align:center;font-size:max(1.1111111111vw, 16px);background:rgba(255, 255, 255, 0.1);height:3.125vw;min-height:45px;display:grid;place-items:center;border-radius:0.6944444444vw}@media screen and (min-width: 1240px){.link.svelte-1gemu1j.svelte-1gemu1j{font-size:min(1.1111111111vw, 16px);height:min(3.125vw, 45px);border-radius:min(0.6944444444vw, 10px)}}.link.svelte-1gemu1j.svelte-1gemu1j:hover{transition:background 0.2s ease-in-out;background:rgba(255, 255, 255, 0.2)}.spacer.linker.svelte-1gemu1j.svelte-1gemu1j{width:1.3888888889vw}@media screen and (max-width: 850px){.spacer.linker.svelte-1gemu1j.svelte-1gemu1j{width:0%}}.spacer.one.svelte-1gemu1j.svelte-1gemu1j{width:53.8194444444vw}@media screen and (max-width: 850px){.spacer.one.svelte-1gemu1j.svelte-1gemu1j{width:69.4444444444vw}}",
+      code: ".form-container.svelte-b1z75w.svelte-b1z75w{min-width:350px;width:31.25vw}@media screen and (min-width: 1240px){.form-container.svelte-b1z75w.svelte-b1z75w{width:min(31.25vw, 450px)}}@media screen and (max-width: 850px){.form-container.svelte-b1z75w.svelte-b1z75w{display:none}}main.svelte-b1z75w.svelte-b1z75w{display:flex;align-items:center;max-width:90%;min-height:85px;position:relative;margin:0px;padding:0px 6.9444444444vw}@media screen and (min-width: 1440px){main.svelte-b1z75w.svelte-b1z75w{max-width:1240px;padding:0px;margin:0px auto}}#logo.svelte-b1z75w img.svelte-b1z75w{aspect-ratio:1/1;width:3.4722222222vw;min-width:50px;display:grid;place-items:center}@media screen and (min-width: 1240px){#logo.svelte-b1z75w img.svelte-b1z75w{width:min(3.4722222222vw, 50px)}}.link.svelte-b1z75w.svelte-b1z75w{width:8.5416666667vw;text-align:center;font-size:max(1.1111111111vw, 16px);background:rgba(255, 255, 255, 0.1);height:3.125vw;min-height:45px;display:grid;place-items:center;border-radius:0.6944444444vw}@media screen and (min-width: 1240px){.link.svelte-b1z75w.svelte-b1z75w{font-size:min(1.1111111111vw, 16px);height:min(3.125vw, 45px);border-radius:min(0.6944444444vw, 10px);width:min(6.5972222222vw, 90px)}}@media screen and (max-width: 850px){.link.svelte-b1z75w.svelte-b1z75w{width:max(6.5972222222vw, 90px)}}.link.svelte-b1z75w.svelte-b1z75w:hover{transition:background 0.2s ease-in-out;background:rgba(255, 255, 255, 0.2)}.spacer.linker.svelte-b1z75w.svelte-b1z75w{width:1.3888888889vw}@media screen and (max-width: 850px){.spacer.linker.svelte-b1z75w.svelte-b1z75w{width:0%}}@media screen and (max-width: 850px){.spacer.linker.between.svelte-b1z75w.svelte-b1z75w{width:max(1.3888888889vw, 20px)}}.spacer.one.svelte-b1z75w.svelte-b1z75w{width:53.8194444444vw}@media screen and (max-width: 850px){.spacer.one.svelte-b1z75w.svelte-b1z75w{width:69.4444444444vw}}",
       map: null
     };
     Dash = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$2);
-      return `<main class="${"d svelte-1gemu1j"}"><a sveltekit:prefetch href="${"/"}"><div id="${"logo"}" class="${"svelte-1gemu1j"}"><img src="${"/logo.svg"}" alt="${"Feather Logo"}" class="${"svelte-1gemu1j"}"></div></a>
-	<div class="${"spacer one svelte-1gemu1j"}"></div>
-	<a sveltekit:prefetch href="${"/blog"}"><div class="${"link svelte-1gemu1j"}">Blog</div></a>
-	<div class="${"spacer linker svelte-1gemu1j"}"></div>
-	<div class="${"form-container svelte-1gemu1j"}">${validate_component(Form, "Form").$$render($$result, {}, {}, {})}</div>
+      return `<main class="${"d svelte-b1z75w"}"><a sveltekit:prefetch href="${"/"}"><div id="${"logo"}" class="${"svelte-b1z75w"}"><img src="${"/logo.svg"}" alt="${"Feather Logo"}" class="${"svelte-b1z75w"}"></div></a>
+	<div class="${"spacer one svelte-b1z75w"}"></div>
+	<a sveltekit:prefetch href="${"/blog"}"><div class="${"link svelte-b1z75w"}">Blog</div></a>
+	<div class="${"spacer linker between svelte-b1z75w"}"></div>
+	<a sveltekit:prefetch href="${"/about"}"><div class="${"link svelte-b1z75w"}">About</div></a>
+	<div class="${"spacer linker svelte-b1z75w"}"></div>
+	<div class="${"form-container svelte-b1z75w"}">${validate_component(Form, "Form").$$render($$result, {}, {}, {})}</div>
 	
 	
 </main>`;
     });
     css$1 = {
-      code: "#f_main.svelte-1uj055g.svelte-1uj055g{width:100%;height:21.5277777778vw;min-height:310px;background:linear-gradient(226.51deg, #1d2030 0%, rgba(29, 32, 48, 0.25) 81.51%);border-radius:10px 10px 0px 0px}@media screen and (min-width: 1240px){#f_main.svelte-1uj055g.svelte-1uj055g{height:min(21.5277777778vw, 310px)}}#f_main.svelte-1uj055g .spacer-gutter.svelte-1uj055g{padding:5.5555555556vw 9.0277777778vw 4.8611111111vw 9.0277777778vw}@media screen and (max-width: 810px){#f_main.svelte-1uj055g .spacer-gutter.svelte-1uj055g{padding:60px 9.0277777778vw 80px 9.0277777778vw}}@media screen and (min-width: 1240px){#f_main.svelte-1uj055g .spacer-gutter.svelte-1uj055g{padding:min(5.5555555556vw, 80px) min(9.0277777778vw, 130px) min(4.8611111111vw, 70px) min(9.0277777778vw, 130px);max-width:1240px;margin:0px auto}}#f_main.svelte-1uj055g .top-container.svelte-1uj055g{display:flex;justify-content:space-between;width:100%;align-content:center}#f_main.svelte-1uj055g .top-container .logo.svelte-1uj055g{aspect-ratio:19/3;width:13.1944444444vw}@media screen and (max-width: 810px){#f_main.svelte-1uj055g .top-container .logo.svelte-1uj055g{width:max(13.1944444444vw, 190px)}}@media screen and (min-width: 1240px){#f_main.svelte-1uj055g .top-container .logo.svelte-1uj055g{width:min(13.1944444444vw, 190px)}}#f_main.svelte-1uj055g .top-container .spacer.one.footer.svelte-1uj055g{width:64%}#f_main.svelte-1uj055g .top-container .cta.svelte-1uj055g{aspect-ratio:235/40;width:16.3194444444vw;font-size:1.1111111111vw;color:#74252b;font-weight:400;box-shadow:none;border:none;background:#ffb3b3;border-radius:0.6944444444vw}@media screen and (min-width: 1240px){#f_main.svelte-1uj055g .top-container .cta.svelte-1uj055g{width:min(16.3194444444vw, 235px);font-size:min(1.1111111111vw, 16px);border-radius:min(0.6944444444vw, 10px)}}#f_main.svelte-1uj055g .top-container .cta .text.svelte-1uj055g{display:block}#f_main.svelte-1uj055g .top-container .cta .image.svelte-1uj055g{display:none}@media screen and (max-width: 810px){#f_main.svelte-1uj055g .top-container .cta.svelte-1uj055g{height:45px;display:grid;place-items:center}#f_main.svelte-1uj055g .top-container .cta .text.svelte-1uj055g{display:none}#f_main.svelte-1uj055g .top-container .cta .image.svelte-1uj055g{display:block}}#f_main.svelte-1uj055g .spacer.two.footer.svelte-1uj055g{width:100%;height:2.7777777778vw}@media screen and (max-width: 810px){#f_main.svelte-1uj055g .spacer.two.footer.svelte-1uj055g{height:max(2.7777777778vw, 40px)}}@media screen and (min-width: 1240px){#f_main.svelte-1uj055g .spacer.two.footer.svelte-1uj055g{height:min(2.7777777778vw, 40px)}}#f_main.svelte-1uj055g .divider.svelte-1uj055g{min-width:100%;min-height:1px;background:#ffffff}#f_main.svelte-1uj055g .spacer.three.footer.svelte-1uj055g{width:55%}@media screen and (max-width: 810px){#f_main.svelte-1uj055g .spacer.three.footer.svelte-1uj055g{display:none}}#f_main.svelte-1uj055g .bottom-container.svelte-1uj055g{display:flex;justify-content:space-between;width:100%;align-items:center}#f_main.svelte-1uj055g .bottom-container .copyright.svelte-1uj055g{width:36%}@media screen and (max-width: 810px){#f_main.svelte-1uj055g .bottom-container .copyright.svelte-1uj055g{display:none}}@media screen and (max-width: 810px){#f_main.svelte-1uj055g .bottom-container .social-container.svelte-1uj055g{width:62%}}#f_main.svelte-1uj055g .bottom-container .social-container .social.image.svelte-1uj055g{aspect-ratio:1/1;height:2.0833333333vw}@media screen and (max-width: 810px){#f_main.svelte-1uj055g .bottom-container .social-container .social.image.svelte-1uj055g{height:max(2.0833333333vw, 30px)}}@media screen and (min-width: 1240px){#f_main.svelte-1uj055g .bottom-container .social-container .social.image.svelte-1uj055g{height:min(2.0833333333vw, 30px)}}",
+      code: "#f_main.svelte-cxmgxs.svelte-cxmgxs{width:100%;height:21.5277777778vw;min-height:310px;border-radius:10px 10px 0px 0px}@media screen and (min-width: 1240px){#f_main.svelte-cxmgxs.svelte-cxmgxs{height:min(21.5277777778vw, 310px)}}#f_main.svelte-cxmgxs .spacer-gutter.svelte-cxmgxs{padding:5.5555555556vw 9.0277777778vw 4.8611111111vw 9.0277777778vw}@media screen and (max-width: 810px){#f_main.svelte-cxmgxs .spacer-gutter.svelte-cxmgxs{padding:60px 9.0277777778vw 80px 9.0277777778vw}}@media screen and (min-width: 1240px){#f_main.svelte-cxmgxs .spacer-gutter.svelte-cxmgxs{padding:min(5.5555555556vw, 80px) min(9.0277777778vw, 130px) min(4.8611111111vw, 70px) min(9.0277777778vw, 130px);max-width:1240px;margin:0px auto}}#f_main.svelte-cxmgxs .top-container.svelte-cxmgxs{display:flex;justify-content:space-between;width:100%;align-content:center}#f_main.svelte-cxmgxs .top-container .logo.svelte-cxmgxs{aspect-ratio:19/3;width:13.1944444444vw}@media screen and (max-width: 810px){#f_main.svelte-cxmgxs .top-container .logo.svelte-cxmgxs{width:max(13.1944444444vw, 190px)}}@media screen and (min-width: 1240px){#f_main.svelte-cxmgxs .top-container .logo.svelte-cxmgxs{width:min(13.1944444444vw, 190px)}}#f_main.svelte-cxmgxs .top-container .spacer.one.footer.svelte-cxmgxs{width:64%}#f_main.svelte-cxmgxs .top-container .cta.svelte-cxmgxs{aspect-ratio:235/40;width:16.3194444444vw;font-size:1.1111111111vw;color:#74252b;font-weight:400;box-shadow:none;border:none;background:#ffb3b3;border-radius:0.6944444444vw}@media screen and (min-width: 1240px){#f_main.svelte-cxmgxs .top-container .cta.svelte-cxmgxs{width:min(16.3194444444vw, 235px);font-size:min(1.1111111111vw, 16px);border-radius:min(0.6944444444vw, 10px)}}#f_main.svelte-cxmgxs .top-container .cta .text.svelte-cxmgxs{display:block}#f_main.svelte-cxmgxs .top-container .cta .image.svelte-cxmgxs{display:none}@media screen and (max-width: 810px){#f_main.svelte-cxmgxs .top-container .cta.svelte-cxmgxs{height:45px;display:grid;place-items:center}#f_main.svelte-cxmgxs .top-container .cta .text.svelte-cxmgxs{display:none}#f_main.svelte-cxmgxs .top-container .cta .image.svelte-cxmgxs{display:block}}#f_main.svelte-cxmgxs .spacer.two.footer.svelte-cxmgxs{width:100%;height:2.7777777778vw}@media screen and (max-width: 810px){#f_main.svelte-cxmgxs .spacer.two.footer.svelte-cxmgxs{height:max(2.7777777778vw, 40px)}}@media screen and (min-width: 1240px){#f_main.svelte-cxmgxs .spacer.two.footer.svelte-cxmgxs{height:min(2.7777777778vw, 40px)}}#f_main.svelte-cxmgxs .divider.svelte-cxmgxs{min-width:100%;min-height:1px;background:#ffffff}#f_main.svelte-cxmgxs .spacer.three.footer.svelte-cxmgxs{width:55%}@media screen and (max-width: 810px){#f_main.svelte-cxmgxs .spacer.three.footer.svelte-cxmgxs{display:none}}#f_main.svelte-cxmgxs .bottom-container.svelte-cxmgxs{display:flex;justify-content:space-between;width:100%;align-items:center}#f_main.svelte-cxmgxs .bottom-container .copyright.svelte-cxmgxs{width:36%}@media screen and (max-width: 810px){#f_main.svelte-cxmgxs .bottom-container .copyright.svelte-cxmgxs{display:none}}@media screen and (max-width: 810px){#f_main.svelte-cxmgxs .bottom-container .social-container.svelte-cxmgxs{width:62%}}#f_main.svelte-cxmgxs .bottom-container .social-container .social.image.svelte-cxmgxs{aspect-ratio:1/1;height:2.0833333333vw}@media screen and (max-width: 810px){#f_main.svelte-cxmgxs .bottom-container .social-container .social.image.svelte-cxmgxs{height:max(2.0833333333vw, 30px)}}@media screen and (min-width: 1240px){#f_main.svelte-cxmgxs .bottom-container .social-container .social.image.svelte-cxmgxs{height:min(2.0833333333vw, 30px)}}",
       map: null
     };
     Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -5907,16 +5909,16 @@ var init_layout_svelte = __esm({
         }
       ];
       $$result.css.add(css$1);
-      return `<div id="${"f_main"}" class="${"d svelte-1uj055g"}"><div class="${"spacer-gutter svelte-1uj055g"}"><div class="${"top-container svelte-1uj055g"}"><img src="${"/footer-logo.svg"}" alt="${"Feather Logo Long"}" class="${"logo svelte-1uj055g"}">
+      return `<div id="${"f_main"}" class="${"d svelte-cxmgxs"}"><div class="${"spacer-gutter svelte-cxmgxs"}"><div class="${"top-container svelte-cxmgxs"}"><img src="${"/footer-logo.svg"}" alt="${"Feather Logo Long"}" class="${"logo svelte-cxmgxs"}">
         
-        <button class="${"cta svelte-1uj055g"}"><div class="${"text svelte-1uj055g"}">Join Our Mailing List</div>
-          <img src="${"/footer-mail.svg"}" alt="${"Mailing List"}" class="${"image svelte-1uj055g"}"></button></div>
-      <div class="${"spacer two footer svelte-1uj055g"}"></div>
-      <div class="${"divider svelte-1uj055g"}"></div>
-      <div class="${"spacer two footer svelte-1uj055g"}"></div>
-      <div class="${"bottom-container svelte-1uj055g"}"><div class="${"copyright svelte-1uj055g"}">\xA9 2021 Feather Systems. All Rights Reserved</div>
-        <div class="${"spacer three footer svelte-1uj055g"}"></div>
-        <div class="${"social-container svelte-1uj055g"}">${each(socialArray, ({ name, url, icon }, i2) => `<a${add_attribute("href", url, 0)} class="${escape(null_to_empty(i2)) + " svelte-1uj055g"}"><img${add_attribute("src", icon, 0)} class="${"social image " + escape(name) + " svelte-1uj055g"}"${add_attribute("alt", name, 0)}>
+        <button class="${"cta svelte-cxmgxs"}"><div class="${"text svelte-cxmgxs"}">Join Our Mailing List</div>
+          <img src="${"/footer-mail.svg"}" alt="${"Mailing List"}" class="${"image svelte-cxmgxs"}"></button></div>
+      <div class="${"spacer two footer svelte-cxmgxs"}"></div>
+      <div class="${"divider svelte-cxmgxs"}"></div>
+      <div class="${"spacer two footer svelte-cxmgxs"}"></div>
+      <div class="${"bottom-container svelte-cxmgxs"}"><div class="${"copyright svelte-cxmgxs"}">\xA9 2021 Feather Systems. All Rights Reserved</div>
+        <div class="${"spacer three footer svelte-cxmgxs"}"></div>
+        <div class="${"social-container svelte-cxmgxs"}">${each(socialArray, ({ name, url, icon }, i2) => `<a${add_attribute("href", url, 0)} class="${escape(null_to_empty(i2)) + " svelte-cxmgxs"}"><img${add_attribute("src", icon, 0)} class="${"social image " + escape(name) + " svelte-cxmgxs"}"${add_attribute("alt", name, 0)}>
             </a>`)}</div></div></div>
   </div>`;
     });
@@ -5958,9 +5960,9 @@ var entry, js, css4;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-f286e2b7.js";
-    js = ["pages/__layout.svelte-f286e2b7.js", "chunks/vendor-2345f34e.js", "chunks/stores-9e46c81f.js", "chunks/form-304c1942.js"];
-    css4 = ["assets/pages/__layout.svelte-f2b1d344.css", "assets/vendor-2634b1a9.css", "assets/stores-ca62fa95.css", "assets/form-77d88580.css"];
+    entry = "pages/__layout.svelte-7adb1413.js";
+    js = ["pages/__layout.svelte-7adb1413.js", "chunks/vendor-2345f34e.js", "chunks/stores-9e46c81f.js", "chunks/form-304c1942.js"];
+    css4 = ["assets/pages/__layout.svelte-2ddbc359.css", "assets/vendor-2634b1a9.css", "assets/stores-ce26150f.css", "assets/form-77d88580.css"];
   }
 });
 
@@ -6199,6 +6201,103 @@ var init__3 = __esm({
     entry3 = "pages/index.svelte-3f23d9b4.js";
     js3 = ["pages/index.svelte-3f23d9b4.js", "chunks/vendor-2345f34e.js", "chunks/form-304c1942.js"];
     css8 = ["assets/pages/index.svelte-523cc025.css", "assets/vendor-2634b1a9.css", "assets/form-77d88580.css"];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/about.svelte.js
+var about_svelte_exports = {};
+__export(about_svelte_exports, {
+  default: () => About
+});
+var css9, About;
+var init_about_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/about.svelte.js"() {
+    init_index_6bc633e9();
+    css9 = {
+      code: ".container.svelte-lp6q9n.svelte-lp6q9n{width:45.8333333333vw;margin:0% auto}@media screen and (min-width: 1240px){.container.svelte-lp6q9n.svelte-lp6q9n{width:min(45.8333333333vw, 660px)}}@media screen and (max-width: 500px){.container.svelte-lp6q9n.svelte-lp6q9n{width:max(45.8333333333vw, 90%)}}.container.svelte-lp6q9n .avatar-container.svelte-lp6q9n{display:grid;grid-template-columns:1fr 1fr;grid-gap:4.1666666667vw}@media screen and (min-width: 1240px){.container.svelte-lp6q9n .avatar-container.svelte-lp6q9n{grid-gap:min(4.1666666667vw, 60px)}}@media screen and (max-width: 810px){.container.svelte-lp6q9n .avatar-container.svelte-lp6q9n{grid-template-columns:1fr;grid-gap:max(4.1666666667vw, 60px)}}.container.svelte-lp6q9n .avatar-cards.svelte-lp6q9n{width:20.8333333333vw;aspect-ratio:10/13;border-radius:0.6944444444vw;position:relative}@media screen and (min-width: 1240px){.container.svelte-lp6q9n .avatar-cards.svelte-lp6q9n{width:min(20.8333333333vw, 300px);border-radius:min(0.6944444444vw, 10px)}}@media screen and (max-width: 810px){.container.svelte-lp6q9n .avatar-cards.svelte-lp6q9n{width:max(20.8333333333vw, 100%);aspect-ratio:10/10;overflow:hidden;border-radius:max(0.6944444444vw, 10px)}}.container.svelte-lp6q9n .avatar-cards .filter.svelte-lp6q9n{z-index:2;width:100%;height:100%;position:absolute;top:0%;left:0%;background-image:linear-gradient(0deg, #11131c 0%, rgba(240, 173, 183, 0) 56.28%, rgba(17, 19, 28, 0) 56.28%)}@media screen and (max-width: 810px){.container.svelte-lp6q9n .avatar-cards .filter.svelte-lp6q9n{background-image:linear-gradient(0deg, #11131ca5 0%, rgba(240, 173, 183, 0) 25%, rgba(17, 19, 28, 0) 56.28%)}}.container.svelte-lp6q9n .avatar-cards img.svelte-lp6q9n{z-index:1;position:absolute;top:0%;left:0%;width:20.8333333333vw;aspect-ratio:10/13}@media screen and (min-width: 1240px){.container.svelte-lp6q9n .avatar-cards img.svelte-lp6q9n{width:min(20.8333333333vw, 300px)}}@media screen and (max-width: 810px){.container.svelte-lp6q9n .avatar-cards img.svelte-lp6q9n{width:max(20.8333333333vw, 100%)}}.container.svelte-lp6q9n .avatar-cards .name.svelte-lp6q9n{z-index:3;position:absolute;bottom:10%;left:10%;max-width:12.5vw;font-size:2.5694444444vw;font-weight:700;line-height:105%}@media screen and (min-width: 1240px){.container.svelte-lp6q9n .avatar-cards .name.svelte-lp6q9n{font-size:min(2.5694444444vw, 37px);max-width:min(12.5vw, 180px)}}@media screen and (max-width: 810px){.container.svelte-lp6q9n .avatar-cards .name.svelte-lp6q9n{max-width:max(12.5vw, 180px);font-size:max(2.5694444444vw, 37px)}}.container.svelte-lp6q9n .avatar-cards .title.svelte-lp6q9n{z-index:3;position:absolute;bottom:10%;right:10%;font-size:16px;font-style:normal;font-weight:400;letter-spacing:0em;text-align:right}.container.svelte-lp6q9n .goodbye-message.svelte-lp6q9n{height:120vh;display:grid;place-items:center}.container.svelte-lp6q9n .goodbye-message h1.svelte-lp6q9n{text-align:center;line-height:101%}@media screen and (min-width: 1240px){.container.svelte-lp6q9n .goodbye-message.svelte-lp6q9n{height:min(150vh, 875px)}}@media screen and (max-width: 810px){.container.svelte-lp6q9n .goodbye-message.svelte-lp6q9n{height:max(100vh, 660px)}}h1.svelte-lp6q9n.svelte-lp6q9n{margin-top:2.7777777778vw;margin-bottom:1.5%;font-size:6.1805555556vw}@media screen and (min-width: 1240px){h1.svelte-lp6q9n.svelte-lp6q9n{font-size:min(6.1805555556vw, 89px);margin-top:min(2.7777777778vw, 40px)}}@media screen and (max-width: 810px){h1.svelte-lp6q9n.svelte-lp6q9n{text-align:left;font-size:max(6.1805555556vw, 59px);margin-top:max(2.7777777778vw, 40px)}}h1.text.svelte-lp6q9n.svelte-lp6q9n{background:linear-gradient(96.56deg, #fff2f0 0%, #fcafa8 25%, #f5938b 40%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}h2.svelte-lp6q9n.svelte-lp6q9n{margin:2% 0% 1% 0%;font-size:2.5694444444vw}@media screen and (min-width: 1240px){h2.svelte-lp6q9n.svelte-lp6q9n{font-size:min(2.5694444444vw, 37px)}}@media screen and (max-width: 810px){h2.svelte-lp6q9n.svelte-lp6q9n{font-size:max(2.5694444444vw, 37px)}}p.svelte-lp6q9n.svelte-lp6q9n{opacity:0.85;font-size:1.3888888889vw;font-style:normal;font-weight:400;line-height:1.75;letter-spacing:0em;text-align:left;margin-top:0.5%;margin-bottom:7%}@media screen and (min-width: 1240px){p.svelte-lp6q9n.svelte-lp6q9n{font-size:min(1.3888888889vw, 20px)}}@media screen and (max-width: 810px){p.svelte-lp6q9n.svelte-lp6q9n{font-size:max(1.3888888889vw, 20px)}}.spacer.vert.svelte-lp6q9n.svelte-lp6q9n{width:100%}.vert.one.svelte-lp6q9n.svelte-lp6q9n{height:1.7361111111vw}@media screen and (min-width: 1240px){.vert.one.svelte-lp6q9n.svelte-lp6q9n{height:min(1.7361111111vw, 25px)}}@media screen and (max-width: 810px){.vert.one.svelte-lp6q9n.svelte-lp6q9n{height:max(1.7361111111vw, 25px)}}.vert.two.svelte-lp6q9n.svelte-lp6q9n{height:0.3472222222vw}@media screen and (min-width: 1240px){.vert.two.svelte-lp6q9n.svelte-lp6q9n{height:min(0.3472222222vw, 5px)}}@media screen and (max-width: 810px){.vert.two.svelte-lp6q9n.svelte-lp6q9n{height:0px}}",
+      map: null
+    };
+    About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      const teamStruct = [
+        {
+          name: "Jo Gao",
+          title: "COO",
+          picture: "/avatars/jo.webp"
+        },
+        {
+          name: "Ojasvin Kirpane",
+          title: "CEO",
+          picture: "/avatars/ojas.webp"
+        },
+        {
+          name: "Abhishek Cherath",
+          title: "CTO",
+          picture: "/avatars/abhi.webp"
+        },
+        {
+          name: "Kyle Li",
+          title: "CMO",
+          picture: "/avatars/kyle.webp"
+        }
+      ];
+      $$result.css.add(css9);
+      return `<div id="${"about-container"}"><div class="${"container svelte-lp6q9n"}"><div class="${"spacer vert one svelte-lp6q9n"}"></div>
+		<div class="${"spacer vert one svelte-lp6q9n"}"></div>
+		
+		<h1 class="${"text svelte-lp6q9n"}">About Us</h1>
+		<div class="${"spacer vert two svelte-lp6q9n"}"></div>
+		<h2 class="${"text svelte-lp6q9n"}">Who we are</h2>
+		<p class="${"svelte-lp6q9n"}">We are Feather Systems!<br>
+			Computers don\u2019t work well together (especially across platforms). This leads to a lot of computers
+			running tasks that they are not necessarily optimised for. So Feather turns people\u2019s computers
+			into routers for processing power, so that this compute can happen where it&#39;s best for it to happen.
+		</p>
+		<h2 class="${"text svelte-lp6q9n"}">What we do</h2>
+		<p class="${"svelte-lp6q9n"}">We are currently building a remote desktop protocol (RDP) with WebRTC and Electron. Our
+			primary focus with this application is to build a competitive RDP application with an
+			excellent, near-native user experience. This will set the foundation for our dream of making
+			virtualised hardware easy to access and ubiquitous.
+		</p>
+		<h2 class="${"text svelte-lp6q9n"}">Where we are going</h2>
+		<p class="${"svelte-lp6q9n"}">We want to be the nexus between the remote desktop and cloud infrastructure industries. Both
+			these industries have the same major flaw, they are overly technical and obtuse. Our plan is
+			to establish our own network of edge nodes and allow users to easily connect with them with
+			our robust remote desktop protocol.<br><br>
+			We&#39;re ambitious. We hope to grow our own network of Feather edge nodes to the point where everyone
+			and everything that uses Feather will have access to the data they need and the processing power
+			they deserve. From smart homes, to delivery drones, to your smart phones and wearables, everything
+			will be powerful by default.
+		</p>
+		<h1 class="${"svelte-lp6q9n"}">Our Team</h1>
+		<div class="${"spacer vert one svelte-lp6q9n"}"></div>
+		<div class="${"spacer vert one svelte-lp6q9n"}"></div>
+		<div class="${"avatar-container svelte-lp6q9n"}">${each(teamStruct, ({ name, title: title2, picture }, i2) => `<div class="${"avatar-cards grow svelte-lp6q9n"}"><div class="${"filter svelte-lp6q9n"}"></div>
+					<img${add_attribute("src", picture, 0)}${add_attribute("alt", name, 0)} class="${"svelte-lp6q9n"}">
+					<div class="${"name svelte-lp6q9n"}">${escape(name)}</div>
+					<div class="${"title svelte-lp6q9n"}">${escape(title2)}</div>
+				</div>`)}</div>
+		<div class="${"goodbye-message grow svelte-lp6q9n"}"><h1 class="${"svelte-lp6q9n"}">Thanks for dropping by. \u{1F389}</h1></div>
+		<div class="${"spacer vert two svelte-lp6q9n"}"></div></div>
+</div>`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/3.js
+var __exports4 = {};
+__export(__exports4, {
+  css: () => css10,
+  entry: () => entry4,
+  js: () => js4,
+  module: () => about_svelte_exports
+});
+var entry4, js4, css10;
+var init__4 = __esm({
+  ".svelte-kit/output/server/nodes/3.js"() {
+    init_about_svelte();
+    entry4 = "pages/about.svelte-02d1c28c.js";
+    js4 = ["pages/about.svelte-02d1c28c.js", "chunks/vendor-2345f34e.js"];
+    css10 = ["assets/pages/about.svelte-763be746.css", "assets/vendor-2634b1a9.css"];
   }
 });
 
@@ -19544,10 +19643,10 @@ var init_katex = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/2-webgl-b580027c.js
-var Katex, metadata$1, slug, title, date, summary, thumbnail, tags, author, e1, e2, _1_mandel, __glob_1_0, metadata, _2_webgl, __glob_1_1;
-var init_webgl_b580027c = __esm({
-  ".svelte-kit/output/server/chunks/2-webgl-b580027c.js"() {
+// .svelte-kit/output/server/chunks/3-review-c328f41c.js
+var Katex, metadata$2, slug, title, date, summary, thumbnail, tags, author, e1, e2, _1_mandel, __glob_1_0, metadata$1, _2_webgl, __glob_1_1, metadata, _3_review, __glob_1_2;
+var init_review_c328f41c = __esm({
+  ".svelte-kit/output/server/chunks/3-review-c328f41c.js"() {
     init_index_6bc633e9();
     init_katex();
     Katex = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -19564,16 +19663,16 @@ var init_webgl_b580027c = __esm({
 
 <!-- HTML_TAG_START -->${katexString}<!-- HTML_TAG_END -->`;
     });
-    metadata$1 = {
+    metadata$2 = {
       "slug": "1-mandel",
       "title": "One of the Fastest Web Mandelbrot Renderers",
       "date": "2021-06-21T00:00:00.000Z",
       "summary": "Our initial experiments rendering the Mandelbrot set with JavaScript, Web-workers & emerging web technologies like webassembly.",
       "thumbnail": "/blog-1-mandel-thumbnail.webp",
-      "tags": ["WASM"],
+      "tags": ["Engineering"],
       "author": "Ojasvin Kirpane, Abhishek Cherath, Jo Gao & Abhinuv Allu"
     };
-    ({ slug, title, date, summary, thumbnail, tags, author } = metadata$1);
+    ({ slug, title, date, summary, thumbnail, tags, author } = metadata$2);
     e1 = "z_{0}=0";
     e2 = "z*{n+1}=z_n^2+c";
     _1_mandel = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -20074,15 +20173,15 @@ RUNTIME_FLAGS <span class="token operator">=</span> --runtime stub
       __proto__: null,
       [Symbol.toStringTag]: "Module",
       "default": _1_mandel,
-      metadata: metadata$1
+      metadata: metadata$2
     });
-    metadata = {
+    metadata$1 = {
       "slug": "2-webgl",
       "title": "WebGL with Emscripten: The Bare Minimum",
       "date": "2021-08-03T00:00:00.000Z",
       "summary": "Illustrating the bare minimum required to get WebGL up and running in C with the Emscripten compiler.",
       "thumbnail": "/blog-2-tri-thumbnail.webp",
-      "tags": ["WebGL"],
+      "tags": ["Engineering"],
       "author": "Jo Gao"
     };
     _2_webgl = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -20149,17 +20248,55 @@ RUNTIME_FLAGS <span class="token operator">=</span> --runtime stub
       __proto__: null,
       [Symbol.toStringTag]: "Module",
       "default": _2_webgl,
+      metadata: metadata$1
+    });
+    metadata = {
+      "slug": "3-2021-in-Review",
+      "title": "Looking Back at 2021, Gearing For Launch",
+      "date": "2022-1-21",
+      "summary": "Over the past year we\u2019ve done a lot to rapidly build up a prototype, and have finally reached a point where we\u2019ve been using it on your own workflows.",
+      "thumbnail": "/blog-3-review-thumbnail.webp",
+      "tags": ["Update", "Engineering"],
+      "author": "Kyle Li, Jo Gao"
+    };
+    _3_review = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<p>Hey everyone,</p>
+<p>This January, we\u2019re excited to bring you the first of many monthly updates you can expect moving forward into 2022.</p>
+<iframe style="${"width: 100%;"}" width="${"560"}" height="${"315"}" src="${"https://www.youtube.com/embed/zh7jbxOZipw"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}" allowfullscreen></iframe>
+<p><em>P.S. Stay tuned until the end of the video Progress Report to view a demo of Feather in action through long distances (Atlanta \u2192 New York).</em></p>
+<h2>Progress So Far</h2>
+<p>Over the past year we\u2019ve done a lot to rapidly build up a prototype, and have finally reached a point where we\u2019ve been using it on your own workflows. </p>
+<p><strong>Remote Desktop:</strong> FeatherStream currently allows users to access their full desktop remotely from any other PC utilizing webRTC.</p>
+<p><strong>Cross OS Support:</strong> We have successfully configured CI for this project to automatically give us Linux, Windows, and MacOS builds for testing.</p>
+<p><strong>Multi-Server Support:</strong> To prepare for future plans in load balancing, FeatherStream allows you to set up and connect to multiple servers from the same client device, seamlessly across multiple devices and vice versa.</p>
+<p>All of this has brought Feather up to speed with other remote desktop solutions in months, building the core of our future innovations.</p>
+<h2>The Feather Vision</h2>
+<p>Feather isn\u2019t simply a Remote Desktop. In fact, we looked at the clunky existing remote desktop and VDI infrastructure and found it unusable. It\u2019s not their fault. The fact is that simply streaming the entire desktop as a video can never feel like you\u2019re natively browsing windows on your machine.</p>
+<p>Feather isn\u2019t a Remote Desktop because it\u2019s a way for you to transform your home PC into a router for processing power itself. Anyone connected to your local Wi-Fi network should be able to accelerate the processing power they have available on the weakest of devices. Connecting to another machine should feel as smooth as running an app on your own device\u2026 and making these connections should be as simple and easily understood as connecting to Wi-Fi itself. </p>
+<h2>Looking Forward</h2>
+<p>We\u2019re a little ambitious, and it won\u2019t be easy. This year, we have a few steps planned to achieve our vision.</p>
+<p><strong>Individual Windows</strong>: Moving forward, we will implement application-level video streaming so users can access specific programs remotely. Users will be able to use different applications with a near-native experience.</p>
+<p><strong>Cross-Platform Files:</strong> We will add a shared clipboard mechanism so users can copy and paste between their local and remote devices without problems. We will be setting up a file system view for users to be able to access both local and remote files and a way to transfer and share files between devices.</p>
+<p><strong>Alpha Testing:</strong> We will continue to improve and develop our testing framework to start multiple instances of FeatherStream and help us release more robust versions of this product.</p>
+<p>If you\u2019re interested in being the first to hear about how we\u2019re changing remote access, make sure to subscribe to the Feather newsletter.</p>
+<p>It has been an exciting year as we begin to gear up to bring Feather into the public eye. Lots have been celebrated, improved, and learned. We have exciting news planned for our next monthly update, so stay tuned to learn more because even we can\u2019t wait to see what comes next. </p>
+<ul><li>Feather Team</li></ul>`;
+    });
+    __glob_1_2 = /* @__PURE__ */ Object.freeze({
+      __proto__: null,
+      [Symbol.toStringTag]: "Module",
+      "default": _3_review,
       metadata
     });
   }
 });
 
 // .svelte-kit/output/server/chunks/thumbnail-57767130.js
-var css9, Thumbnail;
+var css11, Thumbnail;
 var init_thumbnail_57767130 = __esm({
   ".svelte-kit/output/server/chunks/thumbnail-57767130.js"() {
     init_index_6bc633e9();
-    css9 = {
+    css11 = {
       code: '.image.svelte-11z53b.svelte-11z53b{overflow:hidden;border-radius:10px 10px 0 0}.title.svelte-11z53b.svelte-11z53b{line-height:1.25;font-size:1.8055555556vw}@media screen and (max-width: 810px){.title.svelte-11z53b.svelte-11z53b{font-size:max(1.8055555556vw, 26px)}}@media screen and (min-width: 1240px){.title.svelte-11z53b.svelte-11z53b{font-size:min(1.8055555556vw, 26px)}}.tag.svelte-11z53b.svelte-11z53b{margin-right:10px;text-decoration:none}.tags.svelte-11z53b.svelte-11z53b{display:flex;flex-direction:row}#arrow-icon.svelte-11z53b.svelte-11z53b{content:url("/arrow.svg")}.content-footer.svelte-11z53b.svelte-11z53b{display:flex;justify-content:space-between;align-items:center}.content.svelte-11z53b.svelte-11z53b{padding-left:20px;padding-right:20px}.summary.svelte-11z53b.svelte-11z53b{width:100%;min-height:100px;line-height:1.6;font-size:1.1111111111vw;opacity:0.75}@media screen and (max-width: 810px){.summary.svelte-11z53b.svelte-11z53b{font-size:max(1.1111111111vw, 16px)}}@media screen and (min-width: 1240px){.summary.svelte-11z53b.svelte-11z53b{font-size:min(1.1111111111vw, 16px)}}.thumbnail.svelte-11z53b.svelte-11z53b{aspect-ratio:38/47;min-width:24.3055555556vw;height:485px;border-radius:0.6944444444vw;background:#1a1e2c}@media screen and (max-width: 810px){.thumbnail.svelte-11z53b.svelte-11z53b{max-width:100%;height:auto;width:100%}}@media screen and (min-width: 1240px){.thumbnail.svelte-11z53b.svelte-11z53b{min-width:min(24.3055555556vw, 350px);width:min(26.3888888889vw, 380px);border-radius:min(0.6944444444vw, 10px)}}a.svelte-11z53b.svelte-11z53b{display:block}img.svelte-11z53b.svelte-11z53b{border-radius:10px 10px 0 0;width:100%;object-fit:contain;transition:transform 0.4s;display:block}.thumbnail.svelte-11z53b:hover img.svelte-11z53b{transform:scale(1.5)}h2.svelte-11z53b.svelte-11z53b{word-wrap:break-word;font-size:1.8055555556vw;min-height:65px}@media screen and (max-width: 810px){h2.svelte-11z53b.svelte-11z53b{font-size:max(1.8055555556vw, 26px)}}@media screen and (min-width: 1240px){h2.svelte-11z53b.svelte-11z53b{font-size:min(1.8055555556vw, 26px)}}',
       map: null
     };
@@ -20179,7 +20316,7 @@ var init_thumbnail_57767130 = __esm({
         $$bindings.tags(tags2);
       if ($$props.thumbnail === void 0 && $$bindings.thumbnail && thumbnail2 !== void 0)
         $$bindings.thumbnail(thumbnail2);
-      $$result.css.add(css9);
+      $$result.css.add(css11);
       return `<a sveltekit:prefetch${add_attribute("href", `/${link}`, 0)} class="${"svelte-11z53b"}"><div class="${"thumbnail svelte-11z53b"}"><div class="${"image svelte-11z53b"}"><img${add_attribute("src", thumbnail2, 0)} alt="${"Thumbnail"}" class="${"svelte-11z53b"}"></div>
 		<div class="${"content svelte-11z53b"}"><h2 class="${"title truncate header svelte-11z53b"}">${escape(title2)}</h2>
 			<div class="${"summary truncate svelte-11z53b"}">${escape(summary2)}</div>
@@ -20209,18 +20346,18 @@ function load2({ url, params }) {
     }
   };
 }
-var css10, allPosts, posts, U5Btagsu5D;
+var css12, allPosts, posts, U5Btagsu5D;
 var init_tags_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/tags/_tags_.svelte.js"() {
-    init_webgl_b580027c();
+    init_review_c328f41c();
     init_index_6bc633e9();
     init_thumbnail_57767130();
     init_katex();
-    css10 = {
+    css12 = {
       code: ".tags.svelte-zjfayw{padding:35px;font-size:40px;font-weight:300}.container.svelte-zjfayw{display:flex;flex-direction:column;align-items:center;justify-content:center}.grid.svelte-zjfayw{display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:50px}",
       map: null
     };
-    allPosts = { "../../lib/posts/1-mandel.md": __glob_1_0, "../../lib/posts/2-webgl.md": __glob_1_1 };
+    allPosts = { "../../lib/posts/1-mandel.md": __glob_1_0, "../../lib/posts/2-webgl.md": __glob_1_1, "../../lib/posts/3-review.md": __glob_1_2 };
     posts = [];
     for (let path2 in allPosts) {
       const post = allPosts[path2];
@@ -20235,7 +20372,7 @@ var init_tags_svelte = __esm({
         $$bindings.filteredPosts(filteredPosts2);
       if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0)
         $$bindings.tag(tag);
-      $$result.css.add(css10);
+      $$result.css.add(css12);
       return `<div class="${"container svelte-zjfayw"}"><div class="${"tags svelte-zjfayw"}">Posts tagged with #${escape(tag)}</div>
     <div class="${"grid svelte-zjfayw"}">${each(filteredPosts2, ({ post, slug: slug2 }) => `${validate_component(Thumbnail, "Thumbnail").$$render($$result, {
         title: post.metadata.title,
@@ -20250,21 +20387,21 @@ var init_tags_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/4.js
-var __exports4 = {};
-__export(__exports4, {
-  css: () => css11,
-  entry: () => entry4,
-  js: () => js4,
+// .svelte-kit/output/server/nodes/5.js
+var __exports5 = {};
+__export(__exports5, {
+  css: () => css13,
+  entry: () => entry5,
+  js: () => js5,
   module: () => tags_svelte_exports
 });
-var entry4, js4, css11;
-var init__4 = __esm({
-  ".svelte-kit/output/server/nodes/4.js"() {
+var entry5, js5, css13;
+var init__5 = __esm({
+  ".svelte-kit/output/server/nodes/5.js"() {
     init_tags_svelte();
-    entry4 = "pages/tags/_tags_.svelte-7d6d6691.js";
-    js4 = ["pages/tags/_tags_.svelte-7d6d6691.js", "chunks/2-webgl-45c8070e.js", "chunks/vendor-2345f34e.js", "chunks/thumbnail-ca47334d.js"];
-    css11 = ["assets/pages/tags/_tags_.svelte-fe12782a.css", "assets/vendor-2634b1a9.css", "assets/thumbnail-b6ad015b.css"];
+    entry5 = "pages/tags/_tags_.svelte-2e0ad2ce.js";
+    js5 = ["pages/tags/_tags_.svelte-2e0ad2ce.js", "chunks/3-review-c32f013a.js", "chunks/vendor-2345f34e.js", "chunks/thumbnail-ca47334d.js"];
+    css13 = ["assets/pages/tags/_tags_.svelte-fe12782a.css", "assets/vendor-2634b1a9.css", "assets/thumbnail-b6ad015b.css"];
   }
 });
 
@@ -29579,7 +29716,7 @@ var require_css = __commonJS({
       "writing-mode",
       "z-index"
     ].reverse();
-    function css15(hljs) {
+    function css17(hljs) {
       const regex = hljs.regex;
       const modes = MODES(hljs);
       const VENDOR_PREFIX = {
@@ -29699,7 +29836,7 @@ var require_css = __commonJS({
         ]
       };
     }
-    module2.exports = css15;
+    module2.exports = css17;
   }
 });
 
@@ -67340,7 +67477,7 @@ async function load3({ url, params, fetch: fetch3 }) {
     error: new Error(`Could not load ${url}`)
   };
 }
-var css$13, Clipboard, css12, _layout2;
+var css$13, Clipboard, css14, _layout2;
 var init_layout_svelte2 = __esm({
   ".svelte-kit/output/server/entries/pages/_slug_/__layout.svelte.js"() {
     init_index_6bc633e9();
@@ -67367,7 +67504,7 @@ var init_layout_svelte2 = __esm({
       return `${slots.default ? slots.default({ copy }) : ``}
 <textarea class="${"svelte-w8w2mp"}"${add_attribute("this", textarea, 0)}>${escape(text2)}</textarea>`;
     });
-    css12 = {
+    css14 = {
       code: ".container.svelte-uuqhyn{position:relative;width:54.1666666667vw;margin:0px auto 0px auto}@media screen and (max-width: 810px){.container.svelte-uuqhyn{width:max(54.1666666667vw, 90%)}}@media screen and (min-width: 1240px){.container.svelte-uuqhyn{width:min(54.1666666667vw, 780px)}}.thumbnail.svelte-uuqhyn{margin:0 60px}@media screen and (max-width: 810px){.thumbnail.svelte-uuqhyn{margin:0}}@media screen and (max-width: 1112px){.thumbnail.svelte-uuqhyn{margin:0}}.social-container.svelte-uuqhyn{margin:2.0833333333vw 0px 0px 0px;min-width:60px;min-height:100%}@media screen and (max-width: 1112px){.social-container.svelte-uuqhyn{display:none}}@media screen and (max-width: 810px){.social-container.svelte-uuqhyn{left:max(21.5277777778vw, 310px);top:max(18.75vw, 270px)}}@media screen and (min-width: 1240px){.social-container.svelte-uuqhyn{left:max(21.5277777778vw, 310px);top:max(18.75vw, 270px)}}.sticky-social.svelte-uuqhyn{display:flex;flex-direction:column;justify-content:space-between;height:160px;position:sticky;top:10.4166666667vw}.social.image.svelte-uuqhyn{aspect-ratio:1/1;width:25px;height:25px}.center-spacer.svelte-uuqhyn{min-width:60px;flex-grow:1}@media screen and (max-width: 810px){.center-spacer.svelte-uuqhyn{min-width:0}}@media screen and (max-width: 1112px){.center-spacer.svelte-uuqhyn{min-width:0}}.title.svelte-uuqhyn{font-size:3.3333333333vw;font-weight:bold}@media screen and (max-width: 810px){.title.svelte-uuqhyn{font-size:max(3.3333333333vw, 37px)}}@media screen and (min-width: 1240px){.title.svelte-uuqhyn{font-size:min(3.3333333333vw, 48px)}}.meta.svelte-uuqhyn{opacity:0.75}.tag.svelte-uuqhyn{margin-right:5px;text-decoration:none;color:#fffffb}.tag.svelte-uuqhyn:hover{color:#fb7680}.heading-box.svelte-uuqhyn{display:flex;vertical-align:bottom;width:100%}.heading.svelte-uuqhyn{display:flex;flex-direction:column}@media screen and (max-width: 810px){.heading.svelte-uuqhyn{width:80%;padding-left:20px}}.content.svelte-uuqhyn{display:flex;flex-direction:row}@media screen and (max-width: 810px){.content.svelte-uuqhyn{margin:0%}}.slot.svelte-uuqhyn{position:relative;z-index:1;height:100%;overflow:hidden;color:#fffffb}.spacer.hundred.svelte-uuqhyn{height:5.9027777778vw}@media screen and (max-width: 810px){.spacer.hundred.svelte-uuqhyn{height:max(5.9027777778vw, 85px)}}@media screen and (min-width: 1240px){.spacer.hundred.svelte-uuqhyn{height:min(5.9027777778vw, 85px)}}.spacer.ten.svelte-uuqhyn{height:0.6944444444vw}@media screen and (max-width: 810px){.spacer.ten.svelte-uuqhyn{height:max(0.6944444444vw, 10px)}}@media screen and (min-width: 1240px){.spacer.ten.svelte-uuqhyn{height:min(0.6944444444vw, 10px)}}.spacer.twenty.svelte-uuqhyn{height:0.3472222222vw}@media screen and (max-width: 810px){.spacer.twenty.svelte-uuqhyn{height:max(0.3472222222vw, 5px)}}@media screen and (min-width: 1240px){.spacer.twenty.svelte-uuqhyn{height:min(0.3472222222vw, 5px)}}",
       map: null
     };
@@ -67400,7 +67537,7 @@ var init_layout_svelte2 = __esm({
       ];
       if ($$props.post === void 0 && $$bindings.post && post !== void 0)
         $$bindings.post(post);
-      $$result.css.add(css12);
+      $$result.css.add(css14);
       $$unsubscribe_page();
       return `${$$result.head += `${$$result.title = `<title>${escape(post.title)}</title>`, ""}<meta name="${"description"}"${add_attribute("content", post.summary, 0)} data-svelte="svelte-1pnt10t">`, ""}
 
@@ -67425,21 +67562,21 @@ var init_layout_svelte2 = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/5.js
-var __exports5 = {};
-__export(__exports5, {
-  css: () => css13,
-  entry: () => entry5,
-  js: () => js5,
+// .svelte-kit/output/server/nodes/6.js
+var __exports6 = {};
+__export(__exports6, {
+  css: () => css15,
+  entry: () => entry6,
+  js: () => js6,
   module: () => layout_svelte_exports2
 });
-var entry5, js5, css13;
-var init__5 = __esm({
-  ".svelte-kit/output/server/nodes/5.js"() {
+var entry6, js6, css15;
+var init__6 = __esm({
+  ".svelte-kit/output/server/nodes/6.js"() {
     init_layout_svelte2();
-    entry5 = "pages/_slug_/__layout.svelte-73d46e09.js";
-    js5 = ["pages/_slug_/__layout.svelte-73d46e09.js", "chunks/vendor-2345f34e.js", "chunks/stores-9e46c81f.js"];
-    css13 = ["assets/pages/_slug_/__layout.svelte-7693d0c0.css", "assets/vendor-2634b1a9.css", "assets/stores-ca62fa95.css"];
+    entry6 = "pages/_slug_/__layout.svelte-73d46e09.js";
+    js6 = ["pages/_slug_/__layout.svelte-73d46e09.js", "chunks/vendor-2345f34e.js", "chunks/stores-9e46c81f.js"];
+    css15 = ["assets/pages/_slug_/__layout.svelte-7693d0c0.css", "assets/vendor-2634b1a9.css", "assets/stores-ce26150f.css"];
   }
 });
 
@@ -67464,11 +67601,11 @@ function load4({ url, params }) {
 var prerender, allPosts2, posts2, U5Bslugu5D;
 var init_index_svelte2 = __esm({
   ".svelte-kit/output/server/entries/pages/_slug_/index.svelte.js"() {
-    init_webgl_b580027c();
+    init_review_c328f41c();
     init_index_6bc633e9();
     init_katex();
     prerender = true;
-    allPosts2 = { "../../lib/posts/1-mandel.md": __glob_1_0, "../../lib/posts/2-webgl.md": __glob_1_1 };
+    allPosts2 = { "../../lib/posts/1-mandel.md": __glob_1_0, "../../lib/posts/2-webgl.md": __glob_1_1, "../../lib/posts/3-review.md": __glob_1_2 };
     posts2 = [];
     for (let path2 in allPosts2) {
       const post = allPosts2[path2];
@@ -67484,21 +67621,21 @@ var init_index_svelte2 = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/6.js
-var __exports6 = {};
-__export(__exports6, {
-  css: () => css14,
-  entry: () => entry6,
-  js: () => js6,
+// .svelte-kit/output/server/nodes/7.js
+var __exports7 = {};
+__export(__exports7, {
+  css: () => css16,
+  entry: () => entry7,
+  js: () => js7,
   module: () => index_svelte_exports2
 });
-var entry6, js6, css14;
-var init__6 = __esm({
-  ".svelte-kit/output/server/nodes/6.js"() {
+var entry7, js7, css16;
+var init__7 = __esm({
+  ".svelte-kit/output/server/nodes/7.js"() {
     init_index_svelte2();
-    entry6 = "pages/_slug_/index.svelte-a19be077.js";
-    js6 = ["pages/_slug_/index.svelte-a19be077.js", "chunks/2-webgl-45c8070e.js", "chunks/vendor-2345f34e.js"];
-    css14 = ["assets/vendor-2634b1a9.css"];
+    entry7 = "pages/_slug_/index.svelte-480c1361.js";
+    js7 = ["pages/_slug_/index.svelte-480c1361.js", "chunks/3-review-c32f013a.js", "chunks/vendor-2345f34e.js"];
+    css16 = ["assets/vendor-2634b1a9.css"];
   }
 });
 
@@ -67616,7 +67753,7 @@ var require_reading_time2 = __commonJS({
   }
 });
 
-// .svelte-kit/output/server/chunks/posts-8dc729cf.js
+// .svelte-kit/output/server/chunks/posts-7094e0e7.js
 function groupByTags(array) {
   return array.reduce((acc, value) => {
     const property = value["tag"];
@@ -67645,11 +67782,11 @@ function getRelatedPosts(post) {
   return relatedPosts;
 }
 var import_reading_time, imports, posts3, allTagsAndPosts, categories, filteredPosts;
-var init_posts_8dc729cf = __esm({
-  ".svelte-kit/output/server/chunks/posts-8dc729cf.js"() {
-    init_webgl_b580027c();
+var init_posts_7094e0e7 = __esm({
+  ".svelte-kit/output/server/chunks/posts-7094e0e7.js"() {
+    init_review_c328f41c();
     import_reading_time = __toModule(require_reading_time2());
-    imports = { "./posts/1-mandel.md": __glob_1_0, "./posts/2-webgl.md": __glob_1_1 };
+    imports = { "./posts/1-mandel.md": __glob_1_0, "./posts/2-webgl.md": __glob_1_1, "./posts/3-review.md": __glob_1_2 };
     posts3 = [];
     for (const path2 in imports) {
       const post = imports[path2];
@@ -67689,8 +67826,8 @@ async function get() {
 var import_reading_time2;
 var init_blog_json = __esm({
   ".svelte-kit/output/server/entries/endpoints/blog.json.js"() {
-    init_posts_8dc729cf();
-    init_webgl_b580027c();
+    init_posts_7094e0e7();
+    init_review_c328f41c();
     init_index_6bc633e9();
     init_katex();
     import_reading_time2 = __toModule(require_reading_time2());
@@ -67717,8 +67854,8 @@ function get2({ params }) {
 var import_reading_time3;
 var init_index_json = __esm({
   ".svelte-kit/output/server/entries/endpoints/_slug_/index.json.js"() {
-    init_posts_8dc729cf();
-    init_webgl_b580027c();
+    init_posts_7094e0e7();
+    init_review_c328f41c();
     init_index_6bc633e9();
     init_katex();
     import_reading_time3 = __toModule(require_reading_time2());
@@ -67926,12 +68063,12 @@ function devalue(value) {
   }
   walk(value);
   var names = new Map();
-  Array.from(counts).filter(function(entry7) {
-    return entry7[1] > 1;
+  Array.from(counts).filter(function(entry8) {
+    return entry8[1] > 1;
   }).sort(function(a, b) {
     return b[1] - a[1];
-  }).forEach(function(entry7, i2) {
-    names.set(entry7[0], getName(i2));
+  }).forEach(function(entry8, i2) {
+    names.set(entry8[0], getName(i2));
   });
   function stringify(thing) {
     if (names.has(thing)) {
@@ -68208,7 +68345,7 @@ async function render_response({
   params
 }) {
   const css22 = new Set(options.manifest._.entry.css);
-  const js7 = new Set(options.manifest._.entry.js);
+  const js8 = new Set(options.manifest._.entry.js);
   const styles2 = new Set();
   const serialized_data = [];
   let rendered;
@@ -68222,7 +68359,7 @@ async function render_response({
       if (node.css)
         node.css.forEach((url2) => css22.add(url2));
       if (node.js)
-        node.js.forEach((url2) => js7.add(url2));
+        node.js.forEach((url2) => js8.add(url2));
       if (node.styles)
         node.styles.forEach((content) => styles2.add(content));
       if (fetched && page_config.hydrate)
@@ -68270,10 +68407,10 @@ async function render_response({
   }
   const include_js = page_config.router || page_config.hydrate;
   if (!include_js)
-    js7.clear();
+    js8.clear();
   const links = options.amp ? styles2.size > 0 || rendered.css.code.length > 0 ? `<style amp-custom>${Array.from(styles2).concat(rendered.css.code).join("\n")}</style>` : "" : [
     ...Array.from(css22).map((dep) => `<link rel="stylesheet" href="${options.prefix}${dep}">`),
-    ...Array.from(js7).map((dep) => `<link rel="modulepreload" href="${options.prefix}${dep}">`)
+    ...Array.from(js8).map((dep) => `<link rel="modulepreload" href="${options.prefix}${dep}">`)
   ].join("\n		");
   let init = "";
   if (options.amp) {
@@ -69266,17 +69403,18 @@ var App = class {
 // .svelte-kit/vercel-tmp/manifest.js
 var manifest = {
   appDir: "_app",
-  assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "logo.svg", "reddit.svg", "robots.txt", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
+  assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "logo.svg", "reddit.svg", "robots.txt", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
-    mime: { ".png": "image/png", ".woff2": "font/woff2", ".svg": "image/svg+xml", ".webp": "image/webp", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain" },
-    entry: { "file": "start-68f1531f.js", "js": ["start-68f1531f.js", "chunks/vendor-2345f34e.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain" },
+    entry: { "file": "start-e9e5ac06.js", "js": ["start-e9e5ac06.js", "chunks/vendor-2345f34e.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
       () => Promise.resolve().then(() => (init__3(), __exports3)),
       () => Promise.resolve().then(() => (init__4(), __exports4)),
       () => Promise.resolve().then(() => (init__5(), __exports5)),
-      () => Promise.resolve().then(() => (init__6(), __exports6))
+      () => Promise.resolve().then(() => (init__6(), __exports6)),
+      () => Promise.resolve().then(() => (init__7(), __exports7))
     ],
     routes: [
       {
@@ -69295,10 +69433,18 @@ var manifest = {
       },
       {
         type: "page",
+        pattern: /^\/about\/?$/,
+        params: null,
+        path: "/about",
+        a: [0, 3],
+        b: [1]
+      },
+      {
+        type: "page",
         pattern: /^\/tags\/([^/]+?)\/?$/,
         params: (m2) => ({ tags: m2[1] }),
         path: null,
-        a: [0, 3],
+        a: [0, 4],
         b: [1]
       },
       {
@@ -69312,7 +69458,7 @@ var manifest = {
         pattern: /^\/([^/]+?)\/?$/,
         params: (m2) => ({ slug: m2[1] }),
         path: null,
-        a: [0, 4, 5],
+        a: [0, 5, 6],
         b: [1]
       }
     ]
