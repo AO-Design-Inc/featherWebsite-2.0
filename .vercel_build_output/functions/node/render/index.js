@@ -6214,7 +6214,7 @@ var init_about_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/about.svelte.js"() {
     init_index_6bc633e9();
     css9 = {
-      code: ".container.svelte-12xclr9.svelte-12xclr9{width:45.8333333333vw;margin:0% auto}@media screen and (min-width: 1240px){.container.svelte-12xclr9.svelte-12xclr9{width:min(45.8333333333vw, 660px)}}@media screen and (max-width: 500px){.container.svelte-12xclr9.svelte-12xclr9{width:max(45.8333333333vw, 90%)}}.container.svelte-12xclr9 .avatar-container.svelte-12xclr9{display:grid;grid-template-columns:1fr 1fr;grid-gap:4.1666666667vw}@media screen and (min-width: 1240px){.container.svelte-12xclr9 .avatar-container.svelte-12xclr9{grid-gap:min(4.1666666667vw, 60px)}}@media screen and (max-width: 810px){.container.svelte-12xclr9 .avatar-container.svelte-12xclr9{grid-template-columns:1fr;grid-gap:max(4.1666666667vw, 60px)}}.container.svelte-12xclr9 .avatar-cards.svelte-12xclr9{width:20.8333333333vw;aspect-ratio:10/13;border-radius:0.6944444444vw;position:relative}@media screen and (min-width: 1240px){.container.svelte-12xclr9 .avatar-cards.svelte-12xclr9{width:min(20.8333333333vw, 300px);border-radius:min(0.6944444444vw, 10px)}}@media screen and (max-width: 810px){.container.svelte-12xclr9 .avatar-cards.svelte-12xclr9{width:max(20.8333333333vw, 100%);aspect-ratio:10/10;overflow:hidden;border-radius:max(0.6944444444vw, 10px)}}.container.svelte-12xclr9 .avatar-cards .filter.svelte-12xclr9{z-index:2;width:100%;height:100%;position:absolute;top:0%;left:0%;background-image:linear-gradient(96.56deg, #fff2f0 0%, #fcafa8 50%, #f5938b 60%)}@media screen and (max-width: 810px){.container.svelte-12xclr9 .avatar-cards .filter.svelte-12xclr9{background-image:linear-gradient(0deg, #11131ca5 0%, rgba(240, 173, 183, 0) 25%, rgba(17, 19, 28, 0) 56.28%)}}.container.svelte-12xclr9 .avatar-cards img.svelte-12xclr9{z-index:1;position:absolute;top:0%;left:0%;width:20.8333333333vw;aspect-ratio:10/13}@media screen and (min-width: 1240px){.container.svelte-12xclr9 .avatar-cards img.svelte-12xclr9{width:min(20.8333333333vw, 300px)}}@media screen and (max-width: 810px){.container.svelte-12xclr9 .avatar-cards img.svelte-12xclr9{width:max(20.8333333333vw, 100%)}}.container.svelte-12xclr9 .avatar-cards .name.svelte-12xclr9{z-index:3;position:absolute;bottom:10%;left:10%;max-width:12.5vw;font-size:2.5694444444vw;font-weight:700;line-height:105%}@media screen and (min-width: 1240px){.container.svelte-12xclr9 .avatar-cards .name.svelte-12xclr9{font-size:min(2.5694444444vw, 37px);max-width:min(12.5vw, 180px)}}@media screen and (max-width: 810px){.container.svelte-12xclr9 .avatar-cards .name.svelte-12xclr9{max-width:max(12.5vw, 180px);font-size:max(2.5694444444vw, 37px)}}.container.svelte-12xclr9 .avatar-cards .title.svelte-12xclr9{z-index:3;position:absolute;bottom:10%;right:10%;font-size:16px;font-style:normal;font-weight:400;letter-spacing:0em;text-align:right}.container.svelte-12xclr9 .goodbye-message.svelte-12xclr9{height:120vh;display:grid;place-items:center}.container.svelte-12xclr9 .goodbye-message h1.svelte-12xclr9{text-align:center;line-height:101%}@media screen and (min-width: 1240px){.container.svelte-12xclr9 .goodbye-message.svelte-12xclr9{height:min(150vh, 875px)}}@media screen and (max-width: 810px){.container.svelte-12xclr9 .goodbye-message.svelte-12xclr9{height:max(100vh, 660px)}}h1.svelte-12xclr9.svelte-12xclr9{margin-top:2.7777777778vw;margin-bottom:1.5%;font-size:6.1805555556vw}@media screen and (min-width: 1240px){h1.svelte-12xclr9.svelte-12xclr9{font-size:min(6.1805555556vw, 89px);margin-top:min(2.7777777778vw, 40px)}}@media screen and (max-width: 810px){h1.svelte-12xclr9.svelte-12xclr9{text-align:left;font-size:max(6.1805555556vw, 59px);margin-top:max(2.7777777778vw, 40px)}}h1.text.svelte-12xclr9.svelte-12xclr9{background:linear-gradient(96.56deg, #fff2f0 0%, #fcafa8 50%, #f5938b 60%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}h2.svelte-12xclr9.svelte-12xclr9{margin:2% 0% 1% 0%;font-size:2.5694444444vw}@media screen and (min-width: 1240px){h2.svelte-12xclr9.svelte-12xclr9{font-size:min(2.5694444444vw, 37px)}}@media screen and (max-width: 810px){h2.svelte-12xclr9.svelte-12xclr9{font-size:max(2.5694444444vw, 37px)}}p.svelte-12xclr9.svelte-12xclr9{opacity:0.85;font-size:1.3888888889vw;font-style:normal;font-weight:400;line-height:1.75;letter-spacing:0em;text-align:left;margin-top:0.5%;margin-bottom:7%}@media screen and (min-width: 1240px){p.svelte-12xclr9.svelte-12xclr9{font-size:min(1.3888888889vw, 20px)}}@media screen and (max-width: 810px){p.svelte-12xclr9.svelte-12xclr9{font-size:max(1.3888888889vw, 20px)}}.spacer.vert.svelte-12xclr9.svelte-12xclr9{width:100%}.vert.one.svelte-12xclr9.svelte-12xclr9{height:1.7361111111vw}@media screen and (min-width: 1240px){.vert.one.svelte-12xclr9.svelte-12xclr9{height:min(1.7361111111vw, 25px)}}@media screen and (max-width: 810px){.vert.one.svelte-12xclr9.svelte-12xclr9{height:max(1.7361111111vw, 25px)}}.vert.two.svelte-12xclr9.svelte-12xclr9{height:0.3472222222vw}@media screen and (min-width: 1240px){.vert.two.svelte-12xclr9.svelte-12xclr9{height:min(0.3472222222vw, 5px)}}@media screen and (max-width: 810px){.vert.two.svelte-12xclr9.svelte-12xclr9{height:0px}}",
+      code: ".container.svelte-17qbbbh.svelte-17qbbbh{width:45.8333333333vw;margin:0% auto}@media screen and (min-width: 1240px){.container.svelte-17qbbbh.svelte-17qbbbh{width:min(45.8333333333vw, 660px)}}@media screen and (max-width: 500px){.container.svelte-17qbbbh.svelte-17qbbbh{width:max(45.8333333333vw, 90%)}}.container.svelte-17qbbbh .avatar-container.svelte-17qbbbh{display:grid;grid-template-columns:1fr 1fr;grid-gap:4.1666666667vw}@media screen and (min-width: 1240px){.container.svelte-17qbbbh .avatar-container.svelte-17qbbbh{grid-gap:min(4.1666666667vw, 60px)}}@media screen and (max-width: 810px){.container.svelte-17qbbbh .avatar-container.svelte-17qbbbh{grid-template-columns:1fr;grid-gap:max(4.1666666667vw, 60px)}}.container.svelte-17qbbbh .avatar-cards.svelte-17qbbbh{width:20.8333333333vw;aspect-ratio:10/13;border-radius:0.6944444444vw;position:relative}@media screen and (min-width: 1240px){.container.svelte-17qbbbh .avatar-cards.svelte-17qbbbh{width:min(20.8333333333vw, 300px);border-radius:min(0.6944444444vw, 10px)}}@media screen and (max-width: 810px){.container.svelte-17qbbbh .avatar-cards.svelte-17qbbbh{width:max(20.8333333333vw, 100%);aspect-ratio:10/10;overflow:hidden;border-radius:max(0.6944444444vw, 10px)}}.container.svelte-17qbbbh .avatar-cards .filter.svelte-17qbbbh{z-index:2;width:100%;height:100%;position:absolute;top:0%;left:0%;background-image:linear-gradient(0deg, #11131c 0%, rgba(240, 173, 183, 0) 56.28%, rgba(17, 19, 28, 0) 56.28%)}@media screen and (max-width: 810px){.container.svelte-17qbbbh .avatar-cards .filter.svelte-17qbbbh{background-image:linear-gradient(0deg, #11131ca5 0%, rgba(240, 173, 183, 0) 25%, rgba(17, 19, 28, 0) 56.28%)}}.container.svelte-17qbbbh .avatar-cards img.svelte-17qbbbh{z-index:1;position:absolute;top:0%;left:0%;width:20.8333333333vw;aspect-ratio:10/13}@media screen and (min-width: 1240px){.container.svelte-17qbbbh .avatar-cards img.svelte-17qbbbh{width:min(20.8333333333vw, 300px)}}@media screen and (max-width: 810px){.container.svelte-17qbbbh .avatar-cards img.svelte-17qbbbh{width:max(20.8333333333vw, 100%)}}.container.svelte-17qbbbh .avatar-cards .name.svelte-17qbbbh{z-index:3;position:absolute;bottom:10%;left:10%;max-width:12.5vw;font-size:2.5694444444vw;font-weight:700;line-height:105%}@media screen and (min-width: 1240px){.container.svelte-17qbbbh .avatar-cards .name.svelte-17qbbbh{font-size:min(2.5694444444vw, 37px);max-width:min(12.5vw, 180px)}}@media screen and (max-width: 810px){.container.svelte-17qbbbh .avatar-cards .name.svelte-17qbbbh{max-width:max(12.5vw, 180px);font-size:max(2.5694444444vw, 37px)}}.container.svelte-17qbbbh .avatar-cards .title.svelte-17qbbbh{z-index:3;position:absolute;bottom:10%;right:10%;font-size:16px;font-style:normal;font-weight:400;letter-spacing:0em;text-align:right}.container.svelte-17qbbbh .goodbye-message.svelte-17qbbbh{height:120vh;display:grid;place-items:center}.container.svelte-17qbbbh .goodbye-message h1.svelte-17qbbbh{text-align:center;line-height:101%}@media screen and (min-width: 1240px){.container.svelte-17qbbbh .goodbye-message.svelte-17qbbbh{height:min(150vh, 875px)}}@media screen and (max-width: 810px){.container.svelte-17qbbbh .goodbye-message.svelte-17qbbbh{height:max(100vh, 660px)}}h1.svelte-17qbbbh.svelte-17qbbbh{margin-top:2.7777777778vw;margin-bottom:1.5%;font-size:6.1805555556vw}@media screen and (min-width: 1240px){h1.svelte-17qbbbh.svelte-17qbbbh{font-size:min(6.1805555556vw, 89px);margin-top:min(2.7777777778vw, 40px)}}@media screen and (max-width: 810px){h1.svelte-17qbbbh.svelte-17qbbbh{text-align:left;font-size:max(6.1805555556vw, 59px);margin-top:max(2.7777777778vw, 40px)}}h1.text.svelte-17qbbbh.svelte-17qbbbh{background:linear-gradient(96.56deg, #fff2f0 0%, #fcafa8 50%, #f5938b 60%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}h2.svelte-17qbbbh.svelte-17qbbbh{margin:2% 0% 1% 0%;font-size:2.5694444444vw}@media screen and (min-width: 1240px){h2.svelte-17qbbbh.svelte-17qbbbh{font-size:min(2.5694444444vw, 37px)}}@media screen and (max-width: 810px){h2.svelte-17qbbbh.svelte-17qbbbh{font-size:max(2.5694444444vw, 37px)}}p.svelte-17qbbbh.svelte-17qbbbh{opacity:0.85;font-size:1.3888888889vw;font-style:normal;font-weight:400;line-height:1.75;letter-spacing:0em;text-align:left;margin-top:0.5%;margin-bottom:7%}@media screen and (min-width: 1240px){p.svelte-17qbbbh.svelte-17qbbbh{font-size:min(1.3888888889vw, 20px)}}@media screen and (max-width: 810px){p.svelte-17qbbbh.svelte-17qbbbh{font-size:max(1.3888888889vw, 20px)}}.spacer.vert.svelte-17qbbbh.svelte-17qbbbh{width:100%}.vert.one.svelte-17qbbbh.svelte-17qbbbh{height:1.7361111111vw}@media screen and (min-width: 1240px){.vert.one.svelte-17qbbbh.svelte-17qbbbh{height:min(1.7361111111vw, 25px)}}@media screen and (max-width: 810px){.vert.one.svelte-17qbbbh.svelte-17qbbbh{height:max(1.7361111111vw, 25px)}}.vert.two.svelte-17qbbbh.svelte-17qbbbh{height:0.3472222222vw}@media screen and (min-width: 1240px){.vert.two.svelte-17qbbbh.svelte-17qbbbh{height:min(0.3472222222vw, 5px)}}@media screen and (max-width: 810px){.vert.two.svelte-17qbbbh.svelte-17qbbbh{height:0px}}",
       map: null
     };
     About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6241,25 +6241,25 @@ var init_about_svelte = __esm({
         }
       ];
       $$result.css.add(css9);
-      return `<div id="${"about-container"}"><div class="${"container svelte-12xclr9"}"><div class="${"spacer vert one svelte-12xclr9"}"></div>
-		<div class="${"spacer vert one svelte-12xclr9"}"></div>
+      return `<div id="${"about-container"}"><div class="${"container svelte-17qbbbh"}"><div class="${"spacer vert one svelte-17qbbbh"}"></div>
+		<div class="${"spacer vert one svelte-17qbbbh"}"></div>
 		
-		<h1 class="${"text svelte-12xclr9"}">About Us</h1>
-		<div class="${"spacer vert two svelte-12xclr9"}"></div>
-		<h2 class="${"text svelte-12xclr9"}">Who we are</h2>
-		<p class="${"svelte-12xclr9"}">We are Feather Systems!<br>
+		<h1 class="${"text svelte-17qbbbh"}">About Us</h1>
+		<div class="${"spacer vert two svelte-17qbbbh"}"></div>
+		<h2 class="${"text svelte-17qbbbh"}">Who we are</h2>
+		<p class="${"svelte-17qbbbh"}">We are Feather Systems!<br>
 			Computers don\u2019t work well together (especially across platforms). This leads to a lot of computers
 			running tasks that they are not necessarily optimised for. Feather turns people\u2019s computers into
 			routers for processing power, so that this compute can happen where it&#39;s best for it to happen.
 		</p>
-		<h2 class="${"text svelte-12xclr9"}">What we do</h2>
-		<p class="${"svelte-12xclr9"}">We are currently building a remote desktop application with WebRTC and Electron. Our primary
+		<h2 class="${"text svelte-17qbbbh"}">What we do</h2>
+		<p class="${"svelte-17qbbbh"}">We are currently building a remote desktop application with WebRTC and Electron. Our primary
 			focus with this application is to build a competitive remote access software with an
 			excellent, near-native user experience. This will set the foundation for our dream of making
 			virtualised hardware easy to access and ubiquitous.
 		</p>
-		<h2 class="${"text svelte-12xclr9"}">Where we are going</h2>
-		<p class="${"svelte-12xclr9"}">We want to be the nexus between the remote desktop and cloud infrastructure industries. Both
+		<h2 class="${"text svelte-17qbbbh"}">Where we are going</h2>
+		<p class="${"svelte-17qbbbh"}">We want to be the nexus between the remote desktop and cloud infrastructure industries. Both
 			these industries have the same major flaw, they are overly technical and obtuse. Our plan is
 			to establish our own network of edge nodes and allow users to easily connect with them with
 			our robust remote desktop application.<br><br>
@@ -6268,16 +6268,16 @@ var init_about_svelte = __esm({
 			smart homes, to delivery drones, to your smart phones and wearables, everything will be powerful
 			by default.
 		</p>
-		<h1 class="${"svelte-12xclr9"}">Our Team</h1>
-		<div class="${"spacer vert one svelte-12xclr9"}"></div>
-		<div class="${"spacer vert one svelte-12xclr9"}"></div>
-		<div class="${"avatar-container svelte-12xclr9"}">${each(teamStruct, ({ name, title: title2, picture }, i2) => `<div class="${"avatar-cards grow svelte-12xclr9"}"><div class="${"filter svelte-12xclr9"}"></div>
-					<img${add_attribute("src", picture, 0)}${add_attribute("alt", name, 0)} class="${"svelte-12xclr9"}">
-					<div class="${"name svelte-12xclr9"}">${escape(name)}</div>
-					<div class="${"title svelte-12xclr9"}">${escape(title2)}</div>
+		<h1 class="${"svelte-17qbbbh"}">Our Team</h1>
+		<div class="${"spacer vert one svelte-17qbbbh"}"></div>
+		<div class="${"spacer vert one svelte-17qbbbh"}"></div>
+		<div class="${"avatar-container svelte-17qbbbh"}">${each(teamStruct, ({ name, title: title2, picture }, i2) => `<div class="${"avatar-cards grow svelte-17qbbbh"}"><div class="${"filter svelte-17qbbbh"}"></div>
+					<img${add_attribute("src", picture, 0)}${add_attribute("alt", name, 0)} class="${"svelte-17qbbbh"}">
+					<div class="${"name svelte-17qbbbh"}">${escape(name)}</div>
+					<div class="${"title svelte-17qbbbh"}">${escape(title2)}</div>
 				</div>`)}</div>
-		<div class="${"goodbye-message grow svelte-12xclr9"}"><h1 class="${"svelte-12xclr9"}">Thanks for dropping by. \u{1F389}</h1></div>
-		<div class="${"spacer vert two svelte-12xclr9"}"></div></div>
+		<div class="${"goodbye-message grow svelte-17qbbbh"}"><h1 class="${"svelte-17qbbbh"}">Thanks for dropping by. \u{1F389}</h1></div>
+		<div class="${"spacer vert two svelte-17qbbbh"}"></div></div>
 </div>`;
     });
   }
@@ -6295,9 +6295,9 @@ var entry4, js4, css10;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_about_svelte();
-    entry4 = "pages/about.svelte-ae0dc149.js";
-    js4 = ["pages/about.svelte-ae0dc149.js", "chunks/vendor-9661f7ef.js"];
-    css10 = ["assets/pages/about.svelte-bffb13c6.css", "assets/vendor-2634b1a9.css"];
+    entry4 = "pages/about.svelte-cdc20ddd.js";
+    js4 = ["pages/about.svelte-cdc20ddd.js", "chunks/vendor-9661f7ef.js"];
+    css10 = ["assets/pages/about.svelte-f40b445b.css", "assets/vendor-2634b1a9.css"];
   }
 });
 
@@ -69406,7 +69406,7 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "logo.svg", "reddit.svg", "robots.txt", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain" },
-    entry: { "file": "start-71130742.js", "js": ["start-71130742.js", "chunks/vendor-9661f7ef.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-693f469b.js", "js": ["start-693f469b.js", "chunks/vendor-9661f7ef.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

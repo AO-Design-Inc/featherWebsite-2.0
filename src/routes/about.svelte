@@ -124,7 +124,12 @@
 				position: absolute;
 				top: 0%;
 				left: 0%;
-				background-image: linear-gradient(96.56deg, #fff2f0 0%, #fcafa8 50%, #f5938b 60%);
+				background-image: linear-gradient(
+					0deg,
+					#11131c 0%,
+					rgba(240, 173, 183, 0) 56.28%,
+					rgba(17, 19, 28, 0) 56.28%
+				);
 				@media screen and (max-width: $bp) {
 					background-image: linear-gradient(
 						0deg,

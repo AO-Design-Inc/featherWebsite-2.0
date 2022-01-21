@@ -46,10 +46,6 @@
 		overflow: hidden;
 	}
 
-	.hovering {
-		transform: scale(1.2);
-	}
-
 	img {
 		display: block;
 		transition: transform .4s;
