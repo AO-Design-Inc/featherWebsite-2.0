@@ -5960,8 +5960,8 @@ var entry, js, css4;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-7adb1413.js";
-    js = ["pages/__layout.svelte-7adb1413.js", "chunks/vendor-2345f34e.js", "chunks/stores-9e46c81f.js", "chunks/form-304c1942.js"];
+    entry = "pages/__layout.svelte-484e083f.js";
+    js = ["pages/__layout.svelte-484e083f.js", "chunks/vendor-9661f7ef.js", "chunks/stores-6fc21725.js", "chunks/form-0183d2be.js"];
     css4 = ["assets/pages/__layout.svelte-2ddbc359.css", "assets/vendor-2634b1a9.css", "assets/stores-ce26150f.css", "assets/form-77d88580.css"];
   }
 });
@@ -6007,8 +6007,8 @@ var entry2, js2, css6;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "pages/__error.svelte-3c54e745.js";
-    js2 = ["pages/__error.svelte-3c54e745.js", "chunks/vendor-2345f34e.js"];
+    entry2 = "pages/__error.svelte-a0aac0f8.js";
+    js2 = ["pages/__error.svelte-a0aac0f8.js", "chunks/vendor-9661f7ef.js"];
     css6 = ["assets/pages/__error.svelte-f53665cf.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -6198,8 +6198,8 @@ var entry3, js3, css8;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-3f23d9b4.js";
-    js3 = ["pages/index.svelte-3f23d9b4.js", "chunks/vendor-2345f34e.js", "chunks/form-304c1942.js"];
+    entry3 = "pages/index.svelte-c6ab0add.js";
+    js3 = ["pages/index.svelte-c6ab0add.js", "chunks/vendor-9661f7ef.js", "chunks/form-0183d2be.js"];
     css8 = ["assets/pages/index.svelte-523cc025.css", "assets/vendor-2634b1a9.css", "assets/form-77d88580.css"];
   }
 });
@@ -6295,8 +6295,8 @@ var entry4, js4, css10;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_about_svelte();
-    entry4 = "pages/about.svelte-c37440bb.js";
-    js4 = ["pages/about.svelte-c37440bb.js", "chunks/vendor-2345f34e.js"];
+    entry4 = "pages/about.svelte-0edd9ff7.js";
+    js4 = ["pages/about.svelte-0edd9ff7.js", "chunks/vendor-9661f7ef.js"];
     css10 = ["assets/pages/about.svelte-ff7d833d.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -20399,8 +20399,8 @@ var entry5, js5, css13;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_tags_svelte();
-    entry5 = "pages/tags/_tags_.svelte-2e0ad2ce.js";
-    js5 = ["pages/tags/_tags_.svelte-2e0ad2ce.js", "chunks/3-review-c32f013a.js", "chunks/vendor-2345f34e.js", "chunks/thumbnail-ca47334d.js"];
+    entry5 = "pages/tags/_tags_.svelte-9704a156.js";
+    js5 = ["pages/tags/_tags_.svelte-9704a156.js", "chunks/3-review-1b6db324.js", "chunks/vendor-9661f7ef.js", "chunks/thumbnail-2cc3e0ee.js"];
     css13 = ["assets/pages/tags/_tags_.svelte-fe12782a.css", "assets/vendor-2634b1a9.css", "assets/thumbnail-b6ad015b.css"];
   }
 });
@@ -67574,8 +67574,8 @@ var entry6, js6, css15;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_layout_svelte2();
-    entry6 = "pages/_slug_/__layout.svelte-73d46e09.js";
-    js6 = ["pages/_slug_/__layout.svelte-73d46e09.js", "chunks/vendor-2345f34e.js", "chunks/stores-9e46c81f.js"];
+    entry6 = "pages/_slug_/__layout.svelte-165495aa.js";
+    js6 = ["pages/_slug_/__layout.svelte-165495aa.js", "chunks/vendor-9661f7ef.js", "chunks/stores-6fc21725.js"];
     css15 = ["assets/pages/_slug_/__layout.svelte-7693d0c0.css", "assets/vendor-2634b1a9.css", "assets/stores-ce26150f.css"];
   }
 });
@@ -67633,8 +67633,8 @@ var entry7, js7, css16;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
     init_index_svelte2();
-    entry7 = "pages/_slug_/index.svelte-480c1361.js";
-    js7 = ["pages/_slug_/index.svelte-480c1361.js", "chunks/3-review-c32f013a.js", "chunks/vendor-2345f34e.js"];
+    entry7 = "pages/_slug_/index.svelte-813dc55e.js";
+    js7 = ["pages/_slug_/index.svelte-813dc55e.js", "chunks/3-review-1b6db324.js", "chunks/vendor-9661f7ef.js"];
     css16 = ["assets/vendor-2634b1a9.css"];
   }
 });
@@ -69406,7 +69406,7 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "logo.svg", "reddit.svg", "robots.txt", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain" },
-    entry: { "file": "start-104cb152.js", "js": ["start-104cb152.js", "chunks/vendor-2345f34e.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-b659f02e.js", "js": ["start-b659f02e.js", "chunks/vendor-9661f7ef.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

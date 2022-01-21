@@ -15,7 +15,7 @@
 <div class="container">
 	<div class="thumbnail">
 		<div class="image">
-			<img src={post.thumbnail} alt="Thumbnail" class="background" class:hovering />
+			<img src={post.thumbnail} alt="Thumbnail" class="background" />
 		</div>
 		<div class="content">
 			<div class="tags">
