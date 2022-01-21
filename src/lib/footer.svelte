@@ -55,11 +55,11 @@
       height: calc(310 / 5) * $g;
       min-height: 310px;
   
-      background: linear-gradient(
-        226.51deg,
-        #1d2030 0%,
-        rgba(29, 32, 48, 0.25) 81.51%
-      );
+      // background: linear-gradient(
+      //   226.51deg,
+      //   #1d2030 0%,
+      //   rgba(29, 32, 48, 0.25) 81.51%
+      // );
       border-radius: 10px 10px 0px 0px;
       @media screen and (min-width: 1240px) {
         height: min(get-vw(310px), 310px);

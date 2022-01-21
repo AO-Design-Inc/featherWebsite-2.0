@@ -12,6 +12,10 @@
 	<a sveltekit:prefetch href="/blog">
 		<div class="link">Blog</div>
 	</a>
+	<div class="spacer linker between" />
+	<a sveltekit:prefetch href="/about">
+		<div class="link">About</div>
+	</a>
 	<div class="spacer linker" />
 	<div class="form-container">
 		<Form />
@@ -62,7 +66,6 @@
 	}
 	.link {
 		width: 24.6 * $g;
-    min-width: 95px;
 		text-align: center;
 		font-size: max(get-vw(16px), 16px);
 		background: rgba(255, 255, 255, 0.1);
@@ -76,6 +79,9 @@
 			height: min(get-vw(45px), 45px);
 			border-radius: min(get-vw(10px), 10px);
 		}
+		@media screen and (max-width: $bpDash) {
+			width: max(get-vw(95px), 90px);
+		}
 	}
 	.link:hover {
 		transition: background 0.2s ease-in-out;
@@ -85,6 +91,11 @@
 		width: get-vw(20px);
     @media screen and (max-width: $bpDash) {
 			width: 0%;
+		}
+	}
+	.spacer.linker.between {
+    @media screen and (max-width: $bpDash) {
+			width: max(get-vw(20px), 20px);
 		}
 	}
 	.spacer.one {
