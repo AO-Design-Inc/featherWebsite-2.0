@@ -58,7 +58,7 @@
 		<h1 class="text">Our Team</h1>
 		<div class="avatar-container">
 			{#each teamStruct as { name, title, picture }, i}
-				<div class="avatar-cards">
+				<div class="avatar-cards grow">
 					<div class="filter"/>
 					<img src={picture} alt={name} />
 					<div class="name">{name}</div>
@@ -66,7 +66,7 @@
 				</div>
 			{/each}
 		</div>
-		<div class="goodbye-message">
+		<div class="goodbye-message grow">
 			<h1>Thanks for dropping by. 🎉</h1>
 		</div>
 		<div class="spacer vert two" />
@@ -75,6 +75,7 @@
 
 <style lang="scss">
 	@import '../variables.scss';
+	$aboutbp: 500px;
 	// spacing and layout
 	.container {
 		width: get-vw(660px);
@@ -82,7 +83,7 @@
 		@media screen and (min-width: 1240px) {
 			width: min(get-vw(660px), 660px);
 		}
-		@media screen and (max-width: $bp) {
+		@media screen and (max-width: $aboutbp) {
 			width: max(get-vw(660px), 90%);
 		}
 		.image {
