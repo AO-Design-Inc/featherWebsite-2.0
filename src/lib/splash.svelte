@@ -42,7 +42,7 @@
 				<button
 					on:click={() =>
 						window.open(
-							'https://debonair-yumberry-7ef.notion.site/a088d6fbcf72470995a722249f52860e?v=3ad640a5516945b3ba7a7181ca084c97',
+							'https://debonair-yumberry-7ef.notion.site/8a6df0d21843495da5111e5f358c39ed?v=3723d322237b4018adc104a1d789c25f',
 							'_blank'
 						)}
 					class=" secondary doc"
