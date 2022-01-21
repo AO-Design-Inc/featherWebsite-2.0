@@ -128,7 +128,7 @@
 					0deg,
 					#11131c 0%,
 					rgba(240, 173, 183, 0) 56.28%,
-					rgba(17, 19, 28, 0) 56.28%
+					rgba(17, 19, 28, 0) 56.28%linear-gradient(96.56deg,#fff2f0 0%,#fcafa8 50%,#f5938b 60%)
 				);
 				@media screen and (max-width: $bp) {
 					background-image: linear-gradient(
@@ -222,7 +222,7 @@
 	}
 	h1.text {
 		//gradient
-		background: linear-gradient(96.56deg, #fff2f0 0%, #fcafa8 25%, #f5938b 40%);
+		background: linear-gradient(96.56deg,#fff2f0 0%,#fcafa8 50%,#f5938b 60%);
 		-webkit-background-clip: text;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
