@@ -10,9 +10,9 @@ tags:
 author: Kyle Li, Jo Gao
 ---
 
-Hey everyone,
+2021 has been an exciting year for Feather. 
 
-This January, we’re excited to bring you the first of many monthly updates you can expect moving forward into 2022.
+We’ve made massive strides towards reaching feature parity with key players in our field, expanded our team, and have plans for even more in 2022 (including a public launch!).
 
 <iframe style="width: 100%;" width="560" height="315" src="https://www.youtube.com/embed/zh7jbxOZipw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
