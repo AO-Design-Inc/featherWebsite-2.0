@@ -19643,10 +19643,10 @@ var init_katex = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/3-review-c328f41c.js
+// .svelte-kit/output/server/chunks/3-review-a28deda0.js
 var Katex, metadata$2, slug, title, date, summary, thumbnail, tags, author, e1, e2, _1_mandel, __glob_1_0, metadata$1, _2_webgl, __glob_1_1, metadata, _3_review, __glob_1_2;
-var init_review_c328f41c = __esm({
-  ".svelte-kit/output/server/chunks/3-review-c328f41c.js"() {
+var init_review_a28deda0 = __esm({
+  ".svelte-kit/output/server/chunks/3-review-a28deda0.js"() {
     init_index_6bc633e9();
     init_katex();
     Katex = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -20260,8 +20260,8 @@ RUNTIME_FLAGS <span class="token operator">=</span> --runtime stub
       "author": "Kyle Li, Jo Gao"
     };
     _3_review = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<p>Hey everyone,</p>
-<p>This January, we\u2019re excited to bring you the first of many monthly updates you can expect moving forward into 2022.</p>
+      return `<p>2021 has been an exciting year for Feather. </p>
+<p>We\u2019ve made massive strides towards reaching feature parity with key players in our field, expanded our team, and have plans for even more in 2022 (including a public launch!).</p>
 <iframe style="${"width: 100%;"}" width="${"560"}" height="${"315"}" src="${"https://www.youtube.com/embed/zh7jbxOZipw"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}" allowfullscreen></iframe>
 <p><em>P.S. Stay tuned until the end of the video Progress Report to view a demo of Feather in action through long distances (Atlanta \u2192 New York).</em></p>
 <h2>Progress So Far</h2>
@@ -20349,7 +20349,7 @@ function load2({ url, params }) {
 var css12, allPosts, posts, U5Btagsu5D;
 var init_tags_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/tags/_tags_.svelte.js"() {
-    init_review_c328f41c();
+    init_review_a28deda0();
     init_index_6bc633e9();
     init_thumbnail_57767130();
     init_katex();
@@ -20399,8 +20399,8 @@ var entry5, js5, css13;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_tags_svelte();
-    entry5 = "pages/tags/_tags_.svelte-9704a156.js";
-    js5 = ["pages/tags/_tags_.svelte-9704a156.js", "chunks/3-review-1b6db324.js", "chunks/vendor-9661f7ef.js", "chunks/thumbnail-2cc3e0ee.js"];
+    entry5 = "pages/tags/_tags_.svelte-9cc27c67.js";
+    js5 = ["pages/tags/_tags_.svelte-9cc27c67.js", "chunks/3-review-ca6b3645.js", "chunks/vendor-9661f7ef.js", "chunks/thumbnail-2cc3e0ee.js"];
     css13 = ["assets/pages/tags/_tags_.svelte-fe12782a.css", "assets/vendor-2634b1a9.css", "assets/thumbnail-b6ad015b.css"];
   }
 });
@@ -67601,7 +67601,7 @@ function load4({ url, params }) {
 var prerender, allPosts2, posts2, U5Bslugu5D;
 var init_index_svelte2 = __esm({
   ".svelte-kit/output/server/entries/pages/_slug_/index.svelte.js"() {
-    init_review_c328f41c();
+    init_review_a28deda0();
     init_index_6bc633e9();
     init_katex();
     prerender = true;
@@ -67633,8 +67633,8 @@ var entry7, js7, css16;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
     init_index_svelte2();
-    entry7 = "pages/_slug_/index.svelte-813dc55e.js";
-    js7 = ["pages/_slug_/index.svelte-813dc55e.js", "chunks/3-review-1b6db324.js", "chunks/vendor-9661f7ef.js"];
+    entry7 = "pages/_slug_/index.svelte-545ac889.js";
+    js7 = ["pages/_slug_/index.svelte-545ac889.js", "chunks/3-review-ca6b3645.js", "chunks/vendor-9661f7ef.js"];
     css16 = ["assets/vendor-2634b1a9.css"];
   }
 });
@@ -67753,7 +67753,7 @@ var require_reading_time2 = __commonJS({
   }
 });
 
-// .svelte-kit/output/server/chunks/posts-7094e0e7.js
+// .svelte-kit/output/server/chunks/posts-6862907e.js
 function groupByTags(array) {
   return array.reduce((acc, value) => {
     const property = value["tag"];
@@ -67782,9 +67782,9 @@ function getRelatedPosts(post) {
   return relatedPosts;
 }
 var import_reading_time, imports, posts3, allTagsAndPosts, categories, filteredPosts;
-var init_posts_7094e0e7 = __esm({
-  ".svelte-kit/output/server/chunks/posts-7094e0e7.js"() {
-    init_review_c328f41c();
+var init_posts_6862907e = __esm({
+  ".svelte-kit/output/server/chunks/posts-6862907e.js"() {
+    init_review_a28deda0();
     import_reading_time = __toModule(require_reading_time2());
     imports = { "./posts/1-mandel.md": __glob_1_0, "./posts/2-webgl.md": __glob_1_1, "./posts/3-review.md": __glob_1_2 };
     posts3 = [];
@@ -67826,8 +67826,8 @@ async function get() {
 var import_reading_time2;
 var init_blog_json = __esm({
   ".svelte-kit/output/server/entries/endpoints/blog.json.js"() {
-    init_posts_7094e0e7();
-    init_review_c328f41c();
+    init_posts_6862907e();
+    init_review_a28deda0();
     init_index_6bc633e9();
     init_katex();
     import_reading_time2 = __toModule(require_reading_time2());
@@ -67854,8 +67854,8 @@ function get2({ params }) {
 var import_reading_time3;
 var init_index_json = __esm({
   ".svelte-kit/output/server/entries/endpoints/_slug_/index.json.js"() {
-    init_posts_7094e0e7();
-    init_review_c328f41c();
+    init_posts_6862907e();
+    init_review_a28deda0();
     init_index_6bc633e9();
     init_katex();
     import_reading_time3 = __toModule(require_reading_time2());
@@ -69406,7 +69406,7 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "logo.svg", "reddit.svg", "robots.txt", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain" },
-    entry: { "file": "start-693f469b.js", "js": ["start-693f469b.js", "chunks/vendor-9661f7ef.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-b2c955a8.js", "js": ["start-b2c955a8.js", "chunks/vendor-9661f7ef.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
