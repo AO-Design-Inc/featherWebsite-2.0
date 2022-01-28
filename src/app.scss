@@ -198,7 +198,7 @@ blockquote p {
 }
 
 #line-animation.anim {
-	animation: appear 3s cubic-bezier(.63,.38,0,1.07) 0.3s 1 forwards;
+	animation: appear 3s cubic-bezier(.65,.25,0,1.15) 0.3s 1 forwards;
 }
 
 @keyframes appear {
