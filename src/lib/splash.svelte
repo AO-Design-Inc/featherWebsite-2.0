@@ -304,7 +304,7 @@
 		}
 	}
 	#right {
-		background: linear-gradient(180deg, #1d2030 0%, rgba(29, 32, 48, 0.25) 100%);
+		/*background: linear-gradient(180deg, #1d2030 0%, rgba(29, 32, 48, 0.25) 100%);*/
 		border-radius: 10px;
 		height: 100%;
 		width: 100%;

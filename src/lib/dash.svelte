@@ -17,9 +17,12 @@
 		<div class="link">About</div>
 	</a>
 	<div class="spacer linker" />
-	<div class="form-container">
-		<Form />
+	<div on:click={() => (window.location.href = '#sign-up')} >
+		<div class="sign-up">Sign Up</div>
 	</div>
+	<!--<div class="form-container">
+		<Form />
+	</div>-->
 	<!-- <div class="spacer two" /> -->
 	<!-- <button> Get Feather </button> -->
 </main>
@@ -68,7 +71,7 @@
 		width: 24.6 * $g;
 		text-align: center;
 		font-size: max(get-vw(16px), 16px);
-		background: rgba(255, 255, 255, 0.1);
+		/*background: rgba(255, 255, 255, 0.1);*/
 		height: get-vw(45px);
 		min-height: 45px;
 		display: grid;
@@ -103,6 +106,27 @@
 		width: 155 * $g;
     @media screen and (max-width: $bpDash) {
 			width: 200 * $g;
+		}
+	}
+	.sign-up {
+		width: 24.6 * $g; /*fix the spacers to accomodate this new button*/
+		text-align: center;
+		font-size: max(get-vw(16px), 16px);
+		/*background: rgba(255, 255, 255, 0.1);*/
+		height: get-vw(45px);
+		min-height: 45px;
+		display: grid;
+		place-items: center;
+		border: 1px solid white;
+		border-radius: get-vw(10px);
+		@media screen and (min-width: 1240px) {
+			font-size: min(get-vw(16px), 16px);
+			height: min(get-vw(45px), 45px);
+			border-radius: min(get-vw(10px), 10px);
+			width: min(get-vw(150px), 140px);
+		}
+		@media screen and (max-width: $bpDash) {
+			width: max(get-vw(95px), 90px);
 		}
 	}
 </style>

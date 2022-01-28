@@ -2,7 +2,7 @@
 	import Form from './form.svelte';
 </script>
 
-<div class="container">
+<div id="sign-up" class="container">
 	<div class="inner">
 		<div class="subscription">
 			<div class="pre-alpha-text">

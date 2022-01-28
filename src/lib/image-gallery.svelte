@@ -55,7 +55,7 @@
 <style lang="scss">
 	.image {
 		position: absolute;
-		right: 5%;
+		right: 0%;
 		top: 5%;
 		min-width: 90%;
 		width: 90%;
