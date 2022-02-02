@@ -74,6 +74,8 @@
 	.images {
 		@media screen and (min-width: 600px) {
 			width: 45%;
+			margin-left: auto; 
+			margin-right: 20px;
 		}
 		@media screen and (max-width: 600px) {
 			width: 100%;

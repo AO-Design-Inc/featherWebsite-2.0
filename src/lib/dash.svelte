@@ -17,9 +17,11 @@
 		<div class="link">About</div>
 	</a>
 	<div class="spacer linker" />
-	<div on:click={() => (window.location.href = '#sign-up')} >
+	<a href="#sign-up">
+	<div>
 		<div class="sign-up">Sign Up</div>
 	</div>
+</a>
 	<!--<div class="form-container">
 		<Form />
 	</div>-->
@@ -128,5 +130,9 @@
 		@media screen and (max-width: $bpDash) {
 			width: max(get-vw(95px), 90px);
 		}
+	}
+	.sign-up:hover {
+		transition: background 0.2s ease-in-out;
+		background: rgba(255, 255, 255, 0.2);
 	}
 </style>
