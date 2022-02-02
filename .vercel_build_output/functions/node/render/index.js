@@ -19634,10 +19634,10 @@ var init_katex = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/3-review-a28deda0.js
-var Katex, metadata$2, slug, title, date, summary, thumbnail, tags, author, e1, e2, _1_mandel, __glob_1_0, metadata$1, _2_webgl, __glob_1_1, metadata, _3_review, __glob_1_2;
-var init_review_a28deda0 = __esm({
-  ".svelte-kit/output/server/chunks/3-review-a28deda0.js"() {
+// .svelte-kit/output/server/chunks/4-vision-f7f833b7.js
+var Katex, metadata$3, slug, title, date, summary, thumbnail, tags, author, e1, e2, _1_mandel, __glob_1_0, metadata$2, _2_webgl, __glob_1_1, metadata$1, _3_review, __glob_1_2, metadata, _4_vision, __glob_1_3;
+var init_vision_f7f833b7 = __esm({
+  ".svelte-kit/output/server/chunks/4-vision-f7f833b7.js"() {
     init_index_6bc633e9();
     init_katex();
     Katex = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -19654,7 +19654,7 @@ var init_review_a28deda0 = __esm({
 
 <!-- HTML_TAG_START -->${katexString}<!-- HTML_TAG_END -->`;
     });
-    metadata$2 = {
+    metadata$3 = {
       "slug": "1-mandel",
       "title": "One of the Fastest Web Mandelbrot Renderers",
       "date": "2021-06-21T00:00:00.000Z",
@@ -19663,7 +19663,7 @@ var init_review_a28deda0 = __esm({
       "tags": ["Engineering"],
       "author": "Ojasvin Kirpane, Abhishek Cherath, Jo Gao & Abhinuv Allu"
     };
-    ({ slug, title, date, summary, thumbnail, tags, author } = metadata$2);
+    ({ slug, title, date, summary, thumbnail, tags, author } = metadata$3);
     e1 = "z_{0}=0";
     e2 = "z*{n+1}=z_n^2+c";
     _1_mandel = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -20164,9 +20164,9 @@ RUNTIME_FLAGS <span class="token operator">=</span> --runtime stub
       __proto__: null,
       [Symbol.toStringTag]: "Module",
       "default": _1_mandel,
-      metadata: metadata$2
+      metadata: metadata$3
     });
-    metadata$1 = {
+    metadata$2 = {
       "slug": "2-webgl",
       "title": "WebGL with Emscripten: The Bare Minimum",
       "date": "2021-08-03T00:00:00.000Z",
@@ -20239,9 +20239,9 @@ RUNTIME_FLAGS <span class="token operator">=</span> --runtime stub
       __proto__: null,
       [Symbol.toStringTag]: "Module",
       "default": _2_webgl,
-      metadata: metadata$1
+      metadata: metadata$2
     });
-    metadata = {
+    metadata$1 = {
       "slug": "3-2021-in-Review",
       "title": "Looking Back at 2021, Gearing For Launch",
       "date": "2022-1-21",
@@ -20277,6 +20277,57 @@ RUNTIME_FLAGS <span class="token operator">=</span> --runtime stub
       __proto__: null,
       [Symbol.toStringTag]: "Module",
       "default": _3_review,
+      metadata: metadata$1
+    });
+    metadata = {
+      "slug": "4-power-user-vision",
+      "title": "Vision: Sharing The Power of the PC You Already Own",
+      "date": "2022-02-02T00:00:00.000Z",
+      "summary": "Feather does more for power users. Learn more about how Feather is changing the world of compute.",
+      "thumbnail": "/blog-4-vision-vision-Sharing-Thumbnail.webp",
+      "tags": ["Vision", "Article"],
+      "author": "Kyle Li"
+    };
+    _4_vision = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<h1>Vision: Sharing The Power of the PC You Already Own</h1>
+<p>Created: January 21, 2022 11:47 AM</p>
+<p>Why would anyone want to remotely access their computer? In fact, lets ask this in another way: what do you gain from being able to use the processing power of a desktop PC, anywhere?</p>
+<p>The concept of computing began with massive computers - the size of rooms - purpose built for industrial applications. One of these firsts, the CDC 6600 was capable of performing over three million mathematical operations a second. Research and operations that once took hundreds of hours of <em>man-power</em>, now required only seconds of computer <strong><em>processing power</em></strong>.</p>
+<div align="${"center"}"><img style="${"width: 100%"}"${add_attribute("src", "/blog-4-vision-cdc-6600-picture.webp", 0)} alt="${"Thumbnail"}"></div>
+<div align="${"center"}"><img style="${"width: 100%"}"${add_attribute("src", "/blog-4-vision-cdc-6600-diagram.webp", 0)} alt="${"Thumbnail"}"></div>
+<p>In the decades following, we\u2019ve seen the rise of home computing, a shift towards ultraportable laptops, and the global takeover of smartphones. Now, with even the average household game console capable of over 10 trillion operations (10 TFlops), it\u2019s become clear that the future of computing is going portable. We\u2019re constantly seeking more processing power than ever before and in increasingly small packages. Toss in the growing awareness of owning personal data and information, a shift towards work at home culture, and you have to ask yourself\u2026 what don\u2019t you gain from accessing the resources of a powerful PC from any of your other devices?</p>
+<h3>Removing heat &amp; noise from where you work &amp; play?</h3>
+<div align="${"center"}"><img style="${"width: 100%"}"${add_attribute("src", "/blog-4-vision-move-heat-and-noise-from-where-you-work-and-play.webp", 0)} alt="${"Thumbnail"}"></div>
+<p>A powerful computer turns a small room into a sauna in minutes. No matter if you\u2019re rendering the last few minutes of a short film or cranking out killstreaks in the latest FPS, running a PC generates heat which gets uncomfortable, fast. In fact the average high end system in a bedroom increases room temperatures by up to 5-10f above room temperature.</p>
+<p>Where does remotely accessing your computer come into play? Well, what if we moved the source of the heat somewhere where it can\u2019t bother you? Places where the heat and noise don\u2019t matter as much. By remotely accessing your PC, you can have it run in a dedicated server room, a garage, or even your living room so the heat is out of sight and out of mind. </p>
+<h3>Accessing processing power from anywhere in your house?</h3>
+<div align="${"center"}"><img style="${"width: 100%"}"${add_attribute("src", "/blog-4-vision-access-your-home-office-from-any-device.webp", 0)} alt="${"Thumbnail"}"></div>
+<p>If you own a powerful PC already, why can\u2019t you access its resources from any device in your house? Leaving a noisy PC in a quiet home theater is just unacceptable, and you don\u2019t want to move your desktop around whenever you want it on a different screen.</p>
+<p>What if you could leave your PC connected to your home office, but still share the processing power around to your TV or laptop elsewhere? You can do the same work and access the same files as you would in your office or use your work PC to run games or enjoy entertainment from a central hub. You purchase one device for all.</p>
+<h3>Sharing a file, without ever needing to \u201Cshare\u201D the file?</h3>
+<div align="${"center"}"><img style="${"width: 100%"}"${add_attribute("src", "/blog-4-vision-work-from-home-actually-at-home.webp", 0)} alt="${"Thumbnail"}"></div>
+<p>Sharing files is annoying. It\u2019s become easier than ever to link files for a detailed presentation, or to share an update with your coworkers. The easiest solution however, will always be to run the file natively, never having to move the file at all.</p>
+<p>What if instead of having to plug your laptop into an HDMI projector, you\u2019re already ready to demo at all times? Instead of sending a file to yourself through email or uploading it on a USB stick to take home, you\u2019ve got access to the file on the computer you\u2019re already on because you\u2019ve never left it. With remote access, your files are already in a central location accessible just like your private cloud. Just log in, and you have your entire workspace ready and waiting all of the files already there as you left them.</p>
+<h2>What Does Feather Do Different?</h2>
+<p>The concept of remotely accessing a computer itself is not a novel idea. When you think about remotely access however, what are your options? A hardwire solution is permanent, expensive and complex. Remote desktops scale poorly, are complex to set up, and unsecure. Cloud servers have high latency, are prohibitively expensive, and lack user control.</p>
+<p>Feather isn\u2019t in the business of being a remote desktop. Feather is built with the goal of providing freedom to how you access compute. Our goal is to enable anyone to turn their home PCs into home servers that load balance processing power across Wi-Fi. After all, why would you stream the text of a web page to a computer and have it end up blurry or try and drive complex games or render jobs on a weak laptop? If your device is better at rendering text and images, while a desktop PC is great at handling intensive processing like games and work, why not let the compute happen where it\u2019s best for it to happen? Our vision of Feather enables this and so much more.</p>
+<h3>Accelerating any Wi-Fi connected device</h3>
+<div align="${"center"}"><img style="${"width: 100%"}"${add_attribute("src", "/blog-4-vision-let-processing-happen-where-its-best.webp", 0)} alt="${"Thumbnail"}"></div>
+<p>Traditional remote access software only allows you to share with similarly sized screens since all they do is record a desktop. Can you imagine trying to use a desktop UI on a smartphone or even a smartwatch? There\u2019s a reason mobile UI is designed the way it is. By splitting the processing power of each application, we can run applications natively on devices and only speed up the parts that need to be improved. Multiple clients can be load balanced across multiple servers at once, and you can accelerate the performance of an entire family\u2019s worth of Chromebooks with a single PC. </p>
+<h3>Creating a processing power network</h3>
+<div align="${"center"}"><img style="${"width: 100%"}"${add_attribute("src", "/blog-4-vision-load-balancing-entire-neighborhoods.webp", 0)} alt="${"Thumbnail"}"></div>
+<p>Modern electricity grids load balance power across regions. When production is high in one region, the grid automatically sells power to high demand regions and vice versa. With the average user spending less than 10% of their time never utilizing their devices at peak processing, we waste massive amounts of not only money, but our global processing potential to fulfill rare peaks in our usage. </p>
+<p>What if instead of electricity, we could load balance processing power? If processing power can be anonymized, devices sitting at home can automatically assist neighborhood workplaces and research institutions on processor heavy tasks. In return, when you return home and run the latest triple A title, the now available workplace devices can share their processing with you. The more people on the network, the more processing power available to everyone at once. Together we can upgrade all the devices everyone has, everywhere.</p>
+<h3>Public Wi-Fi nodes and feather light technology</h3>
+<div align="${"center"}"><img style="${"width: 100%"}"${add_attribute("src", "/blog-4-vision-processing-power-as-easily-accessible-as-public-wifi.webp", 0)} alt="${"Thumbnail"}"></div>
+<p>We are more connected than ever before, and the implementation of 5G enables us to do more over the internet wherever we need to be. By setting up feather nodes in public spaces, we now not only are more connected everywhere, but can do more everywhere. Developers will have a completely new ecosystem of tools to develop around. Imagine smart drones with image recognition powered locally instead of requiring data being sent to servers on the cloud, smart clothing and glasses that can be as thin and small as a Wi-Fi receiver, or even feather light low cost devices with amazing interfaces at the fraction of the cost of a full device. Anyone will be able to develop on this platform, for this platform to enable things that were once never possible before.</p>
+<p>So to answer the question about why someone would want to remotely access their computer, we at Feather ask a different question. What don\u2019t we <strong><em>all</em></strong> gain from being able to use the processing power of a desktop PC, anywhere? Here at Feather, we hope to enable a better connected future that blurs the lines between server and client, where society can have access to more powerful computing than ever before, and a world where processing power is as easily accessible as public Wi-Fi.</p>
+<p><em>Thanks for reading \u2728</em></p>`;
+    });
+    __glob_1_3 = /* @__PURE__ */ Object.freeze({
+      __proto__: null,
+      [Symbol.toStringTag]: "Module",
+      "default": _4_vision,
       metadata
     });
   }
@@ -20340,7 +20391,7 @@ function load2({ url, params }) {
 var css11, allPosts, posts, U5Btagsu5D;
 var init_tags_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/tags/_tags_.svelte.js"() {
-    init_review_a28deda0();
+    init_vision_f7f833b7();
     init_index_6bc633e9();
     init_thumbnail_57767130();
     init_katex();
@@ -20348,7 +20399,7 @@ var init_tags_svelte = __esm({
       code: ".tags.svelte-zjfayw{padding:35px;font-size:40px;font-weight:300}.container.svelte-zjfayw{display:flex;flex-direction:column;align-items:center;justify-content:center}.grid.svelte-zjfayw{display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:50px}",
       map: null
     };
-    allPosts = { "../../lib/posts/1-mandel.md": __glob_1_0, "../../lib/posts/2-webgl.md": __glob_1_1, "../../lib/posts/3-review.md": __glob_1_2 };
+    allPosts = { "../../lib/posts/1-mandel.md": __glob_1_0, "../../lib/posts/2-webgl.md": __glob_1_1, "../../lib/posts/3-review.md": __glob_1_2, "../../lib/posts/4-vision.md": __glob_1_3 };
     posts = [];
     for (let path2 in allPosts) {
       const post = allPosts[path2];
@@ -20390,8 +20441,8 @@ var entry5, js5, css12;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_tags_svelte();
-    entry5 = "pages/tags/_tags_.svelte-9cc27c67.js";
-    js5 = ["pages/tags/_tags_.svelte-9cc27c67.js", "chunks/3-review-ca6b3645.js", "chunks/vendor-9661f7ef.js", "chunks/thumbnail-2cc3e0ee.js"];
+    entry5 = "pages/tags/_tags_.svelte-620c3c4b.js";
+    js5 = ["pages/tags/_tags_.svelte-620c3c4b.js", "chunks/4-vision-ce00726c.js", "chunks/vendor-9661f7ef.js", "chunks/thumbnail-2cc3e0ee.js"];
     css12 = ["assets/pages/tags/_tags_.svelte-fe12782a.css", "assets/vendor-2634b1a9.css", "assets/thumbnail-b6ad015b.css"];
   }
 });
@@ -67592,11 +67643,11 @@ function load4({ url, params }) {
 var prerender, allPosts2, posts2, U5Bslugu5D;
 var init_index_svelte2 = __esm({
   ".svelte-kit/output/server/entries/pages/_slug_/index.svelte.js"() {
-    init_review_a28deda0();
+    init_vision_f7f833b7();
     init_index_6bc633e9();
     init_katex();
     prerender = true;
-    allPosts2 = { "../../lib/posts/1-mandel.md": __glob_1_0, "../../lib/posts/2-webgl.md": __glob_1_1, "../../lib/posts/3-review.md": __glob_1_2 };
+    allPosts2 = { "../../lib/posts/1-mandel.md": __glob_1_0, "../../lib/posts/2-webgl.md": __glob_1_1, "../../lib/posts/3-review.md": __glob_1_2, "../../lib/posts/4-vision.md": __glob_1_3 };
     posts2 = [];
     for (let path2 in allPosts2) {
       const post = allPosts2[path2];
@@ -67624,8 +67675,8 @@ var entry7, js7, css15;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
     init_index_svelte2();
-    entry7 = "pages/_slug_/index.svelte-545ac889.js";
-    js7 = ["pages/_slug_/index.svelte-545ac889.js", "chunks/3-review-ca6b3645.js", "chunks/vendor-9661f7ef.js"];
+    entry7 = "pages/_slug_/index.svelte-cdd6c1c8.js";
+    js7 = ["pages/_slug_/index.svelte-cdd6c1c8.js", "chunks/4-vision-ce00726c.js", "chunks/vendor-9661f7ef.js"];
     css15 = ["assets/vendor-2634b1a9.css"];
   }
 });
@@ -67744,7 +67795,7 @@ var require_reading_time2 = __commonJS({
   }
 });
 
-// .svelte-kit/output/server/chunks/posts-6862907e.js
+// .svelte-kit/output/server/chunks/posts-148c5500.js
 function groupByTags(array) {
   return array.reduce((acc, value) => {
     const property = value["tag"];
@@ -67773,11 +67824,11 @@ function getRelatedPosts(post) {
   return relatedPosts;
 }
 var import_reading_time, imports, posts3, allTagsAndPosts, categories, filteredPosts;
-var init_posts_6862907e = __esm({
-  ".svelte-kit/output/server/chunks/posts-6862907e.js"() {
-    init_review_a28deda0();
+var init_posts_148c5500 = __esm({
+  ".svelte-kit/output/server/chunks/posts-148c5500.js"() {
+    init_vision_f7f833b7();
     import_reading_time = __toModule(require_reading_time2());
-    imports = { "./posts/1-mandel.md": __glob_1_0, "./posts/2-webgl.md": __glob_1_1, "./posts/3-review.md": __glob_1_2 };
+    imports = { "./posts/1-mandel.md": __glob_1_0, "./posts/2-webgl.md": __glob_1_1, "./posts/3-review.md": __glob_1_2, "./posts/4-vision.md": __glob_1_3 };
     posts3 = [];
     for (const path2 in imports) {
       const post = imports[path2];
@@ -67817,8 +67868,8 @@ async function get() {
 var import_reading_time2;
 var init_blog_json = __esm({
   ".svelte-kit/output/server/entries/endpoints/blog.json.js"() {
-    init_posts_6862907e();
-    init_review_a28deda0();
+    init_posts_148c5500();
+    init_vision_f7f833b7();
     init_index_6bc633e9();
     init_katex();
     import_reading_time2 = __toModule(require_reading_time2());
@@ -67845,8 +67896,8 @@ function get2({ params }) {
 var import_reading_time3;
 var init_index_json = __esm({
   ".svelte-kit/output/server/entries/endpoints/_slug_/index.json.js"() {
-    init_posts_6862907e();
-    init_review_a28deda0();
+    init_posts_148c5500();
+    init_vision_f7f833b7();
     init_index_6bc633e9();
     init_katex();
     import_reading_time3 = __toModule(require_reading_time2());
@@ -69394,10 +69445,10 @@ var App = class {
 // .svelte-kit/vercel-tmp/manifest.js
 var manifest = {
   appDir: "_app",
-  assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "logo.svg", "reddit.svg", "robots.txt", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
+  assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-4-vision-access-your-home-office-from-any-device.webp", "blog-4-vision-cdc-6600-diagram.webp", "blog-4-vision-cdc-6600-picture.webp", "blog-4-vision-let-processing-happen-where-its-best.webp", "blog-4-vision-load-balancing-entire-neighborhoods.webp", "blog-4-vision-move-heat-and-noise-from-where-you-work-and-play.webp", "blog-4-vision-processing-power-as-easily-accessible-as-public-wifi.webp", "blog-4-vision-vision-Sharing-Thumbnail.webp", "blog-4-vision-work-from-home-actually-at-home.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "logo.svg", "reddit.svg", "robots.txt", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain" },
-    entry: { "file": "start-6fc2ccc4.js", "js": ["start-6fc2ccc4.js", "chunks/vendor-9661f7ef.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-0ad1d77a.js", "js": ["start-0ad1d77a.js", "chunks/vendor-9661f7ef.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
