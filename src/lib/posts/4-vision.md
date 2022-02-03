@@ -10,10 +10,6 @@ tags:
 author: Kyle Li
 ---
 
-# Vision: Sharing The Power of the PC You Already Own
-
-Created: January 21, 2022 11:47 AM
-
 Why would anyone want to remotely access their computer? In fact, lets ask this in another way: what do you gain from being able to use the processing power of a desktop PC, anywhere?
 
 The concept of computing began with massive computers - the size of rooms - purpose built for industrial applications. One of these firsts, the CDC 6600 was capable of performing over three million mathematical operations a second. Research and operations that once took hundreds of hours of *man-power*, now required only seconds of computer ***processing power***.
