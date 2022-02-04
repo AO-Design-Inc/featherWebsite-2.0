@@ -19634,10 +19634,10 @@ var init_katex = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/4-vision-f7f833b7.js
+// .svelte-kit/output/server/chunks/4-vision-9e8be31e.js
 var Katex, metadata$3, slug, title, date, summary, thumbnail, tags, author, e1, e2, _1_mandel, __glob_1_0, metadata$2, _2_webgl, __glob_1_1, metadata$1, _3_review, __glob_1_2, metadata, _4_vision, __glob_1_3;
-var init_vision_f7f833b7 = __esm({
-  ".svelte-kit/output/server/chunks/4-vision-f7f833b7.js"() {
+var init_vision_9e8be31e = __esm({
+  ".svelte-kit/output/server/chunks/4-vision-9e8be31e.js"() {
     init_index_6bc633e9();
     init_katex();
     Katex = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -20289,9 +20289,7 @@ RUNTIME_FLAGS <span class="token operator">=</span> --runtime stub
       "author": "Kyle Li"
     };
     _4_vision = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<h1>Vision: Sharing The Power of the PC You Already Own</h1>
-<p>Created: January 21, 2022 11:47 AM</p>
-<p>Why would anyone want to remotely access their computer? In fact, lets ask this in another way: what do you gain from being able to use the processing power of a desktop PC, anywhere?</p>
+      return `<p>Why would anyone want to remotely access their computer? In fact, lets ask this in another way: what do you gain from being able to use the processing power of a desktop PC, anywhere?</p>
 <p>The concept of computing began with massive computers - the size of rooms - purpose built for industrial applications. One of these firsts, the CDC 6600 was capable of performing over three million mathematical operations a second. Research and operations that once took hundreds of hours of <em>man-power</em>, now required only seconds of computer <strong><em>processing power</em></strong>.</p>
 <div align="${"center"}"><img style="${"width: 100%"}"${add_attribute("src", "/blog-4-vision-cdc-6600-picture.webp", 0)} alt="${"Thumbnail"}"></div>
 <div align="${"center"}"><img style="${"width: 100%"}"${add_attribute("src", "/blog-4-vision-cdc-6600-diagram.webp", 0)} alt="${"Thumbnail"}"></div>
@@ -20391,7 +20389,7 @@ function load2({ url, params }) {
 var css11, allPosts, posts, U5Btagsu5D;
 var init_tags_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/tags/_tags_.svelte.js"() {
-    init_vision_f7f833b7();
+    init_vision_9e8be31e();
     init_index_6bc633e9();
     init_thumbnail_57767130();
     init_katex();
@@ -20441,8 +20439,8 @@ var entry5, js5, css12;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_tags_svelte();
-    entry5 = "pages/tags/_tags_.svelte-620c3c4b.js";
-    js5 = ["pages/tags/_tags_.svelte-620c3c4b.js", "chunks/4-vision-ce00726c.js", "chunks/vendor-9661f7ef.js", "chunks/thumbnail-2cc3e0ee.js"];
+    entry5 = "pages/tags/_tags_.svelte-494abcb6.js";
+    js5 = ["pages/tags/_tags_.svelte-494abcb6.js", "chunks/4-vision-0fa7c17a.js", "chunks/vendor-9661f7ef.js", "chunks/thumbnail-2cc3e0ee.js"];
     css12 = ["assets/pages/tags/_tags_.svelte-fe12782a.css", "assets/vendor-2634b1a9.css", "assets/thumbnail-b6ad015b.css"];
   }
 });
@@ -67643,7 +67641,7 @@ function load4({ url, params }) {
 var prerender, allPosts2, posts2, U5Bslugu5D;
 var init_index_svelte2 = __esm({
   ".svelte-kit/output/server/entries/pages/_slug_/index.svelte.js"() {
-    init_vision_f7f833b7();
+    init_vision_9e8be31e();
     init_index_6bc633e9();
     init_katex();
     prerender = true;
@@ -67675,8 +67673,8 @@ var entry7, js7, css15;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
     init_index_svelte2();
-    entry7 = "pages/_slug_/index.svelte-cdd6c1c8.js";
-    js7 = ["pages/_slug_/index.svelte-cdd6c1c8.js", "chunks/4-vision-ce00726c.js", "chunks/vendor-9661f7ef.js"];
+    entry7 = "pages/_slug_/index.svelte-c8c09357.js";
+    js7 = ["pages/_slug_/index.svelte-c8c09357.js", "chunks/4-vision-0fa7c17a.js", "chunks/vendor-9661f7ef.js"];
     css15 = ["assets/vendor-2634b1a9.css"];
   }
 });
@@ -67795,7 +67793,7 @@ var require_reading_time2 = __commonJS({
   }
 });
 
-// .svelte-kit/output/server/chunks/posts-148c5500.js
+// .svelte-kit/output/server/chunks/posts-7e02c29e.js
 function groupByTags(array) {
   return array.reduce((acc, value) => {
     const property = value["tag"];
@@ -67824,9 +67822,9 @@ function getRelatedPosts(post) {
   return relatedPosts;
 }
 var import_reading_time, imports, posts3, allTagsAndPosts, categories, filteredPosts;
-var init_posts_148c5500 = __esm({
-  ".svelte-kit/output/server/chunks/posts-148c5500.js"() {
-    init_vision_f7f833b7();
+var init_posts_7e02c29e = __esm({
+  ".svelte-kit/output/server/chunks/posts-7e02c29e.js"() {
+    init_vision_9e8be31e();
     import_reading_time = __toModule(require_reading_time2());
     imports = { "./posts/1-mandel.md": __glob_1_0, "./posts/2-webgl.md": __glob_1_1, "./posts/3-review.md": __glob_1_2, "./posts/4-vision.md": __glob_1_3 };
     posts3 = [];
@@ -67868,8 +67866,8 @@ async function get() {
 var import_reading_time2;
 var init_blog_json = __esm({
   ".svelte-kit/output/server/entries/endpoints/blog.json.js"() {
-    init_posts_148c5500();
-    init_vision_f7f833b7();
+    init_posts_7e02c29e();
+    init_vision_9e8be31e();
     init_index_6bc633e9();
     init_katex();
     import_reading_time2 = __toModule(require_reading_time2());
@@ -67896,8 +67894,8 @@ function get2({ params }) {
 var import_reading_time3;
 var init_index_json = __esm({
   ".svelte-kit/output/server/entries/endpoints/_slug_/index.json.js"() {
-    init_posts_148c5500();
-    init_vision_f7f833b7();
+    init_posts_7e02c29e();
+    init_vision_9e8be31e();
     init_index_6bc633e9();
     init_katex();
     import_reading_time3 = __toModule(require_reading_time2());
@@ -69381,7 +69379,9 @@ var template = ({ head, body }) => `<!DOCTYPE html>
 		<link rel="shortcut icon" href="/icons/favicon.ico" />
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="msapplication-config" content="/icons/browserconfig.xml" />
-		<meta name="theme-color" content="#ffffff" />
+		<meta name="theme-color" content="#ffffff" /><script defer data-domain="feather.systems" src="https://plausible.io/js/plausible.js"><\/script>
+		<script defer data-domain="feather.systems" src="https://plausible.io/js/plausible.js"><\/script>
+
 		<style>
 			@font-face {
 				font-family: 'Inter var';
@@ -69448,7 +69448,7 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-4-vision-access-your-home-office-from-any-device.webp", "blog-4-vision-cdc-6600-diagram.webp", "blog-4-vision-cdc-6600-picture.webp", "blog-4-vision-let-processing-happen-where-its-best.webp", "blog-4-vision-load-balancing-entire-neighborhoods.webp", "blog-4-vision-move-heat-and-noise-from-where-you-work-and-play.webp", "blog-4-vision-processing-power-as-easily-accessible-as-public-wifi.webp", "blog-4-vision-vision-Sharing-Thumbnail.webp", "blog-4-vision-work-from-home-actually-at-home.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "logo.svg", "reddit.svg", "robots.txt", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain" },
-    entry: { "file": "start-0ad1d77a.js", "js": ["start-0ad1d77a.js", "chunks/vendor-9661f7ef.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-cc1f038d.js", "js": ["start-cc1f038d.js", "chunks/vendor-9661f7ef.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
