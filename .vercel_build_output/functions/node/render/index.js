@@ -5862,7 +5862,7 @@ var init_layout_svelte = __esm({
 	<div class="${"spacer linker between svelte-cyzlce"}"></div>
 	<a sveltekit:prefetch href="${"/about"}"><div class="${"link svelte-cyzlce"}">About</div></a>
 	<div class="${"spacer linker svelte-cyzlce"}"></div>
-	<a href="${"#sign-up"}"><div><div class="${"sign-up svelte-cyzlce"}">Sign Up</div></div></a>
+	<a href="${"/#sign-up"}"><div><div class="${"sign-up svelte-cyzlce"}">Sign Up</div></div></a>
 	
 	
 	
@@ -5942,8 +5942,8 @@ var entry, js, css3;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-252eab77.js";
-    js = ["pages/__layout.svelte-252eab77.js", "chunks/vendor-9661f7ef.js", "chunks/stores-6fc21725.js"];
+    entry = "pages/__layout.svelte-a69cb74e.js";
+    js = ["pages/__layout.svelte-a69cb74e.js", "chunks/vendor-9661f7ef.js", "chunks/stores-6fc21725.js"];
     css3 = ["assets/pages/__layout.svelte-273cf206.css", "assets/form.svelte_svelte_type_style_lang-4622c0fc.css", "assets/vendor-2634b1a9.css", "assets/stores-4ca8f149.css"];
   }
 });
@@ -6205,7 +6205,7 @@ var init_about_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/about.svelte.js"() {
     init_index_6bc633e9();
     css8 = {
-      code: ".container.svelte-17qbbbh.svelte-17qbbbh{width:45.8333333333vw;margin:0% auto}@media screen and (min-width: 1240px){.container.svelte-17qbbbh.svelte-17qbbbh{width:min(45.8333333333vw, 660px)}}@media screen and (max-width: 500px){.container.svelte-17qbbbh.svelte-17qbbbh{width:max(45.8333333333vw, 90%)}}.container.svelte-17qbbbh .avatar-container.svelte-17qbbbh{display:grid;grid-template-columns:1fr 1fr;grid-gap:4.1666666667vw}@media screen and (min-width: 1240px){.container.svelte-17qbbbh .avatar-container.svelte-17qbbbh{grid-gap:min(4.1666666667vw, 60px)}}@media screen and (max-width: 810px){.container.svelte-17qbbbh .avatar-container.svelte-17qbbbh{grid-template-columns:1fr;grid-gap:max(4.1666666667vw, 60px)}}.container.svelte-17qbbbh .avatar-cards.svelte-17qbbbh{width:20.8333333333vw;aspect-ratio:10/13;border-radius:0.6944444444vw;position:relative}@media screen and (min-width: 1240px){.container.svelte-17qbbbh .avatar-cards.svelte-17qbbbh{width:min(20.8333333333vw, 300px);border-radius:min(0.6944444444vw, 10px)}}@media screen and (max-width: 810px){.container.svelte-17qbbbh .avatar-cards.svelte-17qbbbh{width:max(20.8333333333vw, 100%);aspect-ratio:10/10;overflow:hidden;border-radius:max(0.6944444444vw, 10px)}}.container.svelte-17qbbbh .avatar-cards .filter.svelte-17qbbbh{z-index:2;width:100%;height:100%;position:absolute;top:0%;left:0%;background-image:linear-gradient(0deg, #11131c 0%, rgba(240, 173, 183, 0) 56.28%, rgba(17, 19, 28, 0) 56.28%)}@media screen and (max-width: 810px){.container.svelte-17qbbbh .avatar-cards .filter.svelte-17qbbbh{background-image:linear-gradient(0deg, #11131ca5 0%, rgba(240, 173, 183, 0) 25%, rgba(17, 19, 28, 0) 56.28%)}}.container.svelte-17qbbbh .avatar-cards img.svelte-17qbbbh{z-index:1;position:absolute;top:0%;left:0%;width:20.8333333333vw;aspect-ratio:10/13}@media screen and (min-width: 1240px){.container.svelte-17qbbbh .avatar-cards img.svelte-17qbbbh{width:min(20.8333333333vw, 300px)}}@media screen and (max-width: 810px){.container.svelte-17qbbbh .avatar-cards img.svelte-17qbbbh{width:max(20.8333333333vw, 100%)}}.container.svelte-17qbbbh .avatar-cards .name.svelte-17qbbbh{z-index:3;position:absolute;bottom:10%;left:10%;max-width:12.5vw;font-size:2.5694444444vw;font-weight:700;line-height:105%}@media screen and (min-width: 1240px){.container.svelte-17qbbbh .avatar-cards .name.svelte-17qbbbh{font-size:min(2.5694444444vw, 37px);max-width:min(12.5vw, 180px)}}@media screen and (max-width: 810px){.container.svelte-17qbbbh .avatar-cards .name.svelte-17qbbbh{max-width:max(12.5vw, 180px);font-size:max(2.5694444444vw, 37px)}}.container.svelte-17qbbbh .avatar-cards .title.svelte-17qbbbh{z-index:3;position:absolute;bottom:10%;right:10%;font-size:16px;font-style:normal;font-weight:400;letter-spacing:0em;text-align:right}.container.svelte-17qbbbh .goodbye-message.svelte-17qbbbh{height:120vh;display:grid;place-items:center}.container.svelte-17qbbbh .goodbye-message h1.svelte-17qbbbh{text-align:center;line-height:101%}@media screen and (min-width: 1240px){.container.svelte-17qbbbh .goodbye-message.svelte-17qbbbh{height:min(150vh, 875px)}}@media screen and (max-width: 810px){.container.svelte-17qbbbh .goodbye-message.svelte-17qbbbh{height:max(100vh, 660px)}}h1.svelte-17qbbbh.svelte-17qbbbh{margin-top:2.7777777778vw;margin-bottom:1.5%;font-size:6.1805555556vw}@media screen and (min-width: 1240px){h1.svelte-17qbbbh.svelte-17qbbbh{font-size:min(6.1805555556vw, 89px);margin-top:min(2.7777777778vw, 40px)}}@media screen and (max-width: 810px){h1.svelte-17qbbbh.svelte-17qbbbh{text-align:left;font-size:max(6.1805555556vw, 59px);margin-top:max(2.7777777778vw, 40px)}}h1.text.svelte-17qbbbh.svelte-17qbbbh{background:linear-gradient(96.56deg, #fff2f0 0%, #fcafa8 50%, #f5938b 60%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}h2.svelte-17qbbbh.svelte-17qbbbh{margin:2% 0% 1% 0%;font-size:2.5694444444vw}@media screen and (min-width: 1240px){h2.svelte-17qbbbh.svelte-17qbbbh{font-size:min(2.5694444444vw, 37px)}}@media screen and (max-width: 810px){h2.svelte-17qbbbh.svelte-17qbbbh{font-size:max(2.5694444444vw, 37px)}}p.svelte-17qbbbh.svelte-17qbbbh{opacity:0.85;font-size:1.3888888889vw;font-style:normal;font-weight:400;line-height:1.75;letter-spacing:0em;text-align:left;margin-top:0.5%;margin-bottom:7%}@media screen and (min-width: 1240px){p.svelte-17qbbbh.svelte-17qbbbh{font-size:min(1.3888888889vw, 20px)}}@media screen and (max-width: 810px){p.svelte-17qbbbh.svelte-17qbbbh{font-size:max(1.3888888889vw, 20px)}}.spacer.vert.svelte-17qbbbh.svelte-17qbbbh{width:100%}.vert.one.svelte-17qbbbh.svelte-17qbbbh{height:1.7361111111vw}@media screen and (min-width: 1240px){.vert.one.svelte-17qbbbh.svelte-17qbbbh{height:min(1.7361111111vw, 25px)}}@media screen and (max-width: 810px){.vert.one.svelte-17qbbbh.svelte-17qbbbh{height:max(1.7361111111vw, 25px)}}.vert.two.svelte-17qbbbh.svelte-17qbbbh{height:0.3472222222vw}@media screen and (min-width: 1240px){.vert.two.svelte-17qbbbh.svelte-17qbbbh{height:min(0.3472222222vw, 5px)}}@media screen and (max-width: 810px){.vert.two.svelte-17qbbbh.svelte-17qbbbh{height:0px}}",
+      code: ".container.svelte-3nrvlq.svelte-3nrvlq{width:45.8333333333vw;margin:0% auto}@media screen and (min-width: 1240px){.container.svelte-3nrvlq.svelte-3nrvlq{width:min(45.8333333333vw, 660px)}}@media screen and (max-width: 500px){.container.svelte-3nrvlq.svelte-3nrvlq{width:max(45.8333333333vw, 90%)}}.container.svelte-3nrvlq .avatar-container.svelte-3nrvlq{display:grid;grid-template-columns:1fr 1fr;grid-gap:4.1666666667vw}@media screen and (min-width: 1240px){.container.svelte-3nrvlq .avatar-container.svelte-3nrvlq{grid-gap:min(4.1666666667vw, 60px)}}@media screen and (max-width: 810px){.container.svelte-3nrvlq .avatar-container.svelte-3nrvlq{grid-template-columns:1fr;grid-gap:max(4.1666666667vw, 60px)}}.container.svelte-3nrvlq .avatar-cards.svelte-3nrvlq{width:20.8333333333vw;aspect-ratio:10/13;border-radius:0.6944444444vw;position:relative}@media screen and (min-width: 1240px){.container.svelte-3nrvlq .avatar-cards.svelte-3nrvlq{width:min(20.8333333333vw, 300px);border-radius:min(0.6944444444vw, 10px)}}@media screen and (max-width: 810px){.container.svelte-3nrvlq .avatar-cards.svelte-3nrvlq{width:max(20.8333333333vw, 100%);aspect-ratio:10/10;overflow:hidden;border-radius:max(0.6944444444vw, 10px)}}.container.svelte-3nrvlq .avatar-cards .filter.svelte-3nrvlq{z-index:2;width:100%;height:100%;position:absolute;top:0%;left:0%;background-image:linear-gradient(0deg, #11131c 0%, rgba(240, 173, 183, 0) 56.28%, rgba(17, 19, 28, 0) 56.28%)}@media screen and (max-width: 810px){.container.svelte-3nrvlq .avatar-cards .filter.svelte-3nrvlq{background-image:linear-gradient(0deg, #11131ca5 0%, rgba(240, 173, 183, 0) 25%, rgba(17, 19, 28, 0) 56.28%)}}.container.svelte-3nrvlq .avatar-cards img.svelte-3nrvlq{z-index:1;position:absolute;top:0%;left:0%;width:20.8333333333vw;aspect-ratio:10/13}@media screen and (min-width: 1240px){.container.svelte-3nrvlq .avatar-cards img.svelte-3nrvlq{width:min(20.8333333333vw, 300px)}}@media screen and (max-width: 810px){.container.svelte-3nrvlq .avatar-cards img.svelte-3nrvlq{width:max(20.8333333333vw, 100%)}}.container.svelte-3nrvlq .avatar-cards .name.svelte-3nrvlq{z-index:3;position:absolute;bottom:10%;left:10%;max-width:12.5vw;font-size:2.5694444444vw;font-weight:700;line-height:105%}@media screen and (min-width: 1240px){.container.svelte-3nrvlq .avatar-cards .name.svelte-3nrvlq{font-size:min(2.5694444444vw, 37px);max-width:min(12.5vw, 180px)}}@media screen and (max-width: 810px){.container.svelte-3nrvlq .avatar-cards .name.svelte-3nrvlq{max-width:max(12.5vw, 180px);font-size:max(2.5694444444vw, 37px)}}.container.svelte-3nrvlq .avatar-cards .title.svelte-3nrvlq{z-index:3;position:absolute;bottom:10%;right:10%;font-size:16px;font-style:normal;font-weight:400;letter-spacing:0em;text-align:right}.container.svelte-3nrvlq .goodbye-message.svelte-3nrvlq{height:120vh;display:grid;place-items:center}.container.svelte-3nrvlq .goodbye-message h1.svelte-3nrvlq{text-align:center;line-height:101%}@media screen and (min-width: 1240px){.container.svelte-3nrvlq .goodbye-message.svelte-3nrvlq{height:min(150vh, 875px)}}@media screen and (max-width: 810px){.container.svelte-3nrvlq .goodbye-message.svelte-3nrvlq{height:max(100vh, 660px)}}h1.svelte-3nrvlq.svelte-3nrvlq{margin-top:2.7777777778vw;margin-bottom:1.5%;font-size:6.1805555556vw}@media screen and (min-width: 1240px){h1.svelte-3nrvlq.svelte-3nrvlq{font-size:min(6.1805555556vw, 89px);margin-top:min(2.7777777778vw, 40px)}}@media screen and (max-width: 810px){h1.svelte-3nrvlq.svelte-3nrvlq{text-align:left;font-size:max(6.1805555556vw, 59px);margin-top:max(2.7777777778vw, 40px)}}h2.svelte-3nrvlq.svelte-3nrvlq{margin:2% 0% 1% 0%;font-size:2.5694444444vw}@media screen and (min-width: 1240px){h2.svelte-3nrvlq.svelte-3nrvlq{font-size:min(2.5694444444vw, 37px)}}@media screen and (max-width: 810px){h2.svelte-3nrvlq.svelte-3nrvlq{font-size:max(2.5694444444vw, 37px)}}p.svelte-3nrvlq.svelte-3nrvlq{opacity:0.85;font-size:1.3888888889vw;font-style:normal;font-weight:400;line-height:1.75;letter-spacing:0em;text-align:left;margin-top:0.5%;margin-bottom:7%}@media screen and (min-width: 1240px){p.svelte-3nrvlq.svelte-3nrvlq{font-size:min(1.3888888889vw, 20px)}}@media screen and (max-width: 810px){p.svelte-3nrvlq.svelte-3nrvlq{font-size:max(1.3888888889vw, 20px)}}.spacer.vert.svelte-3nrvlq.svelte-3nrvlq{width:100%}.vert.one.svelte-3nrvlq.svelte-3nrvlq{height:1.7361111111vw}@media screen and (min-width: 1240px){.vert.one.svelte-3nrvlq.svelte-3nrvlq{height:min(1.7361111111vw, 25px)}}@media screen and (max-width: 810px){.vert.one.svelte-3nrvlq.svelte-3nrvlq{height:max(1.7361111111vw, 25px)}}.vert.two.svelte-3nrvlq.svelte-3nrvlq{height:0.3472222222vw}@media screen and (min-width: 1240px){.vert.two.svelte-3nrvlq.svelte-3nrvlq{height:min(0.3472222222vw, 5px)}}@media screen and (max-width: 810px){.vert.two.svelte-3nrvlq.svelte-3nrvlq{height:0px}}",
       map: null
     };
     About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6232,25 +6232,25 @@ var init_about_svelte = __esm({
         }
       ];
       $$result.css.add(css8);
-      return `<div id="${"about-container"}"><div class="${"container svelte-17qbbbh"}"><div class="${"spacer vert one svelte-17qbbbh"}"></div>
-		<div class="${"spacer vert one svelte-17qbbbh"}"></div>
+      return `<div id="${"about-container"}"><div class="${"container svelte-3nrvlq"}"><div class="${"spacer vert one svelte-3nrvlq"}"></div>
+		<div class="${"spacer vert one svelte-3nrvlq"}"></div>
 		
-		<h1 class="${"text svelte-17qbbbh"}">About Us</h1>
-		<div class="${"spacer vert two svelte-17qbbbh"}"></div>
-		<h2 class="${"text svelte-17qbbbh"}">Who we are</h2>
-		<p class="${"svelte-17qbbbh"}">We are Feather Systems!<br>
+		<h1 class="${"text svelte-3nrvlq"}">About Us</h1>
+		<div class="${"spacer vert two svelte-3nrvlq"}"></div>
+		<h2 class="${"text svelte-3nrvlq"}">Who we are</h2>
+		<p class="${"svelte-3nrvlq"}">We are Feather Systems!<br>
 			Computers don\u2019t work well together (especially across platforms). This leads to a lot of computers
 			running tasks that they are not necessarily optimised for. Feather turns people\u2019s computers into
 			routers for processing power, so that this compute can happen where it&#39;s best for it to happen.
 		</p>
-		<h2 class="${"text svelte-17qbbbh"}">What we do</h2>
-		<p class="${"svelte-17qbbbh"}">We are currently building a remote desktop application with WebRTC and Electron. Our primary
+		<h2 class="${"text svelte-3nrvlq"}">What we do</h2>
+		<p class="${"svelte-3nrvlq"}">We are currently building a remote desktop application with WebRTC and Electron. Our primary
 			focus with this application is to build a competitive remote access software with an
 			excellent, near-native user experience. This will set the foundation for our dream of making
 			virtualised hardware easy to access and ubiquitous.
 		</p>
-		<h2 class="${"text svelte-17qbbbh"}">Where we are going</h2>
-		<p class="${"svelte-17qbbbh"}">We want to be the nexus between the remote desktop and cloud infrastructure industries. Both
+		<h2 class="${"text svelte-3nrvlq"}">Where we are going</h2>
+		<p class="${"svelte-3nrvlq"}">We want to be the nexus between the remote desktop and cloud infrastructure industries. Both
 			these industries have the same major flaw, they are overly technical and obtuse. Our plan is
 			to establish our own network of edge nodes and allow users to easily connect with them with
 			our robust remote desktop application.<br><br>
@@ -6259,16 +6259,16 @@ var init_about_svelte = __esm({
 			smart homes, to delivery drones, to your smart phones and wearables, everything will be powerful
 			by default.
 		</p>
-		<h1 class="${"svelte-17qbbbh"}">Our Team</h1>
-		<div class="${"spacer vert one svelte-17qbbbh"}"></div>
-		<div class="${"spacer vert one svelte-17qbbbh"}"></div>
-		<div class="${"avatar-container svelte-17qbbbh"}">${each(teamStruct, ({ name, title: title2, picture }, i2) => `<div class="${"avatar-cards grow svelte-17qbbbh"}"><div class="${"filter svelte-17qbbbh"}"></div>
-					<img${add_attribute("src", picture, 0)}${add_attribute("alt", name, 0)} class="${"svelte-17qbbbh"}">
-					<div class="${"name svelte-17qbbbh"}">${escape(name)}</div>
-					<div class="${"title svelte-17qbbbh"}">${escape(title2)}</div>
+		<h1 class="${"svelte-3nrvlq"}">Our Team</h1>
+		<div class="${"spacer vert one svelte-3nrvlq"}"></div>
+		<div class="${"spacer vert one svelte-3nrvlq"}"></div>
+		<div class="${"avatar-container svelte-3nrvlq"}">${each(teamStruct, ({ name, title: title2, picture }, i2) => `<div class="${"avatar-cards grow svelte-3nrvlq"}"><div class="${"filter svelte-3nrvlq"}"></div>
+					<img${add_attribute("src", picture, 0)}${add_attribute("alt", name, 0)} class="${"svelte-3nrvlq"}">
+					<div class="${"name svelte-3nrvlq"}">${escape(name)}</div>
+					<div class="${"title svelte-3nrvlq"}">${escape(title2)}</div>
 				</div>`)}</div>
-		<div class="${"goodbye-message grow svelte-17qbbbh"}"><h1 class="${"svelte-17qbbbh"}">Thanks for dropping by. \u{1F389}</h1></div>
-		<div class="${"spacer vert two svelte-17qbbbh"}"></div></div>
+		<div class="${"goodbye-message grow svelte-3nrvlq"}"><h1 class="${"svelte-3nrvlq"}">Thanks for dropping by. \u{1F389}</h1></div>
+		<div class="${"spacer vert two svelte-3nrvlq"}"></div></div>
 </div>`;
     });
   }
@@ -6286,9 +6286,9 @@ var entry4, js4, css9;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_about_svelte();
-    entry4 = "pages/about.svelte-cdc20ddd.js";
-    js4 = ["pages/about.svelte-cdc20ddd.js", "chunks/vendor-9661f7ef.js"];
-    css9 = ["assets/pages/about.svelte-f40b445b.css", "assets/vendor-2634b1a9.css"];
+    entry4 = "pages/about.svelte-4efd2790.js";
+    js4 = ["pages/about.svelte-4efd2790.js", "chunks/vendor-9661f7ef.js"];
+    css9 = ["assets/pages/about.svelte-7bcdac62.css", "assets/vendor-2634b1a9.css"];
   }
 });
 
@@ -69448,7 +69448,7 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-4-vision-access-your-home-office-from-any-device.webp", "blog-4-vision-cdc-6600-diagram.webp", "blog-4-vision-cdc-6600-picture.webp", "blog-4-vision-let-processing-happen-where-its-best.webp", "blog-4-vision-load-balancing-entire-neighborhoods.webp", "blog-4-vision-move-heat-and-noise-from-where-you-work-and-play.webp", "blog-4-vision-processing-power-as-easily-accessible-as-public-wifi.webp", "blog-4-vision-vision-Sharing-Thumbnail.webp", "blog-4-vision-work-from-home-actually-at-home.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "logo.svg", "reddit.svg", "robots.txt", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain" },
-    entry: { "file": "start-cc1f038d.js", "js": ["start-cc1f038d.js", "chunks/vendor-9661f7ef.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-eec16446.js", "js": ["start-eec16446.js", "chunks/vendor-9661f7ef.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

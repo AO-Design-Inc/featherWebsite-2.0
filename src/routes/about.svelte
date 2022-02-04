@@ -220,13 +220,6 @@
 			margin-top: max(get-vw(40px), 40px);
 		}
 	}
-	h1.text {
-		//gradient
-		background: linear-gradient(96.56deg, #fff2f0 0%, #fcafa8 50%, #f5938b 60%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
 	h2 {
 		margin: 2% 0% 1% 0%;
 		font-size: get-vw(37px);
