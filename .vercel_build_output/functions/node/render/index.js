@@ -69380,7 +69380,7 @@ var template = ({ head, body }) => `<!DOCTYPE html>
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="msapplication-config" content="/icons/browserconfig.xml" />
 		<meta name="theme-color" content="#ffffff" /><script defer data-domain="feather.systems" src="https://plausible.io/js/plausible.js"><\/script>
-		<script defer data-domain="feather.systems" src="https://plausible.io/js/plausible.js"><\/script>
+		<script defer data-domain="feather.systems" src="./plausible.js"><\/script>
 
 		<style>
 			@font-face {
