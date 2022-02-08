@@ -105,10 +105,7 @@
 		}
 	}
 	.spacer.one {
-		width: 155 * $g;
-    @media screen and (max-width: $bpDash) {
-			width: 200 * $g;
-		}
+		width: 100%;
 	}
 	.sign-up {
 		width: 24.6 * $g; /*fix the spacers to accomodate this new button*/
