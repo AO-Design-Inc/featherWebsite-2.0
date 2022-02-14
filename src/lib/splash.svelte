@@ -162,26 +162,6 @@
 			max-width: 0;
 			// animation: appear 3s cubic-bezier(0.32, 0, 0.67, 0) 0.3s 1 forwards;
 		}
-
-		// @keyframes appear {
-		// 	0% {
-		// 		max-width: 0;
-		// 		opacity: 100%;
-		// 	}
-		// 	50% {
-		// 		max-width: 400px;
-		// 		opacity: 100%;
-		// 	}
-		// 	90% {
-		// 		max-width: 400px;
-		// 		opacity: 100%;
-		// 	}
-		// 	100% {
-		// 		display: none;
-		// 		max-width: 400px;
-		// 		opacity: 0%;
-		// 	}
-		// }
 		#line {
 			width: get-vw(400px);
 			@media screen and (min-width: 1240px) {
