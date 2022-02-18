@@ -1,3 +1,10 @@
+<script>
+	let clickToApp = function () {
+		window.open('feather://open');
+		console.log('nav');
+	};
+</script>
+
 <div id="welcome">
 	<div id="center-container">
 		<div id="welcome-head">Welcome to Feather</div>
@@ -23,7 +30,7 @@
 				</div>
 			</button>
 			<div class="spacer between buttons" />
-			<button id="launch">
+			<button on:click={clickToApp} id="launch">
 				<div class="cont" style="display: flex">
 					Launch Feather <div class="spacer" style="width:10px" />
 					<svg
@@ -106,7 +113,7 @@
 			margin: 0% auto;
 			@media screen and (max-width: $bp) {
 				display: block;
-                width: 100%;
+				width: 100%;
 			}
 			button {
 				width: get-vw(235px);
