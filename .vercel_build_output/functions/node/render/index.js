@@ -6196,21 +6196,66 @@ var init__3 = __esm({
   }
 });
 
-// .svelte-kit/output/server/entries/pages/invite-2022.svelte.js
-var invite_2022_svelte_exports = {};
-__export(invite_2022_svelte_exports, {
-  default: () => Invite_2022
+// .svelte-kit/output/server/entries/pages/welcome.svelte.js
+var welcome_svelte_exports = {};
+__export(welcome_svelte_exports, {
+  default: () => Welcome
 });
-var css8, Invite_2022;
-var init_invite_2022_svelte = __esm({
-  ".svelte-kit/output/server/entries/pages/invite-2022.svelte.js"() {
+var css8, Welcome;
+var init_welcome_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/welcome.svelte.js"() {
     init_index_6bc633e9();
     css8 = {
+      code: "#welcome.svelte-z0ph7z.svelte-z0ph7z{max-width:100%;height:80vh;display:grid;place-items:center}@media screen and (max-width: 810px){#welcome.svelte-z0ph7z.svelte-z0ph7z{margin:0% 20px}}#welcome.svelte-z0ph7z #center-container.svelte-z0ph7z{max-height:14.9305555556vw}@media screen and (min-width: 1240px){#welcome.svelte-z0ph7z #center-container.svelte-z0ph7z{max-height:min(14.9305555556vw, 215px)}}@media screen and (max-width: 810px){#welcome.svelte-z0ph7z #center-container.svelte-z0ph7z{max-height:max(14.9305555556vw, 215px)}}#welcome.svelte-z0ph7z #welcome-head.svelte-z0ph7z{text-align:center;font-size:7.0833333333vw;font-weight:750}@media screen and (min-width: 1240px){#welcome.svelte-z0ph7z #welcome-head.svelte-z0ph7z{font-size:min(7.0833333333vw, 102px)}}@media screen and (max-width: 810px){#welcome.svelte-z0ph7z #welcome-head.svelte-z0ph7z{font-size:max(7.0833333333vw, 65px)}}#welcome.svelte-z0ph7z .spacer.buttons.svelte-z0ph7z{width:100%;height:2.7777777778vw}@media screen and (min-width: 1240px){#welcome.svelte-z0ph7z .spacer.buttons.svelte-z0ph7z{height:min(2.7777777778vw, 40px)}}@media screen and (max-width: 810px){#welcome.svelte-z0ph7z .spacer.buttons.svelte-z0ph7z{height:max(2.7777777778vw, 40px)}}#welcome.svelte-z0ph7z #button-container.svelte-z0ph7z{display:flex;align-items:center;width:fit-content;margin:0% auto}@media screen and (max-width: 810px){#welcome.svelte-z0ph7z #button-container.svelte-z0ph7z{display:block;width:100%}}#welcome.svelte-z0ph7z #button-container button.svelte-z0ph7z{width:16.3194444444vw;height:3.8194444444vw;border-radius:0.6944444444vw;margin:0%;display:grid;place-items:center;font-size:1.1111111111vw}@media screen and (min-width: 1240px){#welcome.svelte-z0ph7z #button-container button.svelte-z0ph7z{width:min(16.3194444444vw, 235px);height:min(3.8194444444vw, 55px);font-size:min(1.1111111111vw, 16px);border-radius:min(0.6944444444vw, 10px)}}@media screen and (max-width: 810px){#welcome.svelte-z0ph7z #button-container button.svelte-z0ph7z{width:100%;height:max(3.8194444444vw, 55px);font-size:max(1.1111111111vw, 16px);border-radius:max(0.6944444444vw, 10px)}}#welcome.svelte-z0ph7z #button-container button#download.svelte-z0ph7z{border:none;background:#ffb0b0;box-shadow:0px 0px 7px 2px rgba(251, 118, 128, 0.25)}#welcome.svelte-z0ph7z #button-container .spacer.between.buttons.svelte-z0ph7z{width:2.4305555556vw}@media screen and (min-width: 1240px){#welcome.svelte-z0ph7z #button-container .spacer.between.buttons.svelte-z0ph7z{width:min(2.4305555556vw, 35px)}}@media screen and (max-width: 810px){#welcome.svelte-z0ph7z #button-container .spacer.between.buttons.svelte-z0ph7z{width:max(2.4305555556vw, 15px)}}#welcome.svelte-z0ph7z #button-container button#launch.svelte-z0ph7z{background:none;border:1px solid #ffdede;box-sizing:border-box;color:#fffffb}",
+      map: null
+    };
+    Welcome = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      $$result.css.add(css8);
+      return `<div id="${"welcome"}" class="${"svelte-z0ph7z"}"><div id="${"center-container"}" class="${"svelte-z0ph7z"}"><div id="${"welcome-head"}" class="${"svelte-z0ph7z"}">Welcome to Feather</div>
+		<div class="${"spacer buttons svelte-z0ph7z"}"></div>
+		<div id="${"button-container"}" class="${"svelte-z0ph7z"}"><button id="${"download"}" class="${"svelte-z0ph7z"}"><div class="${"cont"}" style="${"display: flex"}">Download Feather <div class="${"spacer"}" style="${"width:10px"}"></div>
+					<svg width="${"18"}" height="${"17"}" viewBox="${"0 0 18 17"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><path d="${"M8.77948 -3.40207e-07L8.77948 15.75M8.77948 15.75L16.5625 8.33824M8.77948 15.75L0.996462 8.33823"}" stroke="${"#74252B"}" stroke-width="${"2"}" stroke-linejoin="${"round"}"></path></svg></div></button>
+			<div class="${"spacer between buttons svelte-z0ph7z"}"></div>
+			<button id="${"launch"}" class="${"svelte-z0ph7z"}"><div class="${"cont"}" style="${"display: flex"}">Launch Feather <div class="${"spacer"}" style="${"width:10px"}"></div>
+					<svg width="${"14"}" height="${"15"}" viewBox="${"0 0 14 15"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><path d="${"M0.933113 13.3279L12.07 2.19096M12.07 2.19096L1.32571 1.92844M12.07 2.19096L12.3326 12.9353"}" stroke="${"url(#paint0_linear_2198_467)"}" stroke-width="${"2"}" stroke-linejoin="${"round"}"></path><defs><linearGradient id="${"paint0_linear_2198_467"}" x1="${"0.933113"}" y1="${"13.3279"}" x2="${"13.1307"}" y2="${"1.1303"}" gradientUnits="${"userSpaceOnUse"}"><stop offset="${"0.369792"}" stop-color="${"#FFFBFC"}"></stop><stop offset="${"1"}" stop-color="${"#FFB0B0"}"></stop></linearGradient></defs></svg></div></button></div></div>
+</div>`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/3.js
+var __exports4 = {};
+__export(__exports4, {
+  css: () => css9,
+  entry: () => entry4,
+  js: () => js4,
+  module: () => welcome_svelte_exports
+});
+var entry4, js4, css9;
+var init__4 = __esm({
+  ".svelte-kit/output/server/nodes/3.js"() {
+    init_welcome_svelte();
+    entry4 = "pages/welcome.svelte-15380c27.js";
+    js4 = ["pages/welcome.svelte-15380c27.js", "chunks/vendor-a38eab81.js"];
+    css9 = ["assets/pages/welcome.svelte-be1cdb9c.css", "assets/vendor-2634b1a9.css"];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/launch.svelte.js
+var launch_svelte_exports = {};
+__export(launch_svelte_exports, {
+  default: () => Launch
+});
+var css10, Launch;
+var init_launch_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/launch.svelte.js"() {
+    init_index_6bc633e9();
+    css10 = {
       code: ".spacer.first.svelte-13lx1v7.svelte-13lx1v7{width:100%;height:4.1666666667vw}@media screen and (min-width: 1240px){.spacer.first.svelte-13lx1v7.svelte-13lx1v7{height:min(4.1666666667vw, 60px)}}@media screen and (max-width: 810px){.spacer.first.svelte-13lx1v7.svelte-13lx1v7{height:max(4.1666666667vw, 60px)}}.spacer.first.two.svelte-13lx1v7.svelte-13lx1v7{height:0.6944444444vw}@media screen and (min-width: 1240px){.spacer.first.two.svelte-13lx1v7.svelte-13lx1v7{height:min(0.6944444444vw, 10px)}}@media screen and (max-width: 810px){.spacer.first.two.svelte-13lx1v7.svelte-13lx1v7{height:max(0.6944444444vw, 10px)}}.spacer.second.svelte-13lx1v7.svelte-13lx1v7{width:100%;height:3.125vw}@media screen and (min-width: 1240px){.spacer.second.svelte-13lx1v7.svelte-13lx1v7{height:min(3.125vw, 45px)}}@media screen and (max-width: 810px){.spacer.second.svelte-13lx1v7.svelte-13lx1v7{height:max(3.125vw, 45px)}}.spacer.form.svelte-13lx1v7.svelte-13lx1v7{width:100%;height:1.3888888889vw}@media screen and (min-width: 1240px){.spacer.form.svelte-13lx1v7.svelte-13lx1v7{height:min(1.3888888889vw, 20px)}}@media screen and (max-width: 810px){.spacer.form.svelte-13lx1v7.svelte-13lx1v7{height:max(1.3888888889vw, 20px)}}.spacer.third.svelte-13lx1v7.svelte-13lx1v7{width:100%;height:12.5vw}@media screen and (min-width: 1240px){.spacer.third.svelte-13lx1v7.svelte-13lx1v7{height:min(12.5vw, 180px)}}@media screen and (max-width: 810px){.spacer.third.svelte-13lx1v7.svelte-13lx1v7{height:max(12.5vw, 60px)}}#invite-container.svelte-13lx1v7.svelte-13lx1v7,.title-container.svelte-13lx1v7.svelte-13lx1v7,.hundred-width.svelte-13lx1v7.svelte-13lx1v7{width:100%}.center.svelte-13lx1v7.svelte-13lx1v7{display:grid;place-items:center}#invite-container.svelte-13lx1v7.svelte-13lx1v7{height:auto;text-align:center}#invite-container.svelte-13lx1v7 .title-container.svelte-13lx1v7,#invite-container.svelte-13lx1v7 .date-time.svelte-13lx1v7{font-size:1.8055555556vw;font-weight:250}@media screen and (min-width: 1240px){#invite-container.svelte-13lx1v7 .title-container.svelte-13lx1v7,#invite-container.svelte-13lx1v7 .date-time.svelte-13lx1v7{font-size:min(1.8055555556vw, 26px)}}@media screen and (max-width: 810px){#invite-container.svelte-13lx1v7 .title-container.svelte-13lx1v7,#invite-container.svelte-13lx1v7 .date-time.svelte-13lx1v7{font-size:max(1.8055555556vw, 26px)}}#invite-container.svelte-13lx1v7 .title.svelte-13lx1v7{font-size:5vw;font-weight:700}@media screen and (min-width: 1240px){#invite-container.svelte-13lx1v7 .title.svelte-13lx1v7{font-size:min(5vw, 72px)}}@media screen and (max-width: 810px){#invite-container.svelte-13lx1v7 .title.svelte-13lx1v7{font-size:max(5vw, 60px)}}#invite-container.svelte-13lx1v7 .opacity-low.svelte-13lx1v7{opacity:0.65}#invite-container.svelte-13lx1v7 .image-container.svelte-13lx1v7{filter:saturate(1.45)}#invite-container.svelte-13lx1v7 .image-container img.svelte-13lx1v7{max-width:95.1388888889vw}form.svelte-13lx1v7.svelte-13lx1v7{position:relative}form.svelte-13lx1v7 .field.svelte-13lx1v7{height:3.125vw;min-height:45px;border-radius:0.6944444444vw;color:#fffffb;background:#474b52;border:none;width:100%;max-width:31.25vw;font-size:max(1.1111111111vw, 16px);margin-bottom:0;padding:8px 16px}@media screen and (min-width: 1240px){form.svelte-13lx1v7 .field.svelte-13lx1v7{height:min(3.125vw, 45px);font-size:min(1.1111111111vw, 16px)}}@media screen and (max-width: 810px){form.svelte-13lx1v7 .field.svelte-13lx1v7{max-width:100%}}form.svelte-13lx1v7 .sub.svelte-13lx1v7{color:#fffffb;margin:0px;width:100%;max-width:31.25vw;height:3.125vw;min-height:45px;box-shadow:none;border:none;background:#fb7680;border-radius:0.6944444444vw;display:grid;place-items:center;cursor:pointer;font-size:max(1.1111111111vw, 16px);transition:background 0.3s ease-in-out}@media screen and (max-width: 810px){form.svelte-13lx1v7 .sub.svelte-13lx1v7{max-width:100%}}@media screen and (min-width: 1240px){form.svelte-13lx1v7 .sub.svelte-13lx1v7{height:min(3.125vw, 45px);font-size:min(1.1111111111vw, 16px)}}form.svelte-13lx1v7 .check-container.svelte-13lx1v7{display:flex;align-items:center;font-size:1.1111111111vw}@media screen and (min-width: 1240px){form.svelte-13lx1v7 .check-container.svelte-13lx1v7{font-size:min(1.1111111111vw, 16px)}}@media screen and (max-width: 810px){form.svelte-13lx1v7 .check-container.svelte-13lx1v7{font-size:max(1.1111111111vw, 16px)}}form.svelte-13lx1v7 .check-container input.svelte-13lx1v7{margin:0%}form.svelte-13lx1v7 .check-container .spacer.check.svelte-13lx1v7{height:100%;width:0.6944444444vw}@media screen and (min-width: 1240px){form.svelte-13lx1v7 .check-container .spacer.check.svelte-13lx1v7{width:min(0.6944444444vw, 10px)}}@media screen and (max-width: 810px){form.svelte-13lx1v7 .check-container .spacer.check.svelte-13lx1v7{width:max(0.6944444444vw, 10px)}}form.svelte-13lx1v7 .sub.svelte-13lx1v7{transition:background 0.3s ease-in-out;background:#f87c86}",
       map: null
     };
-    Invite_2022 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      $$result.css.add(css8);
+    Launch = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      $$result.css.add(css10);
       return `<div id="${"invite-container"}" class="${"svelte-13lx1v7"}"><div class="${"spacer first svelte-13lx1v7"}"></div>
 	<div class="${"title-container center center-text svelte-13lx1v7"}"><div class="${"hundred-width subheader svelte-13lx1v7"}">You&#39;re invited to:</div>
 		<div class="${"hundred-width title svelte-13lx1v7"}">The Future of Compute</div>
@@ -6238,66 +6283,21 @@ var init_invite_2022_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/3.js
-var __exports4 = {};
-__export(__exports4, {
-  css: () => css9,
-  entry: () => entry4,
-  js: () => js4,
-  module: () => invite_2022_svelte_exports
-});
-var entry4, js4, css9;
-var init__4 = __esm({
-  ".svelte-kit/output/server/nodes/3.js"() {
-    init_invite_2022_svelte();
-    entry4 = "pages/invite-2022.svelte-576c87e2.js";
-    js4 = ["pages/invite-2022.svelte-576c87e2.js", "chunks/vendor-a38eab81.js"];
-    css9 = ["assets/pages/invite-2022.svelte-55a3a193.css", "assets/vendor-2634b1a9.css"];
-  }
-});
-
-// .svelte-kit/output/server/entries/pages/welcome.svelte.js
-var welcome_svelte_exports = {};
-__export(welcome_svelte_exports, {
-  default: () => Welcome
-});
-var css10, Welcome;
-var init_welcome_svelte = __esm({
-  ".svelte-kit/output/server/entries/pages/welcome.svelte.js"() {
-    init_index_6bc633e9();
-    css10 = {
-      code: "#welcome.svelte-z0ph7z.svelte-z0ph7z{max-width:100%;height:80vh;display:grid;place-items:center}@media screen and (max-width: 810px){#welcome.svelte-z0ph7z.svelte-z0ph7z{margin:0% 20px}}#welcome.svelte-z0ph7z #center-container.svelte-z0ph7z{max-height:14.9305555556vw}@media screen and (min-width: 1240px){#welcome.svelte-z0ph7z #center-container.svelte-z0ph7z{max-height:min(14.9305555556vw, 215px)}}@media screen and (max-width: 810px){#welcome.svelte-z0ph7z #center-container.svelte-z0ph7z{max-height:max(14.9305555556vw, 215px)}}#welcome.svelte-z0ph7z #welcome-head.svelte-z0ph7z{text-align:center;font-size:7.0833333333vw;font-weight:750}@media screen and (min-width: 1240px){#welcome.svelte-z0ph7z #welcome-head.svelte-z0ph7z{font-size:min(7.0833333333vw, 102px)}}@media screen and (max-width: 810px){#welcome.svelte-z0ph7z #welcome-head.svelte-z0ph7z{font-size:max(7.0833333333vw, 65px)}}#welcome.svelte-z0ph7z .spacer.buttons.svelte-z0ph7z{width:100%;height:2.7777777778vw}@media screen and (min-width: 1240px){#welcome.svelte-z0ph7z .spacer.buttons.svelte-z0ph7z{height:min(2.7777777778vw, 40px)}}@media screen and (max-width: 810px){#welcome.svelte-z0ph7z .spacer.buttons.svelte-z0ph7z{height:max(2.7777777778vw, 40px)}}#welcome.svelte-z0ph7z #button-container.svelte-z0ph7z{display:flex;align-items:center;width:fit-content;margin:0% auto}@media screen and (max-width: 810px){#welcome.svelte-z0ph7z #button-container.svelte-z0ph7z{display:block;width:100%}}#welcome.svelte-z0ph7z #button-container button.svelte-z0ph7z{width:16.3194444444vw;height:3.8194444444vw;border-radius:0.6944444444vw;margin:0%;display:grid;place-items:center;font-size:1.1111111111vw}@media screen and (min-width: 1240px){#welcome.svelte-z0ph7z #button-container button.svelte-z0ph7z{width:min(16.3194444444vw, 235px);height:min(3.8194444444vw, 55px);font-size:min(1.1111111111vw, 16px);border-radius:min(0.6944444444vw, 10px)}}@media screen and (max-width: 810px){#welcome.svelte-z0ph7z #button-container button.svelte-z0ph7z{width:100%;height:max(3.8194444444vw, 55px);font-size:max(1.1111111111vw, 16px);border-radius:max(0.6944444444vw, 10px)}}#welcome.svelte-z0ph7z #button-container button#download.svelte-z0ph7z{border:none;background:#ffb0b0;box-shadow:0px 0px 7px 2px rgba(251, 118, 128, 0.25)}#welcome.svelte-z0ph7z #button-container .spacer.between.buttons.svelte-z0ph7z{width:2.4305555556vw}@media screen and (min-width: 1240px){#welcome.svelte-z0ph7z #button-container .spacer.between.buttons.svelte-z0ph7z{width:min(2.4305555556vw, 35px)}}@media screen and (max-width: 810px){#welcome.svelte-z0ph7z #button-container .spacer.between.buttons.svelte-z0ph7z{width:max(2.4305555556vw, 15px)}}#welcome.svelte-z0ph7z #button-container button#launch.svelte-z0ph7z{background:none;border:1px solid #ffdede;box-sizing:border-box;color:#fffffb}",
-      map: null
-    };
-    Welcome = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      $$result.css.add(css10);
-      return `<div id="${"welcome"}" class="${"svelte-z0ph7z"}"><div id="${"center-container"}" class="${"svelte-z0ph7z"}"><div id="${"welcome-head"}" class="${"svelte-z0ph7z"}">Welcome to Feather</div>
-		<div class="${"spacer buttons svelte-z0ph7z"}"></div>
-		<div id="${"button-container"}" class="${"svelte-z0ph7z"}"><button id="${"download"}" class="${"svelte-z0ph7z"}"><div class="${"cont"}" style="${"display: flex"}">Download Feather <div class="${"spacer"}" style="${"width:10px"}"></div>
-					<svg width="${"18"}" height="${"17"}" viewBox="${"0 0 18 17"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><path d="${"M8.77948 -3.40207e-07L8.77948 15.75M8.77948 15.75L16.5625 8.33824M8.77948 15.75L0.996462 8.33823"}" stroke="${"#74252B"}" stroke-width="${"2"}" stroke-linejoin="${"round"}"></path></svg></div></button>
-			<div class="${"spacer between buttons svelte-z0ph7z"}"></div>
-			<button id="${"launch"}" class="${"svelte-z0ph7z"}"><div class="${"cont"}" style="${"display: flex"}">Launch Feather <div class="${"spacer"}" style="${"width:10px"}"></div>
-					<svg width="${"14"}" height="${"15"}" viewBox="${"0 0 14 15"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><path d="${"M0.933113 13.3279L12.07 2.19096M12.07 2.19096L1.32571 1.92844M12.07 2.19096L12.3326 12.9353"}" stroke="${"url(#paint0_linear_2198_467)"}" stroke-width="${"2"}" stroke-linejoin="${"round"}"></path><defs><linearGradient id="${"paint0_linear_2198_467"}" x1="${"0.933113"}" y1="${"13.3279"}" x2="${"13.1307"}" y2="${"1.1303"}" gradientUnits="${"userSpaceOnUse"}"><stop offset="${"0.369792"}" stop-color="${"#FFFBFC"}"></stop><stop offset="${"1"}" stop-color="${"#FFB0B0"}"></stop></linearGradient></defs></svg></div></button></div></div>
-</div>`;
-    });
-  }
-});
-
 // .svelte-kit/output/server/nodes/4.js
 var __exports5 = {};
 __export(__exports5, {
   css: () => css11,
   entry: () => entry5,
   js: () => js5,
-  module: () => welcome_svelte_exports
+  module: () => launch_svelte_exports
 });
 var entry5, js5, css11;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
-    init_welcome_svelte();
-    entry5 = "pages/welcome.svelte-15380c27.js";
-    js5 = ["pages/welcome.svelte-15380c27.js", "chunks/vendor-a38eab81.js"];
-    css11 = ["assets/pages/welcome.svelte-be1cdb9c.css", "assets/vendor-2634b1a9.css"];
+    init_launch_svelte();
+    entry5 = "pages/launch.svelte-106b0fb8.js";
+    js5 = ["pages/launch.svelte-106b0fb8.js", "chunks/vendor-a38eab81.js"];
+    css11 = ["assets/pages/launch.svelte-5c0467d5.css", "assets/vendor-2634b1a9.css"];
   }
 });
 
@@ -69549,7 +69549,7 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-4-vision-access-your-home-office-from-any-device.webp", "blog-4-vision-cdc-6600-diagram.webp", "blog-4-vision-cdc-6600-picture.webp", "blog-4-vision-let-processing-happen-where-its-best.webp", "blog-4-vision-load-balancing-entire-neighborhoods.webp", "blog-4-vision-move-heat-and-noise-from-where-you-work-and-play.webp", "blog-4-vision-processing-power-as-easily-accessible-as-public-wifi.webp", "blog-4-vision-vision-Sharing-Thumbnail.webp", "blog-4-vision-work-from-home-actually-at-home.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "invite/invite-graphic.webp", "logo.svg", "reddit.svg", "robots.txt", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain" },
-    entry: { "file": "start-1bb6f816.js", "js": ["start-1bb6f816.js", "chunks/vendor-a38eab81.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-d89ebefc.js", "js": ["start-d89ebefc.js", "chunks/vendor-a38eab81.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
@@ -69571,14 +69571,6 @@ var manifest = {
         b: [1]
       },
       {
-        type: "page",
-        pattern: /^\/invite-2022\/?$/,
-        params: null,
-        path: "/invite-2022",
-        a: [0, 3],
-        b: [1]
-      },
-      {
         type: "endpoint",
         pattern: /^\/blog\.json$/,
         params: null,
@@ -69589,6 +69581,14 @@ var manifest = {
         pattern: /^\/welcome\/?$/,
         params: null,
         path: "/welcome",
+        a: [0, 3],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/launch\/?$/,
+        params: null,
+        path: "/launch",
         a: [0, 4],
         b: [1]
       },
