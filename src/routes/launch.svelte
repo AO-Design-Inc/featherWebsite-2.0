@@ -43,7 +43,9 @@
 				<div class="check-container">
 					<input type="checkbox" id="Alpha" name="tag" value="Updates" />
 					<div class="spacer check" />
-					<label class="opacity-low" for="Alpha">Keep up w/ Feather by joining our mailing list</label>
+					<label class="opacity-low" for="Alpha"
+						>Keep up w/ Feather by joining our mailing list</label
+					>
 				</div>
 				<div class="spacer form" />
 				<input class="sub" type="submit" value="Subscribe" />
@@ -52,8 +54,9 @@
 		</div>
 		<!-- <div class="spacer second" /> -->
 		<div class="spacer first" />
+		<div class="spacer first" />
 		<div class="hundred-width image-container center">
-			<img src="/invite/invite-graphic.webp" alt="The Future of Computing" />
+			<img src="/invite/circle-f.webp" alt="The Future of Computing" />
 		</div>
 		<div class="spacer third" />
 	</div>
@@ -102,12 +105,12 @@
 	}
 	.spacer.third {
 		width: 100%;
-		height: get-vw(180px);
+		height: get-vw(90px);
 		@media screen and (min-width: 1240px) {
-			height: min(get-vw(180px), 180px);
+			height: min(get-vw(90px), 90px);
 		}
 		@media screen and (max-width: $bp) {
-			height: max(get-vw(180px), 60px);
+			height: max(get-vw(90px), 90px);
 		}
 	}
 	#invite-container,
@@ -149,7 +152,13 @@
 		.image-container {
 			filter: saturate(1.45);
 			img {
-				max-width: get-vw(1370px);
+				max-width: get-vw(480px);
+				@media screen and (min-width: 1240px) {
+					max-width: min(get-vw(480px), 480px);
+				}
+				@media screen and (max-width: $bp) {
+					max-width: max(get-vw(480px), 400px);
+				}
 			}
 		}
 	}
