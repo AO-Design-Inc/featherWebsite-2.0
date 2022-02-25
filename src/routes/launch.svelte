@@ -41,9 +41,9 @@
 				/>
 				<div class="spacer form" />
 				<div class="check-container">
-					<input type="checkbox" id="Alpha" name="tag" value="alpha" />
+					<input type="checkbox" id="Alpha" name="tag" value="Updates" />
 					<div class="spacer check" />
-					<label class="opacity-low" for="Alpha">Keep up Feather by joining our mailing list</label>
+					<label class="opacity-low" for="Alpha">Keep up w/ Feather by joining our mailing list</label>
 				</div>
 				<div class="spacer form" />
 				<input class="sub" type="submit" value="Subscribe" />

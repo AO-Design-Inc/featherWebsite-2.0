@@ -6268,9 +6268,9 @@ var init_launch_svelte = __esm({
 				<div class="${"spacer form svelte-13lx1v7"}"></div>
 				<input class="${"field svelte-13lx1v7"}" placeholder="${"Enter your email"}" type="${"email"}" name="${"email"}" id="${"bd-email"}" required>
 				<div class="${"spacer form svelte-13lx1v7"}"></div>
-				<div class="${"check-container svelte-13lx1v7"}"><input type="${"checkbox"}" id="${"Alpha"}" name="${"tag"}" value="${"alpha"}" class="${"svelte-13lx1v7"}">
+				<div class="${"check-container svelte-13lx1v7"}"><input type="${"checkbox"}" id="${"Alpha"}" name="${"tag"}" value="${"Updates"}" class="${"svelte-13lx1v7"}">
 					<div class="${"spacer check svelte-13lx1v7"}"></div>
-					<label class="${"opacity-low svelte-13lx1v7"}" for="${"Alpha"}">Keep up Feather by joining our mailing list</label></div>
+					<label class="${"opacity-low svelte-13lx1v7"}" for="${"Alpha"}">Keep up w/ Feather by joining our mailing list</label></div>
 				<div class="${"spacer form svelte-13lx1v7"}"></div>
 				<input class="${"sub svelte-13lx1v7"}" type="${"submit"}" value="${"Subscribe"}">
 				<input type="${"hidden"}" name="${"tag"}" value="${"Launch2022"}" class="${"svelte-13lx1v7"}"></form></div>
@@ -6295,8 +6295,8 @@ var entry5, js5, css11;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_launch_svelte();
-    entry5 = "pages/launch.svelte-f2db2059.js";
-    js5 = ["pages/launch.svelte-f2db2059.js", "chunks/vendor-a38eab81.js"];
+    entry5 = "pages/launch.svelte-0965df7d.js";
+    js5 = ["pages/launch.svelte-0965df7d.js", "chunks/vendor-a38eab81.js"];
     css11 = ["assets/pages/launch.svelte-5c0467d5.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -69549,7 +69549,7 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-4-vision-access-your-home-office-from-any-device.webp", "blog-4-vision-cdc-6600-diagram.webp", "blog-4-vision-cdc-6600-picture.webp", "blog-4-vision-let-processing-happen-where-its-best.webp", "blog-4-vision-load-balancing-entire-neighborhoods.webp", "blog-4-vision-move-heat-and-noise-from-where-you-work-and-play.webp", "blog-4-vision-processing-power-as-easily-accessible-as-public-wifi.webp", "blog-4-vision-vision-Sharing-Thumbnail.webp", "blog-4-vision-work-from-home-actually-at-home.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "invite/invite-graphic.webp", "logo.svg", "reddit.svg", "robots.txt", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain" },
-    entry: { "file": "start-66cf6f36.js", "js": ["start-66cf6f36.js", "chunks/vendor-a38eab81.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-a5f14f1e.js", "js": ["start-a5f14f1e.js", "chunks/vendor-a38eab81.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
