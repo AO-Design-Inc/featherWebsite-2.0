@@ -1,8 +1,40 @@
 <script>
+	import { onMount } from 'svelte';
 	let clickToApp = function () {
 		window.open('feather://open');
 		console.log('nav');
 	};
+
+	let getOS = () => {
+		var userAgent = window.navigator.userAgent,
+			platform = window.navigator.platform,
+			macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+			windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+			iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+			os = null;
+
+		if (macosPlatforms.indexOf(platform) !== -1) {
+			os = 'Mac OS';
+		} else if (iosPlatforms.indexOf(platform) !== -1) {
+			os = 'iOS';
+		} else if (windowsPlatforms.indexOf(platform) !== -1) {
+			os = 'Windows';
+		} else if (/Android/.test(userAgent)) {
+			os = 'Android';
+		} else if (!os && /Linux/.test(platform)) {
+			os = 'Linux';
+		}
+
+		return os;
+	}
+	let downloadBuild = (os) => {
+		if (os === 'Mac OS') console.log('Downloading Mac Build')
+		else if (os === 'Windows') console.log('Downloading Windows Build')
+		else if (os === 'Linux') console.log('Downloading Linux Build')
+	}
+	onMount(() => {
+		let userOS = getOS();
+	});
 </script>
 
 <div id="welcome">
@@ -10,7 +42,7 @@
 		<div id="welcome-head">Welcome to Feather</div>
 		<div class="spacer buttons" />
 		<div id="button-container">
-			<button id="download">
+			<button on:click={() => downloadBuild(getOS())} id="download">
 				<div class="cont" style="display: flex">
 					Download Feather <div class="spacer" style="width:10px" />
 					<svg
