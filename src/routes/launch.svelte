@@ -6,7 +6,7 @@
 		<div class="hundred-width subheader">You're invited to:</div>
 		<div class="hundred-width title">The Future of Compute</div>
 		<div class="spacer first two" />
-		<div class="hundred-width date-time opacity-low">Tuesday, March 22<br />5pm EST / 2pm PST</div>
+		<div class="hundred-width date-time opacity-low">Tuesday, March 29th<br />5pm EST / 2pm PST</div>
 		<div class="spacer second" />
 		<div class="center form-container hundred-width">
 			<form

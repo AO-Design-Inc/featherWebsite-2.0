@@ -26,12 +26,12 @@
 		}
 
 		return os;
-	}
+	};
 	let downloadBuild = (os) => {
-		if (os === 'Mac OS') console.log('Downloading Mac Build')
-		else if (os === 'Windows') console.log('Downloading Windows Build')
-		else if (os === 'Linux') console.log('Downloading Linux Build')
-	}
+		if (os === 'Mac OS') console.log('Downloading Mac Build');
+		else if (os === 'Windows') console.log('Downloading Windows Build');
+		else if (os === 'Linux') console.log('Downloading Linux Build');
+	};
 	onMount(() => {
 		let userOS = getOS();
 	});
@@ -62,38 +62,40 @@
 				</div>
 			</button>
 			<div class="spacer between buttons" />
-			<button on:click={clickToApp} id="launch">
-				<div class="cont" style="display: flex">
-					Launch Feather <div class="spacer" style="width:10px" />
-					<svg
-						width="14"
-						height="15"
-						viewBox="0 0 14 15"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M0.933113 13.3279L12.07 2.19096M12.07 2.19096L1.32571 1.92844M12.07 2.19096L12.3326 12.9353"
-							stroke="url(#paint0_linear_2198_467)"
-							stroke-width="2"
-							stroke-linejoin="round"
-						/>
-						<defs>
-							<linearGradient
-								id="paint0_linear_2198_467"
-								x1="0.933113"
-								y1="13.3279"
-								x2="13.1307"
-								y2="1.1303"
-								gradientUnits="userSpaceOnUse"
-							>
-								<stop offset="0.369792" stop-color="#FFFBFC" />
-								<stop offset="1" stop-color="#FFB0B0" />
-							</linearGradient>
-						</defs>
-					</svg>
-				</div>
-			</button>
+			<a href="feather://open/">
+				<button id="launch">
+					<div class="cont" style="display: flex">
+						Launch Feather <div class="spacer" style="width:10px" />
+						<svg
+							width="14"
+							height="15"
+							viewBox="0 0 14 15"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M0.933113 13.3279L12.07 2.19096M12.07 2.19096L1.32571 1.92844M12.07 2.19096L12.3326 12.9353"
+								stroke="url(#paint0_linear_2198_467)"
+								stroke-width="2"
+								stroke-linejoin="round"
+							/>
+							<defs>
+								<linearGradient
+									id="paint0_linear_2198_467"
+									x1="0.933113"
+									y1="13.3279"
+									x2="13.1307"
+									y2="1.1303"
+									gradientUnits="userSpaceOnUse"
+								>
+									<stop offset="0.369792" stop-color="#FFFBFC" />
+									<stop offset="1" stop-color="#FFB0B0" />
+								</linearGradient>
+							</defs>
+						</svg>
+					</div>
+				</button>
+			</a>
 		</div>
 	</div>
 </div>

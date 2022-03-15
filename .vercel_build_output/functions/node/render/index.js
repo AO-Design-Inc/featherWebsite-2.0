@@ -6216,8 +6216,8 @@ var init_welcome_svelte = __esm({
 		<div id="${"button-container"}" class="${"svelte-z0ph7z"}"><button id="${"download"}" class="${"svelte-z0ph7z"}"><div class="${"cont"}" style="${"display: flex"}">Download Feather <div class="${"spacer"}" style="${"width:10px"}"></div>
 					<svg width="${"18"}" height="${"17"}" viewBox="${"0 0 18 17"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><path d="${"M8.77948 -3.40207e-07L8.77948 15.75M8.77948 15.75L16.5625 8.33824M8.77948 15.75L0.996462 8.33823"}" stroke="${"#74252B"}" stroke-width="${"2"}" stroke-linejoin="${"round"}"></path></svg></div></button>
 			<div class="${"spacer between buttons svelte-z0ph7z"}"></div>
-			<button id="${"launch"}" class="${"svelte-z0ph7z"}"><div class="${"cont"}" style="${"display: flex"}">Launch Feather <div class="${"spacer"}" style="${"width:10px"}"></div>
-					<svg width="${"14"}" height="${"15"}" viewBox="${"0 0 14 15"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><path d="${"M0.933113 13.3279L12.07 2.19096M12.07 2.19096L1.32571 1.92844M12.07 2.19096L12.3326 12.9353"}" stroke="${"url(#paint0_linear_2198_467)"}" stroke-width="${"2"}" stroke-linejoin="${"round"}"></path><defs><linearGradient id="${"paint0_linear_2198_467"}" x1="${"0.933113"}" y1="${"13.3279"}" x2="${"13.1307"}" y2="${"1.1303"}" gradientUnits="${"userSpaceOnUse"}"><stop offset="${"0.369792"}" stop-color="${"#FFFBFC"}"></stop><stop offset="${"1"}" stop-color="${"#FFB0B0"}"></stop></linearGradient></defs></svg></div></button></div></div>
+			<a href="${"feather://open/"}"><button id="${"launch"}" class="${"svelte-z0ph7z"}"><div class="${"cont"}" style="${"display: flex"}">Launch Feather <div class="${"spacer"}" style="${"width:10px"}"></div>
+						<svg width="${"14"}" height="${"15"}" viewBox="${"0 0 14 15"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><path d="${"M0.933113 13.3279L12.07 2.19096M12.07 2.19096L1.32571 1.92844M12.07 2.19096L12.3326 12.9353"}" stroke="${"url(#paint0_linear_2198_467)"}" stroke-width="${"2"}" stroke-linejoin="${"round"}"></path><defs><linearGradient id="${"paint0_linear_2198_467"}" x1="${"0.933113"}" y1="${"13.3279"}" x2="${"13.1307"}" y2="${"1.1303"}" gradientUnits="${"userSpaceOnUse"}"><stop offset="${"0.369792"}" stop-color="${"#FFFBFC"}"></stop><stop offset="${"1"}" stop-color="${"#FFB0B0"}"></stop></linearGradient></defs></svg></div></button></a></div></div>
 </div>`;
     });
   }
@@ -6235,8 +6235,8 @@ var entry4, js4, css9;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_welcome_svelte();
-    entry4 = "pages/welcome.svelte-15380c27.js";
-    js4 = ["pages/welcome.svelte-15380c27.js", "chunks/vendor-a38eab81.js"];
+    entry4 = "pages/welcome.svelte-6c908f6a.js";
+    js4 = ["pages/welcome.svelte-6c908f6a.js", "chunks/vendor-a38eab81.js"];
     css9 = ["assets/pages/welcome.svelte-be1cdb9c.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -6260,7 +6260,7 @@ var init_launch_svelte = __esm({
 	<div class="${"title-container center center-text svelte-1upsg0a"}"><div class="${"hundred-width subheader svelte-1upsg0a"}">You&#39;re invited to:</div>
 		<div class="${"hundred-width title svelte-1upsg0a"}">The Future of Compute</div>
 		<div class="${"spacer first two svelte-1upsg0a"}"></div>
-		<div class="${"hundred-width date-time opacity-low svelte-1upsg0a"}">Tuesday, March 22<br>5pm EST / 2pm PST</div>
+		<div class="${"hundred-width date-time opacity-low svelte-1upsg0a"}">Tuesday, March 29th<br>5pm EST / 2pm PST</div>
 		<div class="${"spacer second svelte-1upsg0a"}"></div>
 		<div class="${"center form-container hundred-width svelte-1upsg0a"}"><form action="${"https://buttondown.email/api/emails/embed-subscribe/feather"}" method="${"post"}" target="${"popupwindow"}" onsubmit="${"window.open('https://buttondown.email/feather', 'popupwindow')"}" class="${"embeddable-buttondown-form svelte-1upsg0a"}"><input class="${"field svelte-1upsg0a"}" placeholder="${"Full Name*"}" type="${"text"}" name="${"metadata__name"}" id="${"bd-name"}" required>
 				<div class="${"spacer form svelte-1upsg0a"}"></div>
@@ -6296,8 +6296,8 @@ var entry5, js5, css11;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_launch_svelte();
-    entry5 = "pages/launch.svelte-5dae6a9b.js";
-    js5 = ["pages/launch.svelte-5dae6a9b.js", "chunks/vendor-a38eab81.js"];
+    entry5 = "pages/launch.svelte-376d51eb.js";
+    js5 = ["pages/launch.svelte-376d51eb.js", "chunks/vendor-a38eab81.js"];
     css11 = ["assets/pages/launch.svelte-460bbe3e.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -69550,7 +69550,7 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-4-vision-access-your-home-office-from-any-device.webp", "blog-4-vision-cdc-6600-diagram.webp", "blog-4-vision-cdc-6600-picture.webp", "blog-4-vision-let-processing-happen-where-its-best.webp", "blog-4-vision-load-balancing-entire-neighborhoods.webp", "blog-4-vision-move-heat-and-noise-from-where-you-work-and-play.webp", "blog-4-vision-processing-power-as-easily-accessible-as-public-wifi.webp", "blog-4-vision-vision-Sharing-Thumbnail.webp", "blog-4-vision-work-from-home-actually-at-home.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "invite/circle-f.webp", "invite/invite-graphic.webp", "logo.svg", "reddit.svg", "robots.txt", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain" },
-    entry: { "file": "start-7cd4ad17.js", "js": ["start-7cd4ad17.js", "chunks/vendor-a38eab81.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-3672d457.js", "js": ["start-3672d457.js", "chunks/vendor-a38eab81.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
