@@ -60,7 +60,6 @@
 		<div class="hundred-width image-container center">
 			<img src="/invite/circle-f.webp" alt="The Future of Computing" />
 		</div>
-		<div class="spacer third" />
 	</div>
 </div>
 
@@ -145,13 +144,14 @@
 				font-size: min(get-vw(72px), 72px);
 			}
 			@media screen and (max-width: $bp) {
-				font-size: max(get-vw(72px), 60px);
+				font-size: max(get-vw(72px), 50px);
 			}
 		}
 		.opacity-low {
 			opacity: 0.65;
 		}
 		.image-container {
+			display: none;
 			filter: saturate(1.45);
 			img {
 				max-width: get-vw(480px);
