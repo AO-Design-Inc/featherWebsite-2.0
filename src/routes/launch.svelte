@@ -35,7 +35,7 @@
 				<div class="spacer form" />
 				<input
 					class="field"
-					placeholder="Enter your email"
+					placeholder="Enter your email*"
 					type="email"
 					name="email"
 					id="bd-email"
