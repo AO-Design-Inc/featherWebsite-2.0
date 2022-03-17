@@ -1,9 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-	let clickToApp = function () {
-		window.open('feather://open');
-		console.log('nav');
-	};
 
 	let getOS = () => {
 		var userAgent = window.navigator.userAgent,
@@ -24,7 +20,6 @@
 		} else if (!os && /Linux/.test(platform)) {
 			os = 'Linux';
 		}
-
 		return os;
 	};
 	let downloadBuild = (os) => {
@@ -39,9 +34,26 @@
 
 <div id="welcome">
 	<div id="center-container">
-		<div id="welcome-head">Welcome to Feather</div>
-		<div class="spacer buttons" />
-		<div id="button-container">
+		<div style="width: 100%; height: 30px" />
+		<div id="welcome-head">Welcome to Feather!</div>
+		<div class="spacer text" />
+		<div id="thanks-head">Thanks for signing up.</div>
+		<div class="spacer text two" />
+		<div id="download-head">
+			<p>
+				<span
+					class="butt"
+					on:click={() =>
+						downloadBuild(
+							getOS(),
+							window.open('https://github.com/AO-Design-Inc/Feather-Releases', '_blank')
+						)}>Download Feather</span
+				>
+				if you haven't already.<br /> Or go to the app and login if it's already installed.
+			</p>
+		</div>
+		<div class="spacer text three" />
+		<!-- <div id="button-container">
 			<button on:click={() => downloadBuild(getOS())} id="download">
 				<div class="cont" style="display: flex">
 					Download Feather <div class="spacer" style="width:10px" />
@@ -96,7 +108,7 @@
 					</div>
 				</button>
 			</a>
-		</div>
+		</div> -->
 	</div>
 </div>
 
@@ -111,13 +123,7 @@
 			margin: 0% 20px;
 		}
 		#center-container {
-			max-height: get-vw(215px);
-			@media screen and (min-width: 1240px) {
-				max-height: min(get-vw(215px), 215px);
-			}
-			@media screen and (max-width: $bp) {
-				max-height: max(get-vw(215px), 215px);
-			}
+			height: auto;
 		}
 		#welcome-head {
 			text-align: center;
@@ -130,68 +136,81 @@
 				font-size: max(get-vw(102px), 65px);
 			}
 		}
-		.spacer.buttons {
-			width: 100%;
-			height: get-vw(40px);
+		#thanks-head {
+			opacity: 0.8;
+			text-align: center;
+			font-size: get-vw(75px);
+			font-weight: 725;
 			@media screen and (min-width: 1240px) {
-				height: min(get-vw(40px), 40px);
+				font-size: min(get-vw(75px), 75px);
 			}
 			@media screen and (max-width: $bp) {
-				height: max(get-vw(40px), 40px);
+				font-size: max(get-vw(75px), 36px);
 			}
 		}
-		#button-container {
+		#download-head {
+			opacity: 0.6;
 			display: flex;
 			align-items: center;
-			width: fit-content;
-			margin: 0% auto;
+
+			text-align: center;
+			font-size: get-vw(37px);
+			font-weight: 700;
+			line-height: 170%;
+			@media screen and (min-width: 1240px) {
+				font-size: min(get-vw(37px), 37px);
+			}
 			@media screen and (max-width: $bp) {
-				display: block;
+				font-size: max(get-vw(37px), 19px);
+			}
+			p {
 				width: 100%;
-			}
-			button {
-				width: get-vw(235px);
-				height: get-vw(55px);
-				border-radius: get-vw(10px);
 				margin: 0%;
-
-				display: grid;
-				place-items: center;
-
-				font-size: get-vw(16px);
-
-				@media screen and (min-width: 1240px) {
-					width: min(get-vw(235px), 235px);
-					height: min(get-vw(55px), 55px);
-					font-size: min(get-vw(16px), 16px);
-					border-radius: min(get-vw(10px), 10px);
+				text-align: center;
+				span.butt {
+					cursor: pointer;
+					padding: 0.5% 2%;
+					border-radius: get-vw(10px);
+					border: 1px solid #ffb0b0;
+					background: transparent;
+					color: #fffffb;
+					transition: color 0.1s ease-in-out, background 0.2s ease-in-out;
 				}
-				@media screen and (max-width: $bp) {
-					width: 100%;
-					height: max(get-vw(55px), 55px);
-					font-size: max(get-vw(16px), 16px);
-					border-radius: max(get-vw(10px), 10px);
+				span.butt:hover {
+					background: #ffb0b0;
+					transition: color 0.1s ease-in-out, background 0.2s ease-in-out;
+					color: #11131c;
 				}
 			}
-			button#download {
-				border: none;
-				background: #ffb0b0;
-				box-shadow: 0px 0px 7px 2px rgba(251, 118, 128, 0.25);
+		}
+		.spacer.text {
+			width: 100%;
+			height: get-vw(5px);
+			@media screen and (min-width: 1240px) {
+				height: min(get-vw(5px), 5px);
 			}
-			.spacer.between.buttons {
-				width: get-vw(35px);
-				@media screen and (min-width: 1240px) {
-					width: min(get-vw(35px), 35px);
-				}
-				@media screen and (max-width: $bp) {
-					width: max(get-vw(35px), 15px);
-				}
+			@media screen and (max-width: $bp) {
+				height: max(get-vw(5px), 5px);
 			}
-			button#launch {
-				background: none;
-				border: 1px solid #ffdede;
-				box-sizing: border-box;
-				color: #fffffb;
+		}
+		.spacer.text.two {
+			width: 100%;
+			height: get-vw(15px);
+			@media screen and (min-width: 1240px) {
+				height: min(get-vw(15px), 15px);
+			}
+			@media screen and (max-width: $bp) {
+				height: max(get-vw(15px), 15px);
+			}
+		}
+		.spacer.text.three {
+			width: 100%;
+			height: get-vw(25px);
+			@media screen and (min-width: 1240px) {
+				height: min(get-vw(25px), 25px);
+			}
+			@media screen and (max-width: $bp) {
+				height: max(get-vw(25px), 25px);
 			}
 		}
 	}

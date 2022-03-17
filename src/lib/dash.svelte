@@ -32,16 +32,7 @@
 <style lang="scss">
 	@import '../variables.scss';
 	$bpDash: 850px;
-	.form-container {
-		min-width: 350px;
-		width: get-vw(450px);
-		@media screen and (min-width: 1240px) {
-			width: min(get-vw(450px), 450px);
-		}
-		@media screen and (max-width: $bpDash) {
-			display: none;
-		}
-	}
+	
 	main {
 		// aspect-ratio: 288 / 17;
 		display: flex;

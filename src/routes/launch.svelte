@@ -104,16 +104,6 @@
 			height: max(get-vw(20px), 20px);
 		}
 	}
-	.spacer.third {
-		width: 100%;
-		height: get-vw(90px);
-		@media screen and (min-width: 1240px) {
-			height: min(get-vw(90px), 90px);
-		}
-		@media screen and (max-width: $bp) {
-			height: max(get-vw(90px), 90px);
-		}
-	}
 	#invite-container,
 	.title-container,
 	.hundred-width {
@@ -190,9 +180,6 @@
 			@media screen and (max-width: $bp) {
 				max-width: 100%;
 			}
-		}
-		.email:focus-visible {
-			background: #5f646d;
 		}
 		.sub {
 			color: #fffffb;
