@@ -46,7 +46,7 @@
 					on:click={() =>
 						downloadBuild(
 							getOS(),
-							window.open('https://github.com/AO-Design-Inc/Feather-Releases', '_blank')
+							window.open('https://github.com/AO-Design-Inc/Feather-Releases/releases', '_blank')
 						)}>Download Feather</span
 				>
 				if you haven't already.<br /> Or go to the app and login if it's already installed.
