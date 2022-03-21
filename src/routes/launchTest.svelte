@@ -22,6 +22,7 @@
 				window,
 				document,
 				'script',
+				'src/routes/moosend-tracking.min.js',
 				'mootrack'
 			);
 		}
@@ -29,4 +30,5 @@
 	</script>
 </svelte:head>
 
-<div data-mooform-id="7b8e8353-ac04-4d15-ba41-558b6fa9d886" />
+<div data-mooform-id="7b8e8353-ac04-4d15-ba41-558b6fa9d886" ></div>
+
