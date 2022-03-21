@@ -1,6 +1,10 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
+<<<<<<< HEAD
     "file": "start-3495d450.js",
+=======
+    "file": "start-913c8006.js",
+>>>>>>> parent of a67e99b (Testing for linux)
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -62,7 +66,11 @@
     ]
   },
   "src/routes/welcome.svelte": {
+<<<<<<< HEAD
     "file": "pages/welcome.svelte-d5cfbce0.js",
+=======
+    "file": "pages/welcome.svelte-7113cb4f.js",
+>>>>>>> parent of a67e99b (Testing for linux)
     "src": "src/routes/welcome.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -74,7 +82,11 @@
     ]
   },
   "src/routes/launch.svelte": {
+<<<<<<< HEAD
     "file": "pages/launch.svelte-3df5f34e.js",
+=======
+    "file": "pages/launch.svelte-f8d237ee.js",
+>>>>>>> parent of a67e99b (Testing for linux)
     "src": "src/routes/launch.svelte",
     "isEntry": true,
     "isDynamicEntry": true,

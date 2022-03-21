@@ -49,6 +49,9 @@
 				case UserAgent.contains('Windows'):
 					os = 'Windows';
 					break;
+				case System.WelcomeOSName === 'Android':
+					os = 'Android';
+					break;
 				case UserAgent.contains('Linux') && UserAgent.lacks('Android'):
 					os = 'Linux';
 					break;

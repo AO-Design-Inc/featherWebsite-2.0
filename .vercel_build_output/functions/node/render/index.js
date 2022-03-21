@@ -6323,8 +6323,13 @@ var entry4, js4, css9;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_welcome_svelte();
+<<<<<<< HEAD
     entry4 = "pages/welcome.svelte-d5cfbce0.js";
     js4 = ["pages/welcome.svelte-d5cfbce0.js", "chunks/vendor-08ba1c64.js"];
+=======
+    entry4 = "pages/welcome.svelte-7113cb4f.js";
+    js4 = ["pages/welcome.svelte-7113cb4f.js", "chunks/vendor-8bebd811.js"];
+>>>>>>> parent of a67e99b (Testing for linux)
     css9 = ["assets/pages/welcome.svelte-ff62992f.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -6339,6 +6344,7 @@ var init_launch_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/launch.svelte.js"() {
     init_index_6bc633e9();
     Launch = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+<<<<<<< HEAD
       return `${$$result.head += `<script data-svelte="svelte-1agryf1">if (!window.mootrack) {
 			!(function (t, n, e, o, a) {
 				function d(t) {
@@ -6369,6 +6375,32 @@ var init_launch_svelte = __esm({
 	<\/script>`, ""}
 
 <div data-mooform-id="${"7b8e8353-ac04-4d15-ba41-558b6fa9d886"}"></div>`;
+=======
+      $$result.css.add(css10);
+      return `<div id="${"invite-container"}" class="${"svelte-hujt9u"}"><div class="${"spacer first svelte-hujt9u"}"></div>
+	<div class="${"title-container center center-text svelte-hujt9u"}"><div class="${"hundred-width subheader svelte-hujt9u"}">You&#39;re invited to:</div>
+		<div class="${"hundred-width title svelte-hujt9u"}">The Future of Compute</div>
+		<div class="${"spacer first two svelte-hujt9u"}"></div>
+		<div class="${"hundred-width date-time opacity-low svelte-hujt9u"}">Tuesday, March 29th<br>2pm EST / 11am PST</div>
+		<div class="${"spacer second svelte-hujt9u"}"></div>
+		<div class="${"center form-container hundred-width svelte-hujt9u"}"><form action="${"https://buttondown.email/api/emails/embed-subscribe/feather"}" method="${"post"}" target="${"popupwindow"}" onsubmit="${"window.open('https://buttondown.email/feather', 'popupwindow')"}" class="${"embeddable-buttondown-form svelte-hujt9u"}"><input class="${"field svelte-hujt9u"}" placeholder="${"Full Name*"}" type="${"text"}" name="${"metadata__name"}" id="${"bd-name"}" required>
+				<div class="${"spacer form svelte-hujt9u"}"></div>
+				<input class="${"field svelte-hujt9u"}" placeholder="${"Organization"}" type="${"text"}" name="${"metadata__org"}" id="${"bd-org"}">
+				<div class="${"spacer form svelte-hujt9u"}"></div>
+				<input class="${"field svelte-hujt9u"}" placeholder="${"Enter your email*"}" type="${"email"}" name="${"email"}" id="${"bd-email"}" required>
+				<div class="${"spacer form svelte-hujt9u"}"></div>
+				<div class="${"check-container svelte-hujt9u"}"><input type="${"checkbox"}" id="${"Alpha"}" name="${"tag"}" value="${"Updates"}" class="${"svelte-hujt9u"}">
+					<div class="${"spacer check svelte-hujt9u"}"></div>
+					<label class="${"opacity-low svelte-hujt9u"}" for="${"Alpha"}">Keep up w/ Feather by joining our mailing list</label></div>
+				<div class="${"spacer form svelte-hujt9u"}"></div>
+				<input class="${"sub svelte-hujt9u"}" type="${"submit"}" value="${"Subscribe"}">
+				<input type="${"hidden"}" name="${"tag"}" value="${"Launch2022"}" class="${"svelte-hujt9u"}"></form></div>
+		
+		<div class="${"spacer first svelte-hujt9u"}"></div>
+		<div class="${"spacer first svelte-hujt9u"}"></div>
+		<div class="${"hundred-width image-container center svelte-hujt9u"}"><img src="${"/invite/circle-f.webp"}" alt="${"The Future of Computing"}" class="${"svelte-hujt9u"}"></div></div>
+</div>`;
+>>>>>>> parent of a67e99b (Testing for linux)
     });
   }
 });
@@ -6385,9 +6417,15 @@ var entry5, js5, css10;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_launch_svelte();
+<<<<<<< HEAD
     entry5 = "pages/launch.svelte-3df5f34e.js";
     js5 = ["pages/launch.svelte-3df5f34e.js", "chunks/vendor-08ba1c64.js"];
     css10 = ["assets/vendor-2634b1a9.css"];
+=======
+    entry5 = "pages/launch.svelte-f8d237ee.js";
+    js5 = ["pages/launch.svelte-f8d237ee.js", "chunks/vendor-8bebd811.js"];
+    css11 = ["assets/pages/launch.svelte-f3ba6a70.css", "assets/vendor-2634b1a9.css"];
+>>>>>>> parent of a67e99b (Testing for linux)
   }
 });
 
@@ -69645,7 +69683,11 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-4-vision-access-your-home-office-from-any-device.webp", "blog-4-vision-cdc-6600-diagram.webp", "blog-4-vision-cdc-6600-picture.webp", "blog-4-vision-let-processing-happen-where-its-best.webp", "blog-4-vision-load-balancing-entire-neighborhoods.webp", "blog-4-vision-move-heat-and-noise-from-where-you-work-and-play.webp", "blog-4-vision-processing-power-as-easily-accessible-as-public-wifi.webp", "blog-4-vision-vision-Sharing-Thumbnail.webp", "blog-4-vision-work-from-home-actually-at-home.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "invite/circle-f.webp", "invite/invite-graphic.webp", "logo.svg", "reddit.svg", "robots.txt", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain" },
+<<<<<<< HEAD
     entry: { "file": "start-3495d450.js", "js": ["start-3495d450.js", "chunks/vendor-08ba1c64.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+=======
+    entry: { "file": "start-913c8006.js", "js": ["start-913c8006.js", "chunks/vendor-8bebd811.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+>>>>>>> parent of a67e99b (Testing for linux)
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
