@@ -18,7 +18,7 @@
 					window.attachEvent
 						? window.attachEvent('onload', d.bind(this, o))
 						: window.addEventListener('load', d.bind(this, o), !1);
-			})(window, document, 'script', './src/routes/moosend-tracking.min.js', 'mootrack');
+			})(window, document, 'script', '$lib/moosend-tracking.min.js', 'mootrack');
 		}
 		mootrack('loadForm', '7b8e8353ac044d15ba41558b6fa9d886');
 	</script>
