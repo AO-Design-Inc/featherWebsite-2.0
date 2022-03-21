@@ -14,7 +14,6 @@
 		<div class="spacer second" />
 		<div class="center form-container hundred-width">
 			<form
-				action="https://api.moosend.com/v3/subscribers/MailingListID/subscribe.Format?apikey=cb7f090a-1bf0-40fc-99b5-d5829d9f8d9a"
 				onsubmit="window.open('https://feather.moosend.com/show_campaign/15105efe-e915-4e28-8adf-97543eb9c7a7/00000000-0000-0000-0000-000000000000/')"
 				class="embeddable-buttondown-form"
 			>
