@@ -1,4 +1,3 @@
-
 <script>
 	import fsm from 'svelte-fsm';
 	import { onMount } from 'svelte';
@@ -71,7 +70,7 @@
 							downloadables.mac = arr;
 						if (arr.endsWith('arm64.dmg') === true && downloadables.mac64 === '')
 							downloadables.mac64 = arr;
-						if (arr.endsWith('.AppImage') === true && downloadables.linux === '')
+						if (arr.endsWith('.12.AppImage') === true && downloadables.linux === '')
 							downloadables.linux = arr;
 						else () => {};
 					}

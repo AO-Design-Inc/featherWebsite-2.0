@@ -1,7 +1,6 @@
 {
 	"name": "feather-website",
 	"version": "0.0.1",
-	"sideEffects": true,
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
