@@ -1,6 +1,7 @@
 {
 	"name": "feather-website",
 	"version": "0.0.1",
+	"sideEffects": true,
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
@@ -30,8 +31,11 @@
 		"d3-interpolate": "^3.0.1",
 		"highlight.js": "^11.4.0",
 		"katex": "^0.15.1",
+		"octokit": "^1.7.1",
 		"reading-time": "^1.5.0",
 		"svelte-clipboard": "^1.0.0",
-		"svelte-progress-bar": "^3.0.1"
+		"svelte-fsm": "^1.1.2",
+		"svelte-progress-bar": "^3.0.1",
+		"svelte-system-info": "^1.0.0"
 	}
 }

@@ -5942,8 +5942,8 @@ var entry, js, css3;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-a1c2ce0d.js";
-    js = ["pages/__layout.svelte-a1c2ce0d.js", "chunks/vendor-9661f7ef.js", "chunks/stores-6fc21725.js"];
+    entry = "pages/__layout.svelte-3ecabc70.js";
+    js = ["pages/__layout.svelte-3ecabc70.js", "chunks/vendor-8bebd811.js", "chunks/stores-1651a60b.js"];
     css3 = ["assets/pages/__layout.svelte-0224116f.css", "assets/form.svelte_svelte_type_style_lang-99e7096c.css", "assets/vendor-2634b1a9.css", "assets/stores-4ca8f149.css"];
   }
 });
@@ -5989,8 +5989,8 @@ var entry2, js2, css5;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "pages/__error.svelte-a0aac0f8.js";
-    js2 = ["pages/__error.svelte-a0aac0f8.js", "chunks/vendor-9661f7ef.js"];
+    entry2 = "pages/__error.svelte-7ff1abb5.js";
+    js2 = ["pages/__error.svelte-7ff1abb5.js", "chunks/vendor-8bebd811.js"];
     css5 = ["assets/pages/__error.svelte-f53665cf.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -6190,9 +6190,74 @@ var entry3, js3, css7;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-43f123d0.js";
-    js3 = ["pages/index.svelte-43f123d0.js", "chunks/vendor-9661f7ef.js"];
+    entry3 = "pages/index.svelte-77b2f2a5.js";
+    js3 = ["pages/index.svelte-77b2f2a5.js", "chunks/vendor-8bebd811.js"];
     css7 = ["assets/pages/index.svelte-6e783f1c.css", "assets/form.svelte_svelte_type_style_lang-99e7096c.css", "assets/vendor-2634b1a9.css"];
+  }
+});
+
+// node_modules/svelte-fsm/index.js
+function svelte_fsm_default(state, states = {}) {
+  const subscribers = new Set();
+  let proxy;
+  function subscribe2(callback) {
+    subscribers.add(callback);
+    callback(state);
+    return () => subscribers.delete(callback);
+  }
+  function transition(newState, event, args) {
+    const metadata2 = { from: state, to: newState, event, args };
+    dispatch("_exit", metadata2);
+    state = newState;
+    subscribers.forEach((callback) => callback(state));
+    dispatch("_enter", metadata2);
+  }
+  function dispatch(event, ...args) {
+    var _a4, _b;
+    const action = ((_a4 = states[state]) == null ? void 0 : _a4[event]) ?? ((_b = states["*"]) == null ? void 0 : _b[event]);
+    return action instanceof Function ? action.apply(proxy, args) : action;
+  }
+  function invoke(event, ...args) {
+    var _a4;
+    const newState = (_a4 = dispatch(event, ...args)) == null ? void 0 : _a4.valueOf();
+    if (["string", "symbol"].includes(typeof newState) && newState !== state) {
+      transition(newState, event, args);
+    }
+    return state;
+  }
+  const timeout = {};
+  async function debounce(event, wait = 100, ...args) {
+    clearTimeout(timeout[event]);
+    if (wait === null) {
+      return state;
+    } else {
+      await new Promise((resolve2) => timeout[event] = setTimeout(resolve2, wait));
+      delete timeout[event];
+      return invoke(event, ...args);
+    }
+  }
+  function subscribeOrInvoke(...args) {
+    if (args.length === 1 && args[0] instanceof Function) {
+      return subscribe2(args[0]);
+    } else {
+      invoke("subscribe", ...args);
+    }
+  }
+  subscribeOrInvoke.debounce = debounce.bind(null, "subscribe");
+  proxy = new Proxy({ subscribe: subscribeOrInvoke }, {
+    get(target, property) {
+      if (!Reflect.has(target, property)) {
+        target[property] = invoke.bind(null, property);
+        target[property].debounce = debounce.bind(null, property);
+      }
+      return Reflect.get(target, property);
+    }
+  });
+  dispatch("_enter", { from: null, to: state, event: null, args: [] });
+  return proxy;
+}
+var init_svelte_fsm = __esm({
+  "node_modules/svelte-fsm/index.js"() {
   }
 });
 
@@ -6205,22 +6270,42 @@ var css8, Welcome;
 var init_welcome_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/welcome.svelte.js"() {
     init_index_6bc633e9();
+    init_svelte_fsm();
     css8 = {
-      code: "#welcome.svelte-az3cqs.svelte-az3cqs{max-width:100%;height:80vh;display:grid;place-items:center}@media screen and (max-width: 810px){#welcome.svelte-az3cqs.svelte-az3cqs{margin:0% 20px}}#welcome.svelte-az3cqs #center-container.svelte-az3cqs{height:auto}#welcome.svelte-az3cqs #welcome-head.svelte-az3cqs{text-align:center;font-size:7.0833333333vw;font-weight:750}@media screen and (min-width: 1240px){#welcome.svelte-az3cqs #welcome-head.svelte-az3cqs{font-size:min(7.0833333333vw, 102px)}}@media screen and (max-width: 810px){#welcome.svelte-az3cqs #welcome-head.svelte-az3cqs{font-size:max(7.0833333333vw, 65px)}}#welcome.svelte-az3cqs #thanks-head.svelte-az3cqs{opacity:0.8;text-align:center;font-size:5.2083333333vw;font-weight:725}@media screen and (min-width: 1240px){#welcome.svelte-az3cqs #thanks-head.svelte-az3cqs{font-size:min(5.2083333333vw, 75px)}}@media screen and (max-width: 810px){#welcome.svelte-az3cqs #thanks-head.svelte-az3cqs{font-size:max(5.2083333333vw, 36px)}}#welcome.svelte-az3cqs #download-head.svelte-az3cqs{opacity:0.6;display:flex;align-items:center;text-align:center;font-size:2.5694444444vw;font-weight:700;line-height:170%}@media screen and (min-width: 1240px){#welcome.svelte-az3cqs #download-head.svelte-az3cqs{font-size:min(2.5694444444vw, 37px)}}@media screen and (max-width: 810px){#welcome.svelte-az3cqs #download-head.svelte-az3cqs{font-size:max(2.5694444444vw, 19px)}}#welcome.svelte-az3cqs #download-head p.svelte-az3cqs{width:100%;margin:0%;text-align:center}#welcome.svelte-az3cqs #download-head p span.butt.svelte-az3cqs{cursor:pointer;padding:0.5% 2%;border-radius:0.6944444444vw;border:1px solid #ffb0b0;background:transparent;color:#fffffb;transition:color 0.1s ease-in-out, background 0.2s ease-in-out}#welcome.svelte-az3cqs #download-head p span.butt.svelte-az3cqs:hover{background:#ffb0b0;transition:color 0.1s ease-in-out, background 0.2s ease-in-out;color:#11131c}#welcome.svelte-az3cqs .spacer.text.svelte-az3cqs{width:100%;height:0.3472222222vw}@media screen and (min-width: 1240px){#welcome.svelte-az3cqs .spacer.text.svelte-az3cqs{height:min(0.3472222222vw, 5px)}}@media screen and (max-width: 810px){#welcome.svelte-az3cqs .spacer.text.svelte-az3cqs{height:max(0.3472222222vw, 5px)}}#welcome.svelte-az3cqs .spacer.text.two.svelte-az3cqs{width:100%;height:1.0416666667vw}@media screen and (min-width: 1240px){#welcome.svelte-az3cqs .spacer.text.two.svelte-az3cqs{height:min(1.0416666667vw, 15px)}}@media screen and (max-width: 810px){#welcome.svelte-az3cqs .spacer.text.two.svelte-az3cqs{height:max(1.0416666667vw, 15px)}}#welcome.svelte-az3cqs .spacer.text.three.svelte-az3cqs{width:100%;height:1.7361111111vw}@media screen and (min-width: 1240px){#welcome.svelte-az3cqs .spacer.text.three.svelte-az3cqs{height:min(1.7361111111vw, 25px)}}@media screen and (max-width: 810px){#welcome.svelte-az3cqs .spacer.text.three.svelte-az3cqs{height:max(1.7361111111vw, 25px)}}",
+      code: "#welcome.svelte-vs3jv7.svelte-vs3jv7{max-width:100%;height:80vh;display:grid;place-items:center}@media screen and (max-width: 810px){#welcome.svelte-vs3jv7.svelte-vs3jv7{margin:0% 20px}}#welcome.svelte-vs3jv7 #center-container.svelte-vs3jv7{height:auto}#welcome.svelte-vs3jv7 #welcome-head.svelte-vs3jv7{text-align:center;font-size:7.0833333333vw;font-weight:750}@media screen and (min-width: 1240px){#welcome.svelte-vs3jv7 #welcome-head.svelte-vs3jv7{font-size:min(7.0833333333vw, 102px)}}@media screen and (max-width: 810px){#welcome.svelte-vs3jv7 #welcome-head.svelte-vs3jv7{font-size:max(7.0833333333vw, 65px)}}#welcome.svelte-vs3jv7 #thanks-head.svelte-vs3jv7{opacity:0.8;text-align:center;font-size:5.2083333333vw;font-weight:725}@media screen and (min-width: 1240px){#welcome.svelte-vs3jv7 #thanks-head.svelte-vs3jv7{font-size:min(5.2083333333vw, 75px)}}@media screen and (max-width: 810px){#welcome.svelte-vs3jv7 #thanks-head.svelte-vs3jv7{font-size:max(5.2083333333vw, 36px)}}#welcome.svelte-vs3jv7 #download-head.svelte-vs3jv7{display:flex;align-items:center;text-align:center;font-size:2.5694444444vw;font-weight:700;line-height:170%}@media screen and (min-width: 1240px){#welcome.svelte-vs3jv7 #download-head.svelte-vs3jv7{font-size:min(2.5694444444vw, 37px)}}@media screen and (max-width: 810px){#welcome.svelte-vs3jv7 #download-head.svelte-vs3jv7{font-size:max(2.5694444444vw, 19px)}}#welcome.svelte-vs3jv7 #download-head p.svelte-vs3jv7{width:100%;margin:0%;text-align:center}#welcome.svelte-vs3jv7 #download-head p span.butt.svelte-vs3jv7{cursor:pointer;padding:0.5% 2%;border-radius:0.6944444444vw;border:1px solid #ffb0b0;background:transparent;color:#fffffb;transition:color 0.1s ease-in-out, background 0.2s ease-in-out}#welcome.svelte-vs3jv7 #download-head p span.trans.svelte-vs3jv7{opacity:0.6}#welcome.svelte-vs3jv7 #download-head p span.butt.svelte-vs3jv7:hover{background:#ffb0b0;transition:color 0.1s ease-in-out, background 0.2s ease-in-out;color:#11131c}#welcome.svelte-vs3jv7 .spacer.text.svelte-vs3jv7{width:100%;height:0.3472222222vw}@media screen and (min-width: 1240px){#welcome.svelte-vs3jv7 .spacer.text.svelte-vs3jv7{height:min(0.3472222222vw, 5px)}}@media screen and (max-width: 810px){#welcome.svelte-vs3jv7 .spacer.text.svelte-vs3jv7{height:max(0.3472222222vw, 5px)}}#welcome.svelte-vs3jv7 .spacer.text.two.svelte-vs3jv7{width:100%;height:1.0416666667vw}@media screen and (min-width: 1240px){#welcome.svelte-vs3jv7 .spacer.text.two.svelte-vs3jv7{height:min(1.0416666667vw, 15px)}}@media screen and (max-width: 810px){#welcome.svelte-vs3jv7 .spacer.text.two.svelte-vs3jv7{height:max(1.0416666667vw, 15px)}}#welcome.svelte-vs3jv7 .spacer.text.three.svelte-vs3jv7{width:100%;height:1.7361111111vw}@media screen and (min-width: 1240px){#welcome.svelte-vs3jv7 .spacer.text.three.svelte-vs3jv7{height:min(1.7361111111vw, 25px)}}@media screen and (max-width: 810px){#welcome.svelte-vs3jv7 .spacer.text.three.svelte-vs3jv7{height:max(1.7361111111vw, 25px)}}",
       map: null
     };
     Welcome = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let $downloadMachine, $$unsubscribe_downloadMachine;
+      let getOS;
+      let downloadBuild;
+      const downloadMachine = svelte_fsm_default("DOWNLOAD", {
+        DOWNLOAD: { download: "DOWNLOADING" },
+        DOWNLOADING: {
+          _enter() {
+            getOS();
+            downloadBuild(getOS());
+          },
+          done: "DONE"
+        },
+        DONE: {
+          _enter() {
+            this.change.debounce(6e3);
+          },
+          change: "DOWNLOAD"
+        }
+      });
+      $$unsubscribe_downloadMachine = subscribe(downloadMachine, (value) => $downloadMachine = value);
       $$result.css.add(css8);
-      return `<div id="${"welcome"}" class="${"svelte-az3cqs"}"><div id="${"center-container"}" class="${"svelte-az3cqs"}"><div style="${"width: 100%; height: 30px"}"></div>
-		<div id="${"welcome-head"}" class="${"svelte-az3cqs"}">Welcome to Feather!</div>
-		<div class="${"spacer text svelte-az3cqs"}"></div>
-		<div id="${"thanks-head"}" class="${"svelte-az3cqs"}">Thanks for signing up.</div>
-		<div class="${"spacer text two svelte-az3cqs"}"></div>
-		<div id="${"download-head"}" class="${"svelte-az3cqs"}"><p class="${"svelte-az3cqs"}"><span class="${"butt svelte-az3cqs"}">Download Feather</span>
-				if you haven&#39;t already.<br> Or go to the app and login if it&#39;s already installed.
-			</p></div>
-		<div class="${"spacer text three svelte-az3cqs"}"></div>
-		</div>
+      $$unsubscribe_downloadMachine();
+      return `<div id="${"welcome"}" class="${"svelte-vs3jv7"}"><div id="${"center-container"}" class="${"svelte-vs3jv7"}"><div style="${"width: 100%; height: 30px"}"></div>
+		<div id="${"welcome-head"}" class="${"svelte-vs3jv7"}">Welcome to Feather!</div>
+		<div class="${"spacer text svelte-vs3jv7"}"></div>
+		<div id="${"thanks-head"}" class="${"svelte-vs3jv7"}">Thanks for signing up.</div>
+		<div class="${"spacer text two svelte-vs3jv7"}"></div>
+		<div id="${"download-head"}" class="${"svelte-vs3jv7"}"><p class="${"svelte-vs3jv7"}"><span class="${"butt svelte-vs3jv7"}">${$downloadMachine === "DOWNLOAD" ? `Download Feather` : `${$downloadMachine === "DOWNLOADING" ? `Downloading...` : `${$downloadMachine === "DONE" ? `Done!` : ``}`}`}</span>
+				<span class="${"trans svelte-vs3jv7"}">if you haven&#39;t already.<br> Or go to the app and login if it&#39;s already installed.</span></p></div>
+		<div class="${"spacer text three svelte-vs3jv7"}"></div></div>
 </div>`;
     });
   }
@@ -6238,9 +6323,9 @@ var entry4, js4, css9;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_welcome_svelte();
-    entry4 = "pages/welcome.svelte-62c08b07.js";
-    js4 = ["pages/welcome.svelte-62c08b07.js", "chunks/vendor-9661f7ef.js"];
-    css9 = ["assets/pages/welcome.svelte-f84ab8d5.css", "assets/vendor-2634b1a9.css"];
+    entry4 = "pages/welcome.svelte-7113cb4f.js";
+    js4 = ["pages/welcome.svelte-7113cb4f.js", "chunks/vendor-8bebd811.js"];
+    css9 = ["assets/pages/welcome.svelte-ff62992f.css", "assets/vendor-2634b1a9.css"];
   }
 });
 
@@ -6298,8 +6383,8 @@ var entry5, js5, css11;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_launch_svelte();
-    entry5 = "pages/launch.svelte-214e323c.js";
-    js5 = ["pages/launch.svelte-214e323c.js", "chunks/vendor-9661f7ef.js"];
+    entry5 = "pages/launch.svelte-f8d237ee.js";
+    js5 = ["pages/launch.svelte-f8d237ee.js", "chunks/vendor-8bebd811.js"];
     css11 = ["assets/pages/launch.svelte-f3ba6a70.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -6395,8 +6480,8 @@ var entry6, js6, css13;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_about_svelte();
-    entry6 = "pages/about.svelte-4efd2790.js";
-    js6 = ["pages/about.svelte-4efd2790.js", "chunks/vendor-9661f7ef.js"];
+    entry6 = "pages/about.svelte-ff851157.js";
+    js6 = ["pages/about.svelte-ff851157.js", "chunks/vendor-8bebd811.js"];
     css13 = ["assets/pages/about.svelte-7bcdac62.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -19743,10 +19828,10 @@ var init_katex = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/4-vision-9e8be31e.js
+// .svelte-kit/output/server/chunks/4-vision-4b358c80.js
 var Katex, metadata$3, slug, title, date, summary, thumbnail, tags, author, e1, e2, _1_mandel, __glob_1_0, metadata$2, _2_webgl, __glob_1_1, metadata$1, _3_review, __glob_1_2, metadata, _4_vision, __glob_1_3;
-var init_vision_9e8be31e = __esm({
-  ".svelte-kit/output/server/chunks/4-vision-9e8be31e.js"() {
+var init_vision_4b358c80 = __esm({
+  ".svelte-kit/output/server/chunks/4-vision-4b358c80.js"() {
     init_index_6bc633e9();
     init_katex();
     Katex = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -19794,9 +19879,9 @@ var init_vision_9e8be31e = __esm({
 
 <span class="token keyword">const</span> <span class="token constant">WINDOW</span><span class="token operator">:</span> f32 <span class="token operator">=</span> <span class="token number">0.01</span><span class="token punctuation">;</span>
 
-<span class="token keyword">const</span> step_X<span class="token operator">:</span> f32 <span class="token operator">=</span> <span class="token constant">WINDOW</span> <span class="token operator">/</span> <span class="token function">f32</span><span class="token punctuation">(</span>canvas_width<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token literal-property property">step_X</span><span class="token operator">:</span> f32 <span class="token operator">=</span> <span class="token constant">WINDOW</span> <span class="token operator">/</span> <span class="token function">f32</span><span class="token punctuation">(</span>canvas_width<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-<span class="token keyword">const</span> step_Y<span class="token operator">:</span> f32 <span class="token operator">=</span> <span class="token constant">WINDOW</span> <span class="token operator">/</span> <span class="token function">f32</span><span class="token punctuation">(</span>canvas_height<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token literal-property property">step_Y</span><span class="token operator">:</span> f32 <span class="token operator">=</span> <span class="token constant">WINDOW</span> <span class="token operator">/</span> <span class="token function">f32</span><span class="token punctuation">(</span>canvas_height<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token keyword">const</span> <span class="token constant">ITER_CONST</span><span class="token operator">:</span> i32 <span class="token operator">=</span> <span class="token number">1000</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
 <p><strong>FOR MULTITHREADED</strong></p>
@@ -20002,7 +20087,7 @@ Insofar as an overview is concerned, nothing beats Lin Clark\u2019s cartoon intr
 <p>The magic of wasm-bindgen kicks in here, allowing us to create the ImageData object right in the Rust code by providing the type and the constructor signature:</p>
 <pre class="${"language-rust"}"><!-- HTML_TAG_START -->${`<code class="language-rust"><span class="token attribute attr-name">#[wasm_bindgen]</span>
 <span class="token keyword">extern</span> <span class="token string">"C"</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">pub</span> <span class="token keyword">type</span> <span class="token class-name">ImageData</span><span class="token punctuation">;</span>
+    <span class="token keyword">pub</span> <span class="token keyword">type</span> <span class="token type-definition class-name">ImageData</span><span class="token punctuation">;</span>
 
     <span class="token attribute attr-name">#[wasm_bindgen(constructor, catch)]</span>
     <span class="token keyword">fn</span> <span class="token function-definition function">new</span><span class="token punctuation">(</span>data<span class="token punctuation">:</span> <span class="token operator">&amp;</span><span class="token class-name">Uint8ClampedArray</span><span class="token punctuation">,</span> width<span class="token punctuation">:</span> <span class="token keyword">f64</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token keyword">f64</span><span class="token punctuation">)</span> <span class="token punctuation">-></span> <span class="token class-name">Result</span><span class="token operator">&lt;</span><span class="token class-name">ImageData</span><span class="token punctuation">,</span> <span class="token class-name">JsValue</span><span class="token operator">></span><span class="token punctuation">;</span>
@@ -20042,8 +20127,8 @@ Insofar as an overview is concerned, nothing beats Lin Clark\u2019s cartoon intr
 <h2>AssemblyScript <em>by Abhishek Cherath</em></h2>
 <details><summary>Click to Read</summary>
 <p>AssemblyScript compiles a subset of typescript to webassembly. To get an idea of how simple it is to write it, here\u2019s essentially the same javascript code from earlier, with type annotations and minor changes for webassembly:</p>
-<pre class="${"language-jsx"}"><!-- HTML_TAG_START -->${`<code class="language-jsx">declare <span class="token keyword">const</span> canvas_width<span class="token operator">:</span> i32<span class="token punctuation">;</span>
-declare <span class="token keyword">const</span> canvas_height<span class="token operator">:</span> i32<span class="token punctuation">;</span>
+<pre class="${"language-jsx"}"><!-- HTML_TAG_START -->${`<code class="language-jsx">declare <span class="token keyword">const</span> <span class="token literal-property property">canvas_width</span><span class="token operator">:</span> i32<span class="token punctuation">;</span>
+declare <span class="token keyword">const</span> <span class="token literal-property property">canvas_height</span><span class="token operator">:</span> i32<span class="token punctuation">;</span>
 declare <span class="token keyword">const</span> <span class="token constant">ITER_CONST</span><span class="token operator">:</span> i16<span class="token punctuation">;</span>
 declare <span class="token keyword">const</span> <span class="token constant">START_X_TOTAL</span><span class="token operator">:</span>f32
 declare <span class="token keyword">const</span> <span class="token constant">START_Y_TOTAL</span><span class="token operator">:</span>f32
@@ -20051,10 +20136,10 @@ declare <span class="token keyword">const</span> <span class="token constant">WI
 
 @unmanaged
 <span class="token keyword">class</span> <span class="token class-name">Complex</span> <span class="token punctuation">&#123;</span>
-	real<span class="token operator">:</span> f64 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-	imag<span class="token operator">:</span> f64 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token literal-property property">real</span><span class="token operator">:</span> f64 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token literal-property property">imag</span><span class="token operator">:</span> f64 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
 
-	<span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">real<span class="token operator">:</span>f64<span class="token punctuation">,</span> imag<span class="token operator">:</span>f64</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+	<span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter"><span class="token literal-property property">real</span><span class="token operator">:</span>f64<span class="token punctuation">,</span> <span class="token literal-property property">imag</span><span class="token operator">:</span>f64</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
 		<span class="token keyword">this</span><span class="token punctuation">.</span>real <span class="token operator">=</span> real<span class="token punctuation">;</span>
 		<span class="token keyword">this</span><span class="token punctuation">.</span>imag <span class="token operator">=</span> imag<span class="token punctuation">;</span>
 	<span class="token punctuation">&#125;</span>
@@ -20080,22 +20165,22 @@ declare <span class="token keyword">const</span> <span class="token constant">WI
 		<span class="token keyword">return</span> <span class="token keyword">this</span>
 	<span class="token punctuation">&#125;</span>
 
-	<span class="token function">set</span><span class="token punctuation">(</span>real<span class="token operator">:</span>f64<span class="token punctuation">,</span>imag<span class="token operator">:</span>f64<span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span> <span class="token punctuation">&#123;</span>
+	<span class="token function">set</span><span class="token punctuation">(</span>real<span class="token operator">:</span>f64<span class="token punctuation">,</span><span class="token literal-property property">imag</span><span class="token operator">:</span>f64<span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span> <span class="token punctuation">&#123;</span>
 		<span class="token keyword">this</span><span class="token punctuation">.</span>real <span class="token operator">=</span> real<span class="token punctuation">;</span>
 		<span class="token keyword">this</span><span class="token punctuation">.</span>imag <span class="token operator">=</span> imag<span class="token punctuation">;</span>
 	<span class="token punctuation">&#125;</span>
 
 <span class="token punctuation">&#125;</span>
 
-<span class="token keyword">const</span> z<span class="token operator">:</span>Complex <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Complex</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> cplx<span class="token operator">:</span>Complex <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Complex</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token literal-property property">z</span><span class="token operator">:</span>Complex <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Complex</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token literal-property property">cplx</span><span class="token operator">:</span>Complex <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Complex</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
 
 @inline
-<span class="token keyword">function</span> <span class="token function">mandelbrot</span><span class="token punctuation">(</span><span class="token parameter">real<span class="token operator">:</span>f64<span class="token punctuation">,</span>imag<span class="token operator">:</span>f64</span><span class="token punctuation">)</span><span class="token operator">:</span>i16<span class="token punctuation">&#123;</span>
+<span class="token keyword">function</span> <span class="token function">mandelbrot</span><span class="token punctuation">(</span><span class="token parameter"><span class="token literal-property property">real</span><span class="token operator">:</span>f64<span class="token punctuation">,</span><span class="token literal-property property">imag</span><span class="token operator">:</span>f64</span><span class="token punctuation">)</span><span class="token operator">:</span>i16<span class="token punctuation">&#123;</span>
 	z<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
 	cplx<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>real<span class="token punctuation">,</span>imag<span class="token punctuation">)</span>
 
-	<span class="token keyword">let</span> count<span class="token operator">:</span>i16 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">let</span> <span class="token literal-property property">count</span><span class="token operator">:</span>i16 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
 	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token punctuation">;</span> z<span class="token punctuation">.</span><span class="token function">mag</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;=</span> <span class="token number">2</span><span class="token punctuation">;</span> count<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
 		<span class="token punctuation">(</span>z<span class="token punctuation">.</span><span class="token function">mul</span><span class="token punctuation">(</span>z<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>cplx<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// z = z^2 + cplx</span>
 		<span class="token keyword">if</span> <span class="token punctuation">(</span>count <span class="token operator">></span> <span class="token constant">ITER_CONST</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
@@ -20111,8 +20196,8 @@ array
 */</span>
 <span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">compute</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span> <span class="token punctuation">&#123;</span>
 	<span class="token keyword">let</span> memcounter <span class="token operator">=</span> <span class="token number">0</span>
-	<span class="token keyword">const</span> step_X<span class="token operator">:</span>f32 <span class="token operator">=</span> <span class="token constant">WINDOW</span><span class="token operator">/</span><span class="token function">f32</span><span class="token punctuation">(</span>canvas_width<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token keyword">const</span> step_Y<span class="token operator">:</span>f32 <span class="token operator">=</span> <span class="token constant">WINDOW</span><span class="token operator">/</span><span class="token function">f32</span><span class="token punctuation">(</span>canvas_height<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">const</span> <span class="token literal-property property">step_X</span><span class="token operator">:</span>f32 <span class="token operator">=</span> <span class="token constant">WINDOW</span><span class="token operator">/</span><span class="token function">f32</span><span class="token punctuation">(</span>canvas_width<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">const</span> <span class="token literal-property property">step_Y</span><span class="token operator">:</span>f32 <span class="token operator">=</span> <span class="token constant">WINDOW</span><span class="token operator">/</span><span class="token function">f32</span><span class="token punctuation">(</span>canvas_height<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> y <span class="token operator">=</span> <span class="token constant">START_Y_TOTAL</span><span class="token punctuation">,</span> count_y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> count_y <span class="token operator">&lt;</span> canvas_height<span class="token punctuation">;</span> y <span class="token operator">+=</span> step_Y<span class="token punctuation">,</span> count_y<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
 		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token constant">START_X_TOTAL</span><span class="token punctuation">,</span> count_x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> count_x <span class="token operator">&lt;</span> canvas_width<span class="token punctuation">;</span> x <span class="token operator">+=</span> step_X<span class="token punctuation">,</span> count_x<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
 			store<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i16</span><span class="token punctuation">></span></span><span class="token plain-text">(memcounter, mandelbrot(x,y));
@@ -20132,9 +20217,9 @@ Cross<span class="token operator">-</span>Origin<span class="token operator">-</
 <p>Exhibit A of nondeterministic behavior</p>
 <p>That being said, for small examples such as fractal calculation, it\u2019s quite easy to limit mutability to local variables (which are on the stack, not in the linear memory, and so are not shared) and avoid the problem entirely. Like in the following code:</p>
 <pre class="${"language-jsx"}"><!-- HTML_TAG_START -->${`<code class="language-jsx">@inline
-<span class="token keyword">function</span> <span class="token function">mandelbrot</span><span class="token punctuation">(</span><span class="token parameter">c_r<span class="token operator">:</span>f64<span class="token punctuation">,</span> c_i<span class="token operator">:</span>f64</span><span class="token punctuation">)</span><span class="token operator">:</span>i16<span class="token punctuation">&#123;</span>
-	<span class="token keyword">let</span> count<span class="token operator">:</span>i16 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-	<span class="token keyword">let</span> z_r<span class="token operator">:</span>f64 <span class="token operator">=</span> <span class="token number">0.</span><span class="token punctuation">,</span> z_i<span class="token operator">:</span>f64 <span class="token operator">=</span> <span class="token number">0.</span><span class="token punctuation">,</span> t_r<span class="token operator">:</span>f64 <span class="token operator">=</span> <span class="token number">0.</span><span class="token punctuation">,</span> t_i<span class="token operator">:</span>f64 <span class="token operator">=</span> <span class="token number">0.</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">mandelbrot</span><span class="token punctuation">(</span><span class="token parameter"><span class="token literal-property property">c_r</span><span class="token operator">:</span>f64<span class="token punctuation">,</span> <span class="token literal-property property">c_i</span><span class="token operator">:</span>f64</span><span class="token punctuation">)</span><span class="token operator">:</span>i16<span class="token punctuation">&#123;</span>
+	<span class="token keyword">let</span> <span class="token literal-property property">count</span><span class="token operator">:</span>i16 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">let</span> <span class="token literal-property property">z_r</span><span class="token operator">:</span>f64 <span class="token operator">=</span> <span class="token number">0.</span><span class="token punctuation">,</span> <span class="token literal-property property">z_i</span><span class="token operator">:</span>f64 <span class="token operator">=</span> <span class="token number">0.</span><span class="token punctuation">,</span> <span class="token literal-property property">t_r</span><span class="token operator">:</span>f64 <span class="token operator">=</span> <span class="token number">0.</span><span class="token punctuation">,</span> <span class="token literal-property property">t_i</span><span class="token operator">:</span>f64 <span class="token operator">=</span> <span class="token number">0.</span><span class="token punctuation">;</span>
 	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token punctuation">;</span> z_r<span class="token operator">*</span>z_r <span class="token operator">+</span> z_i<span class="token operator">*</span>z_i <span class="token operator">&lt;</span> <span class="token number">4</span><span class="token punctuation">;</span> count<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
 		t_r <span class="token operator">=</span> z_r<span class="token operator">*</span>z_r <span class="token operator">-</span> z_i<span class="token operator">*</span>z_i <span class="token operator">+</span> c_r<span class="token punctuation">;</span>
 		t_i <span class="token operator">=</span> <span class="token number">2</span><span class="token operator">*</span>z_i<span class="token operator">*</span>z_r <span class="token operator">+</span> c_i<span class="token punctuation">;</span>
@@ -20153,8 +20238,8 @@ array
 */</span>
 <span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">compute</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span><span class="token keyword">void</span> <span class="token punctuation">&#123;</span>
 	<span class="token keyword">let</span> memcounter <span class="token operator">=</span> <span class="token number">0</span>
-	<span class="token keyword">const</span> step_X<span class="token operator">:</span>f32 <span class="token operator">=</span> <span class="token constant">WINDOW</span><span class="token operator">/</span><span class="token function">f32</span><span class="token punctuation">(</span>canvas_width<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token keyword">const</span> step_Y<span class="token operator">:</span>f32 <span class="token operator">=</span> <span class="token constant">WINDOW</span><span class="token operator">/</span><span class="token function">f32</span><span class="token punctuation">(</span>canvas_height<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">const</span> <span class="token literal-property property">step_X</span><span class="token operator">:</span>f32 <span class="token operator">=</span> <span class="token constant">WINDOW</span><span class="token operator">/</span><span class="token function">f32</span><span class="token punctuation">(</span>canvas_width<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">const</span> <span class="token literal-property property">step_Y</span><span class="token operator">:</span>f32 <span class="token operator">=</span> <span class="token constant">WINDOW</span><span class="token operator">/</span><span class="token function">f32</span><span class="token punctuation">(</span>canvas_height<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> y <span class="token operator">=</span> <span class="token constant">START_Y_TOTAL</span><span class="token punctuation">,</span> count_y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> count_y <span class="token operator">&lt;</span> canvas_height<span class="token punctuation">;</span> y <span class="token operator">+=</span> step_Y<span class="token punctuation">,</span> count_y<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
 		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token constant">START_X_TOTAL</span><span class="token punctuation">,</span> count_x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> count_x <span class="token operator">&lt;</span> canvas_width<span class="token punctuation">;</span> x <span class="token operator">+=</span> step_X<span class="token punctuation">,</span> count_x<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
 			store<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i16</span><span class="token punctuation">></span></span><span class="token plain-text">(memcounter, mandelbrot(x,y));
@@ -20171,12 +20256,12 @@ array
 <p>The vector size in the proposal is 128 bit, which is a decent compromise and is backed by hardware instructions on most modern computers. In the future, <a href="${"https://github.com/WebAssembly/flexible-vectors"}" rel="${"nofollow"}">flexible vectors</a>, should be able to allow access to 256, 512 bit vectors that modern intel and AMD CPUs support (consumer ARM chips currently only have 128 bit vectors, as far as I\u2019m aware, although <a href="${"https://en.wikipedia.org/wiki/AArch64#Scalable_Vector_Extension_(SVE)"}" rel="${"nofollow"}">supercomputer ARM chips do have 512 bit vectors</a>.)</p>
 <p>Vectorizing the mandelbrot code above is not too bad, althought it does look rather messy:</p>
 <pre class="${"language-jsx"}"><!-- HTML_TAG_START -->${`<code class="language-jsx">@inline
-<span class="token keyword">function</span> <span class="token function">mandelbrot_simd</span><span class="token punctuation">(</span><span class="token parameter">c_rl<span class="token operator">:</span>v128<span class="token punctuation">,</span>c_il<span class="token operator">:</span>v128</span><span class="token punctuation">)</span><span class="token operator">:</span>v128<span class="token punctuation">&#123;</span>
-    <span class="token keyword">let</span> in_set <span class="token operator">:</span> v128 <span class="token operator">=</span> <span class="token function">i32x4</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">let</span> z_r <span class="token operator">:</span> v128 <span class="token operator">=</span> <span class="token function">f32x4</span><span class="token punctuation">(</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">let</span> z_i <span class="token operator">:</span> v128 <span class="token operator">=</span> <span class="token function">f32x4</span><span class="token punctuation">(</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">let</span> t_r <span class="token operator">:</span> v128 <span class="token operator">=</span> <span class="token function">f32x4</span><span class="token punctuation">(</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">let</span> t_i <span class="token operator">:</span> v128 <span class="token operator">=</span> <span class="token function">f32x4</span><span class="token punctuation">(</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">mandelbrot_simd</span><span class="token punctuation">(</span><span class="token parameter"><span class="token literal-property property">c_rl</span><span class="token operator">:</span>v128<span class="token punctuation">,</span><span class="token literal-property property">c_il</span><span class="token operator">:</span>v128</span><span class="token punctuation">)</span><span class="token operator">:</span>v128<span class="token punctuation">&#123;</span>
+    <span class="token keyword">let</span> <span class="token literal-property property">in_set</span> <span class="token operator">:</span> v128 <span class="token operator">=</span> <span class="token function">i32x4</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> <span class="token literal-property property">z_r</span> <span class="token operator">:</span> v128 <span class="token operator">=</span> <span class="token function">f32x4</span><span class="token punctuation">(</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> <span class="token literal-property property">z_i</span> <span class="token operator">:</span> v128 <span class="token operator">=</span> <span class="token function">f32x4</span><span class="token punctuation">(</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> <span class="token literal-property property">t_r</span> <span class="token operator">:</span> v128 <span class="token operator">=</span> <span class="token function">f32x4</span><span class="token punctuation">(</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> <span class="token literal-property property">t_i</span> <span class="token operator">:</span> v128 <span class="token operator">=</span> <span class="token function">f32x4</span><span class="token punctuation">(</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">,</span><span class="token number">0.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">const</span> ones <span class="token operator">=</span> <span class="token function">i32x4</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
     <span class="token keyword">const</span> fours <span class="token operator">=</span> <span class="token function">f32x4</span><span class="token punctuation">(</span><span class="token number">4.</span><span class="token punctuation">,</span><span class="token number">4.</span><span class="token punctuation">,</span><span class="token number">4.</span><span class="token punctuation">,</span><span class="token number">4.</span><span class="token punctuation">)</span>
     <span class="token keyword">const</span> <span class="token constant">ITER_CONSTS</span><span class="token operator">:</span>v128 <span class="token operator">=</span> v128<span class="token punctuation">.</span>splat<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i32</span><span class="token punctuation">></span></span><span class="token plain-text">(ITER_CONST);
@@ -20206,10 +20291,10 @@ OPTIMIZATION_FLAGS <span class="token operator">=</span> -O3 --converge
 DEBUG_FLAGS <span class="token operator">=</span> --sourceMap
 FEATURE_FLAGS <span class="token operator">=</span> --enable simd --enable threads
 RUNTIME_FLAGS <span class="token operator">=</span> --runtime stub
-<span class="token symbol">start</span><span class="token punctuation">:</span> install
+<span class="token target symbol">start</span><span class="token punctuation">:</span> install
 	npx asc assembly/mandel_final.ts -b build/mandel_final.wasm -t build/mandel_final.wat <span class="token variable">$</span><span class="token punctuation">(</span>OPTIMIZATION_FLAGS<span class="token punctuation">)</span> <span class="token variable">$</span><span class="token punctuation">(</span>MEMORY_FLAGS<span class="token punctuation">)</span> <span class="token variable">$</span><span class="token punctuation">(</span>FEATURE_FLAGS<span class="token punctuation">)</span> <span class="token variable">$</span><span class="token punctuation">(</span>RUNTIME_FLAGS<span class="token punctuation">)</span> <span class="token variable">$</span><span class="token punctuation">(</span>DEBUG_FLAGS<span class="token punctuation">)</span>
 
-<span class="token symbol">install</span><span class="token punctuation">:</span>
+<span class="token target symbol">install</span><span class="token punctuation">:</span>
 	npm i</code>`}<!-- HTML_TAG_END --></pre>
 <h3>Multithreaded SIMD Speed</h3>
 <p>Benchmark results will be discussed near the end of this article, but the speed of the multithreaded SIMD code is quite astonishing, roughly 3x the speed of multithreaded JS using sharedarraybuffers, and I\u2019m guessing that\u2019s held back by module message passing overheads. <a href="${"https://mandelbrot-ascript.vercel.app/"}" rel="${"nofollow"}">HERE</a> is a basic mandelbrot zoom implementation using it (only works in firefox(\u226590 on apple m1) and chrome, <a href="${"https://github.com/pretentious7/mandelbrot-ascript"}" rel="${"nofollow"}">here\u2019s</a> the github repo.) I\u2019ll be working in boundary estimation and period checking along with xaos zoom algorithm into it in a couple of months, so stay tuned for that!</p>
@@ -20498,7 +20583,7 @@ function load2({ url, params }) {
 var css15, allPosts, posts, U5Btagsu5D;
 var init_tags_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/tags/_tags_.svelte.js"() {
-    init_vision_9e8be31e();
+    init_vision_4b358c80();
     init_index_6bc633e9();
     init_thumbnail_57767130();
     init_katex();
@@ -20548,8 +20633,8 @@ var entry7, js7, css16;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
     init_tags_svelte();
-    entry7 = "pages/tags/_tags_.svelte-494abcb6.js";
-    js7 = ["pages/tags/_tags_.svelte-494abcb6.js", "chunks/4-vision-0fa7c17a.js", "chunks/vendor-9661f7ef.js", "chunks/thumbnail-2cc3e0ee.js"];
+    entry7 = "pages/tags/_tags_.svelte-72cdc993.js";
+    js7 = ["pages/tags/_tags_.svelte-72cdc993.js", "chunks/4-vision-8423f5dc.js", "chunks/vendor-8bebd811.js", "chunks/thumbnail-40eb2b38.js"];
     css16 = ["assets/pages/tags/_tags_.svelte-fe12782a.css", "assets/vendor-2634b1a9.css", "assets/thumbnail-b6ad015b.css"];
   }
 });
@@ -67723,8 +67808,8 @@ var entry8, js8, css18;
 var init__8 = __esm({
   ".svelte-kit/output/server/nodes/8.js"() {
     init_layout_svelte2();
-    entry8 = "pages/_slug_/__layout.svelte-165495aa.js";
-    js8 = ["pages/_slug_/__layout.svelte-165495aa.js", "chunks/vendor-9661f7ef.js", "chunks/stores-6fc21725.js"];
+    entry8 = "pages/_slug_/__layout.svelte-3f93e23c.js";
+    js8 = ["pages/_slug_/__layout.svelte-3f93e23c.js", "chunks/vendor-8bebd811.js", "chunks/stores-1651a60b.js"];
     css18 = ["assets/pages/_slug_/__layout.svelte-7693d0c0.css", "assets/vendor-2634b1a9.css", "assets/stores-4ca8f149.css"];
   }
 });
@@ -67750,7 +67835,7 @@ function load4({ url, params }) {
 var prerender, allPosts2, posts2, U5Bslugu5D;
 var init_index_svelte2 = __esm({
   ".svelte-kit/output/server/entries/pages/_slug_/index.svelte.js"() {
-    init_vision_9e8be31e();
+    init_vision_4b358c80();
     init_index_6bc633e9();
     init_katex();
     prerender = true;
@@ -67782,8 +67867,8 @@ var entry9, js9, css19;
 var init__9 = __esm({
   ".svelte-kit/output/server/nodes/9.js"() {
     init_index_svelte2();
-    entry9 = "pages/_slug_/index.svelte-c8c09357.js";
-    js9 = ["pages/_slug_/index.svelte-c8c09357.js", "chunks/4-vision-0fa7c17a.js", "chunks/vendor-9661f7ef.js"];
+    entry9 = "pages/_slug_/index.svelte-8a5fd050.js";
+    js9 = ["pages/_slug_/index.svelte-8a5fd050.js", "chunks/4-vision-8423f5dc.js", "chunks/vendor-8bebd811.js"];
     css19 = ["assets/vendor-2634b1a9.css"];
   }
 });
@@ -67902,7 +67987,7 @@ var require_reading_time2 = __commonJS({
   }
 });
 
-// .svelte-kit/output/server/chunks/posts-7e02c29e.js
+// .svelte-kit/output/server/chunks/posts-3b036185.js
 function groupByTags(array) {
   return array.reduce((acc, value) => {
     const property = value["tag"];
@@ -67931,9 +68016,9 @@ function getRelatedPosts(post) {
   return relatedPosts;
 }
 var import_reading_time, imports, posts3, allTagsAndPosts, categories, filteredPosts;
-var init_posts_7e02c29e = __esm({
-  ".svelte-kit/output/server/chunks/posts-7e02c29e.js"() {
-    init_vision_9e8be31e();
+var init_posts_3b036185 = __esm({
+  ".svelte-kit/output/server/chunks/posts-3b036185.js"() {
+    init_vision_4b358c80();
     import_reading_time = __toModule(require_reading_time2());
     imports = { "./posts/1-mandel.md": __glob_1_0, "./posts/2-webgl.md": __glob_1_1, "./posts/3-review.md": __glob_1_2, "./posts/4-vision.md": __glob_1_3 };
     posts3 = [];
@@ -67975,8 +68060,8 @@ async function get() {
 var import_reading_time2;
 var init_blog_json = __esm({
   ".svelte-kit/output/server/entries/endpoints/blog.json.js"() {
-    init_posts_7e02c29e();
-    init_vision_9e8be31e();
+    init_posts_3b036185();
+    init_vision_4b358c80();
     init_index_6bc633e9();
     init_katex();
     import_reading_time2 = __toModule(require_reading_time2());
@@ -68003,8 +68088,8 @@ function get2({ params }) {
 var import_reading_time3;
 var init_index_json = __esm({
   ".svelte-kit/output/server/entries/endpoints/_slug_/index.json.js"() {
-    init_posts_7e02c29e();
-    init_vision_9e8be31e();
+    init_posts_3b036185();
+    init_vision_4b358c80();
     init_index_6bc633e9();
     init_katex();
     import_reading_time3 = __toModule(require_reading_time2());
@@ -69434,9 +69519,15 @@ function set_paths(paths) {
   base = paths.base;
   assets = paths.assets || base;
 }
+function getSession(request) {
+  return {
+    userAgent: request.headers["user-agent"]
+  };
+}
 var user_hooks = /* @__PURE__ */ Object.freeze({
   __proto__: null,
-  [Symbol.toStringTag]: "Module"
+  [Symbol.toStringTag]: "Module",
+  getSession
 });
 var template = ({ head, body }) => `<!DOCTYPE html>
 <html lang="en">
@@ -69552,7 +69643,7 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-4-vision-access-your-home-office-from-any-device.webp", "blog-4-vision-cdc-6600-diagram.webp", "blog-4-vision-cdc-6600-picture.webp", "blog-4-vision-let-processing-happen-where-its-best.webp", "blog-4-vision-load-balancing-entire-neighborhoods.webp", "blog-4-vision-move-heat-and-noise-from-where-you-work-and-play.webp", "blog-4-vision-processing-power-as-easily-accessible-as-public-wifi.webp", "blog-4-vision-vision-Sharing-Thumbnail.webp", "blog-4-vision-work-from-home-actually-at-home.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "invite/circle-f.webp", "invite/invite-graphic.webp", "logo.svg", "reddit.svg", "robots.txt", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain" },
-    entry: { "file": "start-9dbb5223.js", "js": ["start-9dbb5223.js", "chunks/vendor-9661f7ef.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-913c8006.js", "js": ["start-913c8006.js", "chunks/vendor-8bebd811.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

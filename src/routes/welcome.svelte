@@ -1,35 +1,131 @@
+<script context="module">
+	// import System from 'svelte-system-info';
+</script>
+
 <script>
+	import fsm from 'svelte-fsm';
 	import { onMount } from 'svelte';
 
-	let getOS = () => {
-		var userAgent = window.navigator.userAgent,
-			platform = window.navigator.platform,
-			macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
-			windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
-			iosPlatforms = ['iPhone', 'iPad', 'iPod'],
-			os = null;
+	let UserAgent;
+	let getOS;
+	let downloadables = {
+		windows: '',
+		mac: '',
+		mac64: '',
+		linux: ''
+	};
 
-		if (macosPlatforms.indexOf(platform) !== -1) {
-			os = 'Mac OS';
-		} else if (iosPlatforms.indexOf(platform) !== -1) {
-			os = 'iOS';
-		} else if (windowsPlatforms.indexOf(platform) !== -1) {
-			os = 'Windows';
-		} else if (/Android/.test(userAgent)) {
-			os = 'Android';
-		} else if (!os && /Linux/.test(platform)) {
-			os = 'Linux';
-		}
-		return os;
-	};
-	let downloadBuild = (os) => {
-		if (os === 'Mac OS') console.log('Downloading Mac Build');
-		else if (os === 'Windows') console.log('Downloading Windows Build');
-		else if (os === 'Linux') console.log('Downloading Linux Build');
-	};
-	onMount(() => {
-		let userOS = getOS();
+	let downloadBuild;
+
+	onMount(async () => {
+		console.log('This works: ', window.navigator.userAgent);
+		UserAgent = {
+			Value: await window.navigator.userAgent,
+			contains: function contains(ValueToSearchFor) {
+				return this.Value.indexOf(ValueToSearchFor) >= 0;
+			},
+			lacks: function lacks(ValueToSearchFor) {
+				return this.Value.indexOf(ValueToSearchFor) < 0;
+			},
+			match: function match(Pattern) {
+				return this.Value.match(Pattern);
+			},
+			matches: function matches(Pattern) {
+				return this.Value.match(Pattern) != null;
+			}
+		};
+		getOS = () => {
+			let os = null;
+
+			var DeviceOSVersion = '(n/a)';
+			var VersionMatch;
+
+			switch (true) {
+				case UserAgent.contains('OS X') && UserAgent.lacks('Android'):
+					VersionMatch = UserAgent.match(/OS X ((\d+[._])+\d+)\b/);
+					DeviceOSVersion = VersionMatch[1].replace(/_/g, '.');
+					if (parseFloat(DeviceOSVersion) < 10.15) os = 'Mac OS';
+					else os = 'Mac OS 64';
+					break;
+				case UserAgent.contains('like Mac OS X') && UserAgent.contains('iPhone'):
+					os = 'iOS';
+					break;
+				case UserAgent.contains('Windows'):
+					os = 'Windows';
+					break;
+				case System.WelcomeOSName === 'Android':
+					os = 'Android';
+					break;
+				case UserAgent.contains('Linux') && UserAgent.lacks('Android'):
+					os = 'Linux';
+					break;
+			}
+			return os;
+		};
+		downloadBuild = (os) => {
+			downloadMachine.download();
+			fetch('https://api.github.com/repos/AO-Design-Inc/Feather-Releases/releases/latest')
+				.then((response) => response.json())
+				.then((data) => {
+					console.log('A', os);
+
+					for (let i = 0; i < data.assets.length; i++) {
+						let arr = data.assets[i].browser_download_url;
+						if (arr.endsWith('.exe') === true && downloadables.windows === '')
+							downloadables.windows = arr;
+						if (arr.endsWith('.12.dmg') === true && downloadables.mac === '')
+							downloadables.mac = arr;
+						if (arr.endsWith('arm64.dmg') === true && downloadables.mac64 === '')
+							downloadables.mac64 = arr;
+						if (arr.endsWith('.AppImage') === true && downloadables.linux === '')
+							downloadables.linux = arr;
+						else () => {};
+					}
+					if (os === 'Mac OS') {
+						console.log('Downloading Mac Build', downloadables.mac);
+						window.open(downloadables.mac, 'download');
+						downloadMachine.done();
+						return downloadables.mac;
+					} else if (os === 'Windows') {
+						console.log('Downloading Windows Build', downloadables.windows);
+						window.open(downloadables.windows, 'download');
+						downloadMachine.done();
+						return downloadables.windows;
+					} else if (os === 'Linux') {
+						console.log('Downloading Linux Build', downloadables.linux);
+						window.open(downloadables.linux, 'download');
+						downloadMachine.done();
+						return downloadables.linux;
+					} else if (os === 'Mac OS 64') {
+						console.log('Downloading Mac 64 Build', downloadables.mac64);
+						window.open(downloadables.mac64, 'download');
+						downloadMachine.done();
+						return downloadables.mac64;
+					}
+				})
+				.catch((error) => console.log('Error: ', error));
+		};
 	});
+	// === downloads fsm === //
+	const downloadMachine = fsm('DOWNLOAD', {
+		DOWNLOAD: {
+			download: 'DOWNLOADING'
+		},
+		DOWNLOADING: {
+			_enter() {
+				getOS();
+				downloadBuild(getOS());
+			},
+			done: 'DONE'
+		},
+		DONE: {
+			_enter() {
+				this.change.debounce(6000);
+			},
+			change: 'DOWNLOAD'
+		}
+	});
+	// === end downloads fsm === //
 </script>
 
 <div id="welcome">
@@ -41,74 +137,21 @@
 		<div class="spacer text two" />
 		<div id="download-head">
 			<p>
-				<span
-					class="butt"
-					on:click={() =>
-						downloadBuild(
-							getOS(),
-							window.open('https://github.com/AO-Design-Inc/Feather-Releases/releases', '_blank')
-						)}>Download Feather</span
+				<span on:click={downloadMachine.download} class="butt">
+					{#if $downloadMachine === 'DOWNLOAD'}
+						Download Feather
+					{:else if $downloadMachine === 'DOWNLOADING'}
+						Downloading...
+					{:else if $downloadMachine === 'DONE'}
+						Done!
+					{/if}
+				</span>
+				<span class="trans"
+					>if you haven't already.<br /> Or go to the app and login if it's already installed.</span
 				>
-				if you haven't already.<br /> Or go to the app and login if it's already installed.
 			</p>
 		</div>
 		<div class="spacer text three" />
-		<!-- <div id="button-container">
-			<button on:click={() => downloadBuild(getOS())} id="download">
-				<div class="cont" style="display: flex">
-					Download Feather <div class="spacer" style="width:10px" />
-					<svg
-						width="18"
-						height="17"
-						viewBox="0 0 18 17"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M8.77948 -3.40207e-07L8.77948 15.75M8.77948 15.75L16.5625 8.33824M8.77948 15.75L0.996462 8.33823"
-							stroke="#74252B"
-							stroke-width="2"
-							stroke-linejoin="round"
-						/>
-					</svg>
-				</div>
-			</button>
-			<div class="spacer between buttons" />
-			<a href="feather://open/">
-				<button id="launch">
-					<div class="cont" style="display: flex">
-						Launch Feather <div class="spacer" style="width:10px" />
-						<svg
-							width="14"
-							height="15"
-							viewBox="0 0 14 15"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M0.933113 13.3279L12.07 2.19096M12.07 2.19096L1.32571 1.92844M12.07 2.19096L12.3326 12.9353"
-								stroke="url(#paint0_linear_2198_467)"
-								stroke-width="2"
-								stroke-linejoin="round"
-							/>
-							<defs>
-								<linearGradient
-									id="paint0_linear_2198_467"
-									x1="0.933113"
-									y1="13.3279"
-									x2="13.1307"
-									y2="1.1303"
-									gradientUnits="userSpaceOnUse"
-								>
-									<stop offset="0.369792" stop-color="#FFFBFC" />
-									<stop offset="1" stop-color="#FFB0B0" />
-								</linearGradient>
-							</defs>
-						</svg>
-					</div>
-				</button>
-			</a>
-		</div> -->
 	</div>
 </div>
 
@@ -149,7 +192,6 @@
 			}
 		}
 		#download-head {
-			opacity: 0.6;
 			display: flex;
 			align-items: center;
 
@@ -175,6 +217,9 @@
 					background: transparent;
 					color: #fffffb;
 					transition: color 0.1s ease-in-out, background 0.2s ease-in-out;
+				}
+				span.trans {
+					opacity: 0.6;
 				}
 				span.butt:hover {
 					background: #ffb0b0;

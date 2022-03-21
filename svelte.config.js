@@ -17,6 +17,9 @@ const config = {
 
 		vite: {
 			css: {
+				define: {
+					global: {}
+				},
 				preprocessorOptions: {
 					scss: {
 						additionalData: '@use "src/variables.scss" as *;'
