@@ -49,7 +49,7 @@
           <img class="illus" src="./ft-illus-four.svg" alt="heart" />
           <div class="spacer one feature" />
           <div class="title">Remotely access all the files you need.</div>
-          <div class="spacer two feature" />
+          <div class="spacer two feature"/>
           <div class="des">
             Speed up collaboration and make file sharing within teams completely
             seamless. Create a hub for all your files & gain instant access to

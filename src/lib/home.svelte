@@ -3,7 +3,6 @@
   export const router = true;
   export const handle = true;
 </script> -->
-
 <script>
 	import Splash from './splash.svelte';
 	import Tutorial from './tutorial.svelte';
@@ -23,7 +22,7 @@
 	<Tutorial />
 	<div class="spacer two" />
 	<Features />
-	<div class="spacer two" />
+	<div class="spacer two" id="signin_buffer" />
 	<SignUp />
 	<div class="spacer two" />
 </main>

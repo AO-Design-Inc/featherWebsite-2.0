@@ -1,6 +1,3 @@
-<script>
-	import Form from './form.svelte';
-</script>
 
 <main class="d">
 	<a sveltekit:prefetch href="/">
@@ -18,10 +15,10 @@
 	</a>
 	<div class="spacer linker" />
 	<a href="/#sign-up">
-	<div>
-		<div class="sign-up">Sign Up</div>
-	</div>
-</a>
+		<div>
+			<div class="sign-up">Sign Up</div>
+		</div>
+	</a>
 	<!--<div class="form-container">
 		<Form />
 	</div>-->
@@ -32,7 +29,7 @@
 <style lang="scss">
 	@import '../variables.scss';
 	$bpDash: 850px;
-	
+
 	main {
 		// aspect-ratio: 288 / 17;
 		display: flex;
@@ -86,12 +83,12 @@
 	}
 	.spacer.linker {
 		width: get-vw(20px);
-    @media screen and (max-width: $bpDash) {
+		@media screen and (max-width: $bpDash) {
 			width: 0%;
 		}
 	}
 	.spacer.linker.between {
-    @media screen and (max-width: $bpDash) {
+		@media screen and (max-width: $bpDash) {
 			width: max(get-vw(20px), 20px);
 		}
 	}
