@@ -25,12 +25,18 @@
 </svelte:head>
 
 <div class="title-container center center-text">
+	<div class="spacer first" />
+	<div class="spacer second" />
 	<div class="hundred-width subheader">You're invited to:</div>
 	<div class="hundred-width title">The Future of Compute</div>
 	<div class="spacer first two" />
 	<div class="hundred-width date-time opacity-low">Tuesday, March 29th<br />2pm EST / 11am PST</div>
-	<div class="spacer second" />
+	<div class="spacer first two" />
 	<div data-mooform-id="7b8e8353-ac04-4d15-ba41-558b6fa9d886" />
+	<div class="spacer second" />
+	<div class="spacer second" />
+	<div class="spacer second" />
+	<div class="spacer second" />
 </div>
 
 <style lang="scss">
@@ -43,6 +49,16 @@
 		}
 		@media screen and (max-width: $bp) {
 			height: max(get-vw(60px), 60px);
+		}
+	}
+	.spacer.second {
+		width: 100%;
+		height: get-vw(45px);
+		@media screen and (min-width: 1240px) {
+			height: min(get-vw(45px), 45px);
+		}
+		@media screen and (max-width: $bp) {
+			height: max(get-vw(45px), 45px);
 		}
 	}
 	.spacer.first.two {
@@ -67,9 +83,34 @@
 	.title-container,
 	.hundred-width {
 		width: 100%;
+		text-align: center;
 	}
 	.center {
 		display: grid;
 		place-items: center;
+	}
+	.title-container,
+	.date-time {
+		font-size: get-vw(26px);
+		font-weight: 250;
+		@media screen and (min-width: 1240px) {
+			font-size: min(get-vw(26px), 26px);
+		}
+		@media screen and (max-width: $bp) {
+			font-size: max(get-vw(26px), 26px);
+		}
+	}
+	.title {
+		font-size: get-vw(72px);
+		font-weight: 700;
+		@media screen and (min-width: 1240px) {
+			font-size: min(get-vw(72px), 72px);
+		}
+		@media screen and (max-width: $bp) {
+			font-size: max(get-vw(72px), 50px);
+		}
+	}
+	.opacity-low {
+		opacity: 0.65;
 	}
 </style>
