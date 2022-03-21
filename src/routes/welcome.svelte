@@ -1,6 +1,3 @@
-<script context="module">
-	// import System from 'svelte-system-info';
-</script>
 
 <script>
 	import fsm from 'svelte-fsm';
@@ -52,9 +49,6 @@
 					break;
 				case UserAgent.contains('Windows'):
 					os = 'Windows';
-					break;
-				case System.WelcomeOSName === 'Android':
-					os = 'Android';
 					break;
 				case UserAgent.contains('Linux') && UserAgent.lacks('Android'):
 					os = 'Linux';

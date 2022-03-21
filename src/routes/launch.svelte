@@ -1,4 +1,6 @@
-
+<script>
+	// action="https://api.moosend.com/v3/subscribers/MailingListID/subscribe.Format?apikey=cb7f090a-1bf0-40fc-99b5-d5829d9f8d9a"
+</script>
 
 <div id="invite-container">
 	<div class="spacer first" />
@@ -6,14 +8,14 @@
 		<div class="hundred-width subheader">You're invited to:</div>
 		<div class="hundred-width title">The Future of Compute</div>
 		<div class="spacer first two" />
-		<div class="hundred-width date-time opacity-low">Tuesday, March 29th<br />2pm EST / 11am PST</div>
+		<div class="hundred-width date-time opacity-low">
+			Tuesday, March 29th<br />2pm EST / 11am PST
+		</div>
 		<div class="spacer second" />
 		<div class="center form-container hundred-width">
 			<form
-				action="https://buttondown.email/api/emails/embed-subscribe/feather"
-				method="post"
-				target="popupwindow"
-				onsubmit="window.open('https://buttondown.email/feather', 'popupwindow')"
+				action="https://api.moosend.com/v3/subscribers/MailingListID/subscribe.Format?apikey=cb7f090a-1bf0-40fc-99b5-d5829d9f8d9a"
+				onsubmit="window.open('https://feather.moosend.com/show_campaign/15105efe-e915-4e28-8adf-97543eb9c7a7/00000000-0000-0000-0000-000000000000/')"
 				class="embeddable-buttondown-form"
 			>
 				<input
