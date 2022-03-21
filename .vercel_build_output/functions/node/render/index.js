@@ -5942,8 +5942,8 @@ var entry, js, css3;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-510de2d1.js";
-    js = ["pages/__layout.svelte-510de2d1.js", "chunks/vendor-8aa06787.js", "chunks/stores-49c08374.js"];
+    entry = "pages/__layout.svelte-5b278a1d.js";
+    js = ["pages/__layout.svelte-5b278a1d.js", "chunks/vendor-a38f2821.js", "chunks/stores-4d8f30fe.js"];
     css3 = ["assets/pages/__layout.svelte-0224116f.css", "assets/form.svelte_svelte_type_style_lang-99e7096c.css", "assets/vendor-2634b1a9.css", "assets/stores-4ca8f149.css"];
   }
 });
@@ -5989,8 +5989,8 @@ var entry2, js2, css5;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "pages/__error.svelte-ab37b504.js";
-    js2 = ["pages/__error.svelte-ab37b504.js", "chunks/vendor-8aa06787.js"];
+    entry2 = "pages/__error.svelte-23409de9.js";
+    js2 = ["pages/__error.svelte-23409de9.js", "chunks/vendor-a38f2821.js"];
     css5 = ["assets/pages/__error.svelte-f53665cf.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -6190,8 +6190,8 @@ var entry3, js3, css7;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-be38513c.js";
-    js3 = ["pages/index.svelte-be38513c.js", "chunks/vendor-8aa06787.js"];
+    entry3 = "pages/index.svelte-a84ebccb.js";
+    js3 = ["pages/index.svelte-a84ebccb.js", "chunks/vendor-a38f2821.js"];
     css7 = ["assets/pages/index.svelte-6e783f1c.css", "assets/form.svelte_svelte_type_style_lang-99e7096c.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -6206,10 +6206,11 @@ var init_launchTest_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/launchTest.svelte.js"() {
     init_index_6bc633e9();
     css8 = {
-      code: ".spacer.first.svelte-1v4n4vq{width:100%;height:4.1666666667vw}@media screen and (min-width: 1240px){.spacer.first.svelte-1v4n4vq{height:min(4.1666666667vw, 60px)}}@media screen and (max-width: 810px){.spacer.first.svelte-1v4n4vq{height:max(4.1666666667vw, 60px)}}.spacer.second.svelte-1v4n4vq{width:100%;height:3.125vw}@media screen and (min-width: 1240px){.spacer.second.svelte-1v4n4vq{height:min(3.125vw, 45px)}}@media screen and (max-width: 810px){.spacer.second.svelte-1v4n4vq{height:max(3.125vw, 45px)}}.spacer.first.two.svelte-1v4n4vq{height:0.6944444444vw}@media screen and (min-width: 1240px){.spacer.first.two.svelte-1v4n4vq{height:min(0.6944444444vw, 10px)}}@media screen and (max-width: 810px){.spacer.first.two.svelte-1v4n4vq{height:max(0.6944444444vw, 10px)}}.spacer.second.svelte-1v4n4vq{width:100%;height:3.125vw}@media screen and (min-width: 1240px){.spacer.second.svelte-1v4n4vq{height:min(3.125vw, 45px)}}@media screen and (max-width: 810px){.spacer.second.svelte-1v4n4vq{height:max(3.125vw, 45px)}}.title-container.svelte-1v4n4vq,.hundred-width.svelte-1v4n4vq{width:100%;text-align:center}.center.svelte-1v4n4vq{display:grid;place-items:center}.title-container.svelte-1v4n4vq,.date-time.svelte-1v4n4vq{font-size:1.8055555556vw;font-weight:250}@media screen and (min-width: 1240px){.title-container.svelte-1v4n4vq,.date-time.svelte-1v4n4vq{font-size:min(1.8055555556vw, 26px)}}@media screen and (max-width: 810px){.title-container.svelte-1v4n4vq,.date-time.svelte-1v4n4vq{font-size:max(1.8055555556vw, 26px)}}.title.svelte-1v4n4vq{font-size:5vw;font-weight:700}@media screen and (min-width: 1240px){.title.svelte-1v4n4vq{font-size:min(5vw, 72px)}}@media screen and (max-width: 810px){.title.svelte-1v4n4vq{font-size:max(5vw, 50px)}}.opacity-low.svelte-1v4n4vq{opacity:0.65}",
+      code: ".spacer.first.svelte-19nt4gz{width:100%;height:6.25vw}@media screen and (min-width: 1240px){.spacer.first.svelte-19nt4gz{height:min(6.25vw, 90px)}}@media screen and (max-width: 810px){.spacer.first.svelte-19nt4gz{height:max(6.25vw, 90px)}}.spacer.second.svelte-19nt4gz{width:100%;height:3.125vw}@media screen and (min-width: 1240px){.spacer.second.svelte-19nt4gz{height:min(3.125vw, 45px)}}@media screen and (max-width: 810px){.spacer.second.svelte-19nt4gz{height:max(3.125vw, 45px)}}.spacer.first.two.svelte-19nt4gz{height:0.6944444444vw}@media screen and (min-width: 1240px){.spacer.first.two.svelte-19nt4gz{height:min(0.6944444444vw, 10px)}}@media screen and (max-width: 810px){.spacer.first.two.svelte-19nt4gz{height:max(0.6944444444vw, 10px)}}.spacer.second.svelte-19nt4gz{width:100%;height:3.125vw}@media screen and (min-width: 1240px){.spacer.second.svelte-19nt4gz{height:min(3.125vw, 45px)}}@media screen and (max-width: 810px){.spacer.second.svelte-19nt4gz{height:max(3.125vw, 45px)}}.title-container.svelte-19nt4gz,.hundred-width.svelte-19nt4gz{width:100%;text-align:center}.center.svelte-19nt4gz{display:grid;place-items:center}.title-container.svelte-19nt4gz,.date-time.svelte-19nt4gz{font-size:1.8055555556vw;font-weight:250}@media screen and (min-width: 1240px){.title-container.svelte-19nt4gz,.date-time.svelte-19nt4gz{font-size:min(1.8055555556vw, 26px)}}@media screen and (max-width: 810px){.title-container.svelte-19nt4gz,.date-time.svelte-19nt4gz{font-size:max(1.8055555556vw, 26px)}}.title.svelte-19nt4gz{font-size:5vw;font-weight:700}@media screen and (min-width: 1240px){.title.svelte-19nt4gz{font-size:min(5vw, 72px)}}@media screen and (max-width: 810px){.title.svelte-19nt4gz{font-size:max(5vw, 50px)}}.opacity-low.svelte-19nt4gz{opacity:0.65}",
       map: null
     };
     LaunchTest = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let formValue;
       $$result.css.add(css8);
       return `${$$result.head += `<script data-svelte="svelte-16ng24i">if (!window.mootrack) {
 			!(function (t, n, e, o, a) {
@@ -6234,18 +6235,18 @@ var init_launchTest_svelte = __esm({
 		mootrack('loadForm', '7b8e8353ac044d15ba41558b6fa9d886');
 	<\/script>`, ""}
 
-<div class="${"title-container center center-text svelte-1v4n4vq"}"><div class="${"spacer first svelte-1v4n4vq"}"></div>
-	<div class="${"spacer second svelte-1v4n4vq"}"></div>
-	<div class="${"hundred-width subheader svelte-1v4n4vq"}">You&#39;re invited to:</div>
-	<div class="${"hundred-width title svelte-1v4n4vq"}">The Future of Compute</div>
-	<div class="${"spacer first two svelte-1v4n4vq"}"></div>
-	<div class="${"hundred-width date-time opacity-low svelte-1v4n4vq"}">Tuesday, March 29th<br>2pm EST / 11am PST</div>
-	<div class="${"spacer first two svelte-1v4n4vq"}"></div>
-	<div data-mooform-id="${"7b8e8353-ac04-4d15-ba41-558b6fa9d886"}"></div>
-	<div class="${"spacer second svelte-1v4n4vq"}"></div>
-	<div class="${"spacer second svelte-1v4n4vq"}"></div>
-	<div class="${"spacer second svelte-1v4n4vq"}"></div>
-	<div class="${"spacer second svelte-1v4n4vq"}"></div>
+<div class="${"title-container center center-text svelte-19nt4gz"}"><div class="${"spacer first svelte-19nt4gz"}"></div>
+	<div class="${"hundred-width subheader svelte-19nt4gz"}">You&#39;re invited to:</div>
+	<div class="${"hundred-width title svelte-19nt4gz"}">The Future of Compute</div>
+	<div class="${"spacer first two svelte-19nt4gz"}"></div>
+	<div class="${"hundred-width date-time opacity-low svelte-19nt4gz"}">Tuesday, March 29th<br>2pm EST / 11am PST</div>
+	<div class="${"spacer first two svelte-19nt4gz"}"></div>
+	${`<div style="${"height: 120px; display: grid; place-items:center"}">Loading...</div>`}
+	<div data-mooform-id="${"7b8e8353-ac04-4d15-ba41-558b6fa9d886"}"${add_attribute("this", formValue, 0)}></div>
+	<div class="${"spacer second svelte-19nt4gz"}"></div>
+	<div class="${"spacer second svelte-19nt4gz"}"></div>
+	<div class="${"spacer second svelte-19nt4gz"}"></div>
+	<div class="${"spacer second svelte-19nt4gz"}"></div>
 </div>`;
     });
   }
@@ -6263,9 +6264,9 @@ var entry4, js4, css9;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_launchTest_svelte();
-    entry4 = "pages/launchTest.svelte-7afa5766.js";
-    js4 = ["pages/launchTest.svelte-7afa5766.js", "chunks/vendor-8aa06787.js"];
-    css9 = ["assets/pages/launchTest.svelte-2db63016.css", "assets/vendor-2634b1a9.css"];
+    entry4 = "pages/launchTest.svelte-4ed9c755.js";
+    js4 = ["pages/launchTest.svelte-4ed9c755.js", "chunks/vendor-a38f2821.js"];
+    css9 = ["assets/pages/launchTest.svelte-0cac73a0.css", "assets/vendor-2634b1a9.css"];
   }
 });
 
@@ -6396,8 +6397,8 @@ var entry5, js5, css11;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_welcome_svelte();
-    entry5 = "pages/welcome.svelte-6b2e1480.js";
-    js5 = ["pages/welcome.svelte-6b2e1480.js", "chunks/vendor-8aa06787.js"];
+    entry5 = "pages/welcome.svelte-1e4dcf5a.js";
+    js5 = ["pages/welcome.svelte-1e4dcf5a.js", "chunks/vendor-a38f2821.js"];
     css11 = ["assets/pages/welcome.svelte-ff62992f.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -6456,8 +6457,8 @@ var entry6, js6, css13;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_launch_svelte();
-    entry6 = "pages/launch.svelte-e993b140.js";
-    js6 = ["pages/launch.svelte-e993b140.js", "chunks/vendor-8aa06787.js"];
+    entry6 = "pages/launch.svelte-a187a4ee.js";
+    js6 = ["pages/launch.svelte-a187a4ee.js", "chunks/vendor-a38f2821.js"];
     css13 = ["assets/pages/launch.svelte-f3ba6a70.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -6553,8 +6554,8 @@ var entry7, js7, css15;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_about_svelte();
-    entry7 = "pages/about.svelte-601f6ff5.js";
-    js7 = ["pages/about.svelte-601f6ff5.js", "chunks/vendor-8aa06787.js"];
+    entry7 = "pages/about.svelte-68214692.js";
+    js7 = ["pages/about.svelte-68214692.js", "chunks/vendor-a38f2821.js"];
     css15 = ["assets/pages/about.svelte-7bcdac62.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -20706,8 +20707,8 @@ var entry8, js8, css18;
 var init__8 = __esm({
   ".svelte-kit/output/server/nodes/8.js"() {
     init_tags_svelte();
-    entry8 = "pages/tags/_tags_.svelte-f5468b85.js";
-    js8 = ["pages/tags/_tags_.svelte-f5468b85.js", "chunks/4-vision-4dbc4640.js", "chunks/vendor-8aa06787.js", "chunks/thumbnail-b64016b4.js"];
+    entry8 = "pages/tags/_tags_.svelte-b1c265e8.js";
+    js8 = ["pages/tags/_tags_.svelte-b1c265e8.js", "chunks/4-vision-050ae8dd.js", "chunks/vendor-a38f2821.js", "chunks/thumbnail-9eb03d01.js"];
     css18 = ["assets/pages/tags/_tags_.svelte-fe12782a.css", "assets/vendor-2634b1a9.css", "assets/thumbnail-b6ad015b.css"];
   }
 });
@@ -67881,8 +67882,8 @@ var entry9, js9, css20;
 var init__9 = __esm({
   ".svelte-kit/output/server/nodes/9.js"() {
     init_layout_svelte2();
-    entry9 = "pages/_slug_/__layout.svelte-a5382ec1.js";
-    js9 = ["pages/_slug_/__layout.svelte-a5382ec1.js", "chunks/vendor-8aa06787.js", "chunks/stores-49c08374.js"];
+    entry9 = "pages/_slug_/__layout.svelte-8aa6efdd.js";
+    js9 = ["pages/_slug_/__layout.svelte-8aa6efdd.js", "chunks/vendor-a38f2821.js", "chunks/stores-4d8f30fe.js"];
     css20 = ["assets/pages/_slug_/__layout.svelte-7693d0c0.css", "assets/vendor-2634b1a9.css", "assets/stores-4ca8f149.css"];
   }
 });
@@ -67940,8 +67941,8 @@ var entry10, js10, css21;
 var init__10 = __esm({
   ".svelte-kit/output/server/nodes/10.js"() {
     init_index_svelte2();
-    entry10 = "pages/_slug_/index.svelte-dc644c5b.js";
-    js10 = ["pages/_slug_/index.svelte-dc644c5b.js", "chunks/4-vision-4dbc4640.js", "chunks/vendor-8aa06787.js"];
+    entry10 = "pages/_slug_/index.svelte-14ce69cc.js";
+    js10 = ["pages/_slug_/index.svelte-14ce69cc.js", "chunks/4-vision-050ae8dd.js", "chunks/vendor-a38f2821.js"];
     css21 = ["assets/vendor-2634b1a9.css"];
   }
 });
@@ -69716,7 +69717,7 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-4-vision-access-your-home-office-from-any-device.webp", "blog-4-vision-cdc-6600-diagram.webp", "blog-4-vision-cdc-6600-picture.webp", "blog-4-vision-let-processing-happen-where-its-best.webp", "blog-4-vision-load-balancing-entire-neighborhoods.webp", "blog-4-vision-move-heat-and-noise-from-where-you-work-and-play.webp", "blog-4-vision-processing-power-as-easily-accessible-as-public-wifi.webp", "blog-4-vision-vision-Sharing-Thumbnail.webp", "blog-4-vision-work-from-home-actually-at-home.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "invite/circle-f.webp", "invite/invite-graphic.webp", "logo.svg", "reddit.svg", "robots.txt", "scripts/moosend-tracking.min.js", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain", ".js": "application/javascript" },
-    entry: { "file": "start-71617176.js", "js": ["start-71617176.js", "chunks/vendor-8aa06787.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-cf56b777.js", "js": ["start-cf56b777.js", "chunks/vendor-a38f2821.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

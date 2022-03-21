@@ -1,3 +1,17 @@
+<script>
+	import { onMount } from 'svelte';
+	let formValue;
+	let bool = false;
+	onMount(async () => {
+		let formChild = formValue;
+		let observer = new MutationObserver((mutationsList) => {
+			console.log(mutationsList);
+			bool = true;
+		});
+		observer.observe(formChild, { characterData: false, childList: true, attributes: false });
+	});
+</script>
+
 <svelte:head>
 	<script>
 		if (!window.mootrack) {
@@ -26,13 +40,15 @@
 
 <div class="title-container center center-text">
 	<div class="spacer first" />
-	<div class="spacer second" />
 	<div class="hundred-width subheader">You're invited to:</div>
 	<div class="hundred-width title">The Future of Compute</div>
 	<div class="spacer first two" />
 	<div class="hundred-width date-time opacity-low">Tuesday, March 29th<br />2pm EST / 11am PST</div>
 	<div class="spacer first two" />
-	<div data-mooform-id="7b8e8353-ac04-4d15-ba41-558b6fa9d886" />
+	{#if bool === false}
+		<div style="height: 120px; display: grid; place-items:center">Loading...</div>
+	{/if}
+	<div bind:this={formValue} data-mooform-id="7b8e8353-ac04-4d15-ba41-558b6fa9d886" />
 	<div class="spacer second" />
 	<div class="spacer second" />
 	<div class="spacer second" />
@@ -43,12 +59,12 @@
 	@import '../variables';
 	.spacer.first {
 		width: 100%;
-		height: get-vw(60px);
+		height: get-vw(90px);
 		@media screen and (min-width: 1240px) {
-			height: min(get-vw(60px), 60px);
+			height: min(get-vw(90px), 90px);
 		}
 		@media screen and (max-width: $bp) {
-			height: max(get-vw(60px), 60px);
+			height: max(get-vw(90px), 90px);
 		}
 	}
 	.spacer.second {
