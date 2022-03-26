@@ -53,6 +53,7 @@
 					os = 'Android';
 					break;
 				case UserAgent.contains('Linux') && UserAgent.lacks('Android'):
+					
 					os = 'Linux';
 					break;
 			}
@@ -129,7 +130,7 @@
 		<div style="width: 100%; height: 30px" />
 		<div id="welcome-head">Welcome to Feather!</div>
 		<div class="spacer text" />
-		<div id="thanks-head">Thanks for signing up.</div>
+		<div id="thanks-head">Thanks for stopping by!</div>
 		<div class="spacer text two" />
 		<div id="download-head">
 			<p>

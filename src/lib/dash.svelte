@@ -14,7 +14,7 @@
 		<div class="link">About</div>
 	</a>
 	<div class="spacer linker" />
-	<a href="/#sign-up">
+	<a href="/welcome">
 		<div>
 			<div class="sign-up">Sign Up</div>
 		</div>

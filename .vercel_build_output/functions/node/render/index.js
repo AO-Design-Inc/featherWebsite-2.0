@@ -5862,7 +5862,7 @@ var init_layout_svelte = __esm({
 	<div class="${"spacer linker between svelte-as4lz9"}"></div>
 	<a sveltekit:prefetch href="${"/about"}"><div class="${"link svelte-as4lz9"}">About</div></a>
 	<div class="${"spacer linker svelte-as4lz9"}"></div>
-	<a href="${"/#sign-up"}"><div><div class="${"sign-up svelte-as4lz9"}">Sign Up</div></div></a>
+	<a href="${"/welcome"}"><div><div class="${"sign-up svelte-as4lz9"}">Sign Up</div></div></a>
 	
 	
 	
@@ -5942,8 +5942,8 @@ var entry, js, css3;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-88c1e54b.js";
-    js = ["pages/__layout.svelte-88c1e54b.js", "chunks/vendor-a38f2821.js", "chunks/stores-4d8f30fe.js"];
+    entry = "pages/__layout.svelte-26961917.js";
+    js = ["pages/__layout.svelte-26961917.js", "chunks/vendor-a38f2821.js", "chunks/stores-4d8f30fe.js"];
     css3 = ["assets/pages/__layout.svelte-0224116f.css", "assets/vendor-2634b1a9.css", "assets/stores-4ca8f149.css"];
   }
 });
@@ -6374,7 +6374,7 @@ var init_welcome_svelte = __esm({
       return `<div id="${"welcome"}" class="${"svelte-vs3jv7"}"><div id="${"center-container"}" class="${"svelte-vs3jv7"}"><div style="${"width: 100%; height: 30px"}"></div>
 		<div id="${"welcome-head"}" class="${"svelte-vs3jv7"}">Welcome to Feather!</div>
 		<div class="${"spacer text svelte-vs3jv7"}"></div>
-		<div id="${"thanks-head"}" class="${"svelte-vs3jv7"}">Thanks for signing up.</div>
+		<div id="${"thanks-head"}" class="${"svelte-vs3jv7"}">Thanks for stopping by!</div>
 		<div class="${"spacer text two svelte-vs3jv7"}"></div>
 		<div id="${"download-head"}" class="${"svelte-vs3jv7"}"><p class="${"svelte-vs3jv7"}"><span class="${"butt svelte-vs3jv7"}">${$downloadMachine === "DOWNLOAD" ? `Download Feather` : `${$downloadMachine === "DOWNLOADING" ? `Downloading...` : `${$downloadMachine === "DONE" ? `Done!` : ``}`}`}</span>
 				<span class="${"trans svelte-vs3jv7"}">if you haven&#39;t already.<br> Or go to the app and login if it&#39;s already installed.</span></p></div>
@@ -6396,8 +6396,8 @@ var entry5, js5, css11;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_welcome_svelte();
-    entry5 = "pages/welcome.svelte-1e4dcf5a.js";
-    js5 = ["pages/welcome.svelte-1e4dcf5a.js", "chunks/vendor-a38f2821.js"];
+    entry5 = "pages/welcome.svelte-863f3b6e.js";
+    js5 = ["pages/welcome.svelte-863f3b6e.js", "chunks/vendor-a38f2821.js"];
     css11 = ["assets/pages/welcome.svelte-ff62992f.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -69730,7 +69730,7 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-4-vision-access-your-home-office-from-any-device.webp", "blog-4-vision-cdc-6600-diagram.webp", "blog-4-vision-cdc-6600-picture.webp", "blog-4-vision-let-processing-happen-where-its-best.webp", "blog-4-vision-load-balancing-entire-neighborhoods.webp", "blog-4-vision-move-heat-and-noise-from-where-you-work-and-play.webp", "blog-4-vision-processing-power-as-easily-accessible-as-public-wifi.webp", "blog-4-vision-vision-Sharing-Thumbnail.webp", "blog-4-vision-work-from-home-actually-at-home.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "invite/circle-f.webp", "invite/invite-graphic.webp", "logo.svg", "reddit.svg", "robots.txt", "scripts/moosend-tracking.min.js", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain", ".js": "application/javascript" },
-    entry: { "file": "start-74b426e7.js", "js": ["start-74b426e7.js", "chunks/vendor-a38f2821.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-a2907e78.js", "js": ["start-a2907e78.js", "chunks/vendor-a38f2821.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
