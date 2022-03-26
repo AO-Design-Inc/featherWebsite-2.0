@@ -16,7 +16,7 @@
 	<div class="spacer linker" />
 	<a href="/welcome">
 		<div>
-			<div class="sign-up">Sign Up</div>
+			<div class="sign-up">Download the Alpha</div>
 		</div>
 	</a>
 	<!--<div class="form-container">
@@ -96,7 +96,7 @@
 		width: 100%;
 	}
 	.sign-up {
-		width: 24.6 * $g; /*fix the spacers to accomodate this new button*/
+		width: get-vw(170px); /*fix the spacers to accomodate this new button*/
 		text-align: center;
 		font-size: max(get-vw(16px), 16px);
 		/*background: rgba(255, 255, 255, 0.1);*/
@@ -110,7 +110,7 @@
 			font-size: min(get-vw(16px), 16px);
 			height: min(get-vw(45px), 45px);
 			border-radius: min(get-vw(10px), 10px);
-			width: min(get-vw(150px), 140px);
+			width: min(get-ve(170px), 140px);
 		}
 		@media screen and (max-width: $bpDash) {
 			width: max(get-vw(95px), 90px);

@@ -5851,18 +5851,18 @@ var init_layout_svelte = __esm({
     init_src();
     subscriber_queue2 = [];
     css$2 = {
-      code: "main.svelte-as4lz9.svelte-as4lz9{display:flex;align-items:center;max-width:90%;min-height:85px;position:relative;margin:0px;padding:0px 6.9444444444vw}@media screen and (min-width: 1440px){main.svelte-as4lz9.svelte-as4lz9{max-width:1240px;padding:0px;margin:0px auto}}#logo.svelte-as4lz9 img.svelte-as4lz9{aspect-ratio:1/1;width:3.4722222222vw;min-width:50px;display:grid;place-items:center}@media screen and (min-width: 1240px){#logo.svelte-as4lz9 img.svelte-as4lz9{width:min(3.4722222222vw, 50px)}}.link.svelte-as4lz9.svelte-as4lz9{width:8.5416666667vw;text-align:center;font-size:max(1.1111111111vw, 16px);height:3.125vw;min-height:45px;display:grid;place-items:center;border-radius:0.6944444444vw}@media screen and (min-width: 1240px){.link.svelte-as4lz9.svelte-as4lz9{font-size:min(1.1111111111vw, 16px);height:min(3.125vw, 45px);border-radius:min(0.6944444444vw, 10px);width:min(6.5972222222vw, 90px)}}@media screen and (max-width: 850px){.link.svelte-as4lz9.svelte-as4lz9{width:max(6.5972222222vw, 90px)}}.link.svelte-as4lz9.svelte-as4lz9:hover{transition:background 0.2s ease-in-out;background:rgba(255, 255, 255, 0.2)}.spacer.linker.svelte-as4lz9.svelte-as4lz9{width:1.3888888889vw}@media screen and (max-width: 850px){.spacer.linker.svelte-as4lz9.svelte-as4lz9{width:0%}}@media screen and (max-width: 850px){.spacer.linker.between.svelte-as4lz9.svelte-as4lz9{width:max(1.3888888889vw, 20px)}}.spacer.one.svelte-as4lz9.svelte-as4lz9{width:100%}.sign-up.svelte-as4lz9.svelte-as4lz9{width:8.5416666667vw;text-align:center;font-size:max(1.1111111111vw, 16px);height:3.125vw;min-height:45px;display:grid;place-items:center;border:1px solid white;border-radius:0.6944444444vw}@media screen and (min-width: 1240px){.sign-up.svelte-as4lz9.svelte-as4lz9{font-size:min(1.1111111111vw, 16px);height:min(3.125vw, 45px);border-radius:min(0.6944444444vw, 10px);width:min(10.4166666667vw, 140px)}}@media screen and (max-width: 850px){.sign-up.svelte-as4lz9.svelte-as4lz9{width:max(6.5972222222vw, 90px)}}.sign-up.svelte-as4lz9.svelte-as4lz9:hover{transition:background 0.2s ease-in-out;background:rgba(255, 255, 255, 0.2)}",
+      code: "main.svelte-1p6sb6u.svelte-1p6sb6u{display:flex;align-items:center;max-width:90%;min-height:85px;position:relative;margin:0px;padding:0px 6.9444444444vw}@media screen and (min-width: 1440px){main.svelte-1p6sb6u.svelte-1p6sb6u{max-width:1240px;padding:0px;margin:0px auto}}#logo.svelte-1p6sb6u img.svelte-1p6sb6u{aspect-ratio:1/1;width:3.4722222222vw;min-width:50px;display:grid;place-items:center}@media screen and (min-width: 1240px){#logo.svelte-1p6sb6u img.svelte-1p6sb6u{width:min(3.4722222222vw, 50px)}}.link.svelte-1p6sb6u.svelte-1p6sb6u{width:8.5416666667vw;text-align:center;font-size:max(1.1111111111vw, 16px);height:3.125vw;min-height:45px;display:grid;place-items:center;border-radius:0.6944444444vw}@media screen and (min-width: 1240px){.link.svelte-1p6sb6u.svelte-1p6sb6u{font-size:min(1.1111111111vw, 16px);height:min(3.125vw, 45px);border-radius:min(0.6944444444vw, 10px);width:min(6.5972222222vw, 90px)}}@media screen and (max-width: 850px){.link.svelte-1p6sb6u.svelte-1p6sb6u{width:max(6.5972222222vw, 90px)}}.link.svelte-1p6sb6u.svelte-1p6sb6u:hover{transition:background 0.2s ease-in-out;background:rgba(255, 255, 255, 0.2)}.spacer.linker.svelte-1p6sb6u.svelte-1p6sb6u{width:1.3888888889vw}@media screen and (max-width: 850px){.spacer.linker.svelte-1p6sb6u.svelte-1p6sb6u{width:0%}}@media screen and (max-width: 850px){.spacer.linker.between.svelte-1p6sb6u.svelte-1p6sb6u{width:max(1.3888888889vw, 20px)}}.spacer.one.svelte-1p6sb6u.svelte-1p6sb6u{width:100%}.sign-up.svelte-1p6sb6u.svelte-1p6sb6u{width:11.8055555556vw;text-align:center;font-size:max(1.1111111111vw, 16px);height:3.125vw;min-height:45px;display:grid;place-items:center;border:1px solid white;border-radius:0.6944444444vw}@media screen and (min-width: 1240px){.sign-up.svelte-1p6sb6u.svelte-1p6sb6u{font-size:min(1.1111111111vw, 16px);height:min(3.125vw, 45px);border-radius:min(0.6944444444vw, 10px);width:min(get-ve(170px), 140px)}}@media screen and (max-width: 850px){.sign-up.svelte-1p6sb6u.svelte-1p6sb6u{width:max(6.5972222222vw, 90px)}}.sign-up.svelte-1p6sb6u.svelte-1p6sb6u:hover{transition:background 0.2s ease-in-out;background:rgba(255, 255, 255, 0.2)}",
       map: null
     };
     Dash = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$2);
-      return `<main class="${"d svelte-as4lz9"}"><a sveltekit:prefetch href="${"/"}"><div id="${"logo"}" class="${"svelte-as4lz9"}"><img src="${"/logo.svg"}" alt="${"Feather Logo"}" class="${"svelte-as4lz9"}"></div></a>
-	<div class="${"spacer one svelte-as4lz9"}"></div>
-	<a sveltekit:prefetch href="${"/blog"}"><div class="${"link svelte-as4lz9"}">Blog</div></a>
-	<div class="${"spacer linker between svelte-as4lz9"}"></div>
-	<a sveltekit:prefetch href="${"/about"}"><div class="${"link svelte-as4lz9"}">About</div></a>
-	<div class="${"spacer linker svelte-as4lz9"}"></div>
-	<a href="${"/welcome"}"><div><div class="${"sign-up svelte-as4lz9"}">Sign Up</div></div></a>
+      return `<main class="${"d svelte-1p6sb6u"}"><a sveltekit:prefetch href="${"/"}"><div id="${"logo"}" class="${"svelte-1p6sb6u"}"><img src="${"/logo.svg"}" alt="${"Feather Logo"}" class="${"svelte-1p6sb6u"}"></div></a>
+	<div class="${"spacer one svelte-1p6sb6u"}"></div>
+	<a sveltekit:prefetch href="${"/blog"}"><div class="${"link svelte-1p6sb6u"}">Blog</div></a>
+	<div class="${"spacer linker between svelte-1p6sb6u"}"></div>
+	<a sveltekit:prefetch href="${"/about"}"><div class="${"link svelte-1p6sb6u"}">About</div></a>
+	<div class="${"spacer linker svelte-1p6sb6u"}"></div>
+	<a href="${"/welcome"}"><div><div class="${"sign-up svelte-1p6sb6u"}">Download the Alpha</div></div></a>
 	
 	
 	
@@ -5942,9 +5942,9 @@ var entry, js, css3;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-26961917.js";
-    js = ["pages/__layout.svelte-26961917.js", "chunks/vendor-a38f2821.js", "chunks/stores-4d8f30fe.js"];
-    css3 = ["assets/pages/__layout.svelte-0224116f.css", "assets/vendor-2634b1a9.css", "assets/stores-4ca8f149.css"];
+    entry = "pages/__layout.svelte-744cf02a.js";
+    js = ["pages/__layout.svelte-744cf02a.js", "chunks/vendor-a38f2821.js", "chunks/stores-4d8f30fe.js"];
+    css3 = ["assets/pages/__layout.svelte-3fc529f4.css", "assets/vendor-2634b1a9.css", "assets/stores-4ca8f149.css"];
   }
 });
 
@@ -6265,7 +6265,7 @@ var init__4 = __esm({
     init_launchTest_svelte();
     entry4 = "pages/launchTest.svelte-4ed9c755.js";
     js4 = ["pages/launchTest.svelte-4ed9c755.js", "chunks/vendor-a38f2821.js"];
-    css9 = ["assets/pages/launch.svelte-f77146a4.css", "assets/vendor-2634b1a9.css"];
+    css9 = ["assets/pages/launchTest.svelte-0cac73a0.css", "assets/vendor-2634b1a9.css"];
   }
 });
 
@@ -6412,47 +6412,48 @@ var init_launch_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/launch.svelte.js"() {
     init_index_6bc633e9();
     css12 = {
-      code: ".spacer.first.svelte-19nt4gz{width:100%;height:6.25vw}@media screen and (min-width: 1240px){.spacer.first.svelte-19nt4gz{height:min(6.25vw, 90px)}}@media screen and (max-width: 810px){.spacer.first.svelte-19nt4gz{height:max(6.25vw, 90px)}}.spacer.second.svelte-19nt4gz{width:100%;height:3.125vw}@media screen and (min-width: 1240px){.spacer.second.svelte-19nt4gz{height:min(3.125vw, 45px)}}@media screen and (max-width: 810px){.spacer.second.svelte-19nt4gz{height:max(3.125vw, 45px)}}.spacer.first.two.svelte-19nt4gz{height:0.6944444444vw}@media screen and (min-width: 1240px){.spacer.first.two.svelte-19nt4gz{height:min(0.6944444444vw, 10px)}}@media screen and (max-width: 810px){.spacer.first.two.svelte-19nt4gz{height:max(0.6944444444vw, 10px)}}.spacer.second.svelte-19nt4gz{width:100%;height:3.125vw}@media screen and (min-width: 1240px){.spacer.second.svelte-19nt4gz{height:min(3.125vw, 45px)}}@media screen and (max-width: 810px){.spacer.second.svelte-19nt4gz{height:max(3.125vw, 45px)}}.title-container.svelte-19nt4gz,.hundred-width.svelte-19nt4gz{width:100%;text-align:center}.center.svelte-19nt4gz{display:grid;place-items:center}.title-container.svelte-19nt4gz,.date-time.svelte-19nt4gz{font-size:1.8055555556vw;font-weight:250}@media screen and (min-width: 1240px){.title-container.svelte-19nt4gz,.date-time.svelte-19nt4gz{font-size:min(1.8055555556vw, 26px)}}@media screen and (max-width: 810px){.title-container.svelte-19nt4gz,.date-time.svelte-19nt4gz{font-size:max(1.8055555556vw, 26px)}}.title.svelte-19nt4gz{font-size:5vw;font-weight:700}@media screen and (min-width: 1240px){.title.svelte-19nt4gz{font-size:min(5vw, 72px)}}@media screen and (max-width: 810px){.title.svelte-19nt4gz{font-size:max(5vw, 50px)}}.opacity-low.svelte-19nt4gz{opacity:0.65}",
+      code: ".spacer.first.svelte-5ukgo6{width:100%;height:6.25vw}@media screen and (min-width: 1240px){.spacer.first.svelte-5ukgo6{height:min(6.25vw, 90px)}}@media screen and (max-width: 810px){.spacer.first.svelte-5ukgo6{height:max(6.25vw, 90px)}}.spacer.second.svelte-5ukgo6{width:100%;height:3.125vw}@media screen and (min-width: 1240px){.spacer.second.svelte-5ukgo6{height:min(3.125vw, 45px)}}@media screen and (max-width: 810px){.spacer.second.svelte-5ukgo6{height:max(3.125vw, 45px)}}.spacer.first.two.svelte-5ukgo6{height:0.6944444444vw}@media screen and (min-width: 1240px){.spacer.first.two.svelte-5ukgo6{height:min(0.6944444444vw, 10px)}}@media screen and (max-width: 810px){.spacer.first.two.svelte-5ukgo6{height:max(0.6944444444vw, 10px)}}.spacer.second.svelte-5ukgo6{width:100%;height:3.125vw}@media screen and (min-width: 1240px){.spacer.second.svelte-5ukgo6{height:min(3.125vw, 45px)}}@media screen and (max-width: 810px){.spacer.second.svelte-5ukgo6{height:max(3.125vw, 45px)}}.title-container.svelte-5ukgo6,.hundred-width.svelte-5ukgo6{width:100%;text-align:center}.center.svelte-5ukgo6{display:grid;place-items:center}.title-container.svelte-5ukgo6,.date-time.svelte-5ukgo6{font-size:1.8055555556vw;font-weight:250}@media screen and (min-width: 1240px){.title-container.svelte-5ukgo6,.date-time.svelte-5ukgo6{font-size:min(1.8055555556vw, 26px)}}@media screen and (max-width: 810px){.title-container.svelte-5ukgo6,.date-time.svelte-5ukgo6{font-size:max(1.8055555556vw, 26px)}}.title.svelte-5ukgo6{font-size:5vw;font-weight:700}@media screen and (min-width: 1240px){.title.svelte-5ukgo6{font-size:min(5vw, 72px)}}@media screen and (max-width: 810px){.title.svelte-5ukgo6{font-size:max(5vw, 50px)}}.opacity-low.svelte-5ukgo6{opacity:0.65}.cta.svelte-5ukgo6{font-size:18px}@media screen and (max-width: 810px){.cta.svelte-5ukgo6{width:75%}}",
       map: null
     };
     Launch = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let formValue;
       $$result.css.add(css12);
-      return `${$$result.head += `<script data-svelte="svelte-16ng24i">if (!window.mootrack) {
-			!(function (t, n, e, o, a) {
-				function d(t) {
-					var n = ~~(Date.now() / 3e5),
-						o = document.createElement(e);
-					(o.async = !0), (o.src = t + '?ts=' + n);
-					var a = document.getElementsByTagName(e)[0];
-					a.parentNode.insertBefore(o, a);
-				}
-				(t.MooTrackerObject = a),
-					(t[a] =
-						t[a] ||
-						function () {
-							return t[a].q ? void t[a].q.push(arguments) : void (t[a].q = [arguments]);
-						}),
-					window.attachEvent
-						? window.attachEvent('onload', d.bind(this, o))
-						: window.addEventListener('load', d.bind(this, o), !1);
-			})(window, document, 'script', '/scripts/moosend-tracking.min.js', 'mootrack');
-		}
-		mootrack('loadForm', '7b8e8353ac044d15ba41558b6fa9d886');
-	<\/script>`, ""}
+      return `${$$result.head += `<script data-svelte="svelte-1ymg3ud">if (!window.mootrack) {
+      !(function (t, n, e, o, a) {
+        function d(t) {
+          var n = ~~(Date.now() / 3e5),
+            o = document.createElement(e);
+          (o.async = !0), (o.src = t + '?ts=' + n);
+          var a = document.getElementsByTagName(e)[0];
+          a.parentNode.insertBefore(o, a);
+        }
+        (t.MooTrackerObject = a),
+          (t[a] =
+            t[a] ||
+            function () {
+              return t[a].q ? void t[a].q.push(arguments) : void (t[a].q = [arguments]);
+            }),
+          window.attachEvent
+            ? window.attachEvent('onload', d.bind(this, o))
+            : window.addEventListener('load', d.bind(this, o), !1);
+      })(window, document, 'script', '/scripts/moosend-tracking.min.js', 'mootrack');
+    }
+    mootrack('loadForm', '7b8e8353ac044d15ba41558b6fa9d886');
+  <\/script>`, ""}
 
-<div class="${"title-container center center-text svelte-19nt4gz"}"><div class="${"spacer first svelte-19nt4gz"}"></div>
-	<div class="${"hundred-width subheader svelte-19nt4gz"}">You&#39;re invited to:</div>
-	<div class="${"hundred-width title svelte-19nt4gz"}">The Future of Compute</div>
-	<div class="${"spacer first two svelte-19nt4gz"}"></div>
-	<div class="${"hundred-width date-time opacity-low svelte-19nt4gz"}">Tuesday, March 29th<br>2pm EST / 11am PST</div>
-	<div class="${"spacer first two svelte-19nt4gz"}"></div>
-	${`<div style="${"height: 120px; display: grid; place-items:center"}">Loading...</div>`}
-	<div data-mooform-id="${"7b8e8353-ac04-4d15-ba41-558b6fa9d886"}"${add_attribute("this", formValue, 0)}></div>
-	<div class="${"spacer second svelte-19nt4gz"}"></div>
-	<div class="${"spacer second svelte-19nt4gz"}"></div>
-	<div class="${"spacer second svelte-19nt4gz"}"></div>
-	<div class="${"spacer second svelte-19nt4gz"}"></div>
+<div class="${"title-container center center-text svelte-5ukgo6"}"><div class="${"spacer first svelte-5ukgo6"}"></div>
+  <div class="${"hundred-width subheader svelte-5ukgo6"}">You&#39;re invited to:</div>
+  <div class="${"hundred-width title svelte-5ukgo6"}">The Future of Compute</div>
+  <div class="${"spacer first two svelte-5ukgo6"}"></div>
+  <div class="${"hundred-width date-time opacity-low svelte-5ukgo6"}">Tuesday, March 29th<br>2pm EST / 11am PST</div>
+  <div class="${"spacer first two svelte-5ukgo6"}"></div>
+  <div class="${"cta svelte-5ukgo6"}">Register to receive the link to the Gathertown on the day of the event:</div>
+  ${`<div style="${"height: 120px; display: grid; place-items:center"}">Loading...</div>`}
+  <div data-mooform-id="${"7b8e8353-ac04-4d15-ba41-558b6fa9d886"}"${add_attribute("this", formValue, 0)}></div>
+  <div class="${"spacer second svelte-5ukgo6"}"></div>
+  <div class="${"spacer second svelte-5ukgo6"}"></div>
+  <div class="${"spacer second svelte-5ukgo6"}"></div>
+  <div class="${"spacer second svelte-5ukgo6"}"></div>
 </div>`;
     });
   }
@@ -6470,9 +6471,9 @@ var entry6, js6, css13;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_launch_svelte();
-    entry6 = "pages/launch.svelte-36e4c89f.js";
-    js6 = ["pages/launch.svelte-36e4c89f.js", "chunks/vendor-a38f2821.js"];
-    css13 = ["assets/pages/launch.svelte-f77146a4.css", "assets/vendor-2634b1a9.css"];
+    entry6 = "pages/launch.svelte-ace3e923.js";
+    js6 = ["pages/launch.svelte-ace3e923.js", "chunks/vendor-a38f2821.js"];
+    css13 = ["assets/pages/launch.svelte-068caa49.css", "assets/vendor-2634b1a9.css"];
   }
 });
 
@@ -69730,7 +69731,7 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-4-vision-access-your-home-office-from-any-device.webp", "blog-4-vision-cdc-6600-diagram.webp", "blog-4-vision-cdc-6600-picture.webp", "blog-4-vision-let-processing-happen-where-its-best.webp", "blog-4-vision-load-balancing-entire-neighborhoods.webp", "blog-4-vision-move-heat-and-noise-from-where-you-work-and-play.webp", "blog-4-vision-processing-power-as-easily-accessible-as-public-wifi.webp", "blog-4-vision-vision-Sharing-Thumbnail.webp", "blog-4-vision-work-from-home-actually-at-home.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "invite/circle-f.webp", "invite/invite-graphic.webp", "logo.svg", "reddit.svg", "robots.txt", "scripts/moosend-tracking.min.js", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain", ".js": "application/javascript" },
-    entry: { "file": "start-a2907e78.js", "js": ["start-a2907e78.js", "chunks/vendor-a38f2821.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-7ef88685.js", "js": ["start-7ef88685.js", "chunks/vendor-a38f2821.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
