@@ -1,22 +1,23 @@
 <script>
+	import DownloadModal from '$lib/download-modal.svelte';
+	// import fsm from 'svelte-fsm';
+	import { popUpMachine } from '$lib/popUpMachine';
+
 	import fsm from 'svelte-fsm';
 	import { onMount } from 'svelte';
 
-	let UserAgent;
-	let getOS;
+	let UserAgent, getOS, downloadBuild;
 	let downloadables = {
 		windows: '',
 		mac: '',
 		mac64: '',
-		linux: ''
+		linux: '',
+		linux64: ''
 	};
 
-	let downloadBuild;
-
 	onMount(async () => {
-		console.log('This works: ', window.navigator.userAgent);
 		UserAgent = {
-			Value: await window.navigator.userAgent,
+			Value: window.navigator.userAgent,
 			contains: function contains(ValueToSearchFor) {
 				return this.Value.indexOf(ValueToSearchFor) >= 0;
 			},
@@ -30,35 +31,6 @@
 				return this.Value.match(Pattern) != null;
 			}
 		};
-		getOS = () => {
-			let os = null;
-
-			var DeviceOSVersion = '(n/a)';
-			var VersionMatch;
-
-			switch (true) {
-				case UserAgent.contains('OS X') && UserAgent.lacks('Android'):
-					VersionMatch = UserAgent.match(/OS X ((\d+[._])+\d+)\b/);
-					DeviceOSVersion = VersionMatch[1].replace(/_/g, '.');
-					if (parseFloat(DeviceOSVersion) < 10.15) os = 'Mac OS';
-					else os = 'Mac OS 64';
-					break;
-				case UserAgent.contains('like Mac OS X') && UserAgent.contains('iPhone'):
-					os = 'iOS';
-					break;
-				case UserAgent.contains('Windows'):
-					os = 'Windows';
-					break;
-				case System.WelcomeOSName === 'Android':
-					os = 'Android';
-					break;
-				case UserAgent.contains('Linux') && UserAgent.lacks('Android'):
-					
-					os = 'Linux';
-					break;
-			}
-			return os;
-		};
 		downloadBuild = (os) => {
 			downloadMachine.download();
 			fetch('https://api.github.com/repos/AO-Design-Inc/Feather-Releases/releases/latest')
@@ -70,14 +42,33 @@
 						let arr = data.assets[i].browser_download_url;
 						if (arr.endsWith('.exe') === true && downloadables.windows === '')
 							downloadables.windows = arr;
-						if (arr.endsWith('.12.dmg') === true && downloadables.mac === '')
+						if (
+							arr.endsWith('.dmg') === true &&
+							arr.indexOf('arm64') < 0 === true &&
+							downloadables.mac === ''
+						)
 							downloadables.mac = arr;
-						if (arr.endsWith('arm64.dmg') === true && downloadables.mac64 === '')
+						if (
+							arr.endsWith('arm64.dmg') === true &&
+							arr.indexOf('arm64') >= 0 === true &&
+							downloadables.mac64 === ''
+						)
 							downloadables.mac64 = arr;
-						if (arr.endsWith('.12.AppImage') === true && downloadables.linux === '')
-							downloadables.linux = arr;
+						if (
+							arr.endsWith('.AppImage') === true &&
+							arr.indexOf('arm64') >= 0 === true &&
+							downloadables.linux64 === ''
+						)
+							(downloadables.linux64 = arr), console.log(downloadables.linux64, 'linuc');
+						if (
+							arr.endsWith('.AppImage') === true &&
+							arr.indexOf('arm64') < 0 === true &&
+							downloadables.linux === ''
+						)
+							(downloadables.linux = arr), console.log(downloadables.linux, 'linuc');
 						else () => {};
 					}
+
 					if (os === 'Mac OS') {
 						console.log('Downloading Mac Build', downloadables.mac);
 						window.open(downloadables.mac, 'download');
@@ -98,9 +89,37 @@
 						window.open(downloadables.mac64, 'download');
 						downloadMachine.done();
 						return downloadables.mac64;
+					} else if (os === 'Linux 64') {
+						console.log('Downloading Linux 64 Build', downloadables.linux64);
+						window.open(downloadables.linux64, 'download');
+						downloadMachine.done();
+						return downloadables.linux64;
 					}
 				})
 				.catch((error) => console.log('Error: ', error));
+		};
+		getOS = () => {
+			let os = null;
+
+			switch (true) {
+				case UserAgent.contains('OS X') && UserAgent.lacks('Android'):
+					os = 'Mac OS';
+					break;
+				case UserAgent.contains('like Mac OS X') && UserAgent.contains('iPhone'):
+					os = 'iOS';
+					break;
+				case UserAgent.contains('Windows'):
+					os = 'Windows';
+					break;
+				case UserAgent.contains('Android') ||
+					(UserAgent.contains('Adr') && UserAgent.lacks('Windows Phone')):
+					os = 'Android';
+					break;
+				case UserAgent.contains('Linux') && UserAgent.lacks('Android'):
+					os = 'Linux';
+					break;
+			}
+			return os;
 		};
 	});
 	// === downloads fsm === //
@@ -110,20 +129,43 @@
 		},
 		DOWNLOADING: {
 			_enter() {
-				getOS();
-				downloadBuild(getOS());
+				// getOS();
+				this.done.debounce(1500);
+				if (getOS() === 'Mac OS') popUpMachine.mac();
+				else if (getOS() === 'Linux') popUpMachine.linux();
 			},
 			done: 'DONE'
 		},
 		DONE: {
 			_enter() {
-				this.change.debounce(6000);
+				this.change.debounce(1500);
 			},
 			change: 'DOWNLOAD'
 		}
 	});
+	export { downloadMachine };
 	// === end downloads fsm === //
 </script>
+
+{#if $popUpMachine === 'HIDDEN'}
+	<div />
+{:else if $popUpMachine === 'SHOW_MAC'}
+	<DownloadModal
+		message="Select the appropriate installer for Mac:"
+		option1="Feather for Intel Macs"
+		option2="Feather for Apple Silicon"
+		func1={() => downloadBuild('Mac OS')}
+		func2={() => downloadBuild('Mac OS 64')}
+	/>
+{:else if $popUpMachine === 'SHOW_LINUX'}
+	<DownloadModal
+		message="Select the appropriate installer for Linux:"
+		option1="Feather for AMD Linux"
+		option2="Feather for  ARM Linux"
+		func1={() => downloadBuild('Linux')}
+		func2={() => downloadBuild('Linux 64')}
+	/>
+{/if}
 
 <div id="welcome">
 	<div id="center-container">

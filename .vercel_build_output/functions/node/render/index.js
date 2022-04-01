@@ -1637,10 +1637,10 @@ var init_install_fetch = __esm({
           [PullSteps](readRequest) {
             const stream = this._controlledReadableByteStream;
             if (this._queueTotalSize > 0) {
-              const entry11 = this._queue.shift();
-              this._queueTotalSize -= entry11.byteLength;
+              const entry10 = this._queue.shift();
+              this._queueTotalSize -= entry10.byteLength;
               ReadableByteStreamControllerHandleQueueDrain(this);
-              const view = new Uint8Array(entry11.buffer, entry11.byteOffset, entry11.byteLength);
+              const view = new Uint8Array(entry10.buffer, entry10.byteOffset, entry10.byteLength);
               readRequest._chunkSteps(view);
               return;
             }
@@ -5598,7 +5598,7 @@ function create_ssr_component(fn) {
       return {
         html,
         css: {
-          code: Array.from(result.css).map((css22) => css22.code).join("\n"),
+          code: Array.from(result.css).map((css20) => css20.code).join("\n"),
           map: null
         },
         head: result.title + result.head
@@ -5942,8 +5942,8 @@ var entry, js, css3;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-1e5628a2.js";
-    js = ["pages/__layout.svelte-1e5628a2.js", "chunks/vendor-08ba1c64.js", "chunks/stores-c248ff7b.js"];
+    entry = "pages/__layout.svelte-23d9522a.js";
+    js = ["pages/__layout.svelte-23d9522a.js", "chunks/vendor-4ee06943.js", "chunks/stores-9ef9e617.js"];
     css3 = ["assets/pages/__layout.svelte-3fc529f4.css", "assets/vendor-2634b1a9.css", "assets/stores-4ca8f149.css"];
   }
 });
@@ -5989,8 +5989,8 @@ var entry2, js2, css5;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "pages/__error.svelte-436725ea.js";
-    js2 = ["pages/__error.svelte-436725ea.js", "chunks/vendor-08ba1c64.js"];
+    entry2 = "pages/__error.svelte-b0359f93.js";
+    js2 = ["pages/__error.svelte-b0359f93.js", "chunks/vendor-4ee06943.js"];
     css5 = ["assets/pages/__error.svelte-f53665cf.css", "assets/vendor-2634b1a9.css"];
   }
 });
@@ -6189,48 +6189,9 @@ var entry3, js3, css7;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-42b0da83.js";
-    js3 = ["pages/index.svelte-42b0da83.js", "chunks/vendor-08ba1c64.js"];
+    entry3 = "pages/index.svelte-d716825f.js";
+    js3 = ["pages/index.svelte-d716825f.js", "chunks/vendor-4ee06943.js"];
     css7 = ["assets/pages/index.svelte-090aae61.css", "assets/vendor-2634b1a9.css"];
-  }
-});
-
-// .svelte-kit/output/server/entries/pages/launchTest.svelte.js
-var launchTest_svelte_exports = {};
-__export(launchTest_svelte_exports, {
-  default: () => LaunchTest
-});
-var css8, LaunchTest;
-var init_launchTest_svelte = __esm({
-  ".svelte-kit/output/server/entries/pages/launchTest.svelte.js"() {
-    init_index_6bc633e9();
-    css8 = {
-      code: "@media screen and (min-width: 1240px){}@media screen and (max-width: 810px){}@media screen and (min-width: 1240px){}@media screen and (max-width: 810px){}@media screen and (min-width: 1240px){}@media screen and (max-width: 810px){}@media screen and (min-width: 1240px){}@media screen and (max-width: 810px){}.title-container.svelte-19nt4gz{width:100%;text-align:center}.center.svelte-19nt4gz{display:grid;place-items:center}.title-container.svelte-19nt4gz{font-size:1.8055555556vw;font-weight:250}@media screen and (min-width: 1240px){.title-container.svelte-19nt4gz{font-size:min(1.8055555556vw, 26px)}}@media screen and (max-width: 810px){.title-container.svelte-19nt4gz{font-size:max(1.8055555556vw, 26px)}}@media screen and (min-width: 1240px){}@media screen and (max-width: 810px){}",
-      map: null
-    };
-    LaunchTest = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      $$result.css.add(css8);
-      return `<div class="${"title-container center center-text svelte-19nt4gz"}"><div>Redirecting...</div>
-</div>`;
-    });
-  }
-});
-
-// .svelte-kit/output/server/nodes/3.js
-var __exports4 = {};
-__export(__exports4, {
-  css: () => css9,
-  entry: () => entry4,
-  js: () => js4,
-  module: () => launchTest_svelte_exports
-});
-var entry4, js4, css9;
-var init__4 = __esm({
-  ".svelte-kit/output/server/nodes/3.js"() {
-    init_launchTest_svelte();
-    entry4 = "pages/launchTest.svelte-364bda96.js";
-    js4 = ["pages/launchTest.svelte-364bda96.js", "chunks/vendor-08ba1c64.js"];
-    css9 = ["assets/pages/launchTest.svelte-f9ec6c58.css", "assets/vendor-2634b1a9.css"];
   }
 });
 
@@ -6304,39 +6265,106 @@ var welcome_svelte_exports = {};
 __export(welcome_svelte_exports, {
   default: () => Welcome
 });
-var css10, Welcome;
+var popUpMachine, css$13, Download_modal, css8, Welcome;
 var init_welcome_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/welcome.svelte.js"() {
     init_index_6bc633e9();
     init_svelte_fsm();
-    css10 = {
+    popUpMachine = svelte_fsm_default("HIDDEN", {
+      HIDDEN: {
+        show: "SHOWING",
+        mac: "SHOW_MAC",
+        linux: "SHOW_LINUX"
+      },
+      SHOW_MAC: {
+        hide: "HIDDEN",
+        _exit() {
+        }
+      },
+      SHOW_LINUX: {
+        hide: "HIDDEN",
+        _exit() {
+        }
+      }
+    });
+    css$13 = {
+      code: "main.svelte-tdezzj.svelte-tdezzj{position:fixed;top:50%;left:50%;transform:translate(-50%, -50%);z-index:3;width:34.7222222222vw;height:auto;background:#11131c;box-shadow:0px 0px 30px rgba(251, 118, 128, 0.45);border-radius:10px}@media screen and (min-width: 1240px){main.svelte-tdezzj.svelte-tdezzj{width:min(34.7222222222vw, 500px);height:auto}}@media screen and (max-width: 810px){main.svelte-tdezzj.svelte-tdezzj{width:max(34.7222222222vw, 300px);height:auto}}main.svelte-tdezzj .spacer-m-b.svelte-tdezzj{width:100%;height:1.3888888889vw}main.svelte-tdezzj .spacer-b-b.svelte-tdezzj{width:0.6944444444vw;height:100%}main.svelte-tdezzj .padding.svelte-tdezzj{padding:5% 5%}main.svelte-tdezzj .padding .text.svelte-tdezzj{font-size:2.5694444444vw;font-weight:700;line-height:120%}@media screen and (min-width: 1240px){main.svelte-tdezzj .padding .text.svelte-tdezzj{font-size:min(2.5694444444vw, 37px)}}@media screen and (max-width: 810px){main.svelte-tdezzj .padding .text.svelte-tdezzj{font-size:max(2.5694444444vw, 19px)}}main.svelte-tdezzj .padding .button-container.svelte-tdezzj{display:flex}main.svelte-tdezzj .padding .button-container .button.svelte-tdezzj{font-size:1.1111111111vw;cursor:pointer;display:grid;place-items:center;padding:1% 2%;height:2.7777777778vw;border-radius:0.6944444444vw;border:1px solid #ffb0b0;color:#fffffb;background:transparent;transition:all 0.3s ease-in-out}@media screen and (min-width: 1240px){main.svelte-tdezzj .padding .button-container .button.svelte-tdezzj{font-size:min(1.1111111111vw, 16px);height:min(2.7777777778vw, 40px)}}@media screen and (max-width: 810px){main.svelte-tdezzj .padding .button-container .button.svelte-tdezzj{font-size:max(1.1111111111vw, 16px);height:max(2.7777777778vw, 40px)}}main.svelte-tdezzj .padding .button-container .button.svelte-tdezzj:hover{transition:all 0.3s ease-in-out;background:#ffb0b0;color:#11131c}",
+      map: null
+    };
+    Download_modal = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { message = "" } = $$props;
+      let { option1 = "" } = $$props;
+      let { option2 = "" } = $$props;
+      let { func1 } = $$props;
+      let { func2 } = $$props;
+      if ($$props.message === void 0 && $$bindings.message && message !== void 0)
+        $$bindings.message(message);
+      if ($$props.option1 === void 0 && $$bindings.option1 && option1 !== void 0)
+        $$bindings.option1(option1);
+      if ($$props.option2 === void 0 && $$bindings.option2 && option2 !== void 0)
+        $$bindings.option2(option2);
+      if ($$props.func1 === void 0 && $$bindings.func1 && func1 !== void 0)
+        $$bindings.func1(func1);
+      if ($$props.func2 === void 0 && $$bindings.func2 && func2 !== void 0)
+        $$bindings.func2(func2);
+      $$result.css.add(css$13);
+      return `<main class="${"svelte-tdezzj"}"><div class="${"padding svelte-tdezzj"}"><div class="${"closer"}"><svg width="${"20"}" height="${"20"}" viewBox="${"0 0 20 20"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><circle cx="${"10"}" cy="${"10"}" r="${"10"}" fill="${"#FB7680"}"></circle><path d="${"M5 5L15 15"}" stroke="${"#11131C"}" stroke-width="${"4"}"></path><path d="${"M15 5L5 15"}" stroke="${"#11131C"}" stroke-width="${"4"}"></path></svg></div>
+		<div class="${"text svelte-tdezzj"}">${escape(message)}</div>
+		<div class="${"spacer-m-b svelte-tdezzj"}"></div>
+		<div class="${"button-container svelte-tdezzj"}"><div class="${"button option1 svelte-tdezzj"}">${escape(option1)}</div>
+			<div class="${"spacer-b-b svelte-tdezzj"}"></div>
+			<div class="${"button option2 svelte-tdezzj"}">${escape(option2)}</div></div></div>
+</main>`;
+    });
+    css8 = {
       code: "#welcome.svelte-vs3jv7.svelte-vs3jv7{max-width:100%;height:80vh;display:grid;place-items:center}@media screen and (max-width: 810px){#welcome.svelte-vs3jv7.svelte-vs3jv7{margin:0% 20px}}#welcome.svelte-vs3jv7 #center-container.svelte-vs3jv7{height:auto}#welcome.svelte-vs3jv7 #welcome-head.svelte-vs3jv7{text-align:center;font-size:7.0833333333vw;font-weight:750}@media screen and (min-width: 1240px){#welcome.svelte-vs3jv7 #welcome-head.svelte-vs3jv7{font-size:min(7.0833333333vw, 102px)}}@media screen and (max-width: 810px){#welcome.svelte-vs3jv7 #welcome-head.svelte-vs3jv7{font-size:max(7.0833333333vw, 65px)}}#welcome.svelte-vs3jv7 #thanks-head.svelte-vs3jv7{opacity:0.8;text-align:center;font-size:5.2083333333vw;font-weight:725}@media screen and (min-width: 1240px){#welcome.svelte-vs3jv7 #thanks-head.svelte-vs3jv7{font-size:min(5.2083333333vw, 75px)}}@media screen and (max-width: 810px){#welcome.svelte-vs3jv7 #thanks-head.svelte-vs3jv7{font-size:max(5.2083333333vw, 36px)}}#welcome.svelte-vs3jv7 #download-head.svelte-vs3jv7{display:flex;align-items:center;text-align:center;font-size:2.5694444444vw;font-weight:700;line-height:170%}@media screen and (min-width: 1240px){#welcome.svelte-vs3jv7 #download-head.svelte-vs3jv7{font-size:min(2.5694444444vw, 37px)}}@media screen and (max-width: 810px){#welcome.svelte-vs3jv7 #download-head.svelte-vs3jv7{font-size:max(2.5694444444vw, 19px)}}#welcome.svelte-vs3jv7 #download-head p.svelte-vs3jv7{width:100%;margin:0%;text-align:center}#welcome.svelte-vs3jv7 #download-head p span.butt.svelte-vs3jv7{cursor:pointer;padding:0.5% 2%;border-radius:0.6944444444vw;border:1px solid #ffb0b0;background:transparent;color:#fffffb;transition:color 0.1s ease-in-out, background 0.2s ease-in-out}#welcome.svelte-vs3jv7 #download-head p span.trans.svelte-vs3jv7{opacity:0.6}#welcome.svelte-vs3jv7 #download-head p span.butt.svelte-vs3jv7:hover{background:#ffb0b0;transition:color 0.1s ease-in-out, background 0.2s ease-in-out;color:#11131c}#welcome.svelte-vs3jv7 .spacer.text.svelte-vs3jv7{width:100%;height:0.3472222222vw}@media screen and (min-width: 1240px){#welcome.svelte-vs3jv7 .spacer.text.svelte-vs3jv7{height:min(0.3472222222vw, 5px)}}@media screen and (max-width: 810px){#welcome.svelte-vs3jv7 .spacer.text.svelte-vs3jv7{height:max(0.3472222222vw, 5px)}}#welcome.svelte-vs3jv7 .spacer.text.two.svelte-vs3jv7{width:100%;height:1.0416666667vw}@media screen and (min-width: 1240px){#welcome.svelte-vs3jv7 .spacer.text.two.svelte-vs3jv7{height:min(1.0416666667vw, 15px)}}@media screen and (max-width: 810px){#welcome.svelte-vs3jv7 .spacer.text.two.svelte-vs3jv7{height:max(1.0416666667vw, 15px)}}#welcome.svelte-vs3jv7 .spacer.text.three.svelte-vs3jv7{width:100%;height:1.7361111111vw}@media screen and (min-width: 1240px){#welcome.svelte-vs3jv7 .spacer.text.three.svelte-vs3jv7{height:min(1.7361111111vw, 25px)}}@media screen and (max-width: 810px){#welcome.svelte-vs3jv7 .spacer.text.three.svelte-vs3jv7{height:max(1.7361111111vw, 25px)}}",
       map: null
     };
     Welcome = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let $popUpMachine, $$unsubscribe_popUpMachine;
       let $downloadMachine, $$unsubscribe_downloadMachine;
-      let getOS;
-      let downloadBuild;
+      $$unsubscribe_popUpMachine = subscribe(popUpMachine, (value) => $popUpMachine = value);
+      let getOS, downloadBuild;
       const downloadMachine = svelte_fsm_default("DOWNLOAD", {
         DOWNLOAD: { download: "DOWNLOADING" },
         DOWNLOADING: {
           _enter() {
-            getOS();
-            downloadBuild(getOS());
+            this.done.debounce(1500);
+            if (getOS() === "Mac OS")
+              popUpMachine.mac();
+            else if (getOS() === "Linux")
+              popUpMachine.linux();
           },
           done: "DONE"
         },
         DONE: {
           _enter() {
-            this.change.debounce(6e3);
+            this.change.debounce(1500);
           },
           change: "DOWNLOAD"
         }
       });
       $$unsubscribe_downloadMachine = subscribe(downloadMachine, (value) => $downloadMachine = value);
-      $$result.css.add(css10);
+      if ($$props.downloadMachine === void 0 && $$bindings.downloadMachine && downloadMachine !== void 0)
+        $$bindings.downloadMachine(downloadMachine);
+      $$result.css.add(css8);
+      $$unsubscribe_popUpMachine();
       $$unsubscribe_downloadMachine();
-      return `<div id="${"welcome"}" class="${"svelte-vs3jv7"}"><div id="${"center-container"}" class="${"svelte-vs3jv7"}"><div style="${"width: 100%; height: 30px"}"></div>
+      return `${$popUpMachine === "HIDDEN" ? `<div></div>` : `${$popUpMachine === "SHOW_MAC" ? `${validate_component(Download_modal, "DownloadModal").$$render($$result, {
+        message: "Select the appropriate installer for Mac:",
+        option1: "Feather for Intel Macs",
+        option2: "Feather for Apple Silicon",
+        func1: () => downloadBuild("Mac OS"),
+        func2: () => downloadBuild("Mac OS 64")
+      }, {}, {})}` : `${$popUpMachine === "SHOW_LINUX" ? `${validate_component(Download_modal, "DownloadModal").$$render($$result, {
+        message: "Select the appropriate installer for Linux:",
+        option1: "Feather for AMD Linux",
+        option2: "Feather for  ARM Linux",
+        func1: () => downloadBuild("Linux"),
+        func2: () => downloadBuild("Linux 64")
+      }, {}, {})}` : ``}`}`}
+
+<div id="${"welcome"}" class="${"svelte-vs3jv7"}"><div id="${"center-container"}" class="${"svelte-vs3jv7"}"><div style="${"width: 100%; height: 30px"}"></div>
 		<div id="${"welcome-head"}" class="${"svelte-vs3jv7"}">Welcome to Feather!</div>
 		<div class="${"spacer text svelte-vs3jv7"}"></div>
 		<div id="${"thanks-head"}" class="${"svelte-vs3jv7"}">Thanks for stopping by!</div>
@@ -6349,21 +6377,21 @@ var init_welcome_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/4.js
-var __exports5 = {};
-__export(__exports5, {
-  css: () => css11,
-  entry: () => entry5,
-  js: () => js5,
+// .svelte-kit/output/server/nodes/3.js
+var __exports4 = {};
+__export(__exports4, {
+  css: () => css9,
+  entry: () => entry4,
+  js: () => js4,
   module: () => welcome_svelte_exports
 });
-var entry5, js5, css11;
-var init__5 = __esm({
-  ".svelte-kit/output/server/nodes/4.js"() {
+var entry4, js4, css9;
+var init__4 = __esm({
+  ".svelte-kit/output/server/nodes/3.js"() {
     init_welcome_svelte();
-    entry5 = "pages/welcome.svelte-84226ca5.js";
-    js5 = ["pages/welcome.svelte-84226ca5.js", "chunks/vendor-08ba1c64.js"];
-    css11 = ["assets/pages/welcome.svelte-ff62992f.css", "assets/vendor-2634b1a9.css"];
+    entry4 = "pages/welcome.svelte-bdc7b33d.js";
+    js4 = ["pages/welcome.svelte-bdc7b33d.js", "chunks/vendor-4ee06943.js"];
+    css9 = ["assets/pages/welcome.svelte-1ac59247.css", "assets/vendor-2634b1a9.css"];
   }
 });
 
@@ -6372,61 +6400,62 @@ var launch_svelte_exports = {};
 __export(launch_svelte_exports, {
   default: () => Launch
 });
-var css12, Launch;
+var css10, Launch;
 var init_launch_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/launch.svelte.js"() {
     init_index_6bc633e9();
-    css12 = {
-      code: ".title-container.svelte-cvw0kl{width:100%;text-align:center}.center.svelte-cvw0kl{display:grid;place-items:center}",
+    css10 = {
+      code: ".video-container.svelte-mo8gqy iframe.svelte-mo8gqy{aspect-ratio:585/335;width:40.625vw}@media screen and (min-width: 1240px){.video-container.svelte-mo8gqy iframe.svelte-mo8gqy{width:min(40.625vw, 585px)}}@media screen and (max-width: 810px){.video-container.svelte-mo8gqy iframe.svelte-mo8gqy{width:max(40.625vw, 350px)}}.spacer.first.svelte-mo8gqy.svelte-mo8gqy{width:100%;height:6.25vw}@media screen and (min-width: 1240px){.spacer.first.svelte-mo8gqy.svelte-mo8gqy{height:min(6.25vw, 90px)}}@media screen and (max-width: 810px){.spacer.first.svelte-mo8gqy.svelte-mo8gqy{height:max(6.25vw, 90px)}}.spacer.second.svelte-mo8gqy.svelte-mo8gqy{width:100%;height:3.125vw}@media screen and (min-width: 1240px){.spacer.second.svelte-mo8gqy.svelte-mo8gqy{height:min(3.125vw, 45px)}}@media screen and (max-width: 810px){.spacer.second.svelte-mo8gqy.svelte-mo8gqy{height:max(3.125vw, 45px)}}.spacer.first.two.svelte-mo8gqy.svelte-mo8gqy{height:0.6944444444vw}@media screen and (min-width: 1240px){.spacer.first.two.svelte-mo8gqy.svelte-mo8gqy{height:min(0.6944444444vw, 10px)}}@media screen and (max-width: 810px){.spacer.first.two.svelte-mo8gqy.svelte-mo8gqy{height:max(0.6944444444vw, 10px)}}.spacer.second.svelte-mo8gqy.svelte-mo8gqy{width:100%;height:3.125vw}@media screen and (min-width: 1240px){.spacer.second.svelte-mo8gqy.svelte-mo8gqy{height:min(3.125vw, 45px)}}@media screen and (max-width: 810px){.spacer.second.svelte-mo8gqy.svelte-mo8gqy{height:max(3.125vw, 45px)}}.spacer.three.svelte-mo8gqy.svelte-mo8gqy{width:100%;height:0.6944444444vw}@media screen and (min-width: 1240px){.spacer.three.svelte-mo8gqy.svelte-mo8gqy{height:min(0.6944444444vw, 10px)}}@media screen and (max-width: 810px){.spacer.three.svelte-mo8gqy.svelte-mo8gqy{height:max(0.6944444444vw, 10px)}}.title-container.svelte-mo8gqy.svelte-mo8gqy,.hundred-width.svelte-mo8gqy.svelte-mo8gqy{width:100%;text-align:center}.center.svelte-mo8gqy.svelte-mo8gqy{display:grid;place-items:center}.title-container.svelte-mo8gqy.svelte-mo8gqy,.date-time.svelte-mo8gqy.svelte-mo8gqy{font-size:1.8055555556vw;font-weight:250}@media screen and (min-width: 1240px){.title-container.svelte-mo8gqy.svelte-mo8gqy,.date-time.svelte-mo8gqy.svelte-mo8gqy{font-size:min(1.8055555556vw, 26px)}}@media screen and (max-width: 810px){.title-container.svelte-mo8gqy.svelte-mo8gqy,.date-time.svelte-mo8gqy.svelte-mo8gqy{font-size:max(1.8055555556vw, 26px)}}.constrain.svelte-mo8gqy.svelte-mo8gqy{max-width:38.1944444444vw;font-size:1.3888888889vw}@media screen and (min-width: 1240px){.constrain.svelte-mo8gqy.svelte-mo8gqy{max-width:min(38.1944444444vw, 550px);font-size:min(1.3888888889vw, 20px)}}@media screen and (max-width: 810px){.constrain.svelte-mo8gqy.svelte-mo8gqy{max-width:max(27.7777777778vw, 350px);font-size:max(1.1111111111vw, 16px)}}.title.svelte-mo8gqy.svelte-mo8gqy{font-size:5vw;font-weight:700}@media screen and (min-width: 1240px){.title.svelte-mo8gqy.svelte-mo8gqy{font-size:min(5vw, 72px)}}@media screen and (max-width: 810px){.title.svelte-mo8gqy.svelte-mo8gqy{font-size:max(5vw, 50px)}}.opacity-low.svelte-mo8gqy.svelte-mo8gqy{opacity:0.65}",
       map: null
     };
     Launch = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      $$result.css.add(css12);
-      return `${$$result.head += `<script data-svelte="svelte-1ymg3ud">if (!window.mootrack) {
-      !(function (t, n, e, o, a) {
-        function d(t) {
-          var n = ~~(Date.now() / 3e5),
-            o = document.createElement(e);
-          (o.async = !0), (o.src = t + '?ts=' + n);
-          var a = document.getElementsByTagName(e)[0];
-          a.parentNode.insertBefore(o, a);
-        }
-        (t.MooTrackerObject = a),
-          (t[a] =
-            t[a] ||
-            function () {
-              return t[a].q ? void t[a].q.push(arguments) : void (t[a].q = [arguments]);
-            }),
-          window.attachEvent
-            ? window.attachEvent('onload', d.bind(this, o))
-            : window.addEventListener('load', d.bind(this, o), !1);
-      })(window, document, 'script', '/scripts/moosend-tracking.min.js', 'mootrack');
-    }
-    mootrack('loadForm', '7b8e8353ac044d15ba41558b6fa9d886');
-  <\/script>`, ""}
-
-<div class="${"title-container center center-text svelte-cvw0kl"}"><div>Redirecting...</div>
-  
+      $$result.css.add(css10);
+      return `<div class="${"title-container center center-text svelte-mo8gqy"}">
+	<div class="${"spacer first svelte-mo8gqy"}"></div>
+	<div class="${"hundred-width subheader svelte-mo8gqy"}">The Future of Compute with Feather</div>
+	<div class="${"hundred-width title svelte-mo8gqy"}">We missed you.</div>
+	<div class="${"spacer first two svelte-mo8gqy"}"></div>
+	<div class="${"hundred-width date-time opacity-low constrain svelte-mo8gqy"}">We shared some incredible news, but don\u2019t fret as we\u2019ll have more in store in the future.
+		Meanwhile, check out the VODs of the event below or get into contact with the team through
+		social media.
+	</div>
+	<div class="${"spacer second svelte-mo8gqy"}"></div>
+	<div class="${"video"}"><div class="${"text"}">Event Keynote</div>
+		<div class="${"spacer three svelte-mo8gqy"}"></div>
+		<div class="${"video-container svelte-mo8gqy"}"><iframe width="${"1425"}" height="${"509"}" src="${"https://www.youtube.com/embed/zHDPwXInmr0"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}" allowfullscreen class="${"svelte-mo8gqy"}"></iframe></div></div>
+	<div class="${"spacer second svelte-mo8gqy"}"></div>
+	<div class="${"video"}"><div class="${"text"}">Post Event Q&amp;A</div>
+		<div class="${"spacer three svelte-mo8gqy"}"></div>
+		<div class="${"video-container svelte-mo8gqy"}"><iframe width="${"1425"}" height="${"509"}" src="${"https://www.youtube.com/embed/2TwP0bkqQ4M"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}" allowfullscreen class="${"svelte-mo8gqy"}"></iframe></div></div>
+	<div class="${"spacer second svelte-mo8gqy"}"></div>
+	<div class="${"video"}"><div class="${"text"}">Promo Video</div>
+		<div class="${"spacer three svelte-mo8gqy"}"></div>
+		<div class="${"video-container svelte-mo8gqy"}"><iframe width="${"1425"}" height="${"509"}" src="${"https://www.youtube.com/embed/vzMdy4xTRO4"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}" allowfullscreen class="${"svelte-mo8gqy"}"></iframe></div></div>
+	<div class="${"spacer first two svelte-mo8gqy"}"></div>
+	<div class="${"spacer second svelte-mo8gqy"}"></div>
+	<div class="${"spacer second svelte-mo8gqy"}"></div>
+	<div class="${"spacer second svelte-mo8gqy"}"></div>
+	<div class="${"spacer second svelte-mo8gqy"}"></div>
 </div>`;
     });
   }
 });
 
-// .svelte-kit/output/server/nodes/5.js
-var __exports6 = {};
-__export(__exports6, {
-  css: () => css13,
-  entry: () => entry6,
-  js: () => js6,
+// .svelte-kit/output/server/nodes/4.js
+var __exports5 = {};
+__export(__exports5, {
+  css: () => css11,
+  entry: () => entry5,
+  js: () => js5,
   module: () => launch_svelte_exports
 });
-var entry6, js6, css13;
-var init__6 = __esm({
-  ".svelte-kit/output/server/nodes/5.js"() {
+var entry5, js5, css11;
+var init__5 = __esm({
+  ".svelte-kit/output/server/nodes/4.js"() {
     init_launch_svelte();
-    entry6 = "pages/launch.svelte-77183552.js";
-    js6 = ["pages/launch.svelte-77183552.js", "chunks/vendor-08ba1c64.js"];
-    css13 = ["assets/pages/launch.svelte-f88a2a2c.css", "assets/vendor-2634b1a9.css"];
+    entry5 = "pages/launch.svelte-752c0669.js";
+    js5 = ["pages/launch.svelte-752c0669.js", "chunks/vendor-4ee06943.js"];
+    css11 = ["assets/pages/launch.svelte-bd636fcf.css", "assets/vendor-2634b1a9.css"];
   }
 });
 
@@ -6435,11 +6464,11 @@ var about_svelte_exports = {};
 __export(about_svelte_exports, {
   default: () => About
 });
-var css14, About;
+var css12, About;
 var init_about_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/about.svelte.js"() {
     init_index_6bc633e9();
-    css14 = {
+    css12 = {
       code: ".container.svelte-3nrvlq.svelte-3nrvlq{width:45.8333333333vw;margin:0% auto}@media screen and (min-width: 1240px){.container.svelte-3nrvlq.svelte-3nrvlq{width:min(45.8333333333vw, 660px)}}@media screen and (max-width: 500px){.container.svelte-3nrvlq.svelte-3nrvlq{width:max(45.8333333333vw, 90%)}}.container.svelte-3nrvlq .avatar-container.svelte-3nrvlq{display:grid;grid-template-columns:1fr 1fr;grid-gap:4.1666666667vw}@media screen and (min-width: 1240px){.container.svelte-3nrvlq .avatar-container.svelte-3nrvlq{grid-gap:min(4.1666666667vw, 60px)}}@media screen and (max-width: 810px){.container.svelte-3nrvlq .avatar-container.svelte-3nrvlq{grid-template-columns:1fr;grid-gap:max(4.1666666667vw, 60px)}}.container.svelte-3nrvlq .avatar-cards.svelte-3nrvlq{width:20.8333333333vw;aspect-ratio:10/13;border-radius:0.6944444444vw;position:relative}@media screen and (min-width: 1240px){.container.svelte-3nrvlq .avatar-cards.svelte-3nrvlq{width:min(20.8333333333vw, 300px);border-radius:min(0.6944444444vw, 10px)}}@media screen and (max-width: 810px){.container.svelte-3nrvlq .avatar-cards.svelte-3nrvlq{width:max(20.8333333333vw, 100%);aspect-ratio:10/10;overflow:hidden;border-radius:max(0.6944444444vw, 10px)}}.container.svelte-3nrvlq .avatar-cards .filter.svelte-3nrvlq{z-index:2;width:100%;height:100%;position:absolute;top:0%;left:0%;background-image:linear-gradient(0deg, #11131c 0%, rgba(240, 173, 183, 0) 56.28%, rgba(17, 19, 28, 0) 56.28%)}@media screen and (max-width: 810px){.container.svelte-3nrvlq .avatar-cards .filter.svelte-3nrvlq{background-image:linear-gradient(0deg, #11131ca5 0%, rgba(240, 173, 183, 0) 25%, rgba(17, 19, 28, 0) 56.28%)}}.container.svelte-3nrvlq .avatar-cards img.svelte-3nrvlq{z-index:1;position:absolute;top:0%;left:0%;width:20.8333333333vw;aspect-ratio:10/13}@media screen and (min-width: 1240px){.container.svelte-3nrvlq .avatar-cards img.svelte-3nrvlq{width:min(20.8333333333vw, 300px)}}@media screen and (max-width: 810px){.container.svelte-3nrvlq .avatar-cards img.svelte-3nrvlq{width:max(20.8333333333vw, 100%)}}.container.svelte-3nrvlq .avatar-cards .name.svelte-3nrvlq{z-index:3;position:absolute;bottom:10%;left:10%;max-width:12.5vw;font-size:2.5694444444vw;font-weight:700;line-height:105%}@media screen and (min-width: 1240px){.container.svelte-3nrvlq .avatar-cards .name.svelte-3nrvlq{font-size:min(2.5694444444vw, 37px);max-width:min(12.5vw, 180px)}}@media screen and (max-width: 810px){.container.svelte-3nrvlq .avatar-cards .name.svelte-3nrvlq{max-width:max(12.5vw, 180px);font-size:max(2.5694444444vw, 37px)}}.container.svelte-3nrvlq .avatar-cards .title.svelte-3nrvlq{z-index:3;position:absolute;bottom:10%;right:10%;font-size:16px;font-style:normal;font-weight:400;letter-spacing:0em;text-align:right}.container.svelte-3nrvlq .goodbye-message.svelte-3nrvlq{height:120vh;display:grid;place-items:center}.container.svelte-3nrvlq .goodbye-message h1.svelte-3nrvlq{text-align:center;line-height:101%}@media screen and (min-width: 1240px){.container.svelte-3nrvlq .goodbye-message.svelte-3nrvlq{height:min(150vh, 875px)}}@media screen and (max-width: 810px){.container.svelte-3nrvlq .goodbye-message.svelte-3nrvlq{height:max(100vh, 660px)}}h1.svelte-3nrvlq.svelte-3nrvlq{margin-top:2.7777777778vw;margin-bottom:1.5%;font-size:6.1805555556vw}@media screen and (min-width: 1240px){h1.svelte-3nrvlq.svelte-3nrvlq{font-size:min(6.1805555556vw, 89px);margin-top:min(2.7777777778vw, 40px)}}@media screen and (max-width: 810px){h1.svelte-3nrvlq.svelte-3nrvlq{text-align:left;font-size:max(6.1805555556vw, 59px);margin-top:max(2.7777777778vw, 40px)}}h2.svelte-3nrvlq.svelte-3nrvlq{margin:2% 0% 1% 0%;font-size:2.5694444444vw}@media screen and (min-width: 1240px){h2.svelte-3nrvlq.svelte-3nrvlq{font-size:min(2.5694444444vw, 37px)}}@media screen and (max-width: 810px){h2.svelte-3nrvlq.svelte-3nrvlq{font-size:max(2.5694444444vw, 37px)}}p.svelte-3nrvlq.svelte-3nrvlq{opacity:0.85;font-size:1.3888888889vw;font-style:normal;font-weight:400;line-height:1.75;letter-spacing:0em;text-align:left;margin-top:0.5%;margin-bottom:7%}@media screen and (min-width: 1240px){p.svelte-3nrvlq.svelte-3nrvlq{font-size:min(1.3888888889vw, 20px)}}@media screen and (max-width: 810px){p.svelte-3nrvlq.svelte-3nrvlq{font-size:max(1.3888888889vw, 20px)}}.spacer.vert.svelte-3nrvlq.svelte-3nrvlq{width:100%}.vert.one.svelte-3nrvlq.svelte-3nrvlq{height:1.7361111111vw}@media screen and (min-width: 1240px){.vert.one.svelte-3nrvlq.svelte-3nrvlq{height:min(1.7361111111vw, 25px)}}@media screen and (max-width: 810px){.vert.one.svelte-3nrvlq.svelte-3nrvlq{height:max(1.7361111111vw, 25px)}}.vert.two.svelte-3nrvlq.svelte-3nrvlq{height:0.3472222222vw}@media screen and (min-width: 1240px){.vert.two.svelte-3nrvlq.svelte-3nrvlq{height:min(0.3472222222vw, 5px)}}@media screen and (max-width: 810px){.vert.two.svelte-3nrvlq.svelte-3nrvlq{height:0px}}",
       map: null
     };
@@ -6466,7 +6495,7 @@ var init_about_svelte = __esm({
           picture: "/avatars/kyle.webp"
         }
       ];
-      $$result.css.add(css14);
+      $$result.css.add(css12);
       return `<div id="${"about-container"}"><div class="${"container svelte-3nrvlq"}"><div class="${"spacer vert one svelte-3nrvlq"}"></div>
 		<div class="${"spacer vert one svelte-3nrvlq"}"></div>
 		
@@ -6509,21 +6538,21 @@ var init_about_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/6.js
-var __exports7 = {};
-__export(__exports7, {
-  css: () => css15,
-  entry: () => entry7,
-  js: () => js7,
+// .svelte-kit/output/server/nodes/5.js
+var __exports6 = {};
+__export(__exports6, {
+  css: () => css13,
+  entry: () => entry6,
+  js: () => js6,
   module: () => about_svelte_exports
 });
-var entry7, js7, css15;
-var init__7 = __esm({
-  ".svelte-kit/output/server/nodes/6.js"() {
+var entry6, js6, css13;
+var init__6 = __esm({
+  ".svelte-kit/output/server/nodes/5.js"() {
     init_about_svelte();
-    entry7 = "pages/about.svelte-aedae9a5.js";
-    js7 = ["pages/about.svelte-aedae9a5.js", "chunks/vendor-08ba1c64.js"];
-    css15 = ["assets/pages/about.svelte-7bcdac62.css", "assets/vendor-2634b1a9.css"];
+    entry6 = "pages/about.svelte-b60fe426.js";
+    js6 = ["pages/about.svelte-b60fe426.js", "chunks/vendor-4ee06943.js"];
+    css13 = ["assets/pages/about.svelte-7bcdac62.css", "assets/vendor-2634b1a9.css"];
   }
 });
 
@@ -20567,11 +20596,11 @@ RUNTIME_FLAGS <span class="token operator">=</span> --runtime stub
 });
 
 // .svelte-kit/output/server/chunks/thumbnail-57767130.js
-var css16, Thumbnail;
+var css14, Thumbnail;
 var init_thumbnail_57767130 = __esm({
   ".svelte-kit/output/server/chunks/thumbnail-57767130.js"() {
     init_index_6bc633e9();
-    css16 = {
+    css14 = {
       code: '.image.svelte-11z53b.svelte-11z53b{overflow:hidden;border-radius:10px 10px 0 0}.title.svelte-11z53b.svelte-11z53b{line-height:1.25;font-size:1.8055555556vw}@media screen and (max-width: 810px){.title.svelte-11z53b.svelte-11z53b{font-size:max(1.8055555556vw, 26px)}}@media screen and (min-width: 1240px){.title.svelte-11z53b.svelte-11z53b{font-size:min(1.8055555556vw, 26px)}}.tag.svelte-11z53b.svelte-11z53b{margin-right:10px;text-decoration:none}.tags.svelte-11z53b.svelte-11z53b{display:flex;flex-direction:row}#arrow-icon.svelte-11z53b.svelte-11z53b{content:url("/arrow.svg")}.content-footer.svelte-11z53b.svelte-11z53b{display:flex;justify-content:space-between;align-items:center}.content.svelte-11z53b.svelte-11z53b{padding-left:20px;padding-right:20px}.summary.svelte-11z53b.svelte-11z53b{width:100%;min-height:100px;line-height:1.6;font-size:1.1111111111vw;opacity:0.75}@media screen and (max-width: 810px){.summary.svelte-11z53b.svelte-11z53b{font-size:max(1.1111111111vw, 16px)}}@media screen and (min-width: 1240px){.summary.svelte-11z53b.svelte-11z53b{font-size:min(1.1111111111vw, 16px)}}.thumbnail.svelte-11z53b.svelte-11z53b{aspect-ratio:38/47;min-width:24.3055555556vw;height:485px;border-radius:0.6944444444vw;background:#1a1e2c}@media screen and (max-width: 810px){.thumbnail.svelte-11z53b.svelte-11z53b{max-width:100%;height:auto;width:100%}}@media screen and (min-width: 1240px){.thumbnail.svelte-11z53b.svelte-11z53b{min-width:min(24.3055555556vw, 350px);width:min(26.3888888889vw, 380px);border-radius:min(0.6944444444vw, 10px)}}a.svelte-11z53b.svelte-11z53b{display:block}img.svelte-11z53b.svelte-11z53b{border-radius:10px 10px 0 0;width:100%;object-fit:contain;transition:transform 0.4s;display:block}.thumbnail.svelte-11z53b:hover img.svelte-11z53b{transform:scale(1.5)}h2.svelte-11z53b.svelte-11z53b{word-wrap:break-word;font-size:1.8055555556vw;min-height:65px}@media screen and (max-width: 810px){h2.svelte-11z53b.svelte-11z53b{font-size:max(1.8055555556vw, 26px)}}@media screen and (min-width: 1240px){h2.svelte-11z53b.svelte-11z53b{font-size:min(1.8055555556vw, 26px)}}',
       map: null
     };
@@ -20591,7 +20620,7 @@ var init_thumbnail_57767130 = __esm({
         $$bindings.tags(tags2);
       if ($$props.thumbnail === void 0 && $$bindings.thumbnail && thumbnail2 !== void 0)
         $$bindings.thumbnail(thumbnail2);
-      $$result.css.add(css16);
+      $$result.css.add(css14);
       return `<a sveltekit:prefetch${add_attribute("href", `/${link}`, 0)} class="${"svelte-11z53b"}"><div class="${"thumbnail svelte-11z53b"}"><div class="${"image svelte-11z53b"}"><img${add_attribute("src", thumbnail2, 0)} alt="${"Thumbnail"}" class="${"svelte-11z53b"}"></div>
 		<div class="${"content svelte-11z53b"}"><h2 class="${"title truncate header svelte-11z53b"}">${escape(title2)}</h2>
 			<div class="${"summary truncate svelte-11z53b"}">${escape(summary2)}</div>
@@ -20621,14 +20650,14 @@ function load2({ url, params }) {
     }
   };
 }
-var css17, allPosts, posts, U5Btagsu5D;
+var css15, allPosts, posts, U5Btagsu5D;
 var init_tags_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/tags/_tags_.svelte.js"() {
     init_vision_4b358c80();
     init_index_6bc633e9();
     init_thumbnail_57767130();
     init_katex();
-    css17 = {
+    css15 = {
       code: ".tags.svelte-zjfayw{padding:35px;font-size:40px;font-weight:300}.container.svelte-zjfayw{display:flex;flex-direction:column;align-items:center;justify-content:center}.grid.svelte-zjfayw{display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:50px}",
       map: null
     };
@@ -20647,7 +20676,7 @@ var init_tags_svelte = __esm({
         $$bindings.filteredPosts(filteredPosts2);
       if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0)
         $$bindings.tag(tag);
-      $$result.css.add(css17);
+      $$result.css.add(css15);
       return `<div class="${"container svelte-zjfayw"}"><div class="${"tags svelte-zjfayw"}">Posts tagged with #${escape(tag)}</div>
     <div class="${"grid svelte-zjfayw"}">${each(filteredPosts2, ({ post, slug: slug2 }) => `${validate_component(Thumbnail, "Thumbnail").$$render($$result, {
         title: post.metadata.title,
@@ -20662,21 +20691,21 @@ var init_tags_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/8.js
-var __exports8 = {};
-__export(__exports8, {
-  css: () => css18,
-  entry: () => entry8,
-  js: () => js8,
+// .svelte-kit/output/server/nodes/7.js
+var __exports7 = {};
+__export(__exports7, {
+  css: () => css16,
+  entry: () => entry7,
+  js: () => js7,
   module: () => tags_svelte_exports
 });
-var entry8, js8, css18;
-var init__8 = __esm({
-  ".svelte-kit/output/server/nodes/8.js"() {
+var entry7, js7, css16;
+var init__7 = __esm({
+  ".svelte-kit/output/server/nodes/7.js"() {
     init_tags_svelte();
-    entry8 = "pages/tags/_tags_.svelte-d752ef72.js";
-    js8 = ["pages/tags/_tags_.svelte-d752ef72.js", "chunks/4-vision-af713f9c.js", "chunks/vendor-08ba1c64.js", "chunks/thumbnail-6ffb4fe4.js"];
-    css18 = ["assets/pages/tags/_tags_.svelte-fe12782a.css", "assets/vendor-2634b1a9.css", "assets/thumbnail-b6ad015b.css"];
+    entry7 = "pages/tags/_tags_.svelte-cebd745b.js";
+    js7 = ["pages/tags/_tags_.svelte-cebd745b.js", "chunks/4-vision-c90bcf01.js", "chunks/vendor-4ee06943.js", "chunks/thumbnail-b51a3e30.js"];
+    css16 = ["assets/pages/tags/_tags_.svelte-fe12782a.css", "assets/vendor-2634b1a9.css", "assets/thumbnail-b6ad015b.css"];
   }
 });
 
@@ -29991,7 +30020,7 @@ var require_css = __commonJS({
       "writing-mode",
       "z-index"
     ].reverse();
-    function css22(hljs) {
+    function css20(hljs) {
       const regex = hljs.regex;
       const modes = MODES(hljs);
       const VENDOR_PREFIX = {
@@ -30111,7 +30140,7 @@ var require_css = __commonJS({
         ]
       };
     }
-    module2.exports = css22;
+    module2.exports = css20;
   }
 });
 
@@ -67752,13 +67781,13 @@ async function load3({ url, params, fetch: fetch3 }) {
     error: new Error(`Could not load ${url}`)
   };
 }
-var css$13, Clipboard, css19, _layout2;
+var css$14, Clipboard, css17, _layout2;
 var init_layout_svelte2 = __esm({
   ".svelte-kit/output/server/entries/pages/_slug_/__layout.svelte.js"() {
     init_index_6bc633e9();
     init_stores_a0c7bc51();
     init_es();
-    css$13 = {
+    css$14 = {
       code: "textarea.svelte-w8w2mp{left:0;bottom:0;margin:0;padding:0;opacity:0;width:1px;height:1px;border:none;display:block;position:absolute}",
       map: null
     };
@@ -67775,11 +67804,11 @@ var init_layout_svelte2 = __esm({
       }
       if ($$props.text === void 0 && $$bindings.text && text2 !== void 0)
         $$bindings.text(text2);
-      $$result.css.add(css$13);
+      $$result.css.add(css$14);
       return `${slots.default ? slots.default({ copy }) : ``}
 <textarea class="${"svelte-w8w2mp"}"${add_attribute("this", textarea, 0)}>${escape(text2)}</textarea>`;
     });
-    css19 = {
+    css17 = {
       code: ".container.svelte-uuqhyn{position:relative;width:54.1666666667vw;margin:0px auto 0px auto}@media screen and (max-width: 810px){.container.svelte-uuqhyn{width:max(54.1666666667vw, 90%)}}@media screen and (min-width: 1240px){.container.svelte-uuqhyn{width:min(54.1666666667vw, 780px)}}.thumbnail.svelte-uuqhyn{margin:0 60px}@media screen and (max-width: 810px){.thumbnail.svelte-uuqhyn{margin:0}}@media screen and (max-width: 1112px){.thumbnail.svelte-uuqhyn{margin:0}}.social-container.svelte-uuqhyn{margin:2.0833333333vw 0px 0px 0px;min-width:60px;min-height:100%}@media screen and (max-width: 1112px){.social-container.svelte-uuqhyn{display:none}}@media screen and (max-width: 810px){.social-container.svelte-uuqhyn{left:max(21.5277777778vw, 310px);top:max(18.75vw, 270px)}}@media screen and (min-width: 1240px){.social-container.svelte-uuqhyn{left:max(21.5277777778vw, 310px);top:max(18.75vw, 270px)}}.sticky-social.svelte-uuqhyn{display:flex;flex-direction:column;justify-content:space-between;height:160px;position:sticky;top:10.4166666667vw}.social.image.svelte-uuqhyn{aspect-ratio:1/1;width:25px;height:25px}.center-spacer.svelte-uuqhyn{min-width:60px;flex-grow:1}@media screen and (max-width: 810px){.center-spacer.svelte-uuqhyn{min-width:0}}@media screen and (max-width: 1112px){.center-spacer.svelte-uuqhyn{min-width:0}}.title.svelte-uuqhyn{font-size:3.3333333333vw;font-weight:bold}@media screen and (max-width: 810px){.title.svelte-uuqhyn{font-size:max(3.3333333333vw, 37px)}}@media screen and (min-width: 1240px){.title.svelte-uuqhyn{font-size:min(3.3333333333vw, 48px)}}.meta.svelte-uuqhyn{opacity:0.75}.tag.svelte-uuqhyn{margin-right:5px;text-decoration:none;color:#fffffb}.tag.svelte-uuqhyn:hover{color:#fb7680}.heading-box.svelte-uuqhyn{display:flex;vertical-align:bottom;width:100%}.heading.svelte-uuqhyn{display:flex;flex-direction:column}@media screen and (max-width: 810px){.heading.svelte-uuqhyn{width:80%;padding-left:20px}}.content.svelte-uuqhyn{display:flex;flex-direction:row}@media screen and (max-width: 810px){.content.svelte-uuqhyn{margin:0%}}.slot.svelte-uuqhyn{position:relative;z-index:1;height:100%;overflow:hidden;color:#fffffb}.spacer.hundred.svelte-uuqhyn{height:5.9027777778vw}@media screen and (max-width: 810px){.spacer.hundred.svelte-uuqhyn{height:max(5.9027777778vw, 85px)}}@media screen and (min-width: 1240px){.spacer.hundred.svelte-uuqhyn{height:min(5.9027777778vw, 85px)}}.spacer.ten.svelte-uuqhyn{height:0.6944444444vw}@media screen and (max-width: 810px){.spacer.ten.svelte-uuqhyn{height:max(0.6944444444vw, 10px)}}@media screen and (min-width: 1240px){.spacer.ten.svelte-uuqhyn{height:min(0.6944444444vw, 10px)}}.spacer.twenty.svelte-uuqhyn{height:0.3472222222vw}@media screen and (max-width: 810px){.spacer.twenty.svelte-uuqhyn{height:max(0.3472222222vw, 5px)}}@media screen and (min-width: 1240px){.spacer.twenty.svelte-uuqhyn{height:min(0.3472222222vw, 5px)}}",
       map: null
     };
@@ -67812,7 +67841,7 @@ var init_layout_svelte2 = __esm({
       ];
       if ($$props.post === void 0 && $$bindings.post && post !== void 0)
         $$bindings.post(post);
-      $$result.css.add(css19);
+      $$result.css.add(css17);
       $$unsubscribe_page();
       return `${$$result.head += `${$$result.title = `<title>${escape(post.title)}</title>`, ""}<meta name="${"description"}"${add_attribute("content", post.summary, 0)} data-svelte="svelte-1pnt10t">`, ""}
 
@@ -67837,21 +67866,21 @@ var init_layout_svelte2 = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/9.js
-var __exports9 = {};
-__export(__exports9, {
-  css: () => css20,
-  entry: () => entry9,
-  js: () => js9,
+// .svelte-kit/output/server/nodes/8.js
+var __exports8 = {};
+__export(__exports8, {
+  css: () => css18,
+  entry: () => entry8,
+  js: () => js8,
   module: () => layout_svelte_exports2
 });
-var entry9, js9, css20;
-var init__9 = __esm({
-  ".svelte-kit/output/server/nodes/9.js"() {
+var entry8, js8, css18;
+var init__8 = __esm({
+  ".svelte-kit/output/server/nodes/8.js"() {
     init_layout_svelte2();
-    entry9 = "pages/_slug_/__layout.svelte-8a23f4cf.js";
-    js9 = ["pages/_slug_/__layout.svelte-8a23f4cf.js", "chunks/vendor-08ba1c64.js", "chunks/stores-c248ff7b.js"];
-    css20 = ["assets/pages/_slug_/__layout.svelte-7693d0c0.css", "assets/vendor-2634b1a9.css", "assets/stores-4ca8f149.css"];
+    entry8 = "pages/_slug_/__layout.svelte-d9637f0a.js";
+    js8 = ["pages/_slug_/__layout.svelte-d9637f0a.js", "chunks/vendor-4ee06943.js", "chunks/stores-9ef9e617.js"];
+    css18 = ["assets/pages/_slug_/__layout.svelte-7693d0c0.css", "assets/vendor-2634b1a9.css", "assets/stores-4ca8f149.css"];
   }
 });
 
@@ -67896,21 +67925,21 @@ var init_index_svelte2 = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/10.js
-var __exports10 = {};
-__export(__exports10, {
-  css: () => css21,
-  entry: () => entry10,
-  js: () => js10,
+// .svelte-kit/output/server/nodes/9.js
+var __exports9 = {};
+__export(__exports9, {
+  css: () => css19,
+  entry: () => entry9,
+  js: () => js9,
   module: () => index_svelte_exports2
 });
-var entry10, js10, css21;
-var init__10 = __esm({
-  ".svelte-kit/output/server/nodes/10.js"() {
+var entry9, js9, css19;
+var init__9 = __esm({
+  ".svelte-kit/output/server/nodes/9.js"() {
     init_index_svelte2();
-    entry10 = "pages/_slug_/index.svelte-f3a9e575.js";
-    js10 = ["pages/_slug_/index.svelte-f3a9e575.js", "chunks/4-vision-af713f9c.js", "chunks/vendor-08ba1c64.js"];
-    css21 = ["assets/vendor-2634b1a9.css"];
+    entry9 = "pages/_slug_/index.svelte-78c72997.js";
+    js9 = ["pages/_slug_/index.svelte-78c72997.js", "chunks/4-vision-c90bcf01.js", "chunks/vendor-4ee06943.js"];
+    css19 = ["assets/vendor-2634b1a9.css"];
   }
 });
 
@@ -68338,12 +68367,12 @@ function devalue(value) {
   }
   walk(value);
   var names = new Map();
-  Array.from(counts).filter(function(entry11) {
-    return entry11[1] > 1;
+  Array.from(counts).filter(function(entry10) {
+    return entry10[1] > 1;
   }).sort(function(a, b) {
     return b[1] - a[1];
-  }).forEach(function(entry11, i2) {
-    names.set(entry11[0], getName(i2));
+  }).forEach(function(entry10, i2) {
+    names.set(entry10[0], getName(i2));
   });
   function stringify(thing) {
     if (names.has(thing)) {
@@ -68620,7 +68649,7 @@ async function render_response({
   params
 }) {
   const css22 = new Set(options.manifest._.entry.css);
-  const js11 = new Set(options.manifest._.entry.js);
+  const js10 = new Set(options.manifest._.entry.js);
   const styles2 = new Set();
   const serialized_data = [];
   let rendered;
@@ -68634,7 +68663,7 @@ async function render_response({
       if (node.css)
         node.css.forEach((url2) => css22.add(url2));
       if (node.js)
-        node.js.forEach((url2) => js11.add(url2));
+        node.js.forEach((url2) => js10.add(url2));
       if (node.styles)
         node.styles.forEach((content) => styles2.add(content));
       if (fetched && page_config.hydrate)
@@ -68682,10 +68711,10 @@ async function render_response({
   }
   const include_js = page_config.router || page_config.hydrate;
   if (!include_js)
-    js11.clear();
+    js10.clear();
   const links = options.amp ? styles2.size > 0 || rendered.css.code.length > 0 ? `<style amp-custom>${Array.from(styles2).concat(rendered.css.code).join("\n")}</style>` : "" : [
     ...Array.from(css22).map((dep) => `<link rel="stylesheet" href="${options.prefix}${dep}">`),
-    ...Array.from(js11).map((dep) => `<link rel="modulepreload" href="${options.prefix}${dep}">`)
+    ...Array.from(js10).map((dep) => `<link rel="modulepreload" href="${options.prefix}${dep}">`)
   ].join("\n		");
   let init = "";
   if (options.amp) {
@@ -69616,8 +69645,6 @@ var template = ({ head, body }) => `<!DOCTYPE html>
 	<meta name="theme-color" content="#ffffff" />
 	<!-- <script defer data-domain="feather.systems" src="https://plausible.io/js/plausible.js"><\/script> -->
 	<!-- <script defer data-domain="feather.systems" src="https://plausible.io/js/.js"><\/script> -->
-	<script src="/stats/js/script.js" data-api="/stats/api/event" data-domain="feather.systems"><\/script>
-
 	<style>
 		@font-face {
 			font-family: 'Inter var';
@@ -69684,7 +69711,7 @@ var manifest = {
   assets: new Set(["Feather-site-thumbnail.png", "Inter.var.woff2", "about-illus.webp", "arrow-dark.svg", "arrow-docs.svg", "arrow-read.svg", "arrow.svg", "avatars/abhi.webp", "avatars/jo.webp", "avatars/kyle.webp", "avatars/ojas.webp", "blog-1-mandel-glitch.png", "blog-1-mandel-hypnot.png", "blog-1-mandel-renderer.png", "blog-1-mandel-thumbnail.webp", "blog-2-tri-final.jpg", "blog-2-tri-thumbnail.webp", "blog-3-review-thumbnail.webp", "blog-4-vision-access-your-home-office-from-any-device.webp", "blog-4-vision-cdc-6600-diagram.webp", "blog-4-vision-cdc-6600-picture.webp", "blog-4-vision-let-processing-happen-where-its-best.webp", "blog-4-vision-load-balancing-entire-neighborhoods.webp", "blog-4-vision-move-heat-and-noise-from-where-you-work-and-play.webp", "blog-4-vision-processing-power-as-easily-accessible-as-public-wifi.webp", "blog-4-vision-vision-Sharing-Thumbnail.webp", "blog-4-vision-work-from-home-actually-at-home.webp", "blog-thumbnail-temp.svg", "crossout.svg", "discord.svg", "favicon.png", "footer-logo.svg", "footer-mail.svg", "ft-illus-four.svg", "ft-illus-one.svg", "ft-illus-three.svg", "ft-illus-two.svg", "gallery/Gallery1.webp", "gallery/Gallery2.webp", "gallery/Gallery3.webp", "gallery/Gallery4.webp", "gallery/MobileMockup0.webp", "gallery/MobileMockup1.webp", "gallery/MobileMockup2.webp", "gallery/MobileMockup3.webp", "icons/android-chrome-192x192.png", "icons/android-chrome-256x256.png", "icons/apple-touch-icon.png", "icons/browserconfig.xml", "icons/favicon-16x16.png", "icons/favicon-32x32.png", "icons/favicon.ico", "icons/mstile-150x150.png", "icons/safari-pinned-tab.svg", "icons/site.webmanifest", "invite/circle-f.webp", "invite/invite-graphic.webp", "logo.svg", "reddit.svg", "robots.txt", "scripts/moosend-tracking.min.js", "share-fb.svg", "share-link.svg", "share-linkedin.svg", "share-twitter.svg", "signup.webp", "small-signup.webp", "tut-illus-one.svg", "tut-illus-three.svg", "tut-illus-two.svg", "twitter.svg"]),
   _: {
     mime: { ".png": "image/png", ".woff2": "font/woff2", ".webp": "image/webp", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".xml": "application/xml", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain", ".js": "application/javascript" },
-    entry: { "file": "start-b4a30c62.js", "js": ["start-b4a30c62.js", "chunks/vendor-08ba1c64.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
+    entry: { "file": "start-30f53850.js", "js": ["start-30f53850.js", "chunks/vendor-4ee06943.js"], "css": ["assets/start-61d1577b.css", "assets/vendor-2634b1a9.css"] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
@@ -69694,8 +69721,7 @@ var manifest = {
       () => Promise.resolve().then(() => (init__6(), __exports6)),
       () => Promise.resolve().then(() => (init__7(), __exports7)),
       () => Promise.resolve().then(() => (init__8(), __exports8)),
-      () => Promise.resolve().then(() => (init__9(), __exports9)),
-      () => Promise.resolve().then(() => (init__10(), __exports10))
+      () => Promise.resolve().then(() => (init__9(), __exports9))
     ],
     routes: [
       {
@@ -69704,14 +69730,6 @@ var manifest = {
         params: null,
         path: "/",
         a: [0, 2],
-        b: [1]
-      },
-      {
-        type: "page",
-        pattern: /^\/launchTest\/?$/,
-        params: null,
-        path: "/launchTest",
-        a: [0, 3],
         b: [1]
       },
       {
@@ -69725,7 +69743,7 @@ var manifest = {
         pattern: /^\/welcome\/?$/,
         params: null,
         path: "/welcome",
-        a: [0, 4],
+        a: [0, 3],
         b: [1]
       },
       {
@@ -69733,7 +69751,7 @@ var manifest = {
         pattern: /^\/launch\/?$/,
         params: null,
         path: "/launch",
-        a: [0, 5],
+        a: [0, 4],
         b: [1]
       },
       {
@@ -69741,7 +69759,7 @@ var manifest = {
         pattern: /^\/about\/?$/,
         params: null,
         path: "/about",
-        a: [0, 6],
+        a: [0, 5],
         b: [1]
       },
       {
@@ -69749,7 +69767,7 @@ var manifest = {
         pattern: /^\/tags\/([^/]+?)\/?$/,
         params: (m2) => ({ tags: m2[1] }),
         path: null,
-        a: [0, 7],
+        a: [0, 6],
         b: [1]
       },
       {
@@ -69763,7 +69781,7 @@ var manifest = {
         pattern: /^\/([^/]+?)\/?$/,
         params: (m2) => ({ slug: m2[1] }),
         path: null,
-        a: [0, 8, 9],
+        a: [0, 7, 8],
         b: [1]
       }
     ]
