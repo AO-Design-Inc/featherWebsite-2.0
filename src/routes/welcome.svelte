@@ -133,6 +133,7 @@
 				this.done.debounce(1500);
 				if (getOS() === 'Mac OS') popUpMachine.mac();
 				else if (getOS() === 'Linux') popUpMachine.linux();
+				else if (getOS() === 'Windows') downloadBuild('Windows')
 			},
 			done: 'DONE'
 		},
